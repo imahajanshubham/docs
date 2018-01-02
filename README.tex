@@ -1,0 +1,262 @@
+% Created 2018-01-02 Tue 20:26
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Shubham Mahajan}
+\date{\today}
+\title{Structures And Pointers}
+\hypersetup{
+ pdfauthor={Shubham Mahajan},
+ pdftitle={Structures And Pointers},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.2 (Org mode 9.1.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Basics of structures…}
+\label{sec:org6e8b31f}
+
+\subsection{Definition}
+\label{sec:org1edaaae}
+
+A structure simply is a collection of finite set of similar (heterogeneous)
+collection of data elements under a single name.
+
+\subsubsection{But what do we mean by that?}
+\label{sec:org978f67f}
+
+Consider a scenario where we want to maintain a College record of a student.
+Now, let’s try to visualize the various variables we are going to deal with:
+
+\begin{itemize}
+\item student-Name
+\item student-Email
+\item student-Branch
+\item student-Mobile
+\item student-Year
+\item student-Age
+\item student-Gender
+\item student-DOB
+\item student-RollNo
+\item student-Course
+\item student-Father-Name
+\item student-Mother–Name
+\item student-Subjects
+\item student-Marks
+\item student-Percentage
+\item student-Curr-Semester
+\item student-Aggregate-Marks
+\end{itemize}
+
+and the list goes on…
+
+\uline{\textbf{Phew!!! So much clutter in all these variables, very hard to keep track of each
+one of them individually.}}
+
+The best approach to follow in a programming environment is \textbf{“Divide
+n’Conquer”}. Instead of dealing with all these variables at once, let’s try to
+\textbf{divide them into groups}:
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\uline{GROUP - A} & \textbf{student-Personal-Details}\\
+\hline
+ & - name\\
+ & - age\\
+ & - gender\\
+ & - DOB\\
+ & - email\\
+ & - mobile\\
+ & - father-Name\\
+ & - mother-name\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\uline{GROUP - B} & \textbf{student-College-Details}\\
+ & - rollNo\\
+ & - year\\
+ & - branch\\
+ & - course\\
+ & - semester\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\uline{GROUP - C} & \textbf{student-Academic-Details}\\
+ & - subjects\\
+ & - marks\\
+ & - percentage\\
+ & - aggregate\\
+\hline
+\end{tabular}
+\end{center}
+
+Now it’s pretty easy to keep track of each of the variables with the help of their
+corresponding groups. Isn’t it? That’s exactly the idea behind the concepts of structure.
+
+\subsection{Syntax}
+\label{sec:org4ea3a70}
+
+In C Language, The syntax of writing a block of structure is follows:
+
+\begin{verbatim}
+struct <structure_name> {
+  data_element#1;
+  data_element#2;
+  data_element#3;
+    .
+    .
+    .
+  data_element#n;
+};
+\end{verbatim}
+
+\uline{\textbf{Note: ’semi-colon’ at the end of a structure.}}\\
+Let’s take a look at an example:
+
+\begin{verbatim}
+struct student_Personal_Details {
+  char *name;
+  int age;
+  int DOB;
+  char *email;
+  char father_Name;
+  char mother_Name;
+};
+\end{verbatim}
+
+\subsection{Properties of a structure…}
+\label{sec:org1f6b283}
+\begin{itemize}
+\item Structure in itself is user-defined data-type.
+\item The \texttt{<structure\_name>} is a pointer, pointing the first data-element of
+it’s collection.
+\item All the data-elements of a structure are stored in a contiguous memory fashion
+i.e in above example, if \texttt{student\_Personal\_Details} is a structure name then it would
+point/store the address of it’s first element: \texttt{char *name;}. We’ll later
+explore how it works internally.
+\item A structure can hold as many data-elements as required and that too
+heterogeneous elements (different data-type).
+\item Structures are defined globally.
+\item All data-elements of a structure are private/only known to structure and
+it’s variables. They can’t be directly accessed outside the structure.
+\item The data-elements in a structure are called \texttt{members} of that structure.
+\item Structures and it’s members are accessed via their \texttt{structure name} and the
+\texttt{DOT (.)} operator i.e.
+\end{itemize}
+
+\begin{verbatim}
+struct <structure_name <structure_variable>; 
+\end{verbatim}
+
+For example:
+
+\begin{verbatim}
+struct student_Personal_Details std1;
+std1.<element-name>; 
+\end{verbatim}
+
+So, \texttt{std1} is a variable name of \texttt{struct student\_Personal\_Details} data-type.
+
+\section{A basic Students Record program…}
+\label{sec:orgdb0b27b}
+
+\subsection{using standard approach}
+\label{sec:orgdadba5d}
+
+Writing ’Students Record’ program using only single main/normal function.
+
+\begin{verbatim}
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void) {
+  int rollNo;
+  char *name;
+  char *email;
+  char *branch;
+
+  printf("Roll No - ");
+  scanf(”%d“, &rollNo);
+
+  printf("Name - ");
+  fgets(&name, 25, stdin);
+
+  printf("Branch - ");
+  fgets(&branch, 10, stdin);
+
+  printf("Email - ");
+  fgets(&email, 50, stdin);
+
+  return EXIT_SUCCESS;
+}
+\end{verbatim}
+
+\subsection{using structural approach…}
+\label{sec:org76ed6d5}
+
+Same program, but instead using structure.
+
+\begin{verbatim}
+#include <stdio.h>
+#include <stdlib.h>
+
+struct student_Personal_Details {
+  int rollNo;
+  char *name;
+  char *email;
+  char *branch;
+};
+
+// Creating a new structure variable as ’std1’.
+struct student_Personal_Details std1;
+
+void populate_Structure(void) {
+  printf("Roll No - ");
+  scanf(”%d“, &std1.rollNo);
+
+  printf("Name - ");
+  fgets(&name, 25, std1.stdin);
+
+  printf("Branch - ");
+  fgets(&branch, 10, std1.stdin);
+
+  printf("Email - ");
+  fgets(&email, 50, std1.stdin);
+}
+
+int main (void) {
+  populate_Structure();
+
+  return EXIT_SUCCESS;
+}
+\end{verbatim}
+
+\section{Thank You!}
+\label{sec:org530434c}
+\end{document}
