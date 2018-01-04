@@ -685,7 +685,9 @@ hr{
     padding-left:1.618em -4px}
 
 #table-of-contents li.on a:hover,#table-of-contents li.current>a:hover{
-    background:#fcfcfc}
+    background:#fcfcfc;
+    color: white;
+}
 
 #table-of-contents li ul li a{
     /* background:#c9c9c9; */
@@ -722,7 +724,9 @@ hr{
 
 #table-of-contents a:hover{
     background-color:#4e4a4a;
-    cursor:pointer}
+    cursor:pointer;
+    color: white;
+}
 
 /* #text-table-of-contents { */
 /*     overflow:scroll; */
