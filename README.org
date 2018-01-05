@@ -200,7 +200,7 @@ struct student_Personal_Details {
 struct student_Personal_Details std1;
 
 void populate_Structure(void) {
-  printf("Roll No - ");
+  printf("Roll No. - ");
   scanf(”%d“, &std1.rollNo);
 
   printf("Name - ");
@@ -221,4 +221,4 @@ int main (void) {
 #+END_SRC
  
 * Thank You!
-[Description].
+[Description] - coming soon.
