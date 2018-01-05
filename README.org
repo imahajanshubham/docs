@@ -16,6 +16,7 @@
   - [[#using-standard-approach][using standard approach]]
   - [[#using-structural-approach][using structural approach…]]
 - [[#thank-you][Thank You!]]
+  - [[#description---coming-soon][[Description] - Coming soon…]]
 
 * Basics of structures…
 
@@ -221,4 +222,5 @@ int main (void) {
 #+END_SRC
  
 * Thank You!
-[Description] - Coming soon…
+
+** [Description] - Coming soon…
