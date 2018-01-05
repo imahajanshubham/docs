@@ -13,8 +13,9 @@
   - [[#syntax][Syntax]]
   - [[#properties-of-a-structure][Properties of a structure…]]
 - [[#abasic-students-record-program][A basic Students Record program…]]
-  - [[#using-standard-approach][using standard approach]]
+  - [[#using-standard-approach][using standard approach…]]
   - [[#using-structural-approach][using structural approach…]]
+  - [[#structure-declaration-with-typedef][Structure Declaration with ’typedef’]]
 - [[#thank-you][Thank You!]]
   - [[#description---coming-soon][[Description] - Coming soon…]]
 
@@ -152,7 +153,7 @@ So, ~std1~ is a variable name of ~struct student_Personal_Details~ data-type.
 
 * A basic Students Record program…
 
-** using standard approach
+** using standard approach…
 
 Writing ’Students Record’ program using only single main/normal function.
 
@@ -221,6 +222,32 @@ int main (void) {
 }
 #+END_SRC
  
+** Structure Declaration with ’typedef’
+
+Instead of using:
+
+#+BEGIN_SRC C
+struct student_Personal_Details std1;
+struct student_Personal_Details std2;
+struct student_Personal_Details std3;
+#+END_SRC
+
+we can take create our own data-type using ~typedef~ as follows:
+
+#+BEGIN_SRC C
+typedef <datatype> <alias/new_name>;
+
+typedef struct student_Personal_Details stdRecord;
+
+stdRecord std1;
+stdRecord std2;
+stdRecord std3;
+#+END_SRC
+
+NOTE: ~typedef~ stands for ~type definition~. So using ~typedef~, we can give a
+new alias/name to already existing data-type i.e. same as one person can have
+two names.
+
 * Thank You!
 
 ** [Description] - Coming soon…
