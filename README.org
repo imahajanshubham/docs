@@ -221,4 +221,4 @@ int main (void) {
 #+END_SRC
  
 * Thank You!
-[Description] - Coming soon.
+[Description] - coming soon.
