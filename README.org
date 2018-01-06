@@ -108,8 +108,8 @@ struct <structure_name> {
 };
 #+END_SRC
 
-No, Let’s try to construct our very structure in C Language for the following
-sample:
+Now, Let’s try to construct our very own structure in C Language for the
+following sample:
 
 |-------------+----------------------------|
 | _GROUP - A_ | *student-Personal-Details* |
