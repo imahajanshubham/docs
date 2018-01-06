@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-01-06 Sat 19:06 -->
+<!-- 2018-01-06 Sat 19:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Structures And Pointers</title>
@@ -180,6 +180,10 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>
+<script type="text/javascript "src="readtheorg.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -234,35 +238,35 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org496e155">1. Basics of structures…</a>
+<li><a href="#org80e2305">1. Basics of structures…</a>
 <ul>
-<li><a href="#org78704f9">1.1. Definition</a>
+<li><a href="#org4cc48ac">1.1. Definition</a>
 <ul>
-<li><a href="#org3774009">1.1.1. But what do we mean by that?</a></li>
+<li><a href="#org17455ab">1.1.1. But what do we mean by that?</a></li>
 </ul>
 </li>
-<li><a href="#org17afe60">1.2. Syntax</a></li>
-<li><a href="#org14115a3">1.3. Properties of a structure…</a></li>
+<li><a href="#orga4df273">1.2. Syntax</a></li>
+<li><a href="#org4d9f236">1.3. Properties of a structure…</a></li>
 </ul>
 </li>
-<li><a href="#orgde7148a">2. A basic Students Record program…</a>
+<li><a href="#orga8797f8">2. A basic Students Record program…</a>
 <ul>
-<li><a href="#org264c274">2.1. using standard approach…</a></li>
-<li><a href="#org10cf953">2.2. using structural approach…</a></li>
-<li><a href="#org15e786c">2.3. Structure Declaration with ’typedef’</a></li>
+<li><a href="#orgf2be97c">2.1. using standard approach…</a></li>
+<li><a href="#org0ce3804">2.2. using structural approach…</a></li>
+<li><a href="#org0c77d3e">2.3. Structure Declaration with ’typedef’</a></li>
 </ul>
 </li>
-<li><a href="#orgb2abf75">3. Thank You!</a></li>
+<li><a href="#org19f374d">3. Thank You!</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org496e155" class="outline-2">
-<h2 id="org496e155"><span class="section-number-2">1</span> Basics of structures…</h2>
+<div id="outline-container-org80e2305" class="outline-2">
+<h2 id="org80e2305"><span class="section-number-2">1</span> Basics of structures…</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org78704f9" class="outline-3">
-<h3 id="org78704f9"><span class="section-number-3">1.1</span> Definition</h3>
+<div id="outline-container-org4cc48ac" class="outline-3">
+<h3 id="org4cc48ac"><span class="section-number-3">1.1</span> Definition</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 A structure simply is a collection of finite set of similar (heterogeneous)
@@ -270,8 +274,8 @@ collection of data elements under a single name.
 </p>
 </div>
 
-<div id="outline-container-org3774009" class="outline-4">
-<h4 id="org3774009"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
+<div id="outline-container-org17455ab" class="outline-4">
+<h4 id="org17455ab"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 Consider a scenario where we want to maintain a College record of a student.
@@ -455,8 +459,8 @@ corresponding groups. Isn’t it? That’s exactly the idea behind the concepts 
 </div>
 </div>
 
-<div id="outline-container-org17afe60" class="outline-3">
-<h3 id="org17afe60"><span class="section-number-3">1.2</span> Syntax</h3>
+<div id="outline-container-orga4df273" class="outline-3">
+<h3 id="orga4df273"><span class="section-number-3">1.2</span> Syntax</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 In C Language, The syntax of writing a block of structure is follows:
@@ -494,8 +498,8 @@ Let’s take a look at an example:
 </div>
 </div>
 
-<div id="outline-container-org14115a3" class="outline-3">
-<h3 id="org14115a3"><span class="section-number-3">1.3</span> Properties of a structure…</h3>
+<div id="outline-container-org4d9f236" class="outline-3">
+<h3 id="org4d9f236"><span class="section-number-3">1.3</span> Properties of a structure…</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>Structure in itself is user-defined data-type.</li>
@@ -537,12 +541,12 @@ So, <code>std1</code> is a variable name of <code>struct student_Personal_Detail
 </div>
 </div>
 
-<div id="outline-container-orgde7148a" class="outline-2">
-<h2 id="orgde7148a"><span class="section-number-2">2</span> A basic Students Record program…</h2>
+<div id="outline-container-orga8797f8" class="outline-2">
+<h2 id="orga8797f8"><span class="section-number-2">2</span> A basic Students Record program…</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org264c274" class="outline-3">
-<h3 id="org264c274"><span class="section-number-3">2.1</span> using standard approach…</h3>
+<div id="outline-container-orgf2be97c" class="outline-3">
+<h3 id="orgf2be97c"><span class="section-number-3">2.1</span> using standard approach…</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Writing ’Students Record’ program using only single main/normal function.
@@ -583,8 +587,8 @@ Writing ’Students Record’ program using only single main/normal function.
 </div>
 </div>
 
-<div id="outline-container-org10cf953" class="outline-3">
-<h3 id="org10cf953"><span class="section-number-3">2.2</span> using structural approach…</h3>
+<div id="outline-container-org0ce3804" class="outline-3">
+<h3 id="org0ce3804"><span class="section-number-3">2.2</span> using structural approach…</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Same program, but instead using structure.
@@ -628,8 +632,8 @@ Same program, but instead using structure.
 </div>
 </div>
 
-<div id="outline-container-org15e786c" class="outline-3">
-<h3 id="org15e786c"><span class="section-number-3">2.3</span> Structure Declaration with ’typedef’</h3>
+<div id="outline-container-org0c77d3e" class="outline-3">
+<h3 id="org0c77d3e"><span class="section-number-3">2.3</span> Structure Declaration with ’typedef’</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Instead of using:
@@ -666,8 +670,8 @@ two names.
 </div>
 </div>
 
-<div id="outline-container-orgb2abf75" class="outline-2">
-<h2 id="orgb2abf75"><span class="section-number-2">3</span> Thank You!</h2>
+<div id="outline-container-org19f374d" class="outline-2">
+<h2 id="org19f374d"><span class="section-number-2">3</span> Thank You!</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 [Description] - Coming soon…
@@ -677,7 +681,7 @@ two names.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-01-06 Sat 19:06</p>
+<p class="date">Created: 2018-01-06 Sat 19:07</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
