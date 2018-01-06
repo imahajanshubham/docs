@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-01-06 Sat 19:53 -->
+<!-- 2018-01-07 Sun 00:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Structures And Pointers</title>
@@ -180,10 +180,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>
-<script type="text/javascript "src="readtheorg.js"></script>
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -238,41 +240,117 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org24d8bd5">1. Basics of structures…</a>
+<li><a href="#org0b8f8a9">1. Basics of structures…</a>
 <ul>
-<li><a href="#org9f73c3d">1.1. Definition</a>
+<li><a href="#orgb268e1c">1.1. Definition</a>
 <ul>
-<li><a href="#orgd805f93">1.1.1. But what do we mean by that?</a></li>
+<li><a href="#org60d77a5">1.1.1. But what do we mean by that?</a></li>
 </ul>
 </li>
-<li><a href="#org0943cb5">1.2. Syntax</a></li>
-<li><a href="#org4cb8765">1.3. Properties of a structure</a></li>
-<li><a href="#org995f5b2">1.4. Structure variables</a></li>
+<li><a href="#org947801c">1.2. Syntax</a></li>
+<li><a href="#orgc7c829b">1.3. Properties of a structure</a></li>
+<li><a href="#org9a501ed">1.4. Structure variables</a></li>
 </ul>
 </li>
-<li><a href="#org8c97669">2. A basic Students Record program</a>
+<li><a href="#orgc919c2a">2. A basic Students Record program</a>
 <ul>
-<li><a href="#orgd3967a7">2.1. using standard approach</a></li>
-<li><a href="#org441599b">2.2. using structural approach</a></li>
-<li><a href="#orgc457a87">2.3. using structure with ’typedef’</a>
+<li><a href="#orgc6f3f5a">2.1. using standard approach</a></li>
+<li><a href="#org5027f21">2.2. using structural approach</a></li>
+<li><a href="#orge21b2f4">2.3. using structure with ’typedef’</a>
 <ul>
-<li><a href="#org80c5445">2.3.1. Syntax:</a></li>
-<li><a href="#org0a7d252">2.3.2. Example:</a></li>
+<li><a href="#orga848605">2.3.1. Syntax:</a></li>
+<li><a href="#org33ae46d">2.3.2. Example:</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgc73590f">3. Thank You!</a></li>
+<li><a href="#orge02e275">3. Thank You!</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org24d8bd5" class="outline-2">
-<h2 id="org24d8bd5"><span class="section-number-2">1</span> Basics of structures…</h2>
+<div id="outline-container-org0b8f8a9" class="outline-2">
+<h2 id="org0b8f8a9"><span class="section-number-2">1</span> Basics of structures…</h2>
 <div class="outline-text-2" id="text-1">
+<div class="tip">
+<p>
+Try doing it this way&#x2026;
+</p>
+
 </div>
-<div id="outline-container-org9f73c3d" class="outline-3">
-<h3 id="org9f73c3d"><span class="section-number-3">1.1</span> Definition</h3>
+
+<div class="note">
+<p>
+This is a useful note.
+</p>
+
+</div>
+
+<div class="warning">
+<p>
+Be careful!  Check that you have&#x2026;
+</p>
+
+</div>
+
+<div class="caution">
+<p>
+Caution
+</p>
+
+</div>
+
+<div class="important">
+<p>
+Important
+</p>
+
+</div>
+
+<div class="seealso">
+<dl class="org-dl">
+<dt><a href="http://en.wikipedia.org/wiki/Apple">Apples</a></dt><dd>A kind of <a href="http://en.wikipedia.org/wiki/Fruit">fruit</a>.</dd>
+</dl>
+
+</div>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<div class="sidebar">
+<p>
+Org mode was first released by Carsten Dominik in 2004 as an outlining and
+project planning tool.  Further development turned it into a general tool that
+can be used to author professional documents like LaTeX.
+</p>
+
+</div>
+
+<p>
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
+sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+ullamcorper pharetra. Vestibulum erat wisi&#x2026;
+</p>
+
+<p>
+Phasellus ut libero. Nulla in libero non enim tristique sollicitudin. Ut
+tempor. Phasellus pellentesque augue eget ante. Mauris malesuada. Donec sit
+amet diam sit amet dolor placerat blandit. Morbi enim purus, imperdiet in,
+molestie sit amet, pellentesque eu, mauris. In vel erat vel ipsum bibendum
+commodo. Curabitur accumsan. Nam sed metus. Etiam tristique bibendum justo.
+</p>
+</div>
+
+<div id="outline-container-orgb268e1c" class="outline-3">
+<h3 id="orgb268e1c"><span class="section-number-3">1.1</span> Definition</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 A structure simply is a collection of finite set of similar (heterogeneous)
@@ -280,8 +358,8 @@ collection of data elements under a single name.
 </p>
 </div>
 
-<div id="outline-container-orgd805f93" class="outline-4">
-<h4 id="orgd805f93"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
+<div id="outline-container-org60d77a5" class="outline-4">
+<h4 id="org60d77a5"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 Consider a scenario where we want to maintain a College record of a student.
@@ -465,8 +543,8 @@ corresponding groups. Isn’t it? That’s exactly the idea behind the concepts 
 </div>
 </div>
 
-<div id="outline-container-org0943cb5" class="outline-3">
-<h3 id="org0943cb5"><span class="section-number-3">1.2</span> Syntax</h3>
+<div id="outline-container-org947801c" class="outline-3">
+<h3 id="org947801c"><span class="section-number-3">1.2</span> Syntax</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 In C Language, The syntax of writing a block of structure is follows:
@@ -486,8 +564,8 @@ In C Language, The syntax of writing a block of structure is follows:
 </div>
 
 <p>
-No, Let’s try to construct our very structure in C Language for the following
-sample:
+Now, Let’s try to construct our very own structure in C Language for the
+following sample:
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -567,8 +645,8 @@ becomes:
 </div>
 </div>
 
-<div id="outline-container-org4cb8765" class="outline-3">
-<h3 id="org4cb8765"><span class="section-number-3">1.3</span> Properties of a structure</h3>
+<div id="outline-container-orgc7c829b" class="outline-3">
+<h3 id="orgc7c829b"><span class="section-number-3">1.3</span> Properties of a structure</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>Structure in itself is user-defined data-type.</li>
@@ -590,8 +668,8 @@ it’s variables. They can’t be directly accessed outside the structure.</li>
 </div>
 </div>
 
-<div id="outline-container-org995f5b2" class="outline-3">
-<h3 id="org995f5b2"><span class="section-number-3">1.4</span> Structure variables</h3>
+<div id="outline-container-org9a501ed" class="outline-3">
+<h3 id="org9a501ed"><span class="section-number-3">1.4</span> Structure variables</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 As we discussed earlier, <code>structure</code> itself is a user-defined data-type. So,
@@ -620,8 +698,8 @@ So, <code>std1</code> is a variable name of <code>struct student_Personal_Detail
 </div>
 </div>
 
-<div id="outline-container-org8c97669" class="outline-2">
-<h2 id="org8c97669"><span class="section-number-2">2</span> A basic Students Record program</h2>
+<div id="outline-container-orgc919c2a" class="outline-2">
+<h2 id="orgc919c2a"><span class="section-number-2">2</span> A basic Students Record program</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Now, Let’s try to develop a program where our goal is to get the following data
@@ -636,8 +714,8 @@ of a student from the user:
 </ul>
 </div>
 
-<div id="outline-container-orgd3967a7" class="outline-3">
-<h3 id="orgd3967a7"><span class="section-number-3">2.1</span> using standard approach</h3>
+<div id="outline-container-orgc6f3f5a" class="outline-3">
+<h3 id="orgc6f3f5a"><span class="section-number-3">2.1</span> using standard approach</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Writing ’Students Record’ program using only single main/normal function.
@@ -672,8 +750,8 @@ Writing ’Students Record’ program using only single main/normal function.
 </div>
 </div>
 
-<div id="outline-container-org441599b" class="outline-3">
-<h3 id="org441599b"><span class="section-number-3">2.2</span> using structural approach</h3>
+<div id="outline-container-org5027f21" class="outline-3">
+<h3 id="org5027f21"><span class="section-number-3">2.2</span> using structural approach</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Same program, but instead using structure.
@@ -716,8 +794,8 @@ Same program, but instead using structure.
 </div>
 </div>
 
-<div id="outline-container-orgc457a87" class="outline-3">
-<h3 id="orgc457a87"><span class="section-number-3">2.3</span> using structure with ’typedef’</h3>
+<div id="outline-container-orge21b2f4" class="outline-3">
+<h3 id="orge21b2f4"><span class="section-number-3">2.3</span> using structure with ’typedef’</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 The <code>typedef</code> stands for <code>type definition</code>. So using <code>typedef</code>, we can give a
@@ -726,8 +804,8 @@ two names.
 </p>
 </div>
 
-<div id="outline-container-org80c5445" class="outline-4">
-<h4 id="org80c5445"><span class="section-number-4">2.3.1</span> Syntax:</h4>
+<div id="outline-container-orga848605" class="outline-4">
+<h4 id="orga848605"><span class="section-number-4">2.3.1</span> Syntax:</h4>
 <div class="outline-text-4" id="text-2-3-1">
 <div class="org-src-container">
 <pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">typedef</span> &lt;datatype&gt; &lt;alias/new_name&gt;;
@@ -736,8 +814,8 @@ two names.
 </div>
 </div>
 
-<div id="outline-container-org0a7d252" class="outline-4">
-<h4 id="org0a7d252"><span class="section-number-4">2.3.2</span> Example:</h4>
+<div id="outline-container-org33ae46d" class="outline-4">
+<h4 id="org33ae46d"><span class="section-number-4">2.3.2</span> Example:</h4>
 <div class="outline-text-4" id="text-2-3-2">
 <p>
 Instead of writing:
@@ -807,8 +885,8 @@ So, finally the program becomes:
 </div>
 </div>
 
-<div id="outline-container-orgc73590f" class="outline-2">
-<h2 id="orgc73590f"><span class="section-number-2">3</span> Thank You!</h2>
+<div id="outline-container-orge02e275" class="outline-2">
+<h2 id="orge02e275"><span class="section-number-2">3</span> Thank You!</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 [Description] - Coming soon…
@@ -818,7 +896,7 @@ So, finally the program becomes:
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-01-06 Sat 19:53</p>
+<p class="date">Created: 2018-01-07 Sun 00:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
