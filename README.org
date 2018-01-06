@@ -129,6 +129,7 @@ commodo. Curabitur accumsan. Nam sed metus. Etiam tristique bibendum justo.
 
     |-------------+---------------------------|
     | _GROUP - B_ | *student-College-Details* |
+    |-------------+---------------------------|
     |             | - rollNo                  |
     |             | - year                    |
     |             | - branch                  |
@@ -138,6 +139,7 @@ commodo. Curabitur accumsan. Nam sed metus. Etiam tristique bibendum justo.
 
     |-------------+----------------------------|
     | _GROUP - C_ | *student-Academic-Details* |
+    |-------------+----------------------------|
     |             | - subjects                 |
     |             | - marks                    |
     |             | - percentage               |
