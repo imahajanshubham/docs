@@ -120,6 +120,7 @@ struct student_Personal_Details {
 #+END_SRC
      
 ** Properties of a structure…
+
 - Structure in itself is user-defined data-type.
 - The ~<structure_name>~ is a pointer, pointing the first data-element of
   it’s collection.
