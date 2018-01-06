@@ -12,24 +12,23 @@
     - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
   - [[#syntax][Syntax]]
   - [[#properties-of-a-structure][Properties of a structure…]]
-- [[#abasic-students-record-program][A basic Students Record program…]]
+- [[#a-basic-students-record-program][A basic Students Record program…]]
   - [[#using-standard-approach][using standard approach…]]
   - [[#using-structural-approach][using structural approach…]]
   - [[#structure-declaration-with-typedef][Structure Declaration with ’typedef’]]
 - [[#thank-you][Thank You!]]
-  - [[#description---coming-soon][[Description] - Coming soon…]]
 
 * Basics of structures…
 
 ** Definition
    
-   A structure simply is a collection of finite set of similar (heterogeneous)
+   A structure simply is a collection of finite set of similar (heterogeneous)
    collection of data elements under a single name.
 
 *** But what do we mean by that?
 
     Consider a scenario where we want to maintain a College record of a student.
-    Now, let’s try to visualize the various variables we are going to deal with:
+    Now, let’s try to visualize the various variables we are going to deal with:
 
     - student-Name
     - student-Email
@@ -88,8 +87,8 @@
     |             | - aggregate                |
     |-------------+----------------------------|
 
-    Now it’s pretty easy to keep track of each of the variables with the help of their
-    corresponding groups. Isn’t it? That’s exactly the idea behind the concepts of structure.
+    Now it’s pretty easy to keep track of each of the variables with the help of their
+    corresponding groups. Isn’t it? That’s exactly the idea behind the concepts of structure.
 
 ** Syntax
 
@@ -108,7 +107,7 @@ struct <structure_name> {
 #+END_SRC
 
 _*Note: ’semi-colon’ at the end of a structure.*_\\
-Let’s take a look at an example:
+Let’s take a look at an example:
      
 #+BEGIN_SRC C
 struct student_Personal_Details {
@@ -124,18 +123,18 @@ struct student_Personal_Details {
 ** Properties of a structure…
 - Structure in itself is user-defined data-type.
 - The ~<structure_name>~ is a pointer, pointing the first data-element of
-  it’s collection.
+  it’s collection.
 - All the data-elements of a structure are stored in a contiguous memory fashion
   i.e in above example, if ~student_Personal_Details~ is a structure name then it would
-  point/store the address of it’s first element: ~char *name;~. We’ll later
+  point/store the address of it’s first element: ~char *name;~. We’ll later
   explore how it works internally.
-- A structure can hold as many data-elements as required and that too
+- A structure can hold as many data-elements as required and that too
   heterogeneous elements (different data-type).
 - Structures are defined globally.
 - All data-elements of a structure are private/only known to structure and
-  it’s variables. They can’t be directly accessed outside the structure.
+  it’s variables. They can’t be directly accessed outside the structure.
 - The data-elements in a structure are called ~members~ of that structure.
-- Structures and it’s members are accessed via their ~structure name~ and the
+- Structures and it’s members are accessed via their ~structure name~ and the
   ~DOT (.)~ operator i.e.
 
 #+BEGIN_SRC C
@@ -151,7 +150,7 @@ std1.<element-name>;
 
 So, ~std1~ is a variable name of ~struct student_Personal_Details~ data-type.
 
-* A basic Students Record program…
+* A basic Students Record program…
 
 ** using standard approach…
 
@@ -250,4 +249,4 @@ two names.
 
 * Thank You!
 
-** [Description] - Coming soon…
+[Description] - Coming soon…
