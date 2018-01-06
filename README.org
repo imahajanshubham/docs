@@ -154,7 +154,7 @@ struct student_Personal_Details {
 - All data-elements of a structure are private/only known to structure and
   it’s variables. They can’t be directly accessed outside the structure.
 - The data-elements in a structure are called ~members~ of that structure.
-- Structures and it’s members are accessed via their ~structure name~ and the
+- Structures and it’s members are accessed via their ~structure variables~ and the
   ~DOT (.)~ operator i.e.
 
 ** Structure variables…
@@ -164,7 +164,7 @@ every data-type must’ve a variable-name so as to use it. In case of
 ~structures~, they are declared as follows:
 
 #+BEGIN_SRC C
-struct <structure_name <structure_variable>; 
+struct <structure_name> <structure_variable>; 
 #+END_SRC
 
 For example:
