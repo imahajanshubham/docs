@@ -10,11 +10,11 @@
   - [[#definition][Definition]]
     - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
   - [[#syntax][Syntax]]
-  - [[#properties-of-a-structure][Properties of a structure…]]
-  - [[#structure-variables][Structure variables…]]
-- [[#a-basic-students-record-program][A basic Students Record program…]]
-  - [[#using-standard-approach][using standard approach…]]
-  - [[#using-structural-approach][using structural approach…]]
+  - [[#properties-of-a-structure][Properties of a structure]]
+  - [[#structure-variables][Structure variables]]
+- [[#a-basic-students-record-program][A basic Students Record program]]
+  - [[#using-standard-approach][using standard approach]]
+  - [[#using-structural-approach][using structural approach]]
   - [[#using-structure-with-typedef][using structure with ’typedef’]]
     - [[#syntax-1][Syntax:]]
     - [[#example][Example:]]
@@ -139,7 +139,7 @@ struct student_Personal_Details {
 };
 #+END_SRC
      
-** Properties of a structure…
+** Properties of a structure
 
 - Structure in itself is user-defined data-type.
 - The ~<structure_name>~ is a pointer, pointing the first data-element of
@@ -157,7 +157,7 @@ struct student_Personal_Details {
 - Structures and it’s members are accessed via their ~structure variables~ and the
   ~DOT (.)~ operator i.e.
 
-** Structure variables…
+** Structure variables
 
 As we discussed earlier, ~structure~ itself is a user-defined data-type. So,
 every data-type must’ve a variable-name so as to use it. In case of
@@ -175,7 +175,7 @@ struct student_Personal_Details std1;
 
 So, ~std1~ is a variable name of ~struct student_Personal_Details~ data-type.
 
-* A basic Students Record program…
+* A basic Students Record program
 
 Now, Let’s try to develop a program where our goal is to get the following data
 of a student from the user:
@@ -185,7 +185,7 @@ of a student from the user:
 - Email
 - Branch
 
-** using standard approach…
+** using standard approach
 
 Writing ’Students Record’ program using only single main/normal function.
 
@@ -215,7 +215,7 @@ int main (void) {
 }
   #+END_SRC
 
-** using structural approach…
+** using structural approach
 
 Same program, but instead using structure.
 
