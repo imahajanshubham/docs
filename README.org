@@ -177,6 +177,14 @@ So, ~std1~ is a variable name of ~struct student_Personal_Details~ data-type.
 
 * A basic Students Record program…
 
+Now, Let’s try to develop a program where our goal is to get the following data
+of a student from the user:
+
+- Roll No
+- Name
+- Email
+- Branch
+
 ** using standard approach…
 
 Writing ’Students Record’ program using only single main/normal function.
