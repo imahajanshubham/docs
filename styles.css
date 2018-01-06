@@ -670,9 +670,7 @@ hr{
     padding:0.4045em 2.427em}
 
 #table-of-contents li.current a:hover{
-    background:#d6d6d6;
-    color: white;
-}
+    background:#d6d6d6}
 
 #table-of-contents li a{
     /* color:#404040; */
@@ -685,9 +683,7 @@ hr{
     padding-left:1.618em -4px}
 
 #table-of-contents li.on a:hover,#table-of-contents li.current>a:hover{
-    background:#fcfcfc;
-    color: white;
-}
+    background:#fcfcfc}
 
 #table-of-contents li ul li a{
     /* background:#c9c9c9; */
@@ -724,9 +720,7 @@ hr{
 
 #table-of-contents a:hover{
     background-color:#4e4a4a;
-    cursor:pointer;
-    color: white;
-}
+    cursor:pointer}
 
 /* #text-table-of-contents { */
 /*     overflow:scroll; */

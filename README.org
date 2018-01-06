@@ -1,4 +1,3 @@
-# #+HTML_HEAD: <link rel="stylesheet" type="text/css"href="htmlize.css"/>
 #+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 #+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>
 #+HTML_HEAD: <script type="text/javascript "src="readtheorg.js"></script>
@@ -155,6 +154,8 @@ So, ~std1~ is a variable name of ~struct student_Personal_Details~ data-type.
 ** using standard approach…
 
 Writing ’Students Record’ program using only single main/normal function.
+
+[[~/Downloads/profile.jpg]]
 
 #+BEGIN_SRC C
 #include <stdio.h>
