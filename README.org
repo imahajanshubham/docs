@@ -11,10 +11,13 @@
     - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
   - [[#syntax][Syntax]]
   - [[#properties-of-a-structure][Properties of a structure…]]
+  - [[#structure-variables][Structure variables…]]
 - [[#a-basic-students-record-program][A basic Students Record program…]]
   - [[#using-standard-approach][using standard approach…]]
   - [[#using-structural-approach][using structural approach…]]
-  - [[#structure-declaration-with-typedef][Structure Declaration with ’typedef’]]
+  - [[#using-structure-with-typedef][using structure with ’typedef’]]
+    - [[#syntax-1][Syntax:]]
+    - [[#example][Example:]]
 - [[#thank-you][Thank You!]]
 
 * Basics of structures…
@@ -105,15 +108,32 @@ struct <structure_name> {
 };
 #+END_SRC
 
-_*Note: ’semi-colon’ at the end of a structure.*_\\
-Let’s take a look at an example:
-     
+No, Let’s try to construct our very structure in C Language for the following
+sample:
+
+|-------------+----------------------------|
+| _GROUP - A_ | *student-Personal-Details* |
+|-------------+----------------------------|
+|             | - name                     |
+|             | - age                      |
+|             | - gender                   |
+|             | - DOB                      |
+|             | - email                    |
+|             | - mobile                   |
+|             | - father-Name              |
+|             | - mother-name              |
+|-------------+----------------------------|
+
+becomes:
+
 #+BEGIN_SRC C
 struct student_Personal_Details {
   char *name;
   int age;
+  char gender;
   int DOB;
   char *email;
+  int mobile;
   char father_Name;
   char mother_Name;
 };
@@ -137,6 +157,12 @@ struct student_Personal_Details {
 - Structures and it’s members are accessed via their ~structure name~ and the
   ~DOT (.)~ operator i.e.
 
+** Structure variables…
+
+As we discussed earlier, ~structure~ itself is a user-defined data-type. So,
+every data-type must’ve a variable-name so as to use it. In case of
+~structures~, they are declared as follows:
+
 #+BEGIN_SRC C
 struct <structure_name <structure_variable>; 
 #+END_SRC
@@ -145,7 +171,6 @@ For example:
 
 #+BEGIN_SRC C
 struct student_Personal_Details std1;
-std1.<element-name>; 
 #+END_SRC
 
 So, ~std1~ is a variable name of ~struct student_Personal_Details~ data-type.
@@ -155,8 +180,6 @@ So, ~std1~ is a variable name of ~struct student_Personal_Details~ data-type.
 ** using standard approach…
 
 Writing ’Students Record’ program using only single main/normal function.
-
-[[~/Downloads/profile.jpg]]
 
 #+BEGIN_SRC C
 #include <stdio.h>
@@ -199,7 +222,6 @@ struct student_Personal_Details {
   char *branch;
 };
 
-// Creating a new structure variable as ’std1’.
 struct student_Personal_Details std1;
 
 void populate_Structure(void) {
@@ -223,9 +245,21 @@ int main (void) {
 }
 #+END_SRC
  
-** Structure Declaration with ’typedef’
+** using structure with ’typedef’
 
-Instead of using:
+The ~typedef~ stands for ~type definition~. So using ~typedef~, we can give a
+new alias/name to already existing data-type i.e. same as one person can have
+two names.
+
+*** Syntax:
+
+#+BEGIN_SRC C
+typedef <datatype> <alias/new_name>;
+#+END_SRC
+
+*** Example:
+
+Instead of writing:
 
 #+BEGIN_SRC C
 struct student_Personal_Details std1;
@@ -233,11 +267,9 @@ struct student_Personal_Details std2;
 struct student_Personal_Details std3;
 #+END_SRC
 
-we can take create our own data-type using ~typedef~ as follows:
+We can take create our own data-type using ~typedef~ as follows:
 
 #+BEGIN_SRC C
-typedef <datatype> <alias/new_name>;
-
 typedef struct student_Personal_Details stdRecord;
 
 stdRecord std1;
@@ -245,9 +277,42 @@ stdRecord std2;
 stdRecord std3;
 #+END_SRC
 
-NOTE: ~typedef~ stands for ~type definition~. So using ~typedef~, we can give a
-new alias/name to already existing data-type i.e. same as one person can have
-two names.
+So, finally the program becomes:
+
+#+BEGIN_SRC C
+#include <stdio.h>
+#include <stdlib.h>
+
+struct student_Personal_Details {
+  int rollNo;
+  char *name;
+  char *email;
+  char *branch;
+};
+
+typedef student_Personal_Details stdRecord;
+stdRecord std1;
+
+void populate_Structure(void) {
+  printf("Roll No. - ");
+  scanf(”%d“, &std1.rollNo);
+
+  printf("Name - ");
+  fgets(&name, 25, std1.stdin);
+
+  printf("Branch - ");
+  fgets(&branch, 10, std1.stdin);
+
+  printf("Email - ");
+  fgets(&email, 50, std1.stdin);
+}
+
+int main (void) {
+  populate_Structure();
+
+  return EXIT_SUCCESS;
+}
+#+END_SRC
 
 * Thank You!
 
