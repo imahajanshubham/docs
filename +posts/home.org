@@ -1,3 +1,9 @@
+# -*- mode: org; -*-
+#+INCLUDE: "../+layouts/defaults.org"
+
+#+ATTR_HTML: :width 100%
+| Home | Featured Blogs | GitHub |
+
 #+TITLE: Structures And Pointers
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
@@ -15,18 +21,12 @@
     - [[#example][Example:]]
 - [[#thank-you][Thank You!]]
 
-* Basics of structures
+* TODO Basics of structures
 
-** Definition
-   
+** DONE Definition
+
    A structure simply is a collection of finite set of similar (heterogeneous)
-   collection of data elements undechickr a single name.
-
-#+begin_note
-This is a useful note.
-#+end_note
-
-[[./screenshot.png]]
+   collection of data elements under a single name.
 
 *** But what do we mean by that?
 
@@ -108,7 +108,6 @@ struct <structure_name> {
     .
     .
   data_element#n;
-  // and so on…
 };
 #+END_SRC
 
@@ -227,7 +226,6 @@ Same program, but instead using structure.
 #include <stdio.h>
 #include <stdlib.h>
 
-// lol
 struct student_Personal_Details {
   int rollNo;
   char *name;
@@ -257,6 +255,10 @@ int main (void) {
   return EXIT_SUCCESS;
 }
 #+END_SRC
+ 
+#+RESULTS:
+: Hello World
+: print from function
 
 ** using structure with ’typedef’
 
@@ -330,4 +332,3 @@ int main (void) {
 * Thank You!
 
 [Description] - Coming soon…
-
