@@ -1,0 +1,13 @@
+#+TITLE: Shashank Mahajan
+
+#+INCLUDE: "../_layouts/defaults.org"
+
+* Welcome
+
+Hello, I’m Shashank Mahajan.
+
+|   |   |   |   |   |
+|---+---+---+---+---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+
