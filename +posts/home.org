@@ -6,14 +6,11 @@
 - [[#basics-of-structures][Basics of structures]]
   - [[#definition][Definition]]
     - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
-  - [[#syntax][Syntax]]
-  - [[#properties-of-a-structure][Properties of a structure]]
-  - [[#structure-variables][Structure variables]]
 - [[#a-basic-students-record-program][A basic Students Record program]]
   - [[#using-standard-approach][using standard approach]]
   - [[#using-structural-approach][using structural approach]]
   - [[#using-structure-with-typedef][using structure with ’typedef’]]
-    - [[#syntax-1][Syntax:]]
+    - [[#syntax][Syntax:]]
     - [[#example][Example:]]
 - [[#thank-you][Thank You!]]
 
@@ -26,7 +23,18 @@
 
 *** But what do we mean by that?
 
-    Consider a scenario where we want to maintain a College record of a student.
+    Con#+TITLE: Hash Maps in Java
+
+#+INCLUDE: "../+layouts/defaults.org"
+
+* Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#basics-of-hash-maps][Basics of Hash Maps]]
+  - [[#definition][Definition]]
+    - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
+    - [[#what-did-we-observed][What did we observed?]]
+  - [[#syntax][Syntax]]
+  - [[#properties-of-a-structure][Properties of a structure]]
+  - [[#structure-variables][Structure variables]]sider a scenario where we want to maintain a College record of a student.
     Now, let’s try to visualize the various variables we are going to deal with:
 
     - student-Name

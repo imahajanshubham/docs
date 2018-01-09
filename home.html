@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-01-09 Tue 22:04 -->
+<!-- 2018-01-10 Wed 04:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Structures And Pointers</title>
@@ -181,7 +181,13 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="./+themes/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
@@ -247,9 +253,6 @@ for the JavaScript code in this tag.
 <li><a href="#org0503146">1.1.1. But what do we mean by that?</a></li>
 </ul>
 </li>
-<li><a href="#org6dd41dc">1.2. Syntax</a></li>
-<li><a href="#org30fcae0">1.3. Properties of a structure</a></li>
-<li><a href="#orgf8ade31">1.4. Structure variables</a></li>
 </ul>
 </li>
 <li><a href="#orgabd2a3d">2. A basic Students Record program</a>
@@ -304,340 +307,28 @@ collection of data elements under a single name.
 <h4 id="org0503146"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
-Consider a scenario where we want to maintain a College record of a student.
-Now, let’s try to visualize the various variables we are going to deal with:
+Con#+TITLE: Hash Maps in Java
 </p>
 
-<ul class="org-ul">
-<li>student-Name</li>
-<li>student-Email</li>
-<li>student-Branch</li>
-<li>student-Mobile</li>
-<li>student-Year</li>
-<li>student-Age</li>
-<li>student-Gender</li>
-<li>student-DOB</li>
-<li>student-RollNo</li>
-<li>student-Course</li>
-<li>student-Father-Name</li>
-<li>student-Mother–Name</li>
-<li>student-Subjects</li>
-<li>student-Marks</li>
-<li>student-Percentage</li>
-<li>student-Curr-Semester</li>
-<li>student-Aggregate-Marks</li>
-</ul>
-
-<p>
-and the list goes on…
-</p>
-
-<p>
-<span class="underline"><b>Phew!!! So much clutter in all these variables, very hard to keep track of each
-one of them individually.</b></span>
-</p>
-
-<p>
-The best approach to follow in a programming environment is <b>“Divide
-n’Conquer”</b>. Instead of dealing with all these variables at once, let’s try to
-<b>divide them into groups</b>:
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100%">
 
 
 <colgroup>
 <col  class="org-left" />
 
 <col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left"><span class="underline">GROUP - A</span></th>
-<th scope="col" class="org-left"><b>student-Personal-Details</b></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- name</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- age</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- gender</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- DOB</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- email</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- mobile</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- father-Name</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- mother-name</td>
-</tr>
-</tbody>
-</table>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
 
 <col  class="org-left" />
 </colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left"><span class="underline">GROUP - B</span></th>
-<th scope="col" class="org-left"><b>student-College-Details</b></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- rollNo</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- year</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- branch</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- course</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- semester</td>
+<td class="org-left">Home</td>
+<td class="org-left">Featured Blogs</td>
+<td class="org-left">GitHub</td>
 </tr>
 </tbody>
 </table>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left"><span class="underline">GROUP - C</span></th>
-<th scope="col" class="org-left"><b>student-Academic-Details</b></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- subjects</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- marks</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- percentage</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- aggregate</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-Now it’s pretty easy to keep track of each of the variables with the help of their
-corresponding groups. Isn’t it? That’s exactly the idea behind the concepts of structure.
-</p>
 </div>
-</div>
-</div>
-
-<div id="outline-container-org6dd41dc" class="outline-3">
-<h3 id="org6dd41dc"><span class="section-number-3">1.2</span> Syntax</h3>
-<div class="outline-text-3" id="text-1-2">
-<p>
-In C Language, The syntax of writing a block of structure is follows:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> &lt;structure_name&gt; <span style="color: #4f97d7;">{</span>
-  data_element#<span style="color: #a45bad;">1</span>;
-  data_element#<span style="color: #a45bad;">2</span>;
-  data_element#<span style="color: #a45bad;">3</span>;
-    .
-    .
-    .
-  data_element#n;
-<span style="color: #4f97d7;">}</span>;
-</pre>
-</div>
-
-<p>
-Now, Let’s try to construct our very own structure in C Language for the
-following sample:
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left"><span class="underline">GROUP - A</span></th>
-<th scope="col" class="org-left"><b>student-Personal-Details</b></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- name</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- age</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- gender</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- DOB</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- email</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- mobile</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- father-Name</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">- mother-name</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-becomes:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">name</span>;
-  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">age</span>;
-  <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">gender</span>;
-  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">DOB</span>;
-  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">email</span>;
-  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">mobile</span>;
-  <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">father_Name</span>;
-  <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">mother_Name</span>;
-<span style="color: #4f97d7;">}</span>;
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org30fcae0" class="outline-3">
-<h3 id="org30fcae0"><span class="section-number-3">1.3</span> Properties of a structure</h3>
-<div class="outline-text-3" id="text-1-3">
-<ul class="org-ul">
-<li>Structure in itself is user-defined data-type.</li>
-<li>The <code>&lt;structure_name&gt;</code> is a pointer, pointing the first data-element of
-it’s collection.</li>
-<li>All the data-elements of a structure are stored in a contiguous memory fashion
-i.e in above example, if <code>student_Personal_Details</code> is a structure name then it would
-point/store the address of it’s first element: <code>char *name;</code>. We’ll later
-explore how it works internally.</li>
-<li>A structure can hold as many data-elements as required and that too
-heterogeneous elements (different data-type).</li>
-<li>Structures are defined globally.</li>
-<li>All data-elements of a structure are private/only known to structure and
-it’s variables. They can’t be directly accessed outside the structure.</li>
-<li>The data-elements in a structure are called <code>members</code> of that structure.</li>
-<li>Structures and it’s members are accessed via their <code>structure variables</code> and the
-<code>DOT (.)</code> operator i.e.</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgf8ade31" class="outline-3">
-<h3 id="orgf8ade31"><span class="section-number-3">1.4</span> Structure variables</h3>
-<div class="outline-text-3" id="text-1-4">
-<p>
-As we discussed earlier, <code>structure</code> itself is a user-defined data-type. So,
-every data-type must’ve a variable-name so as to use it. In case of
-<code>structures</code>, they are declared as follows:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> &lt;structure_name&gt; &lt;structure_variable&gt;; 
-</pre>
-</div>
-
-<p>
-For example:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #7590db;">std1</span>;
-</pre>
-</div>
-
-<p>
-So, <code>std1</code> is a variable name of <code>struct student_Personal_Details</code> data-type.
-</p>
 </div>
 </div>
 </div>
@@ -840,7 +531,7 @@ So, finally the program becomes:
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-01-09 Tue 22:04</p>
+<p class="date">Created: 2018-01-10 Wed 04:58</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
