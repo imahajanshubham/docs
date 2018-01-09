@@ -1,0 +1,13 @@
+#+TITLE: Help
+
+#+INCLUDE: "../_layouts/defaults.org"
+
+* Contact
+
+#+INCLUDE: "./sitemap.org"
+
+* Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#contact][Contact]]
+- [[#thank-you][Thank You!]]
+
+* Thank You!
