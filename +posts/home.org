@@ -1,6 +1,6 @@
 #+TITLE: Structures And Pointers
 
-#+INCLUDE: "../_layouts/defaults.org"
+#+INCLUDE: "../+layouts/defaults.org"
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#basics-of-structures][Basics of structures]]

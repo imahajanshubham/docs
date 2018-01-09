@@ -1,6 +1,6 @@
 #+TITLE: Help
 
-#+INCLUDE: "../_layouts/defaults.org"
+#+INCLUDE: "../+layouts/defaults.org"
 
 * Contact
 
