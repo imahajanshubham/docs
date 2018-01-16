@@ -1,7 +1,5 @@
 #+TITLE: Structures And Pointers
 
-#+INCLUDE: "../+layouts/defaults.org"
-
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#basics-of-structures][Basics of structures]]
   - [[#definition][Definition]]
@@ -49,44 +47,44 @@
 
     and the list goes on…
 
-    _*Phew!!! So much clutter in all these variables, very hard to keep track of each
-    one of them individually.*_
+    _*Phew!!! So much clutter in all these variables, very hard to keep track of
+    each one of them individually.*_
     
     The best approach to follow in a programming environment is *“Divide
     n’Conquer”*. Instead of dealing with all these variables at once, let’s try to
     *divide them into groups*:
     
-    |-------------+----------------------------|
+    |-----------+--------------------------|
     | _GROUP - A_ | *student-Personal-Details* |
-    |-------------+----------------------------|
-    |             | - name                     |
-    |             | - age                      |
-    |             | - gender                   |
-    |             | - DOB                      |
-    |             | - email                    |
-    |             | - mobile                   |
-    |             | - father-Name              |
-    |             | - mother-name              |
-    |-------------+----------------------------|
+    |-----------+--------------------------|
+    |           | - name                   |
+    |           | - age                    |
+    |           | - gender                 |
+    |           | - DOB                    |
+    |           | - email                  |
+    |           | - mobile                 |
+    |           | - father-Name            |
+    |           | - mother-name            |
+    |-----------+--------------------------|
 
-    |-------------+---------------------------|
+    |-----------+-------------------------|
     | _GROUP - B_ | *student-College-Details* |
-    |-------------+---------------------------|
-    |             | - rollNo                  |
-    |             | - year                    |
-    |             | - branch                  |
-    |             | - course                  |
-    |             | - semester                |
-    |-------------+---------------------------|
+    |-----------+-------------------------|
+    |           | - rollNo                |
+    |           | - year                  |
+    |           | - branch                |
+    |           | - course                |
+    |           | - semester              |
+    |-----------+-------------------------|
 
-    |-------------+----------------------------|
+    |-----------+--------------------------|
     | _GROUP - C_ | *student-Academic-Details* |
-    |-------------+----------------------------|
-    |             | - subjects                 |
-    |             | - marks                    |
-    |             | - percentage               |
-    |             | - aggregate                |
-    |-------------+----------------------------|
+    |-----------+--------------------------|
+    |           | - subjects               |
+    |           | - marks                  |
+    |           | - percentage             |
+    |           | - aggregate              |
+    |-----------+--------------------------|
 
     Now it’s pretty easy to keep track of each of the variables with the help of their
     corresponding groups. Isn’t it? That’s exactly the idea behind the concepts of structure.
@@ -100,28 +98,28 @@ struct <structure_name> {
   data_element#1;
   data_element#2;
   data_element#3;
-    .
-    .
-    .
+  .
+  .
+  .
   data_element#n;
-};
+  };
 #+END_SRC
 
 Now, Let’s try to construct our very own structure in C Language for the
 following sample:
 
-|-------------+----------------------------|
+|-----------+--------------------------|
 | _GROUP - A_ | *student-Personal-Details* |
-|-------------+----------------------------|
-|             | - name                     |
-|             | - age                      |
-|             | - gender                   |
-|             | - DOB                      |
-|             | - email                    |
-|             | - mobile                   |
-|             | - father-Name              |
-|             | - mother-name              |
-|-------------+----------------------------|
+|-----------+--------------------------|
+|           | - name                   |
+|           | - age                    |
+|           | - gender                 |
+|           | - DOB                    |
+|           | - email                  |
+|           | - mobile                 |
+|           | - father-Name            |
+|           | - mother-name            |
+|-----------+--------------------------|
 
 becomes:
 
@@ -188,7 +186,7 @@ of a student from the user:
 
 Writing ’Students Record’ program using only single main/normal function.
 
-#+BEGIN_SRC C
+#+begin_src C
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -212,13 +210,13 @@ int main (void) {
 
   return EXIT_SUCCESS;
 }
-  #+END_SRC
+#+end_src
 
 ** using structural approach
 
 Same program, but instead using structure.
 
-#+BEGIN_SRC C
+#+begin_src C
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -250,15 +248,11 @@ int main (void) {
 
   return EXIT_SUCCESS;
 }
-#+END_SRC
+#+end_src
  
-#+RESULTS:
-: Hello World
-: print from function
-
 ** using structure with ’typedef’
 
-The ~typedef~ stands for ~type definition~. So using ~typedef~, we can give a
+The ~typedef~ /stands/ for ~type definition~. So using ~typedef~, we can give a
 new alias/name to already existing data-type i.e. same as one person can have
 two names.
 
@@ -326,5 +320,3 @@ int main (void) {
 #+END_SRC
 
 * Thank You!
-
-[Description] - Coming soon…

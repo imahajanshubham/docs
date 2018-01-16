@@ -1,6 +1,7 @@
 #+TITLE: Hash Maps in Java
 
-#+INCLUDE: "../+layouts/defaults.org"
+#+ATTR_HTML: :width 100% class="center"
+| Home | Featured Blogs | [[https://github.com/imahajanshubham][GitHub]] |
 
 * Table of Contents                                       :TOC_4_gh:noexport:
 - [[#basics-of-hash-maps][Basics of Hash Maps]]
@@ -26,7 +27,7 @@
 
 Java HashMap is one of the most popular Collection classes in java. Java HashMap
 is Hash table based implementation. HashMap in java extends AbstractMap class
-that implements Map interface.
+that implement(setq org-hide-emphasis-markers t)s Map interface.
 
 *** But what do we mean by that?
 
@@ -36,12 +37,12 @@ the concept behind the Hash Map.
 Let’s say we want make a record of a phone-book (person’s name and phone no) as
 follows:
 
-#+begin_note
+#+BEGIN_NOTE
 For the sake of simplicity (to avoid rehashing), let’s assume:
 
 - Each name is unique.
 - A single person can have only one phone no.
-#+end_note
+#+END_NOTE
 
 | *Name* | *Phone No.* |
 |--------+-------------|
@@ -152,7 +153,6 @@ Input:
 | Raj 34745910  |
 | Sonu 86988901 |
 | Ravi 87240393 |
-| 2             |
 | Raju          |
 | Ravi          |
 
@@ -170,16 +170,15 @@ classes:
 
 
 #+begin_src java
+  import java.util.*;
+  import java.io.*;
 
-import java.util.*;
-import java.io.*;
-
-class testMain {
-  public static void main(String []args) {
-    Map<String, Integer> phoneBook = new HashMap<String, Integer>();
-    Scanner scan = new Scanner(System.in);
-  }
-}    
+  class testMain {
+    public static void main(String []args) {
+      Map<String, Integer> phoneBook = new HashMap<String, Integer>();
+      Scanner scan = new Scanner(System.in);
+    }
+  }    
 #+end_src
 
 ** Step - 2
@@ -187,7 +186,7 @@ class testMain {
 Now let’s get the value of ’n’ (~INTEGER~) i.e. the no of phone records to be entered:
 
 #+begin_src java
-int n = scan.nextInt();
+  int n = scan.nextInt();
 #+end_src
 
 ** Step - 3
@@ -195,12 +194,12 @@ int n = scan.nextInt();
 Now let’s fill ’n’ records (~STRING INTEGER~) in the phonebook.
 
 #+begin_src java
-for(int i = 0; i < n; i++){
-  String name = scan.next();
-  int phone = scan.nextInt();
+  for(int i = 0; i < n; i++){
+    String name = scan.next();
+    int phone = scan.nextInt();
 
-  phoneBook.put(name, phone);
-}
+    phoneBook.put(name, phone);
+  }
 #+end_src
 
 #+begin_tip
@@ -288,6 +287,6 @@ class testMain {
 #+end_src
 
 That’s it, the program to implement HashMap Logic in Java. I hope if not all,
-we learned something.
+we learned something :)
 
 * Thank You!
