@@ -217,37 +217,37 @@ int main (void) {
 Same program, but instead using structure.
 
 #+begin_src C
-#include <stdio.h>
-#include <stdlib.h>
+  #include <stdio.h>
+  #include <stdlib.h>
 
-struct student_Personal_Details {
-  int rollNo;
-  char *name;
-  char *email;
-  char *branch;
-};
+  struct student_Personal_Details {
+    int rollNo;
+    char *name;
+    char *email;
+    char *branch;
+  };
 
-struct student_Personal_Details std1;
+  struct student_Personal_Details std1;
 
-void populate_Structure(void) {
-  printf("Roll No. - ");
-  scanf(”%d“, &std1.rollNo);
+  void populate_Structure(void) {
+    printf("Roll No. - ");
+    scanf("%d", &std1.rollNo);
 
-  printf("Name - ");
-  fgets(&name, 25, std1.stdin);
+    printf("Name - ");
+    fgets(std1.name, 25, stdin);
 
-  printf("Branch - ");
-  fgets(&branch, 10, std1.stdin);
+    printf("Branch - ");
+    fgets(std1.branch, 10, stdin);
 
-  printf("Email - ");
-  fgets(&email, 50, std1.stdin);
-}
+    printf("Email - ");
+    fgets(std1.email, 50, stdin);
+  }
 
-int main (void) {
-  populate_Structure();
+  int main(void) {
+    populate_Structure();
 
-  return EXIT_SUCCESS;
-}
+    return EXIT_SUCCESS;
+  }
 #+end_src
  
 ** using structure with ’typedef’
@@ -284,39 +284,39 @@ stdRecord std3;
 
 So, finally the program becomes:
 
-#+BEGIN_SRC C
-#include <stdio.h>
-#include <stdlib.h>
+#+begin_src C
+  #include <stdio.h>
+  #include <stdlib.h>
 
-struct student_Personal_Details {
-  int rollNo;
-  char *name;
-  char *email;
-  char *branch;
-};
+  struct student_Personal_Details {
+    int rollNo;
+    char *name;
+    char *email;
+    char *branch;
+  };
 
-typedef student_Personal_Details stdRecord;
-stdRecord std1;
+  typedef struct student_Personal_Details stdRecord;
+  stdRecord std1;
 
-void populate_Structure(void) {
-  printf("Roll No. - ");
-  scanf(”%d“, &std1.rollNo);
+  void populate_Structure(void) {
+    printf("Roll No. - ");
+    scanf("%d", &std1.rollNo);
 
-  printf("Name - ");
-  fgets(&name, 25, std1.stdin);
+    printf("Name - ");
+    fgets(std1.name, 25, stdin);
 
-  printf("Branch - ");
-  fgets(&branch, 10, std1.stdin);
+    printf("Branch - ");
+    fgets(std1.branch, 10, stdin);
 
-  printf("Email - ");
-  fgets(&email, 50, std1.stdin);
-}
+    printf("Email - ");
+    fgets(std1.email, 50, stdin);
+  }
 
-int main (void) {
-  populate_Structure();
+  int main(void) {
+    populate_Structure();
 
-  return EXIT_SUCCESS;
-}
-#+END_SRC
+    return EXIT_SUCCESS;
+  }
+#+end_src
 
 * Thank You!

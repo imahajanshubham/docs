@@ -1,6 +1,7 @@
 #+TITLE: Sitemap
 
 - c
+  - [[file:c/pointers.org][Fun with Pointers]]
   - [[file:c/structures.org][Structures And Pointers]]
 - java
   - [[file:java/hashmap.org][Hash Maps in Java]]

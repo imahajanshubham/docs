@@ -25,9 +25,11 @@
 
 ** Definition
 
-Java HashMap is one of the most popular Collection classes in java. Java HashMap
+Java HashMap is one of the most popular Collection classes in java. Java Hash  printf("Hello World!\n");
+Map
 is Hash table based implementation. HashMap in java extends AbstractMap class
-that implement(setq org-hide-emphasis-markers t)s Map interface.
+that implement(setq org-hide-emphasis-markers t)  printf("Hello World!\n");
+s Map interface.
 
 *** But what do we mean by that?
 
@@ -65,7 +67,7 @@ For ex:
 
 *** What did we observed?
 
-+ We don’t know the exact no of names/phone-nos.
+- We don’t know the exact no of names/phone-nos.
 
 #+begin_tip
 The no of entries (name/phone no) in the Hash Map is called *Hash-Size*.
@@ -76,13 +78,10 @@ Hash-Size (using constructors).
 
 - The order of the entries (Raj -> Nisha or Nisha -> Raj) doesn’t matter for us
   to fetch their phone nos. So Hash Map doesn’t require sorted input.
-
 - Person’s name (input) is the ~KEY~ to find the ~VALUE~ i.e. phone no. (output)
   i.e *name is mapped with phone no*.
-
 - Instead of phone record, we can create any type of record. So the data-type of
   Keys/Values depends upon the user.
-
 - Each ~Name - phone no~ is in the form of pair similar to ~Key - Value~.
 
 Till know, we came to understand a little-bit about something known as
@@ -129,9 +128,9 @@ What better way to understand more than to learn it by implementation? With that
 spirit, let’s try to make a program in java to implement a phonebook
 as follows:
 
-1. Get ’n’ (~INTEGER~ value) from the user, denoting the no of entries/records
+1) Get ’n’ (~INTEGER~ value) from the user, denoting the no of entries/records
    to be filled in the phonebook.
-2. Now, get ’n’ no of names-phoneno (~STRING INTEGER~) space separated pairs from the user.
+2) Now, get ’n’ no of names-phoneno (~STRING-INTEGER~) space separated pairs from the user.
 
    For ex:
 
@@ -139,7 +138,7 @@ as follows:
   | Sonu 86988901 |
   | Ravi 87240393 |
 
-3. Get unknown no of names (~STRING~) from the user and for each of the these
+3) Get unknown no of names (~STRING~) from the user and for each of the these
    names, print:
 
 | If name is present in the phonebook | *name=phoneno* |
@@ -257,33 +256,33 @@ present. To check whether a Name/Key is present in the ~HashMap~ or not, ~HashMa
 Let’s connect the dots:
 
 #+begin_src java
-import java.util.*;
-import java.io.*;
+  import java.util.*;
+  import java.io.*;
 
-class testMain {
-  public static void main(String []args) {
-    Map<String, Integer> phoneBook = new HashMap<String, Integer>();
-    Scanner scan = new Scanner(System.in);
+  class testMain {
+    public static void main(String []args) {
+      Map<String, Integer> phoneBook = new HashMap<String, Integer>();
+      Scanner scan = new Scanner(System.in);
 
-    int n = scan.nextInt();
+      int n = scan.nextInt();
 
-    for(int i = 0; i < n; i++) {
-      String name = scan.next();
-      int phone = scan.nextInt();
+      for(int i = 0; i < n; i++) {
+        String name = scan.next();
+        int phone = scan.nextInt();
 
-      phoneBook.put(name, phone);
+        phoneBook.put(name, phone);
+      }
+
+      while(scan.hasNext()) {
+        String s = scan.next();
+        Integer phoneNumber = phoneBook.get(s);
+
+        System.out.println((phoneNumber != null) ? s + "=" + phoneNumber : "Not found");
+      }
+
+      scan.close();
     }
-
-    while(scan.hasNext()) {
-      String s = scan.next();
-      Integer phoneNumber = phoneBook.get(s);
-
-      System.out.println((phoneNumber != null) ? s + "=" + phoneNumber : "Not found");
-    }
-
-    scan.close();
   }
-}
 #+end_src
 
 That’s it, the program to implement HashMap Logic in Java. I hope if not all,
