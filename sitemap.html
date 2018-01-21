@@ -6,7 +6,7 @@
 <!-- 2018-01-21 Sun 23:16 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Fun with Pointers</title>
+<title>Sitemap</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Shubham Mahajan" />
 <style type="text/css">
@@ -235,131 +235,8 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Fun with Pointers</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org9ae1f50">1. <span class="todo TODO">TODO</span> Basics of pointers</a>
-<ul>
-<li><a href="#orgccd6dc7">1.1. <span class="done DONE">DONE</span> Definition</a></li>
-<li><a href="#orga99cc28">1.2. Syntax</a></li>
-<li><a href="#orge43b56f">1.3. What’s the data-type of a pointer?</a></li>
-<li><a href="#org48e30ae">1.4. <b>Why do we specify data-type before the pointer’s name if it’s of <code>unsigned long int</code> type?</b></a></li>
-</ul>
-</li>
-<li><a href="#org85b4d0f">2. Thank You!</a></li>
-</ul>
-</div>
-</div>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100% class=&quot;center&quot;">
+<h1 class="title">Sitemap</h1>
 
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">Home</td>
-<td class="org-left">Featured Blogs</td>
-<td class="org-left"><a href="https://github.com/imahajanshubham">GitHub</a></td>
-</tr>
-</tbody>
-</table>
-
-<div id="outline-container-org9ae1f50" class="outline-2">
-<h2 id="org9ae1f50"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Basics of pointers</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-orgccd6dc7" class="outline-3">
-<h3 id="orgccd6dc7"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Definition</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-A pointer is a variable which stores the address (memory location) of another variable.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orga99cc28" class="outline-3">
-<h3 id="orga99cc28"><span class="section-number-3">1.2</span> Syntax</h3>
-<div class="outline-text-3" id="text-1-2">
-<p>
-In C Language, The syntax of declaring a pointer is as follows:
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C">&lt;data-type&gt; *ptr_name; 
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orge43b56f" class="outline-3">
-<h3 id="orge43b56f"><span class="section-number-3">1.3</span> What’s the data-type of a pointer?</h3>
-<div class="outline-text-3" id="text-1-3">
-<p>
-_The data-type of any pointer is always an_#a100ff <code>unsigned long int</code> i.e a pointer always stores
-the address of another variable and the address is in hex form.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
-<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #4f97d7;">&gt;</span>
-
-<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">ptr</span> = <span style="color: #a45bad;">NULL</span>;
-
-  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Size of &#8217;unsigned long&#8217;: %lu"</span>, <span style="color: #4f97d7; font-weight: bold;">sizeof</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">unsigned</span> <span style="color: #ce537a; font-weight: bold;">long</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>;
-  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Size of &#8217;ptr&#8217;: %lu\n\n"</span>, <span style="color: #4f97d7; font-weight: bold;">sizeof</span><span style="color: #2d9574;">(</span>ptr<span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>;
-
-  <span style="color: #4f97d7; font-weight: bold;">return</span> EXIT_SUCCESS;
-<span style="color: #4f97d7;">}</span>
-</pre>
-</div>
-
-<p>
-Output
-</p>
-
-<pre class="example">
-Size of ’unsigned long’: 8
-Size of ’ptr’: 8
-
-</pre>
-
-<div class="note">
-<p>
-The <code>sizeof</code> operator always returns an <code>unsigned long int</code> value (address), so we
-use <code>%lu</code> format specifier for the same.
-</p>
-
-</div>
-</div>
-</div>
-
-<div id="outline-container-org48e30ae" class="outline-3">
-<h3 id="org48e30ae"><span class="section-number-3">1.4</span> <b>Why do we specify data-type before the pointer’s name if it’s of <code>unsigned long int</code> type?</b></h3>
-<div class="outline-text-3" id="text-1-4">
-<p>
-To specify the data–type of the variable, whose address pointer is going to
-store.
-</p>
-
-<ul class="org-ul">
-<li>Who does a pointer need to know about the data-type of the variable whose
-value it’s going to store?</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org85b4d0f" class="outline-2">
-<h2 id="org85b4d0f"><span class="section-number-2">2</span> Thank You!</h2>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
