@@ -116,7 +116,6 @@ technical terms.
 
 * Syntax
 In Java, the HashMap class’ object is declared as follows:
-
 #+begin_src java
 Map<Key, Value> obj = new HashMap<Key, Value>();
 #+end_src
