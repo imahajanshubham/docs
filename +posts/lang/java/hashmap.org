@@ -1,6 +1,6 @@
 #+TITLE: Hash Maps in Java
 
-#+SETUPFILE: https://raw.githubusercontent.com/imahajanshubham/docs/master/%2Bthemes/readtheorg.setup
+#+SETUPFILE: ../../../+themes/readtheorg.setup
 
 #+ATTR_HTML: :width 100% class="center"
 | Home | Featured Blogs | [[https://github.com/imahajanshubham][GitHub]] |
