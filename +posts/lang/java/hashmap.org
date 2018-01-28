@@ -27,10 +27,11 @@
 
 * Basics of Hash Maps
 ** Definition
-
 Java HashMap is one of the most popular Collection classes in java. Java Hash is
 Hash table based implementation. HashMap in java extends AbstractMap class that
 implements Map interface.
+
+/imahajanshubham@gmail.com/
 
 *** But what do we mean by that?
 Before trying to understand the definition of Hash Map, we should try to understand
