@@ -1,0 +1,325 @@
+% Created 2018-01-28 Sun 09:09
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Shubham Mahajan}
+\date{\today}
+\title{Hash Maps in Java}
+\hypersetup{
+ pdfauthor={Shubham Mahajan},
+ pdftitle={Hash Maps in Java},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.2 (Org mode 9.1.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\noindent\rule{\textwidth}{0.5pt}
+
+\begin{center}
+\begin{tabular}{lll}
+Home & Featured Blogs & \href{https://github.com/imahajanshubham}{GitHub}\\
+\end{tabular}
+\end{center}
+
+\noindent\rule{\textwidth}{0.5pt}
+
+\section{Basics of Hash Maps}
+\label{sec:org89f9b04}
+
+\subsection{Definition}
+\label{sec:org871fd81}
+
+Java HashMap is one of the most popular Collection classes in java. Java Hash is Hash table based implementation. HashMap in java extends AbstractMap class
+that implements Map interface.
+
+\subsubsection{But what do we mean by that?}
+\label{sec:org6fe0f6b}
+
+Before trying to understand the definition of Hash Map, we should try to understand
+the concept behind the Hash Map.
+
+\noindent\rule{\textwidth}{0.5pt}
+
+Let’s say we want make a record of a phone-book (person’s name and phone no) as
+follows:
+
+\begin{center}
+\begin{tabular}{lr}
+\textbf{Name} & \textbf{Phone No.}\\
+\hline
+Raj & 2345671001\\
+Nisha & 4464832994\\
+Sonu & 4858830685\\
+Nitin & 8739111330\\
+Akshay & 8743193003\\
+Muskan & 9899363086\\
+\end{tabular}
+\end{center}
+
+and so on…
+
+Now what we want to do is:
+If we say a name, we wanna know his/her phone no.
+
+For ex:
+
+\begin{center}
+\begin{tabular}{lr}
+Input & Raj\\
+Output & 2345671001\\
+\end{tabular}
+\end{center}
+
+\subsubsection{What did we observed?}
+\label{sec:orge7b120c}
+
+\begin{itemize}
+\item We don’t know the exact no of names/phone-nos.
+\end{itemize}
+
+So the Hash-Size is not fixed. But there are ways via which we can fix the
+Hash-Size (using constructors).
+
+\begin{itemize}
+\item The order of the entries (Raj -> Nisha or Nisha -> Raj) doesn’t matter for us
+to fetch their phone nos. So Hash Map doesn’t require sorted input.
+\item Person’s name (input) is the \texttt{KEY} to find the \texttt{VALUE} i.e. phone no. (output)
+i.e \textbf{name is mapped with phone no}.
+\item Instead of phone record, we can create any type of record. So the data-type of
+Keys/Values depends upon the user.
+\item Each \texttt{Name - phone no} is in the form of pair similar to \texttt{Key - Value}.
+\end{itemize}
+
+Till know, we came to understand a little-bit about something known as
+Hash-Size, Keys and Values. Now let’s try to understand more about Hash Map in
+technical terms.
+
+\section{Syntax}
+\label{sec:org0d79f9e}
+
+In Java, the HashMap class’ object is declared as follows:
+
+\begin{verbatim}
+Map<Key, Value> obj = new HashMap<Key, Value>();
+\end{verbatim}
+
+For ex:
+
+\begin{verbatim}
+Map<String, Integer> record1 = new HashMap<String, Integer>();
+Map<String, String> record2 = new HashMap<String, String>();
+\end{verbatim}
+
+\section{Properties of a HashMap}
+\label{sec:orgfea3054}
+
+\begin{itemize}
+\item HashMap is denoted as \texttt{HashMap<Key, Value>}.
+\item No need to specify the size of HashMap.
+\item No need of sorted input.
+\item Neither it sorts the stored input.
+\item Similar to \texttt{Hashtable} class except it permits null values and keys.
+\item You need to import \texttt{java.util.HashMap} class in order to use the HashMap class
+and its methods.
+\end{itemize}
+
+\section{A sample program}
+\label{sec:orgbb9058e}
+
+What better way to understand more than to learn it by implementation? With that
+spirit, let’s try to make a program in java to implement a phonebook
+as follows:
+
+\begin{enumerate}
+\item Get ’n’ (\texttt{INTEGER} value) from the user, denoting the no of entries/records
+to be filled in the phonebook.
+\item Now, get ’n’ no of names-phoneno (\texttt{STRING-INTEGER}) space separated pairs from the user.
+
+For ex:
+
+\begin{center}
+\begin{tabular}{l}
+Raj 34745910\\
+Sonu 86988901\\
+Ravi 87240393\\
+\end{tabular}
+\end{center}
+
+\item Get unknown no of names (\texttt{STRING}) from the user and for each of the these
+names, print:
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{ll}
+If name is present in the phonebook & \textbf{name=phoneno}\\
+If name is not present & \textbf{Not found}\\
+\end{tabular}
+\end{center}
+
+\section{The test case}
+\label{sec:orgdd76ab4}
+
+Input:
+
+\begin{center}
+\begin{tabular}{l}
+3\\
+Raj 34745910\\
+Sonu 86988901\\
+Ravi 87240393\\
+Raju\\
+Ravi\\
+\end{tabular}
+\end{center}
+
+Output:
+
+\begin{center}
+\begin{tabular}{l}
+Not found\\
+Ravi=87240393\\
+\end{tabular}
+\end{center}
+
+\section{A humble solution}
+\label{sec:orgc469043}
+
+\subsection{Step - 1}
+\label{sec:org49f5733}
+
+Let’s create testMain class with main function and initialize \texttt{Scanner} and \texttt{Map}
+classes:
+
+\begin{verbatim}
+import java.util.*;
+import java.io.*;
+
+class testMain {
+  public static void main(String []args) {
+    Map<String, Integer> phoneBook = new HashMap<String, Integer>();
+    Scanner scan = new Scanner(System.in);
+  }
+}    
+\end{verbatim}
+
+\subsection{Step - 2}
+\label{sec:orgfd0e3b4}
+
+Now let’s get the value of ’n’ (\texttt{INTEGER}) i.e. the no of phone records to be entered:
+
+\subsection{Step - 3}
+\label{sec:orgf1d191e}
+
+Now let’s fill ’n’ records (\texttt{STRING INTEGER}) in the phonebook.
+
+\begin{verbatim}
+for(int i = 0; i < n; i++){
+  String name = scan.next();
+  int phone = scan.nextInt();
+
+  phoneBook.put(name, phone);
+}
+\end{verbatim}
+
+\subsection{Step - 4}
+\label{sec:org300fdb0}
+
+Now comes a little tricky part:
+
+\begin{enumerate}
+\item Get unknown no of names (\texttt{STRING}) from the user and for each of the these
+names, print:
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{ll}
+If name is present in the phonebook & \textbf{name=phoneno}\\
+If name is not present & \textbf{Not found}\\
+\end{tabular}
+\end{center}
+
+Let’s to do it one-by-one:
+
+\begin{itemize}
+\item get unknown no of names (\texttt{STRING}).
+\end{itemize}
+
+\begin{verbatim}
+while(scan.hasNext()) {
+  String s = scan.next();
+}
+\end{verbatim}
+
+\subsection{Step - 5}
+\label{sec:org8f0dde7}
+
+\begin{itemize}
+\item print the required output.
+\end{itemize}
+
+\begin{verbatim}
+while(scan.hasNext()) {
+  String s = scan.next();
+  Integer phoneNumber = phoneBook.get(s);
+
+  System.out.println((phoneNumber != null) ? s + "=" + phoneNumber : "Not found");
+}
+\end{verbatim}
+
+\subsection{Step - 6}
+\label{sec:org271ecce}
+
+Let’s connect the dots:
+
+\begin{verbatim}
+import java.util.*;
+import java.io.*;
+
+class testMain {
+  public static void main(String []args) {
+    Map<String, Integer> phoneBook = new HashMap<String, Integer>();
+    Scanner scan = new Scanner(System.in);
+
+    int n = scan.nextInt();
+
+    for(int i = 0; i < n; i++) {
+      String name = scan.next();
+      int phone = scan.nextInt();
+
+      phoneBook.put(name, phone);
+    }
+
+    while(scan.hasNext()) {
+      String s = scan.next();
+      Integer phoneNumber = phoneBook.get(s);
+
+      System.out.println((phoneNumber != null) ? s + "=" + phoneNumber : "Not found");
+    }
+
+    scan.close();
+  }
+}
+\end{verbatim}
+
+That’s it, the program to implement HashMap Logic in Java. I hope if not all,
+we learned something :)
+
+\section{Thank You!}
+\label{sec:org34c8c02}
+\end{document}
