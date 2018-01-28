@@ -1,8 +1,12 @@
 #+TITLE: Structures And Pointers
 
+#+SETUPFILE: ../../../+themes/readtheorg.setup
+
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#basics-of-structures][Basics of structures]]
   - [[#definition][Definition]]
+- [[#basics-of-structures-1][Basics of structures]]
+  - [[#definition-1][Definition]]
     - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
   - [[#syntax][Syntax]]
   - [[#properties-of-a-structure][Properties of a structure]]
@@ -15,7 +19,6 @@
     - [[#example][Example:]]
 - [[#thank-you][Thank You!]]
 
-<<<<<<< HEAD
 * Basics of structures
 
 ** Definition
