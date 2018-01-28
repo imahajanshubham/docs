@@ -15,9 +15,15 @@
     - [[#example][Example:]]
 - [[#thank-you][Thank You!]]
 
+<<<<<<< HEAD
 * Basics of structures
 
 ** Definition
+=======
+* TODO Basics of structures
+
+** DONE Definition
+>>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 
    A structure simply is a collection of finite set of similar (heterogeneous)
    collection of data elements under a single name.
@@ -212,8 +218,11 @@ int main (void) {
 }
 #+end_src
 
+<<<<<<< HEAD
 #+RESULTS:
 
+=======
+>>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 ** using structural approach
 
 Same program, but instead using structure.
