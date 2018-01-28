@@ -728,14 +728,15 @@ hr{
 
 #toggle-sidebar {
     background: #715ab1;
+    color: white;
     display: none;
 }
 
 @media screen and (max-width: 768px) {
     #toggle-sidebar {
         display: block;
-        /* background-color: #E0D6E9; */
         background: #715ab1;
+        color: white;
         text-align: center;
         padding: 0.6em;
         margin-bottom: 0.6em;
