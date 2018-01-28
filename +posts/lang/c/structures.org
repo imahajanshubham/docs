@@ -23,7 +23,7 @@
 
 ** Definition
 =======
-* TODO Basics of structures
+* Basics of structures
 
 ** DONE Definition
 >>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
