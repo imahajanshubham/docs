@@ -2,9 +2,6 @@
 
 #+SETUPFILE: ../../../+themes/readtheorg.setup
 
-#+ATTR_HTML: :width 100% class="center"
-| Home | Featured Blogs | [[https://github.com/imahajanshubham][GitHub]] |
-
 * Table of Contents                                       :TOC_4_gh:noexport:
 - [[#basics-of-hash-maps][Basics of Hash Maps]]
   - [[#definition][Definition]]
@@ -25,7 +22,7 @@
   - [[#step---6][Step - 6]]
 - [[#thank-you][Thank You!]]
 
-* TODO Basics of Hash Maps
+* DONE Basics of Hash Maps
 ** Definition
 Java HashMap is one of the most popular Collection classes in java. Java Hash is
 Hash table based implementation. HashMap in java extends AbstractMap class that

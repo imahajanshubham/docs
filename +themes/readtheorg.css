@@ -727,6 +727,7 @@ hr{
 /* } */
 
 #toggle-sidebar {
+    background: #715ab1;
     display: none;
 }
 

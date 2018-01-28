@@ -1,0 +1,7 @@
+#+TITLE: Featured Blogs
+
+#+SETUPFILE: ../+themes/readtheorg.setup
+
+* C
+* Java
+** [[https://imahajanshubham.github.io/docs/lang/java/hashmap.html][Hash Maps in Java]]
