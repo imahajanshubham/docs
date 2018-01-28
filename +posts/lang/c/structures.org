@@ -1,6 +1,5 @@
-#+TITLE: Structures And Pointers
-
 #+SETUPFILE: ../../../+themes/readtheorg.setup
+#+TITLE: Structures And Pointers
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#basics-of-structures][Basics of structures]]

@@ -22,7 +22,7 @@
   - [[#step---6][Step - 6]]
 - [[#thank-you][Thank You!]]
 
-* DONE Basics of Hash Maps
+* Basics of Hash Maps
 ** Definition
 Java HashMap is one of the most popular Collection classes in java. Java Hash is
 Hash table based implementation. HashMap in java extends AbstractMap class that
