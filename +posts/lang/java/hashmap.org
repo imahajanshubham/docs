@@ -173,7 +173,7 @@ Output:
 | Not found     |
 | Ravi=87240393 |
 
-* DONE A humble solution
+* A humble solution
 ** Step - 1
 Let’s create testMain class with main function and initialize ~Scanner~ and ~Map~
 classes:
