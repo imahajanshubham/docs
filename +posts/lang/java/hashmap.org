@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-#+title: Hash Maps in Java
-
-#+attr_html: :width 100% class="center"
-=======
 #+TITLE: Hash Maps in Java
 
 #+ATTR_HTML: :width 100% class="center"
