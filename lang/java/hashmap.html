@@ -3,14 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<<<<<<< HEAD
-<!-- 2018-01-27 Sat 01:02 -->
-=======
-<!-- 2018-01-21 Sun 23:28 -->
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+<!-- 2018-01-28 Sun 11:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hash Maps in Java</title>
+<title>Hash Maps in Java Hash Maps in Java</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Shubham Mahajan" />
 <style type="text/css">
@@ -184,16 +180,6 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
-<<<<<<< HEAD
-<link rel="stylesheet" type="text/css" href="http://spacemacs.org/css/readtheorg.css" />
-=======
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css" />
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -265,66 +251,66 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Hash Maps in Java</h1>
+<h1 class="title">Hash Maps in Java Hash Maps in Java</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<<<<<<< HEAD
-<li><a href="#orgf419988">1. <span class="done DONE">DONE</span> Basics of Hash Maps</a>
+<li><a href="#orgf419988">1. Basics of Hash Maps</a>
 <ul>
 <li><a href="#org3300451">1.1. Definition</a>
 <ul>
 <li><a href="#org1849fe5">1.1.1. But what do we mean by that?</a></li>
-<li><a href="#orgbe68446">1.1.2. What did we observed?</a></li>
-=======
-<li><a href="#org5595970">1. <span class="done DONE">DONE</span> Basics of Hash Maps</a>
-<ul>
-<li><a href="#orgaf516a8">1.1. Definition</a>
-<ul>
-<li><a href="#org94c41c8">1.1.1. But what do we mean by that?</a></li>
-<li><a href="#org16d0cc5">1.1.2. What did we observed?</a></li>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 </ul>
 </li>
 </ul>
 </li>
-<<<<<<< HEAD
-<li><a href="#orga56f6dc">2. <span class="done DONE">DONE</span> Syntax</a></li>
-<li><a href="#org7c6555e">3. <span class="todo TODO">TODO</span> Properties of a HashMap</a></li>
-<li><a href="#orgae70ac3">4. <span class="done DONE">DONE</span> A sample program</a></li>
-<li><a href="#org78eb69b">5. <span class="done DONE">DONE</span> The test case</a></li>
-<li><a href="#org793c2dc">6. <span class="done DONE">DONE</span> A humble solution</a>
+<li><a href="#org8cebe4c">2. <span class="done DONE">DONE</span> Basics of Hash Maps</a>
 <ul>
-<li><a href="#orga4e29c1">6.1. Step - 1</a></li>
-<li><a href="#org57edce2">6.2. Step - 2</a></li>
-<li><a href="#org8a67cc4">6.3. Step - 3</a></li>
-<li><a href="#orgcfa86d3">6.4. Step - 4</a></li>
-<li><a href="#org2c0d3f3">6.5. Step - 5</a></li>
-<li><a href="#org359fa21">6.6. Step - 6</a></li>
+<li><a href="#orgd5c514e">2.1. Definition</a>
+<ul>
+<li><a href="#org63865b2">2.1.1. But what do we mean by that?</a></li>
+<li><a href="#orgbe68446">2.1.2. What did we observed?</a></li>
+<li><a href="#org16c7f30">2.1.3. What did we observed?</a></li>
 </ul>
 </li>
-<li><a href="#orgb4e6dc1">7. Thank You!</a></li>
-=======
-<li><a href="#org7c9e116">2. <span class="done DONE">DONE</span> Syntax</a></li>
-<li><a href="#org059b567">3. <span class="todo TODO">TODO</span> Properties of a HashMap</a></li>
-<li><a href="#org0773307">4. <span class="done DONE">DONE</span> A sample program</a></li>
-<li><a href="#orga95fc7b">5. <span class="done DONE">DONE</span> The test case</a></li>
-<li><a href="#org591d4f1">6. <span class="done DONE">DONE</span> A humble solution</a>
-<ul>
-<li><a href="#org111ca6c">6.1. Step - 1</a></li>
-<li><a href="#orgaaa2787">6.2. Step - 2</a></li>
-<li><a href="#org6d76d38">6.3. Step - 3</a></li>
-<li><a href="#org5bb538c">6.4. Step - 4</a></li>
-<li><a href="#orgc7e2b70">6.5. Step - 5</a></li>
-<li><a href="#orgab0e8c0">6.6. Step - 6</a></li>
 </ul>
 </li>
-<li><a href="#org573b104">7. Thank You!</a></li>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+<li><a href="#orga56f6dc">3. Syntax</a></li>
+<li><a href="#orgf21d3fc">4. <span class="done DONE">DONE</span> Syntax</a></li>
+<li><a href="#org7c6555e">5. Properties of a HashMap</a></li>
+<li><a href="#org22f5d51">6. <span class="todo TODO">TODO</span> Properties of a HashMap</a></li>
+<li><a href="#orgae70ac3">7. A sample program</a></li>
+<li><a href="#org1a206e9">8. <span class="done DONE">DONE</span> A sample program</a></li>
+<li><a href="#org78eb69b">9. The test case</a></li>
+<li><a href="#org76d8f15">10. <span class="done DONE">DONE</span> The test case</a></li>
+<li><a href="#org793c2dc">11. A humble solution</a>
+<ul>
+<li><a href="#orga4e29c1">11.1. Step - 1</a></li>
+</ul>
+</li>
+<li><a href="#org738da92">12. <span class="done DONE">DONE</span> A humble solution</a>
+<ul>
+<li><a href="#org4d29fcb">12.1. Step - 1</a></li>
+<li><a href="#org57edce2">12.2. Step - 2</a></li>
+<li><a href="#org8a67cc4">12.3. Step - 3</a></li>
+<li><a href="#orgcfa86d3">12.4. Step - 4</a></li>
+<li><a href="#org2c0d3f3">12.5. Step - 5</a></li>
+<li><a href="#orgd620f14">12.6. Step - 5</a></li>
+<li><a href="#org359fa21">12.7. Step - 6</a></li>
+<li><a href="#org7ad0b70">12.8. Step - 6</a></li>
+</ul>
+</li>
+<li><a href="#orgb4e6dc1">13. Thank You!</a></li>
 </ul>
 </div>
 </div>
+<p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+<p width="100% class=&quot;center&quot;">
+<code>=====</code>
+</p>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100% class=&quot;center&quot;">
 
 
@@ -344,45 +330,55 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<<<<<<< HEAD
 <div id="outline-container-orgf419988" class="outline-2">
-<h2 id="orgf419988"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Basics of Hash Maps</h2>
+<h2 id="orgf419988"><span class="section-number-2">1</span> Basics of Hash Maps</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 <div id="outline-container-org3300451" class="outline-3">
 <h3 id="org3300451"><span class="section-number-3">1.1</span> Definition</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-Java HashMap is one of the most popular Collection classes in java. Java Hash is Hash table based implementation. HashMap in java extends AbstractMap class
-=======
-<div id="outline-container-org5595970" class="outline-2">
-<h2 id="org5595970"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Basics of Hash Maps</h2>
-<div class="outline-text-2" id="text-1">
+Java HashMap is one of the most popular Collection classes in java. Java Hash is
+Hash table based implementation. HashMap in java extends AbstractMap class that
+implements Map interface.
+</p>
 </div>
-<div id="outline-container-orgaf516a8" class="outline-3">
-<h3 id="orgaf516a8"><span class="section-number-3">1.1</span> Definition</h3>
-<div class="outline-text-3" id="text-1-1">
+
+<div id="outline-container-org1849fe5" class="outline-4">
+<h4 id="org1849fe5"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+Before trying to understand the definition of Hash Map, we should try to
+understand the concept behind the Hash Map.
+<code>=====</code>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8cebe4c" class="outline-2">
+<h2 id="org8cebe4c"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> Basics of Hash Maps</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgd5c514e" class="outline-3">
+<h3 id="orgd5c514e"><span class="section-number-3">2.1</span> Definition</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 Java HashMap is one of the most popular Collection classes in java. Java Hash  printf("Hello World!\n");
 Map
 is Hash table based implementation. HashMap in java extends AbstractMap class
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 that implement(setq org-hide-emphasis-markers t)  printf("Hello World!\n");
 s Map interface.
 </p>
 </div>
 
-<<<<<<< HEAD
-<div id="outline-container-org1849fe5" class="outline-4">
-<h4 id="org1849fe5"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
-=======
-<div id="outline-container-org94c41c8" class="outline-4">
-<h4 id="org94c41c8"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-4" id="text-1-1-1">
+<div id="outline-container-org63865b2" class="outline-4">
+<h4 id="org63865b2"><span class="section-number-4">2.1.1</span> But what do we mean by that?</h4>
+<div class="outline-text-4" id="text-2-1-1">
 <p>
 Before trying to understand the definition of Hash Map, we should try to understand
 the concept behind the Hash Map.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 </p>
 
 <p>
@@ -390,6 +386,59 @@ Let’s say we want make a record of a phone-book (person’s name and phone no)
 follows:
 </p>
 
+<p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left"><b>Name</b></th>
+<th scope="col" class="org-right"><b>Phone No.</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Raj</td>
+<td class="org-right">2345671001</td>
+</tr>
+
+<tr>
+<td class="org-left">Nisha</td>
+<td class="org-right">4464832994</td>
+</tr>
+
+<tr>
+<td class="org-left">Sonu</td>
+<td class="org-right">4858830685</td>
+</tr>
+
+<tr>
+<td class="org-left">Nitin</td>
+<td class="org-right">8739111330</td>
+</tr>
+
+<tr>
+<td class="org-left">Akshay</td>
+<td class="org-right">8743193003</td>
+</tr>
+
+<tr>
+<td class="org-left">Muskan</td>
+<td class="org-right">9899363086</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<code>=====</code>
+</p>
 <div class="NOTE">
 <p>
 For the sake of simplicity (to avoid rehashing), let’s assume:
@@ -448,6 +497,9 @@ For the sake of simplicity (to avoid rehashing), let’s assume:
 </tr>
 </tbody>
 </table>
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+</p>
 
 <p>
 and so on…
@@ -462,6 +514,9 @@ If we say a name, we wanna know his/her phone no.
 For ex:
 </p>
 
+<p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -485,14 +540,45 @@ For ex:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgbe68446" class="outline-4">
-<h4 id="orgbe68446"><span class="section-number-4">1.1.2</span> What did we observed?</h4>
-=======
-<div id="outline-container-org16d0cc5" class="outline-4">
-<h4 id="org16d0cc5"><span class="section-number-4">1.1.2</span> What did we observed?</h4>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-4" id="text-1-1-2">
+<h4 id="orgbe68446"><span class="section-number-4">2.1.2</span> What did we observed?</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>We don’t know the exact no of names/phone-nos.</li>
+<li>So the Hash-Size is not fixed. But there are ways via which we can fix the Hash-Size (using constructors).</li>
+<li>The order of the entries (Raj -&gt; Nisha or Nisha -&gt; Raj) doesn’t matter for us to fetch their phone nos. So Hash Map doesn’t require sorted input.</li>
+<li>Person’s name (input) is the <code>KEY</code> to find the <code>VALUE</code> i.e. phone no. (output) i.e <b>name is mapped with phone no</b>.</li>
+<li>Instead of phone record, we can create any type of record. So the data-type of Keys/Values depends upon the user.</li>
+</ul>
+<p>
+<code>=====</code>
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Input</td>
+<td class="org-right">Raj</td>
+</tr>
+
+<tr>
+<td class="org-left">Output</td>
+<td class="org-right">2345671001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org16c7f30" class="outline-4">
+<h4 id="org16c7f30"><span class="section-number-4">2.1.3</span> What did we observed?</h4>
+<div class="outline-text-4" id="text-2-1-3">
 <ul class="org-ul">
 <li>We don’t know the exact no of names/phone-nos.</li>
 </ul>
@@ -516,6 +602,11 @@ to fetch their phone nos. So Hash Map doesn’t require sorted input.</li>
 i.e <b>name is mapped with phone no</b>.</li>
 <li>Instead of phone record, we can create any type of record. So the data-type of
 Keys/Values depends upon the user.</li>
+</ul>
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+</p>
+<ul class="org-ul">
 <li>Each <code>Name - phone no</code> is in the form of pair similar to <code>Key - Value</code>.</li>
 </ul>
 
@@ -524,20 +615,27 @@ Till know, we came to understand a little-bit about something known as
 Hash-Size, Keys and Values. Now let’s try to understand more about Hash Map in
 technical terms.
 </p>
-</div>
-</div>
-</div>
-</div>
 
-<<<<<<< HEAD
-<div id="outline-container-orga56f6dc" class="outline-2">
-<h2 id="orga56f6dc"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> Syntax</h2>
-=======
-<div id="outline-container-org7c9e116" class="outline-2">
-<h2 id="org7c9e116"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> Syntax</h2>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-2" id="text-2">
 <p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga56f6dc" class="outline-2">
+<h2 id="orga56f6dc"><span class="section-number-2">3</span> Syntax</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<code>=====</code>
+</p>
+</div>
+</div>
+<div id="outline-container-orgf21d3fc" class="outline-2">
+<h2 id="orgf21d3fc"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> Syntax</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 In Java, the HashMap class’ object is declared as follows:
 </p>
 
@@ -555,17 +653,26 @@ For ex:
 <span style="color: #ce537a; font-weight: bold;">Map</span><span style="color: #4f97d7;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">String</span><span style="color: #4f97d7;">&gt;</span> <span style="color: #7590db;">record2</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">HashMap</span><span style="color: #4f97d7;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">String</span><span style="color: #4f97d7;">&gt;()</span>;
 </pre>
 </div>
-</div>
-</div>
 
-<<<<<<< HEAD
+<p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+</div>
+</div>
 <div id="outline-container-org7c6555e" class="outline-2">
-<h2 id="org7c6555e"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Properties of a HashMap</h2>
-=======
-<div id="outline-container-org059b567" class="outline-2">
-<h2 id="org059b567"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Properties of a HashMap</h2>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-2" id="text-3">
+<h2 id="org7c6555e"><span class="section-number-2">5</span> Properties of a HashMap</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+<code>=====</code>
+</p>
+</div>
+</div>
+<div id="outline-container-org22f5d51" class="outline-2">
+<h2 id="org22f5d51"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> Properties of a HashMap</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+</p>
 <ul class="org-ul">
 <li>HashMap is denoted as <code>HashMap&lt;Key, Value&gt;</code>.</li>
 <li>No need to specify the size of HashMap.</li>
@@ -576,6 +683,28 @@ For ex:
 and its methods.</li>
 </ul>
 
+<p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+</div>
+</div>
+<div id="outline-container-orgae70ac3" class="outline-2">
+<h2 id="orgae70ac3"><span class="section-number-2">7</span> A sample program</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+What better way to understand more than to learn it by implementation? With that
+spirit, let’s try to make a program in java to implement a phonebook as follows:
+</p>
+
+<ol class="org-ol">
+<li>Get ’n’ (<code>INTEGER</code> value) from the user, denoting the no of entries/records to
+be filled in the phonebook.</li>
+<li>Now, get ’n’ no of names-phoneno (<code>STRING-INTEGER</code>) space separated pairs from
+the user.</li>
+</ol>
+<p>
+<code>=====</code>
+</p>
 <div class="note">
 <p>
 There are a lot many other important properties too such:
@@ -594,14 +723,9 @@ But we will study all these and others during our lifelong journey ♥.
 </div>
 </div>
 
-<<<<<<< HEAD
-<div id="outline-container-orgae70ac3" class="outline-2">
-<h2 id="orgae70ac3"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> A sample program</h2>
-=======
-<div id="outline-container-org0773307" class="outline-2">
-<h2 id="org0773307"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> A sample program</h2>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org1a206e9" class="outline-2">
+<h2 id="org1a206e9"><span class="section-number-2">8</span> <span class="done DONE">DONE</span> A sample program</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 What better way to understand more than to learn it by implementation? With that
 spirit, let’s try to make a program in java to implement a phonebook
@@ -611,8 +735,10 @@ as follows:
 <ol class="org-ol">
 <li>Get ’n’ (<code>INTEGER</code> value) from the user, denoting the no of entries/records
 to be filled in the phonebook.</li>
-<li><p>
-Now, get ’n’ no of names-phoneno (<code>STRING-INTEGER</code>) space separated pairs from the user.
+<li>Now, get ’n’ no of names-phoneno (<code>STRING-INTEGER</code>) space separated pairs from the user.</li>
+</ol>
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 </p>
 
 <p>
@@ -638,8 +764,9 @@ For ex:
 <td class="org-left">Ravi 87240393</td>
 </tr>
 </tbody>
-</table></li>
+</table>
 
+<ol class="org-ol">
 <li>Get unknown no of names (<code>STRING</code>) from the user and for each of the these
 names, print:</li>
 </ol>
@@ -664,18 +791,25 @@ names, print:</li>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 
-<<<<<<< HEAD
-<div id="outline-container-org78eb69b" class="outline-2">
-<h2 id="org78eb69b"><span class="section-number-2">5</span> <span class="done DONE">DONE</span> The test case</h2>
-=======
-<div id="outline-container-orga95fc7b" class="outline-2">
-<h2 id="orga95fc7b"><span class="section-number-2">5</span> <span class="done DONE">DONE</span> The test case</h2>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-2" id="text-5">
 <p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+</div>
+</div>
+<div id="outline-container-org78eb69b" class="outline-2">
+<h2 id="org78eb69b"><span class="section-number-2">9</span> The test case</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+<code>=====</code>
+</p>
+</div>
+</div>
+<div id="outline-container-org76d8f15" class="outline-2">
+<h2 id="org76d8f15"><span class="section-number-2">10</span> <span class="done DONE">DONE</span> The test case</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 Input:
 </p>
 
@@ -732,34 +866,46 @@ Output:
 </tr>
 </tbody>
 </table>
-</div>
-</div>
 
-<<<<<<< HEAD
+<p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+</div>
+</div>
 <div id="outline-container-org793c2dc" class="outline-2">
-<h2 id="org793c2dc"><span class="section-number-2">6</span> <span class="done DONE">DONE</span> A humble solution</h2>
-<div class="outline-text-2" id="text-6">
+<h2 id="org793c2dc"><span class="section-number-2">11</span> A humble solution</h2>
+<div class="outline-text-2" id="text-11">
 </div>
 <div id="outline-container-orga4e29c1" class="outline-3">
-<h3 id="orga4e29c1"><span class="section-number-3">6.1</span> Step - 1</h3>
-=======
-<div id="outline-container-org591d4f1" class="outline-2">
-<h2 id="org591d4f1"><span class="section-number-2">6</span> <span class="done DONE">DONE</span> A humble solution</h2>
-<div class="outline-text-2" id="text-6">
-</div>
-<div id="outline-container-org111ca6c" class="outline-3">
-<h3 id="org111ca6c"><span class="section-number-3">6.1</span> Step - 1</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-3" id="text-6-1">
+<h3 id="orga4e29c1"><span class="section-number-3">11.1</span> Step - 1</h3>
+<div class="outline-text-3" id="text-11-1">
 <p>
 Let’s create testMain class with main function and initialize <code>Scanner</code> and <code>Map</code>
 classes:
 </p>
 
-<<<<<<< HEAD
-=======
+<p>
+<code>=====</code>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org738da92" class="outline-2">
+<h2 id="org738da92"><span class="section-number-2">12</span> <span class="done DONE">DONE</span> A humble solution</h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-org4d29fcb" class="outline-3">
+<h3 id="org4d29fcb"><span class="section-number-3">12.1</span> Step - 1</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+Let’s create testMain class with main function and initialize <code>Scanner</code> and <code>Map</code>
+classes:
+</p>
 
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+</p>
 <div class="org-src-container">
 <pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">util</span>.*;
 <span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">io</span>.*;
@@ -775,16 +921,19 @@ classes:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org57edce2" class="outline-3">
-<h3 id="org57edce2"><span class="section-number-3">6.2</span> Step - 2</h3>
-=======
-<div id="outline-container-orgaaa2787" class="outline-3">
-<h3 id="orgaaa2787"><span class="section-number-3">6.2</span> Step - 2</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-3" id="text-6-2">
+<h3 id="org57edce2"><span class="section-number-3">12.2</span> Step - 2</h3>
+<div class="outline-text-3" id="text-12-2">
+<p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Now let’s get the value of ’n’ (<code>INTEGER</code>) i.e. the no of phone records to be
+entered:
+<code>=====</code>
+</p>
+
 <p>
 Now let’s get the value of ’n’ (<code>INTEGER</code>) i.e. the no of phone records to be entered:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 </p>
 
 <div class="org-src-container">
@@ -794,28 +943,46 @@ Now let’s get the value of ’n’ (<code>INTEGER</code>) i.e. the no of phone
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org8a67cc4" class="outline-3">
-<h3 id="org8a67cc4"><span class="section-number-3">6.3</span> Step - 3</h3>
-=======
-<div id="outline-container-org6d76d38" class="outline-3">
-<h3 id="org6d76d38"><span class="section-number-3">6.3</span> Step - 3</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-3" id="text-6-3">
+<h3 id="org8a67cc4"><span class="section-number-3">12.3</span> Step - 3</h3>
+<div class="outline-text-3" id="text-12-3">
 <p>
-Now let’s fill ’n’ records (<code>STRING INTEGER</code>) in the phonebook.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Now let’s fill ’n’ records (<code>STRING-INTEGER</code>) in the phonebook.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">for</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span> = <span style="color: #a45bad;">0</span>; i &lt; <span style="color: #ce537a; font-weight: bold;">n</span>; i++<span style="color: #4f97d7;">){</span>
-  <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">name</span> = scan.next<span style="color: #bc6ec5;">()</span>;
-  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">phone</span> = scan.nextInt<span style="color: #bc6ec5;">()</span>;
+<pre class="src src-java">  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">n</span> = scan.nextInt<span style="color: #4f97d7;">()</span>;
 
-  phoneBook.put<span style="color: #bc6ec5;">(</span>name, phone<span style="color: #bc6ec5;">)</span>;
-<span style="color: #4f97d7;">}</span>
+=======
+
+Now let&#8217;s fill &#8217;n&#8217; records <span style="color: #4f97d7;">(</span>~STRING INTEGER~<span style="color: #4f97d7;">)</span> in the phonebook.
+
+#+begin_src java
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; <span style="color: #a45bad;">56fa0856f7ac8a3f6ccbb031f887df86ce329ca7</span>
+  <span style="color: #4f97d7; font-weight: bold;">for</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span> = <span style="color: #a45bad;">0</span>; i &lt; <span style="color: #ce537a; font-weight: bold;">n</span>; i++<span style="color: #4f97d7;">){</span>
+    <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">name</span> = scan.next<span style="color: #bc6ec5;">()</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">phone</span> = scan.nextInt<span style="color: #bc6ec5;">()</span>;
+
+    phoneBook.put<span style="color: #bc6ec5;">(</span>name, phone<span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
+<p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<b>Note:</b> To put the data (name, phoneno) in the HashMap/phonebook, <code>put()</code> method is
+used.
+</p>
+
+<p>
+Syntax: <code>put(Key, Value)</code>
+</p>
+
+<p>
+<code>=====</code>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+</p>
 <div class="tip">
 <p>
 To put the data (name, phoneno) in the HashMap/phonebook, <code>put()</code> method is used.
@@ -830,15 +997,16 @@ To put the data (name, phoneno) in the HashMap/phonebook, <code>put()</code> met
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgcfa86d3" class="outline-3">
-<h3 id="orgcfa86d3"><span class="section-number-3">6.4</span> Step - 4</h3>
-=======
-<div id="outline-container-org5bb538c" class="outline-3">
-<h3 id="org5bb538c"><span class="section-number-3">6.4</span> Step - 4</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-3" id="text-6-4">
+<h3 id="orgcfa86d3"><span class="section-number-3">12.4</span> Step - 4</h3>
+<div class="outline-text-3" id="text-12-4">
 <p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<code>=====</code>
+</p>
+
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 Now comes a little tricky part:
 </p>
 
@@ -877,7 +1045,32 @@ Let’s to do it one-by-one:
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">while</span><span style="color: #4f97d7;">(</span>scan.hasNext<span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-java">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+  <span style="color: #4f97d7; font-weight: bold;">while</span><span style="color: #4f97d7;">(</span>scan.hasNext<span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">s</span> = scan.next<span style="color: #bc6ec5;">()</span>;
+  <span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2c0d3f3" class="outline-3">
+<h3 id="org2c0d3f3"><span class="section-number-3">12.5</span> Step - 5</h3>
+<div class="outline-text-3" id="text-12-5">
+<ul class="org-ul">
+<li>print the required output.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-java">  <span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #4f97d7;">(</span>scan.hasNext<span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">s</span> = scan.next<span style="color: #bc6ec5;">()</span>;
+    <span style="color: #ce537a; font-weight: bold;">Integer</span> <span style="color: #7590db;">phoneNumber</span> = phoneBook.get<span style="color: #bc6ec5;">(</span>s<span style="color: #bc6ec5;">)</span>;
+
+    System.out.println<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span>phoneNumber != <span style="color: #a45bad;">null</span><span style="color: #2d9574;">)</span> ? s + <span style="color: #2d9574;">"="</span> + phoneNumber
+                                             : <span style="color: #2d9574;">"Not found"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7;">}</span>
+=======
+<span style="color: #4f97d7; font-weight: bold;">while</span><span style="color: #4f97d7;">(</span>scan.hasNext<span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
   <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">s</span> = scan.next<span style="color: #bc6ec5;">()</span>;
 <span style="color: #4f97d7;">}</span>
 </pre>
@@ -885,14 +1078,9 @@ Let’s to do it one-by-one:
 </div>
 </div>
 
-<<<<<<< HEAD
-<div id="outline-container-org2c0d3f3" class="outline-3">
-<h3 id="org2c0d3f3"><span class="section-number-3">6.5</span> Step - 5</h3>
-=======
-<div id="outline-container-orgc7e2b70" class="outline-3">
-<h3 id="orgc7e2b70"><span class="section-number-3">6.5</span> Step - 5</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-3" id="text-6-5">
+<div id="outline-container-orgd620f14" class="outline-3">
+<h3 id="orgd620f14"><span class="section-number-3">12.6</span> Step - 5</h3>
+<div class="outline-text-3" id="text-12-6">
 <ul class="org-ul">
 <li>print the required output.</li>
 </ul>
@@ -904,6 +1092,7 @@ Let’s to do it one-by-one:
 
   System.out.println<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span>phoneNumber != <span style="color: #a45bad;">null</span><span style="color: #2d9574;">)</span> ? s + <span style="color: #2d9574;">"="</span> + phoneNumber : <span style="color: #2d9574;">"Not found"</span><span style="color: #bc6ec5;">)</span>;
 <span style="color: #4f97d7;">}</span>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; <span style="color: #a45bad;">56fa0856f7ac8a3f6ccbb031f887df86ce329ca7</span>
 </pre>
 </div>
 
@@ -919,22 +1108,31 @@ To get the data (phone no) from the HashMap, <code>get()</code> method is used.
 
 <p>
 So, <code>phoneBook.get(Raj)</code> will return the phone no of ’Raj’ if he’s
-present. To check whether a Name/Key is present in the <code>HashMap</code> or not, <code>HashMap</code> uses <code>equals()</code> method internally.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+present. To check whether a Name/Key is present in the <code>HashMap</code> or not, <code>HashMap</code>
+uses <code>equals()</code> method internally.
 </p>
 
 </div>
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org359fa21" class="outline-3">
-<h3 id="org359fa21"><span class="section-number-3">6.6</span> Step - 6</h3>
-=======
-<div id="outline-container-orgab0e8c0" class="outline-3">
-<h3 id="orgab0e8c0"><span class="section-number-3">6.6</span> Step - 6</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
-<div class="outline-text-3" id="text-6-6">
+<h3 id="org359fa21"><span class="section-number-3">12.7</span> Step - 6</h3>
+<div class="outline-text-3" id="text-12-7">
 <p>
+<code>=====</code>
+present. To check whether a Name/Key is present in the <code>HashMap</code> or not, <code>HashMap</code> uses <code>equals()</code> method internally.
+#+end<sub>tip</sub>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7ad0b70" class="outline-3">
+<h3 id="org7ad0b70"><span class="section-number-3">12.8</span> Step - 6</h3>
+<div class="outline-text-3" id="text-12-8">
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 Let’s connect the dots:
 </p>
 
@@ -977,27 +1175,14 @@ we learned something :)
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgb4e6dc1" class="outline-2">
-<h2 id="orgb4e6dc1"><span class="section-number-2">7</span> Thank You!</h2>
-=======
-<div id="outline-container-org573b104" class="outline-2">
-<h2 id="org573b104"><span class="section-number-2">7</span> Thank You!</h2>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+<h2 id="orgb4e6dc1"><span class="section-number-2">13</span> Thank You!</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<<<<<<< HEAD
-<p class="date">Created: 2018-01-27 Sat 01:02</p>
+<p class="date">Created: 2018-01-28 Sun 11:09</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
-=======
-<p class="date">Created: 2018-01-21 Sun 23:28</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
-</div>
-</body>
-</html>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7

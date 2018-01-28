@@ -6,28 +6,38 @@
 #+TITLE: Hash Maps in Java
 
 #+ATTR_HTML: :width 100% class="center"
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 | Home | Featured Blogs | [[https://github.com/imahajanshubham][GitHub]] |
 
 * Table of Contents                                       :TOC_4_gh:noexport:
 - [[#basics-of-hash-maps][Basics of Hash Maps]]
   - [[#definition][Definition]]
     - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
+- [[#basics-of-hash-maps-1][Basics of Hash Maps]]
+  - [[#definition-1][Definition]]
+    - [[#but-what-do-we-mean-by-that-1][But what do we mean by that?]]
     - [[#what-did-we-observed][What did we observed?]]
+    - [[#what-did-we-observed-1][What did we observed?]]
 - [[#syntax][Syntax]]
+- [[#syntax-1][Syntax]]
 - [[#properties-of-a-hashmap][Properties of a HashMap]]
+- [[#properties-of-a-hashmap-1][Properties of a HashMap]]
 - [[#a-sample-program][A sample program]]
+- [[#a-sample-program-1][A sample program]]
 - [[#the-test-case][The test case]]
+- [[#the-test-case-1][The test case]]
 - [[#a-humble-solution][A humble solution]]
   - [[#step---1][Step - 1]]
+- [[#a-humble-solution-1][A humble solution]]
+  - [[#step---1-1][Step - 1]]
   - [[#step---2][Step - 2]]
   - [[#step---3][Step - 3]]
   - [[#step---4][Step - 4]]
   - [[#step---5][Step - 5]]
+  - [[#step---5-1][Step - 5]]
   - [[#step---6][Step - 6]]
+  - [[#step---6-1][Step - 6]]
 - [[#thank-you][Thank You!]]
 
-<<<<<<< HEAD
 * Basics of Hash Maps
 ** Definition
 Java HashMap is one of the most popular Collection classes in java. Java Hash is
