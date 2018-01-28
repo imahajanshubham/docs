@@ -736,12 +736,12 @@ hr{
     #toggle-sidebar {
         display: block;
         background: #715ab1;
-        color: white;
         text-align: center;
         padding: 0.6em;
         margin-bottom: 0.6em;
     }
     #toggle-sidebar h2 {
+        color: white;
         margin: 0;
         padding: 0;
     }
