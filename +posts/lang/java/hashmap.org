@@ -1,5 +1,7 @@
 #+TITLE: Hash Maps in Java
 
+#+SETUPFILE: https://raw.githubusercontent.com/imahajanshubham/docs/master/%2Bthemes/readtheorg.setup
+
 #+ATTR_HTML: :width 100% class="center"
 | Home | Featured Blogs | [[https://github.com/imahajanshubham][GitHub]] |
 
@@ -7,62 +9,36 @@
 - [[#basics-of-hash-maps][Basics of Hash Maps]]
   - [[#definition][Definition]]
     - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
-- [[#basics-of-hash-maps-1][Basics of Hash Maps]]
-  - [[#definition-1][Definition]]
-    - [[#but-what-do-we-mean-by-that-1][But what do we mean by that?]]
     - [[#what-did-we-observed][What did we observed?]]
     - [[#what-did-we-observed-1][What did we observed?]]
 - [[#syntax][Syntax]]
-- [[#syntax-1][Syntax]]
 - [[#properties-of-a-hashmap][Properties of a HashMap]]
-- [[#properties-of-a-hashmap-1][Properties of a HashMap]]
 - [[#a-sample-program][A sample program]]
-- [[#a-sample-program-1][A sample program]]
 - [[#the-test-case][The test case]]
-- [[#the-test-case-1][The test case]]
 - [[#a-humble-solution][A humble solution]]
   - [[#step---1][Step - 1]]
-- [[#a-humble-solution-1][A humble solution]]
-  - [[#step---1-1][Step - 1]]
   - [[#step---2][Step - 2]]
   - [[#step---3][Step - 3]]
   - [[#step---4][Step - 4]]
   - [[#step---5][Step - 5]]
   - [[#step---5-1][Step - 5]]
   - [[#step---6][Step - 6]]
-  - [[#step---6-1][Step - 6]]
 - [[#thank-you][Thank You!]]
 
 * Basics of Hash Maps
 ** Definition
+
 Java HashMap is one of the most popular Collection classes in java. Java Hash is
 Hash table based implementation. HashMap in java extends AbstractMap class that
 implements Map interface.
 
 *** But what do we mean by that?
-Before trying to understand the definition of Hash Map, we should try to
-understand the concept behind the Hash Map.
-=======
-* DONE Basics of Hash Maps
-
-** Definition
-
-Java HashMap is one of the most popular Collection classes in java. Java Hash  printf("Hello World!\n");
-Map
-is Hash table based implementation. HashMap in java extends AbstractMap class
-that implement(setq org-hide-emphasis-markers t)  printf("Hello World!\n");
-s Map interface.
-
-*** But what do we mean by that?
-
 Before trying to understand the definition of Hash Map, we should try to understand
 the concept behind the Hash Map.
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 
 Let’s say we want make a record of a phone-book (person’s name and phone no) as
 follows:
 
-<<<<<<< HEAD
 |--------+------------|
 | *Name*   |  *Phone No.* |
 |--------+------------|
@@ -74,23 +50,21 @@ follows:
 | Muskan | 9899363086 |
 |--------+------------|
 
-=======
-#+BEGIN_NOTE
+#+begin_note
 For the sake of simplicity (to avoid rehashing), let’s assume:
 
 - Each name is unique.
 - A single person can have only one phone no.
-#+END_NOTE
+#+end_note
 
-| *Name* | *Phone No.* |
-|--------+-------------|
-| Raj    |  2345671001 |
-| Nisha  |  4464832994 |
-| Sonu   |  4858830685 |
-| Nitin  |  8739111330 |
-| Akshay |  8743193003 |
-| Muskan |  9899363086 |
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+| *Name*   |  *Phone No.* |
+|--------+------------|
+| Raj    | 2345671001 |
+| Nisha  | 4464832994 |
+| Sonu   | 4858830685 |
+| Nitin  | 8739111330 |
+| Akshay | 8743193003 |
+| Muskan | 9899363086 |
 
 and so on…
 
@@ -99,7 +73,6 @@ If we say a name, we wanna know his/her phone no.
 
 For ex:
 
-<<<<<<< HEAD
 |--------+------------|
 | Input  |        Raj |
 | Output | 2345671001 |
@@ -107,16 +80,19 @@ For ex:
 
 *** What did we observed?
 - We don’t know the exact no of names/phone-nos.
-- So the Hash-Size is not fixed. But there are ways via which we can fix the Hash-Size (using constructors).
-- The order of the entries (Raj -> Nisha or Nisha -> Raj) doesn’t matter for us to fetch their phone nos. So Hash Map doesn’t require sorted input.
-- Person’s name (input) is the ~KEY~ to find the ~VALUE~ i.e. phone no. (output) i.e *name is mapped with phone no*.
-- Instead of phone record, we can create any type of record. So the data-type of Keys/Values depends upon the user.
-=======
+- So the Hash-Size is not fixed. But there are ways via which we can fix the
+  Hash-Size (using constructors).
+- The order of the entries (Raj -> Nisha or Nisha -> Raj) doesn’t matter for us
+  to fetch their phone nos. So Hash Map doesn’t require sorted input.
+- Person’s name (input) is the ~KEY~ to find the ~VALUE~ i.e. phone no. (output) i.e
+  *name is mapped with phone no*.
+- Instead of phone record, we can create any type of record. So the data-type of
+  Keys/Values depends upon the user.
+
 | Input  |        Raj |
 | Output | 2345671001 |
 
 *** What did we observed?
-
 - We don’t know the exact no of names/phone-nos.
 
 #+begin_tip
@@ -132,19 +108,13 @@ Hash-Size (using constructors).
   i.e *name is mapped with phone no*.
 - Instead of phone record, we can create any type of record. So the data-type of
   Keys/Values depends upon the user.
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 - Each ~Name - phone no~ is in the form of pair similar to ~Key - Value~.
 
 Till know, we came to understand a little-bit about something known as
 Hash-Size, Keys and Values. Now let’s try to understand more about Hash Map in
 technical terms.
 
-<<<<<<< HEAD
 * Syntax
-=======
-* DONE Syntax
-
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 In Java, the HashMap class’ object is declared as follows:
 
 #+begin_src java
@@ -158,12 +128,7 @@ Map<String, Integer> record1 = new HashMap<String, Integer>();
 Map<String, String> record2 = new HashMap<String, String>();
 #+end_src
 
-<<<<<<< HEAD
 * Properties of a HashMap
-=======
-* TODO Properties of a HashMap
-
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 - HashMap is denoted as ~HashMap<Key, Value>~.
 - No need to specify the size of HashMap.
 - No need of sorted input.
@@ -172,27 +137,7 @@ Map<String, String> record2 = new HashMap<String, String>();
 - You need to import ~java.util.HashMap~ class in order to use the HashMap class
   and its methods.
 
-<<<<<<< HEAD
 * A sample program
-What better way to understand more than to learn it by implementation? With that
-spirit, let’s try to make a program in java to implement a phonebook as follows:
-
-1) Get ’n’ (~INTEGER~ value) from the user, denoting the no of entries/records to
-   be filled in the phonebook.
-2) Now, get ’n’ no of names-phoneno (~STRING-INTEGER~) space separated pairs from
-   the user.
-=======
-#+begin_note
-There are a lot many other important properties too such:
-- Rehashing
-- Load Factor
-- Various methods.
-  
-But we will study all these and others during our lifelong journey ♥.
-#+end_note
-
-* DONE A sample program
-
 What better way to understand more than to learn it by implementation? With that
 spirit, let’s try to make a program in java to implement a phonebook
 as follows:
@@ -200,7 +145,6 @@ as follows:
 1) Get ’n’ (~INTEGER~ value) from the user, denoting the no of entries/records
    to be filled in the phonebook.
 2) Now, get ’n’ no of names-phoneno (~STRING-INTEGER~) space separated pairs from the user.
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 
    For ex:
 
@@ -214,12 +158,7 @@ as follows:
 | If name is present in the phonebook | *name=phoneno* |
 | If name is not present              | *Not found*    |
 
-<<<<<<< HEAD
 * The test case
-=======
-* DONE The test case
-
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 Input:
 
 | 3             |
@@ -234,22 +173,11 @@ Output:
 | Not found     |
 | Ravi=87240393 |
 
-<<<<<<< HEAD
-* A humble solution
-** Step - 1
-Let’s create testMain class with main function and initialize ~Scanner~ and ~Map~
-classes:
-
-=======
 * DONE A humble solution
-
 ** Step - 1
-
 Let’s create testMain class with main function and initialize ~Scanner~ and ~Map~
 classes:
 
-
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 #+begin_src java
   import java.util.*;
   import java.io.*;
@@ -263,31 +191,19 @@ classes:
 #+end_src
 
 ** Step - 2
-<<<<<<< HEAD
 Now let’s get the value of ’n’ (~INTEGER~) i.e. the no of phone records to be
 entered:
-=======
-
-Now let’s get the value of ’n’ (~INTEGER~) i.e. the no of phone records to be entered:
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 
 #+begin_src java
   int n = scan.nextInt();
 #+end_src
 
 ** Step - 3
-<<<<<<< HEAD
 Now let’s fill ’n’ records (~STRING-INTEGER~) in the phonebook.
 
 #+begin_src java
   int n = scan.nextInt();
   
-=======
-
-Now let’s fill ’n’ records (~STRING INTEGER~) in the phonebook.
-
-#+begin_src java
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
   for(int i = 0; i < n; i++){
     String name = scan.next();
     int phone = scan.nextInt();
@@ -296,14 +212,6 @@ Now let’s fill ’n’ records (~STRING INTEGER~) in the phonebook.
   }
 #+end_src
 
-<<<<<<< HEAD
-*Note:* To put the data (name, phoneno) in the HashMap/phonebook, ~put()~ method is
-used.
-
-Syntax: ~put(Key, Value)~
-
-=======
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 #+begin_tip
 To put the data (name, phoneno) in the HashMap/phonebook, ~put()~ method is used.
 
@@ -312,10 +220,6 @@ To put the data (name, phoneno) in the HashMap/phonebook, ~put()~ method is used
 #+end_tip
 
 ** Step - 4
-<<<<<<< HEAD
-=======
-
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 Now comes a little tricky part:
 
 3. Get unknown no of names (~STRING~) from the user and for each of the these
@@ -329,7 +233,6 @@ Let’s to do it one-by-one:
 - get unknown no of names (~STRING~).
 
 #+begin_src java
-<<<<<<< HEAD
   while(scan.hasNext()) {
     String s = scan.next();
   }
@@ -346,14 +249,9 @@ Let’s to do it one-by-one:
     System.out.println((phoneNumber != null) ? s + "=" + phoneNumber
                                              : "Not found");
   }
-=======
-while(scan.hasNext()) {
-  String s = scan.next();
-}
 #+end_src
 
 ** Step - 5
-
 - print the required output.
 
 #+begin_src java
@@ -363,7 +261,6 @@ while(scan.hasNext()) {
   
   System.out.println((phoneNumber != null) ? s + "=" + phoneNumber : "Not found");
 }
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 #+end_src
 
 #+begin_tip
@@ -372,20 +269,12 @@ To get the data (phone no) from the HashMap, ~get()~ method is used.
 *Syntax:*
        ~get(Key)~
 
-So, ~phoneBook.get(Raj)~ will return the phone no of ’Raj’ if he’s
-<<<<<<< HEAD
-present. To check whether a Name/Key is present in the ~HashMap~ or not, ~HashMap~
-uses ~equals()~ method internally.
+So, ~phoneBook.get(Raj)~ will return the phone no of ’Raj’ if he’s present. To
+check whether a Name/Key is present in the ~HashMap~ or not, ~HashMap~ uses ~equals()~
+method internally.
 #+end_tip
 
 ** Step - 6
-=======
-present. To check whether a Name/Key is present in the ~HashMap~ or not, ~HashMap~ uses ~equals()~ method internally.
-#+end_tip
-
-** Step - 6
-
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
 Let’s connect the dots:
 
 #+begin_src java
