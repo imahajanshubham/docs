@@ -264,7 +264,6 @@ Same program, but instead using structure.
 #+end_src
  
 ** using structure with ’typedef’
-
 The ~typedef~ /stands/ for ~type definition~. So using ~typedef~, we can give a
 new alias/name to already existing data-type i.e. same as one person can have
 two names.
@@ -276,7 +275,6 @@ typedef <datatype> <alias/new_name>;
 #+END_SRC
 
 *** Example:
-
 Instead of writing:
 
 #+BEGIN_SRC C
