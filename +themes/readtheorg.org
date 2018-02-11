@@ -8,4 +8,6 @@
 #+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
 
 #+ATTR_HTML: :width 100% class="center"
+|------+----------------+--------|
 | Home | Featured Blogs | [[https://github.com/imahajanshubham][GitHub]] |
+|------+----------------+--------|
