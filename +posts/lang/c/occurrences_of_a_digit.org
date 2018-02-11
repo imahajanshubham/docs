@@ -173,9 +173,10 @@ Finally,
       inputNumber /= 10;
     }
 
-    for (int indx = 0; indx < 10; indx++)
-      printf("%d ", noOfOccurrences[indx]);
-    printf("\n");
+    int Digit;
+
+    scanf("%d", &Digit);
+    printf("%d\n", noOfOccurrences[Digit]);
 
     return EXIT_SUCCESS;
   }

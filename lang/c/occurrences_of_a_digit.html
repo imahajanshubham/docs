@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-02-11 Sun 02:08 -->
+<!-- 2018-02-11 Sun 02:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Occurrences of a Digit</title>
@@ -240,27 +240,27 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2ae6aea">1. The Problem Statement</a>
+<li><a href="#orgb105fc4">1. The Problem Statement</a>
 <ul>
-<li><a href="#org7120587">1.1. Input</a></li>
-<li><a href="#org0294e14">1.2. Output</a></li>
+<li><a href="#org826d2ec">1.1. Input</a></li>
+<li><a href="#orgc8f9b48">1.2. Output</a></li>
 </ul>
 </li>
-<li><a href="#orgb5a27a0">2. Conditions</a></li>
-<li><a href="#orgd3f69c0">3. Test Case</a></li>
-<li><a href="#orgc875982">4. Prerequisites</a></li>
-<li><a href="#orgf51a2cd">5. An Attempt Towards The Solution</a>
+<li><a href="#org194769f">2. Conditions</a></li>
+<li><a href="#org66ae257">3. Test Case</a></li>
+<li><a href="#org31caffd">4. Prerequisites</a></li>
+<li><a href="#org5a7981b">5. An Attempt Towards The Solution</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org7f36f8d">5.0.1. Understanding the Datatype of our Input</a></li>
-<li><a href="#org01cf3f5">5.0.2. Finding the number of occurences of a digit</a></li>
-<li><a href="#org2d50f0a">5.0.3. The Solution</a></li>
+<li><a href="#org1ec7f42">5.0.1. Understanding the Datatype of our Input</a></li>
+<li><a href="#org25bee5f">5.0.2. Finding the number of occurences of a digit</a></li>
+<li><a href="#org5d92f48">5.0.3. The Solution</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org78296ae">6. Thank You</a></li>
+<li><a href="#orgfaa078c">6. Thank You</a></li>
 </ul>
 </div>
 </div>
@@ -283,8 +283,8 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<div id="outline-container-org2ae6aea" class="outline-2">
-<h2 id="org2ae6aea"><span class="section-number-2">1</span> The Problem Statement</h2>
+<div id="outline-container-orgb105fc4" class="outline-2">
+<h2 id="orgb105fc4"><span class="section-number-2">1</span> The Problem Statement</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Find the no. of times, a particular digit appeared (occurences) in a <b>very large
@@ -292,8 +292,8 @@ positive number.</b>
 </p>
 </div>
 
-<div id="outline-container-org7120587" class="outline-3">
-<h3 id="org7120587"><span class="section-number-3">1.1</span> Input</h3>
+<div id="outline-container-org826d2ec" class="outline-3">
+<h3 id="org826d2ec"><span class="section-number-3">1.1</span> Input</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Line 1: A <b>very large positive number</b>.</li>
@@ -302,8 +302,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-org0294e14" class="outline-3">
-<h3 id="org0294e14"><span class="section-number-3">1.2</span> Output</h3>
+<div id="outline-container-orgc8f9b48" class="outline-3">
+<h3 id="orgc8f9b48"><span class="section-number-3">1.2</span> Output</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>Line 1: <b>Number of occurences</b> of that digit.</li>
@@ -312,8 +312,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-orgb5a27a0" class="outline-2">
-<h2 id="orgb5a27a0"><span class="section-number-2">2</span> Conditions</h2>
+<div id="outline-container-org194769f" class="outline-2">
+<h2 id="org194769f"><span class="section-number-2">2</span> Conditions</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>A input number can be as large as from <b>0</b> to <b>2<sup>64</sup> - 1</b>.</li>
@@ -323,8 +323,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-orgd3f69c0" class="outline-2">
-<h2 id="orgd3f69c0"><span class="section-number-2">3</span> Test Case</h2>
+<div id="outline-container-org66ae257" class="outline-2">
+<h2 id="org66ae257"><span class="section-number-2">3</span> Test Case</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Input
@@ -366,8 +366,8 @@ Output
 </div>
 </div>
 
-<div id="outline-container-orgc875982" class="outline-2">
-<h2 id="orgc875982"><span class="section-number-2">4</span> Prerequisites</h2>
+<div id="outline-container-org31caffd" class="outline-2">
+<h2 id="org31caffd"><span class="section-number-2">4</span> Prerequisites</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Basic syntax of C language, rest we will explore during the journey.
@@ -375,8 +375,8 @@ Basic syntax of C language, rest we will explore during the journey.
 </div>
 </div>
 
-<div id="outline-container-orgf51a2cd" class="outline-2">
-<h2 id="orgf51a2cd"><span class="section-number-2">5</span> An Attempt Towards The Solution</h2>
+<div id="outline-container-org5a7981b" class="outline-2">
+<h2 id="org5a7981b"><span class="section-number-2">5</span> An Attempt Towards The Solution</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 In the very first line of the problem statement, we are going to deal with a
@@ -389,8 +389,8 @@ very large positive number. Let's try to understand this much first:
 </ul>
 </div>
 
-<div id="outline-container-org7f36f8d" class="outline-4">
-<h4 id="org7f36f8d"><span class="section-number-4">5.0.1</span> Understanding the Datatype of our Input</h4>
+<div id="outline-container-org1ec7f42" class="outline-4">
+<h4 id="org1ec7f42"><span class="section-number-4">5.0.1</span> Understanding the Datatype of our Input</h4>
 <div class="outline-text-4" id="text-5-0-1">
 <p>
 Let's try to visualize the range of our input number:
@@ -482,8 +482,8 @@ The range of <code>unsigned long int</code> is from <b>0</b> to <b>2<sup>64</sup
 </div>
 </div>
 
-<div id="outline-container-org01cf3f5" class="outline-4">
-<h4 id="org01cf3f5"><span class="section-number-4">5.0.2</span> Finding the number of occurences of a digit</h4>
+<div id="outline-container-org25bee5f" class="outline-4">
+<h4 id="org25bee5f"><span class="section-number-4">5.0.2</span> Finding the number of occurences of a digit</h4>
 <div class="outline-text-4" id="text-5-0-2">
 <p>
 How many digits are there in total?
@@ -561,8 +561,8 @@ Then divide the number by 10, and repeat the steps i.e.
 </div>
 </div>
 
-<div id="outline-container-org2d50f0a" class="outline-4">
-<h4 id="org2d50f0a"><span class="section-number-4">5.0.3</span> The Solution</h4>
+<div id="outline-container-org5d92f48" class="outline-4">
+<h4 id="org5d92f48"><span class="section-number-4">5.0.3</span> The Solution</h4>
 <div class="outline-text-4" id="text-5-0-3">
 <p>
 Finally,
@@ -585,9 +585,10 @@ Finally,
     inputNumber /= <span style="color: #4e3163;">10</span>;
   <span style="color: #6c3163;">}</span>
 
-  <span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">indx</span> = <span style="color: #4e3163;">0</span>; indx &lt; <span style="color: #4e3163;">10</span>; indx++<span style="color: #6c3163;">)</span>
-    printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d "</span>, noOfOccurrences<span style="color: #2d9574;">[</span>indx<span style="color: #2d9574;">]</span><span style="color: #6c3163;">)</span>;
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"\n"</span><span style="color: #6c3163;">)</span>;
+  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">Digit</span>;
+
+  scanf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;Digit<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d\n"</span>, noOfOccurrences<span style="color: #2d9574;">[</span>Digit<span style="color: #2d9574;">]</span><span style="color: #6c3163;">)</span>;
 
   <span style="color: #3a81c3; font-weight: bold;">return</span> EXIT_SUCCESS;
 <span style="color: #3a81c3;">}</span>
@@ -597,8 +598,8 @@ Finally,
 </div>
 </div>
 
-<div id="outline-container-org78296ae" class="outline-2">
-<h2 id="org78296ae"><span class="section-number-2">6</span> Thank You</h2>
+<div id="outline-container-orgfaa078c" class="outline-2">
+<h2 id="orgfaa078c"><span class="section-number-2">6</span> Thank You</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 I hope, this was a pleasantfull journey for all of us 😍
@@ -608,7 +609,7 @@ I hope, this was a pleasantfull journey for all of us 😍
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-02-11 Sun 02:08</p>
+<p class="date">Created: 2018-02-11 Sun 02:14</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
