@@ -113,7 +113,13 @@ way only 1 loop will do our whole job.
   }
 #+end_src
 
-_Notice_, The ~acideName~ size is *10001*, 1 Byte extra to store ~'\0'~ as a string end indicator. 
+#+begin_note
+Even though the maximum ~acid name~ should be equal-to/less-than 10000 characters, but we used:
+
+~acidName[10001];~
+
+That's because, 1 extra Byte would store ~'\0'~ (null) i.e. the string end indicator.
+#+end_note
 
 ** How do we check whether the input starts with ~hydro~ or not?
 To check whether the input starts with ~hydro~ or not, we'll take help of a *flag*
@@ -197,7 +203,7 @@ In general,
 #+end_src
 
 means, *n* is not equal to *0*? True, so it'll enter the the *if-body*. But what if
-want to say, *n* not equal to *0*?
+want to say, *n* equal to *0*?
 
 #+begin_src C
   if (n == 0) {
@@ -205,7 +211,7 @@ want to say, *n* not equal to *0*?
   }
 #+end_src
 
-or, we use ~!~ operator to achieve same:
+or, we use ~!~ operator to achieve the same:
 
 #+begin_src C
   if (!n) {
