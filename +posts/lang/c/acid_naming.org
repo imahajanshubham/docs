@@ -1,0 +1,345 @@
+#+INCLUDE: ../../../+themes/readtheorg.org
+#+TITLE: Acid Naming Problem
+
+* Table of contents                                       :TOC_4_gh:noexport:
+- [[#the-problem-statement][The Problem Statement]]
+  - [[#input][Input]]
+  - [[#output][Output]]
+- [[#conditions][Conditions]]
+- [[#test-case][Test Case]]
+- [[#what-do-we-need-to-know][What do we need to know?]]
+- [[#lets-begin][Let's begin!]]
+  - [[#what-should-be-the-maximum-length-of-an-acid-name][What should be the maximum length of an ~acid name~?]]
+  - [[#what-method-should-we-use-for-getting-the-acid-names-from-user][What method should we use for getting the ~acid names~ from user?]]
+  - [[#how-do-we-check-whether-the-input-starts-with-hydro-or-not][How do we check whether the input starts with ~hydro~ or not?]]
+  - [[#how-to-check-if-acid-name-ends-with-ic][How to check if ~acid name~ ends with "ic"?]]
+  - [[#connecting-the-dots][Connecting the dots...]]
+  - [[#finally-here-comes-the-main-function][Finally, Here comes the ~main~ function!]]
+- [[#thank-you-][Thank You :)]]
+
+* The Problem Statement
+Jonathan is in a science class, but because he does not understand how to name
+acids, he would like you to make a program for him. There are two types of acids
+at his level, /non-metal/ and /polyaomic/.
+
+Conditions for naming an acid:
+
+- If the given input starts with ~hydro~ and ends with ~ic~ then it is a ~non-metal
+  acid~.
+- If the input only ends with ~ic~ then it is a ~polyatomic acid~.
+- If it does not have either case, then output ~not an acid~.
+
+For example, for the input, *hydrochloric*, the correct output is - /non-metal acid/ as the input begins with
+~hydro~ and ends with ~ic~.
+
+Complete the function acidNaming which takes a string input with the name of the
+acid, and return a string describing the appropriate type of acid.
+
+** Input
+The first line will contain an integer *q*.
+The next *q* lines will contain a single word *s*.
+
+** Output
+- If the word starts with ~hydro~ and ends with ~ic~ then it is a non-metal acid.
+  Hence, the correct output is - /non-metal acid/.
+- If the word only ends with ~ic~ then it is a polyatomic acid. Hence, the correct
+  output is /polyatomic acid/.
+- If the word does not meet any of the cases, then the correct output is /not an acid/.
+
+
+* Conditions
+- *1* <= *q* <= *100.*
+- Word *s* is made up of lower-case english letters.
+- *2* <= *length of s* <= *10^4*.
+
+* Test Case
+Input
+
+|---------------|
+| 3             |
+| hydrochloric  |
+| rainbowic     |
+| idontevenknow |
+|---------------|
+
+Output
+
+|-----------------|
+| non-metal acid  |
+| polyatomic acid |
+| not an acid     |
+|-----------------|
+
+* What do we need to know?
+- What should be the maximum length of an ~Acid~ name?
+- What method should we use for getting the ~acid names~ from user?
+- How do we check whether the input starts with ~hydro~ or not?
+
+* Let's begin!
+** What should be the maximum length of an ~acid name~?
+In the constraints section, it is given that:
+
+- *2* <= *length of s* <= *10^4*.
+
+So, the ~acid name~ can have minimum *2* and maximum *10000* characters.
+
+** What method should we use for getting the ~acid names~ from user?
+As the ~acid names~ are english words, so we will use ~char array or string~
+datatype. Now to populate the array with user input, There are couple of ways:
+
+- Either we directly get the input using ~scanf~ and then process the string for a
+  valid acid.
+
+But this way, we would be using *2 loops* (1 via ~scanf~ to *get the  input*,
+another to *traverse the string again to process it*) which is not an efficient
+way. That too when we want to reduce the ~Time Complexity~ in competetive
+programming environment.
+
+So?
+
+We would get the input character-by-character and process it there within. This
+way only 1 loop will do our whole job.
+
+#+begin_src C
+  int character;
+  int charCount = 0;
+  
+  char acidName[10001];
+
+  while ((character = getchar()) != '\n') {
+    acidName[charCount++] = character;
+
+    // Rest of the code goes here.
+  }
+#+end_src
+
+_Notice_, The ~acideName~ size is *10001*, 1 Byte extra to store ~'\0'~ as a string end indicator. 
+
+** How do we check whether the input starts with ~hydro~ or not?
+To check whether the input starts with ~hydro~ or not, we'll take help of a *flag*
+which would tell us if we've encountered ~hydro~ in our input or not.
+
+Now, if we are getting the input character-by-character then why not simply do:
+
+#+begin_src C
+  if ((character = getchar()) == 'h') {
+    acidName[charCount++] = character;
+
+    if ((character = getchar()) == 'y') {
+      acidName[charCount++] = character;
+
+      if ((character = getchar()) == 'd') {
+        acidName[charCount++] = character;
+
+        if ((character = getchar()) == 'r') {
+          acidName[charCount++] = character;
+
+          if ((character = getchar()) == 'o') {
+            acidName[charCount++] = character;
+
+            flag = 1;
+          }
+
+          else flag = 0;
+        }
+      }
+    }
+  }
+#+end_src
+
+Because this is a very unorthodox approach and there is too much use of ~if statements~.
+Imagine if need to compare the input with 100+ characters... phew!!!
+
+So, Let's use one of the possible better approach:
+
+#+begin_src C
+  int flag = 0;
+
+  int character;
+  int charCount = 0;
+
+  char acidName[10001];
+
+  while ((character = getchar()) != '\n') {
+    acidName[charCount++] = character;
+
+    if (charCount == 5) {
+      if (!strcmp(acidName, "hydro"))
+        hasStart = 1;
+    }
+  }
+#+end_src
+
+Only 2 ~if statements~ did the trick, no matter how long the comparison string is.
+*Also, notice* why we used ~! i.e. (NOT operator)~ in ~!strcmp(...)~.
+
+#+begin_tip
+The library function ~strcmp~ defined in *string.h* file is used to compare two
+strings based upon the ASCII values of their characters.
+
+Syntax: ~strcmp(string1, string2)~
+
+So, it returns:
+- *0*   - if both the strings are equal.
+- *+ve* - if first string is greater than second (numerically).
+- *-ve* - vice-versa.
+#+end_tip
+
+So, we took advantage of it's first return value i.e. it returns *0* when both
+strings are equal.
+
+In general,
+
+#+begin_src C
+  if (n) {
+    // code
+  }
+#+end_src
+
+means, *n* is not equal to *0*? True, so it'll enter the the *if-body*. But what if
+want to say, *n* not equal to *0*?
+
+#+begin_src C
+  if (n == 0) {
+    // code
+  }
+#+end_src
+
+or, we use ~!~ operator to achieve same:
+
+#+begin_src C
+  if (!n) {
+    // code
+  }
+#+end_src
+
+Now,
+
+** How to check if ~acid name~ ends with "ic"?
+To check if ~acide name~ ends with *"ic"* or not, we will compare *n - 2th* index of
+the ~acid name~.
+
+#+begin_src C
+  while ((character = getchar()) != '\n') {
+    acidName[charCount++] = character;
+
+    if (charCount == 5) {
+      if (!strcmp(acidName, "hydro"))
+        hasStart = 1;
+    }
+   }
+
+  acidName[charCount] = '\0';
+
+  if (charCount >=2 && !strcmp(&acidName[charCount - 2], "ic"))
+    hasEnd = 1;
+#+end_src
+
+** Connecting the dots...
+Let's complete the function, so that it can return suitable flag value based
+upon the input:
+
+#+begin_src C
+  int checkForAcidName(void) {
+    int hasStart = 0;
+    int hasEnd = 0;
+
+    int character;
+    int charCount;
+    char acidName[10001];
+
+    charCount = 0;
+
+    while ((character = getchar()) != '\n') {
+      acidName[charCount++] = character;
+
+      if (charCount == 5) {
+        if (!strcmp(acidName, "hydro"))
+          hasStart = 1;
+      }
+    }
+
+    acidName[charCount] = '\0';
+
+    if (charCount >=2 && !strcmp(&acidName[charCount - 2], "ic"))
+      hasEnd = 1;
+
+    if (hasStart && hasEnd)
+      return 1;
+
+    else if (!hasStart && hasEnd)
+      return 2;
+
+    return 3;
+  }
+#+end_src
+
+** Finally, Here comes the ~main~ function!
+
+#+begin_src C
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <string.h>
+
+  #define HYDRO 1
+  #define IC 1
+
+  #define HCLACID 1
+  #define POLYACID 2
+  #define NOTANACID 3
+
+  int checkForAcidName(void) {
+    int hasStart = 0;
+    int hasEnd = 0;
+
+    int character;
+    int charCount;
+    char acidName[10001];
+
+    charCount = 0;
+
+    while ((character = getchar()) != '\n') {
+      acidName[charCount++] = character;
+
+      if (charCount == 5) {
+        if (!strcmp(acidName, "hydro"))
+          hasStart = HYDRO;
+      }
+    }
+
+    acidName[charCount] = '\0';
+
+    if (charCount >= 2 && !strcmp(&acidName[charCount - 2], "ic"))
+      hasEnd = POLYACID;
+
+    if (hasStart && hasEnd)
+      return HCLACID;
+    
+    else if (!hasStart && hasEnd)
+      return POLYACID;
+
+    return NOTANACID;
+  }
+
+  int main(void) {
+    int testCases;
+
+    scanf("%d", &testCases);
+    getchar();
+
+    for (int indx = 0; indx < testCases; indx++) {
+      int acid = checkForAcidName();
+
+      if (acid == HCLACID)
+        puts("non-metal acid");
+      else if (acid == POLYACID)
+        puts("polyatomic acid");
+      else
+        puts("not an acid");
+    }
+
+    return EXIT_SUCCESS;
+  }
+#+end_src
+
+* Thank You :)
