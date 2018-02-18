@@ -160,5 +160,6 @@ there and *importing* all the necessary classes that are required.
 
 Here's the screenshot for few test runs:
 
+[[https://raw.githubusercontent.com/imahajanshubham/docs/master/%2Bassets/lang/java/factorial.png]]
 
 * Thank You!

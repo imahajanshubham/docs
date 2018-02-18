@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-02-18 Sun 01:52 -->
+<!-- 2018-02-18 Sun 02:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Factorial of a Number</title>
@@ -240,23 +240,23 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org38fa9b7">1. Problem Statement</a></li>
-<li><a href="#orged26a4c">2. Few Examples</a>
+<li><a href="#orgc41a8ab">1. Problem Statement</a></li>
+<li><a href="#org784d33e">2. Few Examples</a>
 <ul>
-<li><a href="#org7c7ba41">2.1. Example #1</a></li>
-<li><a href="#orgf7cb9d4">2.2. Example #2</a></li>
+<li><a href="#org0b1da99">2.1. Example #1</a></li>
+<li><a href="#org7b1117a">2.2. Example #2</a></li>
 </ul>
 </li>
-<li><a href="#org2f2f9e6">3. Let's Begin!</a>
+<li><a href="#orga845481">3. Let's Begin!</a>
 <ul>
-<li><a href="#org94ead7a">3.1. What did we observed?</a></li>
-<li><a href="#orgb1d877c">3.2. What should we do to store such big values?</a></li>
-<li><a href="#orgfff7645">3.3. The initial value of a factorial</a></li>
-<li><a href="#orgc50fa58">3.4. One step closer towards the Answer</a></li>
+<li><a href="#org502669b">3.1. What did we observed?</a></li>
+<li><a href="#org49f5499">3.2. What should we do to store such big values?</a></li>
+<li><a href="#org8a4949b">3.3. The initial value of a factorial</a></li>
+<li><a href="#orgfb9d531">3.4. One step closer towards the Answer</a></li>
 </ul>
 </li>
-<li><a href="#org54cdcc3">4. The Final Solution</a></li>
-<li><a href="#org787d95a">5. Thank You!</a></li>
+<li><a href="#orgb9b249c">4. The Final Solution</a></li>
+<li><a href="#orgf2ade4a">5. Thank You!</a></li>
 </ul>
 </div>
 </div>
@@ -279,8 +279,8 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<div id="outline-container-org38fa9b7" class="outline-2">
-<h2 id="org38fa9b7"><span class="section-number-2">1</span> Problem Statement</h2>
+<div id="outline-container-orgc41a8ab" class="outline-2">
+<h2 id="orgc41a8ab"><span class="section-number-2">1</span> Problem Statement</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Write a program that, given a number <code>n</code> from STDIN, prints out the factorial of <code>n</code> to STDOUT:
@@ -293,12 +293,12 @@ Write a program that, given a number <code>n</code> from STDIN, prints out the f
 </div>
 </div>
 
-<div id="outline-container-orged26a4c" class="outline-2">
-<h2 id="orged26a4c"><span class="section-number-2">2</span> Few Examples</h2>
+<div id="outline-container-org784d33e" class="outline-2">
+<h2 id="org784d33e"><span class="section-number-2">2</span> Few Examples</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7c7ba41" class="outline-3">
-<h3 id="org7c7ba41"><span class="section-number-3">2.1</span> Example #1</h3>
+<div id="outline-container-org0b1da99" class="outline-3">
+<h3 id="org0b1da99"><span class="section-number-3">2.1</span> Example #1</h3>
 <div class="outline-text-3" id="text-2-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -332,8 +332,8 @@ So given the input <code>3</code>, your program should output:
 </div>
 </div>
 
-<div id="outline-container-orgf7cb9d4" class="outline-3">
-<h3 id="orgf7cb9d4"><span class="section-number-3">2.2</span> Example #2</h3>
+<div id="outline-container-org7b1117a" class="outline-3">
+<h3 id="org7b1117a"><span class="section-number-3">2.2</span> Example #2</h3>
 <div class="outline-text-3" id="text-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -368,8 +368,8 @@ So given the input <code>7</code>, your program should output:
 </div>
 </div>
 
-<div id="outline-container-org2f2f9e6" class="outline-2">
-<h2 id="org2f2f9e6"><span class="section-number-2">3</span> Let's Begin!</h2>
+<div id="outline-container-orga845481" class="outline-2">
+<h2 id="orga845481"><span class="section-number-2">3</span> Let's Begin!</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>Let's say we want to calculate the factorial of <code>5</code>. This answer is <code>120</code>.</li>
@@ -378,8 +378,8 @@ So given the input <code>7</code>, your program should output:
 </ul>
 </div>
 
-<div id="outline-container-org94ead7a" class="outline-3">
-<h3 id="org94ead7a"><span class="section-number-3">3.1</span> What did we observed?</h3>
+<div id="outline-container-org502669b" class="outline-3">
+<h3 id="org502669b"><span class="section-number-3">3.1</span> What did we observed?</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Factorial of a number grows very fast as we increase the number.</li>
@@ -400,8 +400,8 @@ the result poses a hurdle.
 </div>
 </div>
 
-<div id="outline-container-orgb1d877c" class="outline-3">
-<h3 id="orgb1d877c"><span class="section-number-3">3.2</span> What should we do to store such big values?</h3>
+<div id="outline-container-org49f5499" class="outline-3">
+<h3 id="org49f5499"><span class="section-number-3">3.2</span> What should we do to store such big values?</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Here comes <code>BigInteger</code> class in java to the rescue!
@@ -444,8 +444,8 @@ Don't forget to <b>import</b> <code>java.math.BigInteger</code> class!
 </div>
 </div>
 
-<div id="outline-container-orgfff7645" class="outline-3">
-<h3 id="orgfff7645"><span class="section-number-3">3.3</span> The initial value of a factorial</h3>
+<div id="outline-container-org8a4949b" class="outline-3">
+<h3 id="org8a4949b"><span class="section-number-3">3.3</span> The initial value of a factorial</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 Now, let's recall the logic for calculating the factorial of a number <code>n</code>:
@@ -483,8 +483,8 @@ factorial by <code>1</code>.
 </div>
 </div>
 
-<div id="outline-container-orgc50fa58" class="outline-3">
-<h3 id="orgc50fa58"><span class="section-number-3">3.4</span> One step closer towards the Answer</h3>
+<div id="outline-container-orgfb9d531" class="outline-3">
+<h3 id="orgfb9d531"><span class="section-number-3">3.4</span> One step closer towards the Answer</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 Because we have initialized the factorial to <code>1</code>, we don't have to multiply number
@@ -514,8 +514,8 @@ And we are good to go!
 </div>
 </div>
 
-<div id="outline-container-org54cdcc3" class="outline-2">
-<h2 id="org54cdcc3"><span class="section-number-2">4</span> The Final Solution</h2>
+<div id="outline-container-orgb9b249c" class="outline-2">
+<h2 id="orgb9b249c"><span class="section-number-2">4</span> The Final Solution</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Connecting the dots i.e. creating a class <code>factorial</code> and a <code>main</code> function inside
@@ -552,17 +552,22 @@ there and <b>importing</b> all the necessary classes that are required.
 <p>
 Here's the screenshot for few test runs:
 </p>
+
+
+<div class="figure">
+<p><img src="https://raw.githubusercontent.com/imahajanshubham/docs/master/+assets/lang/java/factorial.png" alt="factorial.png" />
+</p>
+</div>
 </div>
 </div>
 
-
-<div id="outline-container-org787d95a" class="outline-2">
-<h2 id="org787d95a"><span class="section-number-2">5</span> Thank You!</h2>
+<div id="outline-container-orgf2ade4a" class="outline-2">
+<h2 id="orgf2ade4a"><span class="section-number-2">5</span> Thank You!</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-02-18 Sun 01:52</p>
+<p class="date">Created: 2018-02-18 Sun 02:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
