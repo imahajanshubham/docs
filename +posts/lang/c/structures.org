@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+#+SETUPFILE: ../../../+themes/readtheorg.setup
+>>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
 #+TITLE: Structures And Pointers
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#basics-of-structures][Basics of structures]]
   - [[#definition][Definition]]
+<<<<<<< HEAD
+=======
+- [[#basics-of-structures-1][Basics of structures]]
+  - [[#definition-1][Definition]]
+>>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
     - [[#but-what-do-we-mean-by-that][But what do we mean by that?]]
   - [[#syntax][Syntax]]
   - [[#properties-of-a-structure][Properties of a structure]]
@@ -15,9 +24,20 @@
     - [[#example][Example:]]
 - [[#thank-you][Thank You!]]
 
+<<<<<<< HEAD
 * TODO Basics of structures
 
 ** DONE Definition
+=======
+* Basics of structures
+
+** Definition
+=======
+* Basics of structures
+
+** DONE Definition
+>>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+>>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
 
    A structure simply is a collection of finite set of similar (heterogeneous)
    collection of data elements under a single name.
@@ -212,6 +232,14 @@ int main (void) {
 }
 #+end_src
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#+RESULTS:
+
+=======
+>>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
+>>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
 ** using structural approach
 
 Same program, but instead using structure.
@@ -251,7 +279,10 @@ Same program, but instead using structure.
 #+end_src
  
 ** using structure with ’typedef’
+<<<<<<< HEAD
 
+=======
+>>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
 The ~typedef~ /stands/ for ~type definition~. So using ~typedef~, we can give a
 new alias/name to already existing data-type i.e. same as one person can have
 two names.
@@ -263,7 +294,10 @@ typedef <datatype> <alias/new_name>;
 #+END_SRC
 
 *** Example:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
 Instead of writing:
 
 #+BEGIN_SRC C

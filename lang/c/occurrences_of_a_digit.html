@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-02-11 Sun 02:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Occurrences of a Digit</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Shubham Mahajan" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Occurrences of a Digit</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgb105fc4">1. The Problem Statement</a>
+<ul>
+<li><a href="#org826d2ec">1.1. Input</a></li>
+<li><a href="#orgc8f9b48">1.2. Output</a></li>
+</ul>
+</li>
+<li><a href="#org194769f">2. Conditions</a></li>
+<li><a href="#org66ae257">3. Test Case</a></li>
+<li><a href="#org31caffd">4. Prerequisites</a></li>
+<li><a href="#org5a7981b">5. An Attempt Towards The Solution</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org1ec7f42">5.0.1. Understanding the Datatype of our Input</a></li>
+<li><a href="#org25bee5f">5.0.2. Finding the number of occurences of a digit</a></li>
+<li><a href="#org5d92f48">5.0.3. The Solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgfaa078c">6. Thank You</a></li>
+</ul>
+</div>
+</div>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100% class=&quot;center&quot;">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Home</td>
+<td class="org-left">Featured Blogs</td>
+<td class="org-left"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+</tr>
+</tbody>
+</table>
+
+<div id="outline-container-orgb105fc4" class="outline-2">
+<h2 id="orgb105fc4"><span class="section-number-2">1</span> The Problem Statement</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Find the no. of times, a particular digit appeared (occurences) in a <b>very large
+positive number.</b>
+</p>
+</div>
+
+<div id="outline-container-org826d2ec" class="outline-3">
+<h3 id="org826d2ec"><span class="section-number-3">1.1</span> Input</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Line 1: A <b>very large positive number</b>.</li>
+<li>Line 2: <b>Digit</b>, whose no. of occurences to find.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc8f9b48" class="outline-3">
+<h3 id="orgc8f9b48"><span class="section-number-3">1.2</span> Output</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Line 1: <b>Number of occurences</b> of that digit.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org194769f" class="outline-2">
+<h2 id="org194769f"><span class="section-number-2">2</span> Conditions</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>A input number can be as large as from <b>0</b> to <b>2<sup>64</sup> - 1</b>.</li>
+<li>A number can only contain digits from <b>0-9</b>.</li>
+<li>The running time <b>(T)</b> should be <b>&lt;= 0.050 seconds</b>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org66ae257" class="outline-2">
+<h2 id="org66ae257"><span class="section-number-2">3</span> Test Case</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Input
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">5983461123450009</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Output
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org31caffd" class="outline-2">
+<h2 id="org31caffd"><span class="section-number-2">4</span> Prerequisites</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Basic syntax of C language, rest we will explore during the journey.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5a7981b" class="outline-2">
+<h2 id="org5a7981b"><span class="section-number-2">5</span> An Attempt Towards The Solution</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+In the very first line of the problem statement, we are going to deal with a
+very large positive number. Let's try to understand this much first:
+</p>
+
+<ul class="org-ul">
+<li>A positive number? So we can use an <code>unsigned</code> number.</li>
+<li>We are only dealing with <code>INTEGERS</code>, so we can use <code>unsigned int</code> number.</li>
+</ul>
+</div>
+
+<div id="outline-container-org1ec7f42" class="outline-4">
+<h4 id="org1ec7f42"><span class="section-number-4">5.0.1</span> Understanding the Datatype of our Input</h4>
+<div class="outline-text-4" id="text-5-0-1">
+<p>
+Let's try to visualize the range of our input number:
+</p>
+
+<ul class="org-ul">
+<li>4 Bytes = 4 * 8 = 32 Bits.</li>
+</ul>
+
+<div class="note">
+<p>
+Size of <code>int</code>: 4 Bytes (Unix 64-Bit Architecture).
+</p>
+
+</div>
+
+<ul class="org-ul">
+<li>And we know that by default, any <code>integer</code> is a <code>signed integer</code>. Whoa&#x2026; What do
+we mean by that?</li>
+</ul>
+
+<p>
+That means, a number can be either <code>+ve</code> as well as <code>-ve</code>. To get the range of
+<code>signed integer</code>, let's try to find the maximum number we can make from 32 Bits.
+</p>
+
+<p>
+32 Bits -&gt; 2<sup>32</sup> i.e. 4294967296.
+</p>
+
+<p>
+<b>Now because we can make both <code>+ve</code> as well as <code>-ve</code> numbers, we should divide the
+answer by 2.</b>
+</p>
+
+<p>
+2<sup>32</sup> / 2 = 2<sup>31</sup> i.e. 2147483648. Thats's it!
+</p>
+
+<p>
+The range of <code>signed int</code> is from <b>-2<sup>32</sup></b> to <b>2<sup>32</sup> - 1</b>.
+</p>
+
+<hr />
+<p>
+But we wanted to find the range of <code>unsigned int</code> and not <code>signed int</code>&#x2026;
+Worry not, we have already found that.
+</p>
+
+<p>
+Didn't you noticed?
+</p>
+
+<blockquote>
+<p>
+That means, a number can be either <code>+ve</code> as well as <code>-ve</code>. To get the range of
+<code>signed integer</code>, let's try to find the maximum number we can make from 32 Bits.
+</p>
+
+<p>
+32 Bits -&gt; 2<sup>32</sup> i.e. 4294967296
+</p>
+</blockquote>
+
+<p>
+The reason why we divided it by 2 was, we were considering <code>-ve</code> numbers too.
+</p>
+
+<p>
+Therefore,
+</p>
+
+<p>
+The range of <code>unsigned int</code> is from <b>0</b> to <b>2<sup>32</sup>.</b>
+</p>
+
+<hr />
+<p>
+Similarly, <code>unsigned long int</code> is a 8 Bytes datatype.
+</p>
+
+<p>
+8 Bytes = 8 * 8 = 64 Bits.
+</p>
+
+<p>
+The range of <code>unsigned long int</code> is from <b>0</b> to <b>2<sup>64</sup></b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org25bee5f" class="outline-4">
+<h4 id="org25bee5f"><span class="section-number-4">5.0.2</span> Finding the number of occurences of a digit</h4>
+<div class="outline-text-4" id="text-5-0-2">
+<p>
+How many digits are there in total?
+</p>
+
+<blockquote>
+<p>
+10 i.e. from 0 to 9.
+</p>
+</blockquote>
+
+<p>
+Now, let's create an array of size 10.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">array</span><span style="color: #3a81c3;">[</span><span style="color: #4e3163;">10</span><span style="color: #3a81c3;">]</span>;
+</pre>
+</div>
+
+<p>
+What we are trying to do is.. Say if we encounter a digit <code>x</code>, we will do
+<code>array[x]++</code>. This way we will be able to store the no. of occurences of any digit
+from <b>0</b> to <b>9</b> by treating them as array index.
+</p>
+
+<p>
+The value at that array index will give us the no. of occurences of that digit.
+</p>
+
+<p>
+But if we do <code>array[x]++</code>, we will get garbage, because it's initial value is not
+defined.
+</p>
+
+<p>
+So we use the keybord <code>static</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">array</span><span style="color: #3a81c3;">[</span><span style="color: #4e3163;">10</span><span style="color: #3a81c3;">]</span>;
+</pre>
+</div>
+
+<div class="note">
+<p>
+If not initialized, by default all <code>static int</code> variables are set to <b>0</b>.
+</p>
+
+</div>
+
+<p>
+To the get digit, out of a number, we find out the remainder by dividing the
+number by 10.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">digit</span> = number % <span style="color: #4e3163;">10</span>;
+</pre>
+</div>
+
+<p>
+Then divide the number by 10, and repeat the steps i.e.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #3a81c3;">(</span>number<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  digit = number % <span style="color: #4e3163;">10</span>;
+  <span style="color: #2aa1ae; background-color: #ecf3ec;">// </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Rest code goes here.</span>
+
+  number /= <span style="color: #4e3163;">10</span>;
+ <span style="color: #3a81c3;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5d92f48" class="outline-4">
+<h4 id="org5d92f48"><span class="section-number-4">5.0.3</span> The Solution</h4>
+<div class="outline-text-4" id="text-5-0-3">
+<p>
+Finally,
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #3a81c3;">&gt;</span>
+<span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #3a81c3;">&gt;</span>
+
+<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  <span style="color: #ba2f59; font-weight: bold;">unsigned</span> <span style="color: #ba2f59; font-weight: bold;">long</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">inputNumber</span>;
+  scanf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%lu"</span>, &amp;inputNumber<span style="color: #6c3163;">)</span>;
+
+  <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">noOfOccurrences</span><span style="color: #6c3163;">[</span><span style="color: #4e3163;">10</span><span style="color: #6c3163;">]</span>;
+
+  <span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #6c3163;">(</span>inputNumber<span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
+    <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">Digit</span> = inputNumber % <span style="color: #4e3163;">10</span>;
+
+    noOfOccurrences<span style="color: #2d9574;">[</span>Digit<span style="color: #2d9574;">]</span>++;
+    inputNumber /= <span style="color: #4e3163;">10</span>;
+  <span style="color: #6c3163;">}</span>
+
+  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">Digit</span>;
+
+  scanf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;Digit<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d\n"</span>, noOfOccurrences<span style="color: #2d9574;">[</span>Digit<span style="color: #2d9574;">]</span><span style="color: #6c3163;">)</span>;
+
+  <span style="color: #3a81c3; font-weight: bold;">return</span> EXIT_SUCCESS;
+<span style="color: #3a81c3;">}</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfaa078c" class="outline-2">
+<h2 id="orgfaa078c"><span class="section-number-2">6</span> Thank You</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+I hope, this was a pleasantfull journey for all of us 😍
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Shubham Mahajan</p>
+<p class="date">Created: 2018-02-11 Sun 02:14</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

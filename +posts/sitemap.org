@@ -1,2 +1,6 @@
 #+TITLE: Sitemap
 
+<<<<<<< HEAD
+=======
+- [[file:home.org][Featured Blogs]]
+>>>>>>> 089941baa3b144514581895c2c4fa2031cc34755

@@ -1,0 +1,16 @@
+#+INCLUDE ../+themes/readtheorg.org
+#+TITLE: Featured Blogs
+
+* Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#c][C]]
+  - [[#structures-and-pointers][Structures and Pointers]]
+- [[#java][Java]]
+  - [[#hash-maps-in-java][Hash Maps in Java]]
+
+* C
+** Structures and Pointers
+* Java
+** Hash Maps in Java
+A brief introduction about Hash Maps in Java, starting from basic definition,
+properties, syntax to creating a simple program of phonebook in Java.
+# ** [[https://imahajanshubham.github.io/docs/lang/java/hashmap.html][Hash Maps in Java]
