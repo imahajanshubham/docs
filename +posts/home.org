@@ -1,16 +1,43 @@
-#+INCLUDE ../+themes/readtheorg.org
-#+TITLE: Featured Blogs
+#+INCLUDE: ../+themes/readtheorg.org
+#+TITLE: Home
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#c][C]]
+  - [[#codechef----magical-function][CodeChef -  *Magical Function*]]
+  - [[#codechef----average-halfifyketeki][CodeChef -  *Average Halfify(keteki)*]]
+  - [[#codechef----mminimizing-the-dot-product][CodeChef -  Mminimizing the Dot Product]]
+  - [[#codechef----little-chef-and-sums][CodeChef -  *Little Chef and Sums*]]
   - [[#structures-and-pointers][Structures and Pointers]]
 - [[#java][Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
 
 * C
+#+OPTIONS: H:2 num:nil
+-----
+** CodeChef - [[https://www.codechef.com/CBEN2018/problems/LEONARD][ *Magical Function* ]]
+The goal was to recognize the pattern of a given function. [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c][view code]]
+
+-----
+** CodeChef - [[https://www.codechef.com/KQM82018/problems/QM8B][ *Average Halfify(keteki)* ]]
+The goal was to calculate the recursive average of pairs of *n* numbers. [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem19/halfifyaverage.c][view code]]
+
+-----
+** CodeChef - [[https://www.codechef.com/problems/bitmask2][ Mminimizing the Dot Product ]]
+the goal was to calculate the minimum dot product of given two vectors. we could
+interchange the vector positions with each other if needed. [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c][view code]]
+
+-----
+** CodeChef - [[https://www.codechef.com/problems/CHEFSUM][ *Little Chef and Sums* ]]
+The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values
+in an array. [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][view code]]
+-----
 ** Structures and Pointers
+-----
 * Java
+-----
 ** Hash Maps in Java
 A brief introduction about Hash Maps in Java, starting from basic definition,
 properties, syntax to creating a simple program of phonebook in Java.
 # ** [[https://imahajanshubham.github.io/docs/lang/java/hashmap.html][Hash Maps in Java]
+
+#+html: <p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>

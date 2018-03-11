@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(http//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 h1,h2,h3,h4,h5,h6,legend{
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
@@ -576,7 +576,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 
 #content .admonition-title.note,#content .admonition-title.seealso{
     line-height: 1;
-    background:#6ab0de}
+    background:#715ab1}
 
 #content .admonition-title.warning,#content .admonition-title.caution,#content .admonition-title.attention{
     line-height: 1;
@@ -727,15 +727,13 @@ hr{
 /* } */
 
 #toggle-sidebar {
-    background: #715ab1;
-    color: white;
     display: none;
 }
 
 @media screen and (max-width: 768px) {
     #toggle-sidebar {
         display: block;
-        background: #715ab1;
+        background-color: #715ab1;
         text-align: center;
         padding: 0.6em;
         margin-bottom: 0.6em;
@@ -899,7 +897,7 @@ footer p{
 #postamble .date {
     font-size: 90%;
     margin-bottom: 0px;
-    color: #666;
+    color: #27AE60;
 }
 
 #postamble .creator,#postamble .validation {
