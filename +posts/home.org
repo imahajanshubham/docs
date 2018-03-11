@@ -14,6 +14,9 @@
 * C/C++
 ** [[https://www.codechef.com/KQM82018/problems/QM8B][Average Halfify (keteki)]]
 The goal was to calculate the *recursive average of pairs of n numbers*.
+#+begin_tip
+lol
+#+end_tip
 
 *March 7,* 2018
 -----
