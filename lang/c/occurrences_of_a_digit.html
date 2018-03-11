@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-02-11 Sun 02:14 -->
+<!-- 2018-03-12 Mon 00:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Occurrences of a Digit</title>
@@ -180,8 +180,9 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp">
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css" />
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
@@ -240,27 +241,27 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb105fc4">1. The Problem Statement</a>
+<li><a href="#orgc764067">1. The Problem Statement</a>
 <ul>
-<li><a href="#org826d2ec">1.1. Input</a></li>
-<li><a href="#orgc8f9b48">1.2. Output</a></li>
+<li><a href="#org4a18144">1.1. Input</a></li>
+<li><a href="#org971c4b3">1.2. Output</a></li>
 </ul>
 </li>
-<li><a href="#org194769f">2. Conditions</a></li>
-<li><a href="#org66ae257">3. Test Case</a></li>
-<li><a href="#org31caffd">4. Prerequisites</a></li>
-<li><a href="#org5a7981b">5. An Attempt Towards The Solution</a>
+<li><a href="#orgb0bac2e">2. Conditions</a></li>
+<li><a href="#org2bb2f52">3. Test Case</a></li>
+<li><a href="#org0e79285">4. Prerequisites</a></li>
+<li><a href="#org480177e">5. An Attempt Towards The Solution</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org1ec7f42">5.0.1. Understanding the Datatype of our Input</a></li>
-<li><a href="#org25bee5f">5.0.2. Finding the number of occurences of a digit</a></li>
-<li><a href="#org5d92f48">5.0.3. The Solution</a></li>
+<li><a href="#org5e83cd0">5.0.1. Understanding the Datatype of our Input</a></li>
+<li><a href="#org1b6a830">5.0.2. Finding the number of occurences of a digit</a></li>
+<li><a href="#orgdd57d8d">5.0.3. The Solution</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgfaa078c">6. Thank You</a></li>
+<li><a href="#org64b8c8c">6. Thank You</a></li>
 </ul>
 </div>
 </div>
@@ -268,23 +269,23 @@ for the JavaScript code in this tag.
 
 
 <colgroup>
-<col  class="org-left" />
+<col  class="org-center" />
 
-<col  class="org-left" />
+<col  class="org-center" />
 
-<col  class="org-left" />
+<col  class="org-center" />
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">Home</td>
-<td class="org-left">Featured Blogs</td>
-<td class="org-left"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+<td class="org-center"><a href="https://imahajanshubham.github.io/docs/home.html">Home</a></td>
+<td class="org-center"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+<td class="org-center"><a href="https://sites.google.com/view/the-launchpad/home">Website</a></td>
 </tr>
 </tbody>
 </table>
 
-<div id="outline-container-orgb105fc4" class="outline-2">
-<h2 id="orgb105fc4"><span class="section-number-2">1</span> The Problem Statement</h2>
+<div id="outline-container-orgc764067" class="outline-2">
+<h2 id="orgc764067"><span class="section-number-2">1</span> The Problem Statement</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Find the no. of times, a particular digit appeared (occurences) in a <b>very large
@@ -292,8 +293,8 @@ positive number.</b>
 </p>
 </div>
 
-<div id="outline-container-org826d2ec" class="outline-3">
-<h3 id="org826d2ec"><span class="section-number-3">1.1</span> Input</h3>
+<div id="outline-container-org4a18144" class="outline-3">
+<h3 id="org4a18144"><span class="section-number-3">1.1</span> Input</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Line 1: A <b>very large positive number</b>.</li>
@@ -302,8 +303,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-orgc8f9b48" class="outline-3">
-<h3 id="orgc8f9b48"><span class="section-number-3">1.2</span> Output</h3>
+<div id="outline-container-org971c4b3" class="outline-3">
+<h3 id="org971c4b3"><span class="section-number-3">1.2</span> Output</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>Line 1: <b>Number of occurences</b> of that digit.</li>
@@ -312,8 +313,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-org194769f" class="outline-2">
-<h2 id="org194769f"><span class="section-number-2">2</span> Conditions</h2>
+<div id="outline-container-orgb0bac2e" class="outline-2">
+<h2 id="orgb0bac2e"><span class="section-number-2">2</span> Conditions</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>A input number can be as large as from <b>0</b> to <b>2<sup>64</sup> - 1</b>.</li>
@@ -323,8 +324,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-org66ae257" class="outline-2">
-<h2 id="org66ae257"><span class="section-number-2">3</span> Test Case</h2>
+<div id="outline-container-org2bb2f52" class="outline-2">
+<h2 id="org2bb2f52"><span class="section-number-2">3</span> Test Case</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Input
@@ -366,8 +367,8 @@ Output
 </div>
 </div>
 
-<div id="outline-container-org31caffd" class="outline-2">
-<h2 id="org31caffd"><span class="section-number-2">4</span> Prerequisites</h2>
+<div id="outline-container-org0e79285" class="outline-2">
+<h2 id="org0e79285"><span class="section-number-2">4</span> Prerequisites</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Basic syntax of C language, rest we will explore during the journey.
@@ -375,8 +376,8 @@ Basic syntax of C language, rest we will explore during the journey.
 </div>
 </div>
 
-<div id="outline-container-org5a7981b" class="outline-2">
-<h2 id="org5a7981b"><span class="section-number-2">5</span> An Attempt Towards The Solution</h2>
+<div id="outline-container-org480177e" class="outline-2">
+<h2 id="org480177e"><span class="section-number-2">5</span> An Attempt Towards The Solution</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 In the very first line of the problem statement, we are going to deal with a
@@ -389,8 +390,8 @@ very large positive number. Let's try to understand this much first:
 </ul>
 </div>
 
-<div id="outline-container-org1ec7f42" class="outline-4">
-<h4 id="org1ec7f42"><span class="section-number-4">5.0.1</span> Understanding the Datatype of our Input</h4>
+<div id="outline-container-org5e83cd0" class="outline-4">
+<h4 id="org5e83cd0"><span class="section-number-4">5.0.1</span> Understanding the Datatype of our Input</h4>
 <div class="outline-text-4" id="text-5-0-1">
 <p>
 Let's try to visualize the range of our input number:
@@ -482,8 +483,8 @@ The range of <code>unsigned long int</code> is from <b>0</b> to <b>2<sup>64</sup
 </div>
 </div>
 
-<div id="outline-container-org25bee5f" class="outline-4">
-<h4 id="org25bee5f"><span class="section-number-4">5.0.2</span> Finding the number of occurences of a digit</h4>
+<div id="outline-container-org1b6a830" class="outline-4">
+<h4 id="org1b6a830"><span class="section-number-4">5.0.2</span> Finding the number of occurences of a digit</h4>
 <div class="outline-text-4" id="text-5-0-2">
 <p>
 How many digits are there in total?
@@ -500,7 +501,7 @@ Now, let's create an array of size 10.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">array</span><span style="color: #3a81c3;">[</span><span style="color: #4e3163;">10</span><span style="color: #3a81c3;">]</span>;
+<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">array</span><span style="color: #4f97d7;">[</span><span style="color: #a45bad;">10</span><span style="color: #4f97d7;">]</span>;
 </pre>
 </div>
 
@@ -524,7 +525,7 @@ So we use the keybord <code>static</code>.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">array</span><span style="color: #3a81c3;">[</span><span style="color: #4e3163;">10</span><span style="color: #3a81c3;">]</span>;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">array</span><span style="color: #4f97d7;">[</span><span style="color: #a45bad;">10</span><span style="color: #4f97d7;">]</span>;
 </pre>
 </div>
 
@@ -541,7 +542,7 @@ number by 10.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">digit</span> = number % <span style="color: #4e3163;">10</span>;
+<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">digit</span> = number % <span style="color: #a45bad;">10</span>;
 </pre>
 </div>
 
@@ -550,56 +551,56 @@ Then divide the number by 10, and repeat the steps i.e.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #3a81c3;">(</span>number<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  digit = number % <span style="color: #4e3163;">10</span>;
-  <span style="color: #2aa1ae; background-color: #ecf3ec;">// </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Rest code goes here.</span>
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #4f97d7;">(</span>number<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  digit = number % <span style="color: #a45bad;">10</span>;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">Rest code goes here.</span>
 
-  number /= <span style="color: #4e3163;">10</span>;
- <span style="color: #3a81c3;">}</span>
+  number /= <span style="color: #a45bad;">10</span>;
+ <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org5d92f48" class="outline-4">
-<h4 id="org5d92f48"><span class="section-number-4">5.0.3</span> The Solution</h4>
+<div id="outline-container-orgdd57d8d" class="outline-4">
+<h4 id="orgdd57d8d"><span class="section-number-4">5.0.3</span> The Solution</h4>
 <div class="outline-text-4" id="text-5-0-3">
 <p>
 Finally,
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #3a81c3;">&gt;</span>
-<span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #3a81c3;">&gt;</span>
+<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #4f97d7;">&gt;</span>
 
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">unsigned</span> <span style="color: #ba2f59; font-weight: bold;">long</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">inputNumber</span>;
-  scanf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%lu"</span>, &amp;inputNumber<span style="color: #6c3163;">)</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">unsigned</span> <span style="color: #ce537a; font-weight: bold;">long</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">inputNumber</span>;
+  scanf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%lu"</span>, &amp;inputNumber<span style="color: #bc6ec5;">)</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">noOfOccurrences</span><span style="color: #6c3163;">[</span><span style="color: #4e3163;">10</span><span style="color: #6c3163;">]</span>;
+  <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">noOfOccurrences</span><span style="color: #bc6ec5;">[</span><span style="color: #a45bad;">10</span><span style="color: #bc6ec5;">]</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #6c3163;">(</span>inputNumber<span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
-    <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">Digit</span> = inputNumber % <span style="color: #4e3163;">10</span>;
+  <span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #bc6ec5;">(</span>inputNumber<span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">Digit</span> = inputNumber % <span style="color: #a45bad;">10</span>;
 
     noOfOccurrences<span style="color: #2d9574;">[</span>Digit<span style="color: #2d9574;">]</span>++;
-    inputNumber /= <span style="color: #4e3163;">10</span>;
-  <span style="color: #6c3163;">}</span>
+    inputNumber /= <span style="color: #a45bad;">10</span>;
+  <span style="color: #bc6ec5;">}</span>
 
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">Digit</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">Digit</span>;
 
-  scanf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;Digit<span style="color: #6c3163;">)</span>;
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d\n"</span>, noOfOccurrences<span style="color: #2d9574;">[</span>Digit<span style="color: #2d9574;">]</span><span style="color: #6c3163;">)</span>;
+  scanf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;Digit<span style="color: #bc6ec5;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%d\n"</span>, noOfOccurrences<span style="color: #2d9574;">[</span>Digit<span style="color: #2d9574;">]</span><span style="color: #bc6ec5;">)</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">return</span> EXIT_SUCCESS;
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">return</span> EXIT_SUCCESS;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgfaa078c" class="outline-2">
-<h2 id="orgfaa078c"><span class="section-number-2">6</span> Thank You</h2>
+<div id="outline-container-org64b8c8c" class="outline-2">
+<h2 id="org64b8c8c"><span class="section-number-2">6</span> Thank You</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 I hope, this was a pleasantfull journey for all of us 😍
@@ -609,7 +610,7 @@ I hope, this was a pleasantfull journey for all of us 😍
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-02-11 Sun 02:14</p>
+<p class="date">Created: 2018-03-12 Mon 00:14</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

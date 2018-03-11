@@ -15,6 +15,10 @@
 ** [[https://www.codechef.com/KQM82018/problems/QM8B][Average Halfify (keteki)]]
 The goal was to calculate the *recursive average of pairs of n numbers*.
 
+#+begin_note
+lol
+#+end_note
+
 *March 7,* 2018
 -----
 ** [[https://www.codechef.com/problems/CHEFSUM][Little Chef and Sums]]

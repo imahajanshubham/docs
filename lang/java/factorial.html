@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-02-18 Sun 02:03 -->
+<!-- 2018-03-12 Mon 00:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Factorial of a Number</title>
@@ -180,8 +180,9 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp">
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css" />
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
@@ -240,23 +241,23 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc41a8ab">1. Problem Statement</a></li>
-<li><a href="#org784d33e">2. Few Examples</a>
+<li><a href="#org1123bca">1. Problem Statement</a></li>
+<li><a href="#org0337fe1">2. Few Examples</a>
 <ul>
-<li><a href="#org0b1da99">2.1. Example #1</a></li>
-<li><a href="#org7b1117a">2.2. Example #2</a></li>
+<li><a href="#orgf7b3855">2.1. Example #1</a></li>
+<li><a href="#orgfec6a96">2.2. Example #2</a></li>
 </ul>
 </li>
-<li><a href="#orga845481">3. Let's Begin!</a>
+<li><a href="#org19f705e">3. Let's Begin!</a>
 <ul>
-<li><a href="#org502669b">3.1. What did we observed?</a></li>
-<li><a href="#org49f5499">3.2. What should we do to store such big values?</a></li>
-<li><a href="#org8a4949b">3.3. The initial value of a factorial</a></li>
-<li><a href="#orgfb9d531">3.4. One step closer towards the Answer</a></li>
+<li><a href="#org48f9e46">3.1. What did we observed?</a></li>
+<li><a href="#orgbd7ec06">3.2. What should we do to store such big values?</a></li>
+<li><a href="#org67e4b23">3.3. The initial value of a factorial</a></li>
+<li><a href="#org523c2e0">3.4. One step closer towards the Answer</a></li>
 </ul>
 </li>
-<li><a href="#orgb9b249c">4. The Final Solution</a></li>
-<li><a href="#orgf2ade4a">5. Thank You!</a></li>
+<li><a href="#org3048472">4. The Final Solution</a></li>
+<li><a href="#orgc7db73f">5. Thank You!</a></li>
 </ul>
 </div>
 </div>
@@ -264,23 +265,23 @@ for the JavaScript code in this tag.
 
 
 <colgroup>
-<col  class="org-left" />
+<col  class="org-center" />
 
-<col  class="org-left" />
+<col  class="org-center" />
 
-<col  class="org-left" />
+<col  class="org-center" />
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">Home</td>
-<td class="org-left">Featured Blogs</td>
-<td class="org-left"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+<td class="org-center"><a href="https://imahajanshubham.github.io/docs/home.html">Home</a></td>
+<td class="org-center"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+<td class="org-center"><a href="https://sites.google.com/view/the-launchpad/home">Website</a></td>
 </tr>
 </tbody>
 </table>
 
-<div id="outline-container-orgc41a8ab" class="outline-2">
-<h2 id="orgc41a8ab"><span class="section-number-2">1</span> Problem Statement</h2>
+<div id="outline-container-org1123bca" class="outline-2">
+<h2 id="org1123bca"><span class="section-number-2">1</span> Problem Statement</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Write a program that, given a number <code>n</code> from STDIN, prints out the factorial of <code>n</code> to STDOUT:
@@ -293,12 +294,12 @@ Write a program that, given a number <code>n</code> from STDIN, prints out the f
 </div>
 </div>
 
-<div id="outline-container-org784d33e" class="outline-2">
-<h2 id="org784d33e"><span class="section-number-2">2</span> Few Examples</h2>
+<div id="outline-container-org0337fe1" class="outline-2">
+<h2 id="org0337fe1"><span class="section-number-2">2</span> Few Examples</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0b1da99" class="outline-3">
-<h3 id="org0b1da99"><span class="section-number-3">2.1</span> Example #1</h3>
+<div id="outline-container-orgf7b3855" class="outline-3">
+<h3 id="orgf7b3855"><span class="section-number-3">2.1</span> Example #1</h3>
 <div class="outline-text-3" id="text-2-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -332,8 +333,8 @@ So given the input <code>3</code>, your program should output:
 </div>
 </div>
 
-<div id="outline-container-org7b1117a" class="outline-3">
-<h3 id="org7b1117a"><span class="section-number-3">2.2</span> Example #2</h3>
+<div id="outline-container-orgfec6a96" class="outline-3">
+<h3 id="orgfec6a96"><span class="section-number-3">2.2</span> Example #2</h3>
 <div class="outline-text-3" id="text-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -368,8 +369,8 @@ So given the input <code>7</code>, your program should output:
 </div>
 </div>
 
-<div id="outline-container-orga845481" class="outline-2">
-<h2 id="orga845481"><span class="section-number-2">3</span> Let's Begin!</h2>
+<div id="outline-container-org19f705e" class="outline-2">
+<h2 id="org19f705e"><span class="section-number-2">3</span> Let's Begin!</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>Let's say we want to calculate the factorial of <code>5</code>. This answer is <code>120</code>.</li>
@@ -378,8 +379,8 @@ So given the input <code>7</code>, your program should output:
 </ul>
 </div>
 
-<div id="outline-container-org502669b" class="outline-3">
-<h3 id="org502669b"><span class="section-number-3">3.1</span> What did we observed?</h3>
+<div id="outline-container-org48f9e46" class="outline-3">
+<h3 id="org48f9e46"><span class="section-number-3">3.1</span> What did we observed?</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Factorial of a number grows very fast as we increase the number.</li>
@@ -400,8 +401,8 @@ the result poses a hurdle.
 </div>
 </div>
 
-<div id="outline-container-org49f5499" class="outline-3">
-<h3 id="org49f5499"><span class="section-number-3">3.2</span> What should we do to store such big values?</h3>
+<div id="outline-container-orgbd7ec06" class="outline-3">
+<h3 id="orgbd7ec06"><span class="section-number-3">3.2</span> What should we do to store such big values?</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Here comes <code>BigInteger</code> class in java to the rescue!
@@ -444,8 +445,8 @@ Don't forget to <b>import</b> <code>java.math.BigInteger</code> class!
 </div>
 </div>
 
-<div id="outline-container-org8a4949b" class="outline-3">
-<h3 id="org8a4949b"><span class="section-number-3">3.3</span> The initial value of a factorial</h3>
+<div id="outline-container-org67e4b23" class="outline-3">
+<h3 id="org67e4b23"><span class="section-number-3">3.3</span> The initial value of a factorial</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 Now, let's recall the logic for calculating the factorial of a number <code>n</code>:
@@ -483,8 +484,8 @@ factorial by <code>1</code>.
 </div>
 </div>
 
-<div id="outline-container-orgfb9d531" class="outline-3">
-<h3 id="orgfb9d531"><span class="section-number-3">3.4</span> One step closer towards the Answer</h3>
+<div id="outline-container-org523c2e0" class="outline-3">
+<h3 id="org523c2e0"><span class="section-number-3">3.4</span> One step closer towards the Answer</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 Because we have initialized the factorial to <code>1</code>, we don't have to multiply number
@@ -514,8 +515,8 @@ And we are good to go!
 </div>
 </div>
 
-<div id="outline-container-orgb9b249c" class="outline-2">
-<h2 id="orgb9b249c"><span class="section-number-2">4</span> The Final Solution</h2>
+<div id="outline-container-org3048472" class="outline-2">
+<h2 id="org3048472"><span class="section-number-2">4</span> The Final Solution</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Connecting the dots i.e. creating a class <code>factorial</code> and a <code>main</code> function inside
@@ -561,13 +562,13 @@ Here's the screenshot for few test runs:
 </div>
 </div>
 
-<div id="outline-container-orgf2ade4a" class="outline-2">
-<h2 id="orgf2ade4a"><span class="section-number-2">5</span> Thank You!</h2>
+<div id="outline-container-orgc7db73f" class="outline-2">
+<h2 id="orgc7db73f"><span class="section-number-2">5</span> Thank You!</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-02-18 Sun 02:03</p>
+<p class="date">Created: 2018-03-12 Mon 00:14</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
