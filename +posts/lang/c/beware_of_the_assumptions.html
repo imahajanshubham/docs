@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-11 Sun 16:05 -->
+<!-- 2018-03-11 Sun 19:15 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Beware Of The Assumptions</title>
@@ -180,6 +180,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp">
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
 <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -240,35 +241,35 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org5ed7f89">Greetings Everyone, 😊</a></li>
-<li><a href="#org5e79ef6">1. What took so long?</a>
+<li><a href="#orgd1452ce">1. Greetings Everyone, 😊</a></li>
+<li><a href="#orgd0dc243">2. What took so long?</a>
 <ul>
-<li><a href="#orgd24e670">1.1. <b>How to calculate the factorial of … say <code>50</code>?</b></a></li>
-<li><a href="#orgff80886">1.2. Factorial of <code>50</code> is a <code>65</code> digit answer!</a></li>
-<li><a href="#orge53c2d8">1.3. Do we even have a <code>datatype</code> in C to store such a huge number?</a></li>
+<li><a href="#org7ec77dd">2.1. <b>How to calculate the factorial of … say <code>50</code>?</b></a></li>
+<li><a href="#org2cade68">2.2. Factorial of <code>50</code> is a <code>65</code> digit answer!</a></li>
+<li><a href="#org0deb4d4">2.3. Do we even have a <code>datatype</code> in C to store such a huge number?</a></li>
 </ul>
 </li>
-<li><a href="#org8b07ebf">2. But why?</a>
+<li><a href="#orgd1554a8">3. But why?</a>
 <ul>
-<li><a href="#org876dce4">2.1. False Assumption</a></li>
-<li><a href="#org275ed51">2.2. Wrong Test Cases</a></li>
+<li><a href="#orga75e5d0">3.1. False Assumption</a></li>
+<li><a href="#org8d7e688">3.2. Wrong Test Cases</a></li>
 </ul>
 </li>
-<li><a href="#org3718870">3. How did I overcame it?</a>
+<li><a href="#orgbfad40d">4. How did I overcame it?</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org455608d">3.0.1. What if:</a></li>
-<li><a href="#org16a7c3d">3.0.2. One step forward!</a></li>
-<li><a href="#orgde1f8c0">3.0.3. Another step forward!</a></li>
-<li><a href="#orgbddc88d">3.0.4. Almost reached the Destination!</a></li>
+<li><a href="#org925582a">4.0.1. What if:</a></li>
+<li><a href="#org0487fd5">4.0.2. One step forward!</a></li>
+<li><a href="#orgcf52acf">4.0.3. Another step forward!</a></li>
+<li><a href="#orgcfc96c2">4.0.4. Almost reached the Destination!</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgc32b40f">4. Key Learnings</a></li>
-<li><a href="#org625ec7a">5. Few more treats!</a></li>
-<li><a href="#org6c4896f">6. Thank You, 😍</a></li>
+<li><a href="#org1f79f6c">5. Key Learnings</a></li>
+<li><a href="#orge74b88b">6. Few more treats!</a></li>
+<li><a href="#orge6e7e28">7. Thank You, 😍</a></li>
 </ul>
 </div>
 </div>
@@ -284,34 +285,35 @@ for the JavaScript code in this tag.
 </colgroup>
 <tbody>
 <tr>
-<td class="org-center">Home</td>
+<td class="org-center"><a href="https://imahajanshubham.github.io/docs/home.html">Home</a></td>
 <td class="org-center"><a href="https://github.com/imahajanshubham">GitHub</a></td>
 <td class="org-center"><a href="https://sites.google.com/view/the-launchpad/home">Website</a></td>
 </tr>
 </tbody>
 </table>
 
-<div id="outline-container-org5ed7f89" class="outline-2">
-<h2 id="org5ed7f89">Greetings Everyone, 😊</h2>
-<div class="outline-text-2" id="text-org5ed7f89">
+<div id="outline-container-orgd1452ce" class="outline-2">
+<h2 id="orgd1452ce"><span class="section-number-2">1</span> Greetings Everyone, 😊</h2>
+<div class="outline-text-2" id="text-1">
 <p>
 Been almost two days,
 Did a lot of challenges in the time period.
 </p>
+<hr />
 </div>
 </div>
 
-<div id="outline-container-org5e79ef6" class="outline-2">
-<h2 id="org5e79ef6"><span class="section-number-2">1</span> What took so long?</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-orgd0dc243" class="outline-2">
+<h2 id="orgd0dc243"><span class="section-number-2">2</span> What took so long?</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 Umm… Basically, a question:
 </p>
 </div>
 
-<div id="outline-container-orgd24e670" class="outline-3">
-<h3 id="orgd24e670"><span class="section-number-3">1.1</span> <b>How to calculate the factorial of … say <code>50</code>?</b></h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org7ec77dd" class="outline-3">
+<h3 id="org7ec77dd"><span class="section-number-3">2.1</span> <b>How to calculate the factorial of … say <code>50</code>?</b></h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 Sure, our basic logic of calculating the factorial using recursion would
 work perfectly:
@@ -330,12 +332,13 @@ work perfectly:
 <ul class="org-ul">
 <li>It’s even efficient in terms of speed too.</li>
 </ul>
+<hr />
 </div>
 </div>
 
-<div id="outline-container-orgff80886" class="outline-3">
-<h3 id="orgff80886"><span class="section-number-3">1.2</span> Factorial of <code>50</code> is a <code>65</code> digit answer!</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org2cade68" class="outline-3">
+<h3 id="org2cade68"><span class="section-number-3">2.2</span> Factorial of <code>50</code> is a <code>65</code> digit answer!</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
 You heard it right,
 Factorial of <code>50</code> equals to
@@ -345,12 +348,13 @@ Factorial of <code>50</code> equals to
 <p>
 Just way too long…
 </p>
+<hr />
 </div>
 </div>
 
-<div id="outline-container-orge53c2d8" class="outline-3">
-<h3 id="orge53c2d8"><span class="section-number-3">1.3</span> Do we even have a <code>datatype</code> in C to store such a huge number?</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org0deb4d4" class="outline-3">
+<h3 id="org0deb4d4"><span class="section-number-3">2.3</span> Do we even have a <code>datatype</code> in C to store such a huge number?</h3>
+<div class="outline-text-3" id="text-2-3">
 <p>
 Nope!
 </p>
@@ -359,21 +363,22 @@ Nope!
 I was just shocked, that even the <b>factorial program</b> being the most
 elementary-level failed and I never realized of dealing with such huge numbers.
 </p>
+<hr />
 </div>
 </div>
 </div>
 
-<div id="outline-container-org8b07ebf" class="outline-2">
-<h2 id="org8b07ebf"><span class="section-number-2">2</span> But why?</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgd1554a8" class="outline-2">
+<h2 id="orgd1554a8"><span class="section-number-2">3</span> But why?</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 Because of my false assumption and wrong test cases.
 </p>
 </div>
 
-<div id="outline-container-org876dce4" class="outline-3">
-<h3 id="org876dce4"><span class="section-number-3">2.1</span> False Assumption</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-orga75e5d0" class="outline-3">
+<h3 id="orga75e5d0"><span class="section-number-3">3.1</span> False Assumption</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
 Implementing the Pen n’ Paper logic via Code and believing - <b>that’s it!</b>
 </p>
@@ -381,12 +386,13 @@ Implementing the Pen n’ Paper logic via Code and believing - <b>that’s it!</
 <p>
 i.e. Only focusing on how to iterate the loop/function from <code>2</code> to <code>n</code>.
 </p>
+<hr />
 </div>
 </div>
 
-<div id="outline-container-org275ed51" class="outline-3">
-<h3 id="org275ed51"><span class="section-number-3">2.2</span> Wrong Test Cases</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org8d7e688" class="outline-3">
+<h3 id="org8d7e688"><span class="section-number-3">3.2</span> Wrong Test Cases</h3>
+<div class="outline-text-3" id="text-3-2">
 <p>
 The major reason behind such mistake:
 </p>
@@ -409,13 +415,14 @@ OR in some case,
 </b>
 And that was the sole mistake.
 </p>
+<hr />
 </div>
 </div>
 </div>
 
-<div id="outline-container-org3718870" class="outline-2">
-<h2 id="org3718870"><span class="section-number-2">3</span> How did I overcame it?</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgbfad40d" class="outline-2">
+<h2 id="orgbfad40d"><span class="section-number-2">4</span> How did I overcame it?</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 Thought processing.
 </p>
@@ -480,12 +487,13 @@ While multiplying <code>5</code> with <code>24</code>,
 </tr>
 </tbody>
 </table>
+
+<hr />
 </div>
 
-
-<div id="outline-container-org455608d" class="outline-4">
-<h4 id="org455608d"><span class="section-number-4">3.0.1</span> What if:</h4>
-<div class="outline-text-4" id="text-3-0-1">
+<div id="outline-container-org925582a" class="outline-4">
+<h4 id="org925582a"><span class="section-number-4">4.0.1</span> What if:</h4>
+<div class="outline-text-4" id="text-4-0-1">
 <p>
 Instead of treating <code>24</code> as a whole number, if I store
 </p>
@@ -500,12 +508,13 @@ Instead of treating <code>24</code> as a whole number, if I store
 And then multiply <code>5</code> by <code>array[0]</code> and then add the carry to <code>array[1]</code> and again multiply
 just like I was doing on the piece of paper?
 </p>
+<hr />
 </div>
 </div>
 
-<div id="outline-container-org16a7c3d" class="outline-4">
-<h4 id="org16a7c3d"><span class="section-number-4">3.0.2</span> One step forward!</h4>
-<div class="outline-text-4" id="text-3-0-2">
+<div id="outline-container-org0487fd5" class="outline-4">
+<h4 id="org0487fd5"><span class="section-number-4">4.0.2</span> One step forward!</h4>
+<div class="outline-text-4" id="text-4-0-2">
 <p>
 Initially, it felt a little tough to think such a logic… But after a little-bit
 of practice, I finally managed develop the following logic:
@@ -536,12 +545,13 @@ So far, only <b>30%</b> work was done.
 <p>
 Tricky part of actually multiplying the numbers was still left.
 </p>
+<hr />
 </div>
 </div>
 
-<div id="outline-container-orgde1f8c0" class="outline-4">
-<h4 id="orgde1f8c0"><span class="section-number-4">3.0.3</span> Another step forward!</h4>
-<div class="outline-text-4" id="text-3-0-3">
+<div id="outline-container-orgcf52acf" class="outline-4">
+<h4 id="orgcf52acf"><span class="section-number-4">4.0.3</span> Another step forward!</h4>
+<div class="outline-text-4" id="text-4-0-3">
 <p>
 So to ease the problem,<br />
 I divided it into two sub-parts:
@@ -549,8 +559,8 @@ I divided it into two sub-parts:
 </div>
 
 <ol class="org-ol">
-<li><a id="org3753cc7"></a>Multiply the intermediate number.<br />
-<div class="outline-text-5" id="text-3-0-3-1">
+<li><a id="org34366f5"></a>Multiply the intermediate number.<br />
+<div class="outline-text-5" id="text-4-0-3-1">
 <p>
 Taking the <code>24 x 5</code> example,<br />
 Let’s say that at <code>array[0]</code>, we would get <code>4</code>. So, multiply <code>5</code> with <code>4</code>.
@@ -582,11 +592,13 @@ In that case, we need to add the carry too.
 </p>
 
 </div>
+
+<hr />
 </div>
 </li>
 
-<li><a id="org9444642"></a>Update the final carry.<br />
-<div class="outline-text-5" id="text-3-0-3-2">
+<li><a id="org6d3d416"></a>Update the final carry.<br />
+<div class="outline-text-5" id="text-4-0-3-2">
 <p>
 Add the carry i.e <code>2</code> to <code>array[0 + 1]</code>.
 </p>
@@ -604,15 +616,16 @@ If again a carry is generated (ex. 9 + 1 = 10), then repeat <b>previous step</b>
 <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
+
+<hr />
 </div>
 </li>
 </ol>
 </div>
 
-
-<div id="outline-container-orgbddc88d" class="outline-4">
-<h4 id="orgbddc88d"><span class="section-number-4">3.0.4</span> Almost reached the Destination!</h4>
-<div class="outline-text-4" id="text-3-0-4">
+<div id="outline-container-orgcfc96c2" class="outline-4">
+<h4 id="orgcfc96c2"><span class="section-number-4">4.0.4</span> Almost reached the Destination!</h4>
+<div class="outline-text-4" id="text-4-0-4">
 <p>
 Now only thing to be done was, print values of <code>array</code> from <code>0</code> to <code>noOfDigits</code> so as
 to display the final factorial.
@@ -621,13 +634,14 @@ to display the final factorial.
 <p>
 And we are good to go!!!
 </p>
+<hr />
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc32b40f" class="outline-2">
-<h2 id="orgc32b40f"><span class="section-number-2">4</span> Key Learnings</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org1f79f6c" class="outline-2">
+<h2 id="org1f79f6c"><span class="section-number-2">5</span> Key Learnings</h2>
+<div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>Always validate the assumptions, <b>at any cost</b>.</li>
 <li>Explore every other possibilities.</li>
@@ -638,12 +652,13 @@ And we are good to go!!!
 <p>
 I hope this was the experience worth sharing.🙋 
 </p>
+<hr />
 </div>
 </div>
 
-<div id="outline-container-org625ec7a" class="outline-2">
-<h2 id="org625ec7a"><span class="section-number-2">5</span> Few more treats!</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-orge74b88b" class="outline-2">
+<h2 id="orge74b88b"><span class="section-number-2">6</span> Few more treats!</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 Here’s the original source code and various others on <b>GitHub</b>:
 </p>
@@ -651,42 +666,47 @@ Here’s the original source code and various others on <b>GitHub</b>:
 <hr />
 <p>
 <b>#1</b> CodeChef - <a href="https://www.codechef.com/CBEN2018/problems/LEONARD"> <b>Magical Function</b> </a><br />
-The goal was to recognize the pattern of a given function. <a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c">view code</a>
+The goal was to recognize the pattern of a given function.
+<a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c">view code</a>
 </p>
 
 <hr />
 <p>
 <b>#2</b> CodeChef - <a href="https://www.codechef.com/KQM82018/problems/QM8B"> <b>Average Halfify(keteki)</b> </a><br />
-The goal was to calculate the recursive average of pairs of <b>n</b> numbers. <a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem19/halfifyaverage.c">view code</a>
+The goal was to calculate the recursive average of pairs of <b>n</b> numbers.
+<a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem19/halfifyaverage.c">view code</a>
 </p>
 
 <hr />
 <p>
 <b>#3</b> CodeChef - <a href="https://www.codechef.com/problems/bitmask2"> Mminimizing the Dot Product </a><br />
 the goal was to calculate the minimum dot product of given two vectors. we could
-interchange the vector positions with each other if needed. <a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c">view code</a>
+interchange the vector positions with each other if needed.
+<a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c">view code</a>
 </p>
 
 <hr />
 <p>
 <b>#4</b> CodeChef - <a href="https://www.codechef.com/problems/CHEFSUM"> <b>Little Chef and Sums</b> </a><br />
 The goal was calculate the total of <b>suffix-sum</b> and <b>prefix-sum</b> of given <b>n</b> values
-in an array. <a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c">view code</a>
+in an array.
+<a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c">view code</a>
 </p>
 <hr />
 </div>
 </div>
 
-<div id="outline-container-org6c4896f" class="outline-2">
-<h2 id="org6c4896f"><span class="section-number-2">6</span> Thank You, 😍</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orge6e7e28" class="outline-2">
+<h2 id="orge6e7e28"><span class="section-number-2">7</span> Thank You, 😍</h2>
+<div class="outline-text-2" id="text-7">
+<hr />
 <p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-03-11 Sun 16:05</p>
+<p class="date">Created: 2018-03-11 Sun 19:15</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

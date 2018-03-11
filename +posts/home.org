@@ -3,39 +3,49 @@
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#cc][C/C++]]
-  - [[#_-average-halfify-keteki-_][_ *Average Halfify (keteki)* _]]
-  - [[#_-little-chef-and-sums-_][_ *Little Chef and Sums* _]]
-  - [[#_-magical-function-_][_ *Magical Function* _]]
-  - [[#_-mminimizing-the-dot-product-_][_ Mminimizing the Dot Product _]]
+  - [[#average-halfify-keteki][Average Halfify (keteki)]]
+  - [[#little-chef-and-sums][Little Chef and Sums]]
+  - [[#magical-function][Magical Function]]
+  - [[#minimizing-the-dot-product][Minimizing the Dot Product]]
   - [[#structures-and-pointers][Structures and Pointers]]
 - [[#java][Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
 
 * C/C++
-** _[[https://www.codechef.com/KQM82018/problems/QM8B][ *Average Halfify (keteki)* ]]_
-*March 7,* 2018\\
-The goal was to calculate the recursive average of pairs of *n* numbers.
+** [[https://www.codechef.com/KQM82018/problems/QM8B][Average Halfify (keteki)]]
+The goal was to calculate the *recursive average of pairs of n numbers*.
+
+*March 7,* 2018
 -----
-** _[[https://www.codechef.com/problems/CHEFSUM][ *Little Chef and Sums* ]]_
-*March 7,* 2018\\
+** [[https://www.codechef.com/problems/CHEFSUM][Little Chef and Sums]]
 The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values
 in an array.
+
+*March 7,* 2018
 -----
-** _[[https://www.codechef.com/CBEN2018/problems/LEONARD][ *Magical Function* ]]_
-*March 7,* 2018\\
-The goal was to recognize the pattern of a given function.
+** [[https://www.codechef.com/CBEN2018/problems/LEONARD][Magical Function]]
+The goal was to *recognize the pattern* of a given function.
+
+*March 7,* 2018
 -----
-** _[[https://www.codechef.com/problems/bitmask2][ Mminimizing the Dot Product ]]_
-*March 7,* 2018\\
-the goal was to calculate the minimum dot product of given two vectors. we could
+** [[https://www.codechef.com/problems/bitmask2][Minimizing the Dot Product]]
+The goal was to calculate the *minimum dot product of given two vectors*. we could
 interchange the vector positions with each other if needed. 
+
+*March 7,* 2018
 -----
 
 ** Structures and Pointers
+An attempt to share my thoughts on *Structures and Pointer* and finally a small
+program using them too.
+
+*March 7,* 2018
 -----
 * Java
 ** Hash Maps in Java
 A brief introduction about Hash Maps in Java, starting from basic definition,
 properties, syntax to creating a simple program of phonebook in Java.
+
+[[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][View Code]]
 -----
 #+html: <p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>

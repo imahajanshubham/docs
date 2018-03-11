@@ -22,12 +22,9 @@
 - [[#thank-you-][Thank You, 😍]]
 
 * Greetings Everyone, 😊
-:PROPERTIES:
-:UNNUMBERED: t
-:END:
-
 Been almost two days,
 Did a lot of challenges in the time period.
+-----
 
 * What took so long?
 Umm… Basically, a question:
@@ -46,6 +43,7 @@ work perfectly:
 #+end_src
 
 - It’s even efficient in terms of speed too.
+-----
 
 ** Factorial of ~50~ is a ~65~ digit answer!
 You heard it right,
@@ -53,12 +51,14 @@ Factorial of ~50~ equals to
 ~30414093201713378043612608166064768844377641568960512000000000000~
 
 Just way too long…
+-----
 
 ** Do we even have a ~datatype~ in C to store such a huge number?
 Nope!
 
 I was just shocked, that even the *factorial program* being the most
 elementary-level failed and I never realized of dealing with such huge numbers.
+-----
 
 * But why?
 Because of my false assumption and wrong test cases.
@@ -67,6 +67,7 @@ Because of my false assumption and wrong test cases.
 Implementing the Pen n’ Paper logic via Code and believing - *that’s it!*
 
 i.e. Only focusing on how to iterate the loop/function from ~2~ to ~n~.
+-----
 
 ** Wrong Test Cases
 The major reason behind such mistake:
@@ -80,6 +81,7 @@ OR in some case,
 
 *But never went beyond that…\\*
 And that was the sole mistake.
+-----
 
 * How did I overcame it?
 Thought processing.
@@ -109,6 +111,7 @@ While multiplying ~5~ with ~24~,
 |            | *0* |
 |------------+---|
 
+-----
 
 *** What if:
 Instead of treating ~24~ as a whole number, if I store
@@ -119,6 +122,7 @@ Instead of treating ~24~ as a whole number, if I store
 
 And then multiply ~5~ by ~array[0]~ and then add the carry to ~array[1]~ and again multiply
 just like I was doing on the piece of paper?
+-----
 
 *** One step forward!
 Initially, it felt a little tough to think such a logic… But after a little-bit
@@ -142,6 +146,7 @@ thus obtained.
 So far, only *30%* work was done.
 
 Tricky part of actually multiplying the numbers was still left.
+-----
 
 *** Another step forward!
 So to ease the problem,\\
@@ -170,6 +175,8 @@ We also need to take care of any previous carry digits.\\
 In that case, we need to add the carry too.
 #+end_note
 
+-----
+
 **** Update the final carry.
 Add the carry i.e ~2~ to ~array[0 + 1]~.
 
@@ -184,12 +191,14 @@ If again a carry is generated (ex. 9 + 1 = 10), then repeat *previous step*.
   }
 #+end_src
 
+-----
 
 *** Almost reached the Destination!
 Now only thing to be done was, print values of ~array~ from ~0~ to ~noOfDigits~ so as
 to display the final factorial.
 
 And we are good to go!!!
+-----
 
 * Key Learnings
 - Always validate the assumptions, *at any cost*.
@@ -198,28 +207,34 @@ And we are good to go!!!
 - Always have the room to improvise/innovate.
 
 I hope this was the experience worth sharing.🙋 
+-----
 
 * Few more treats!
 Here’s the original source code and various others on *GitHub*:
 
 -----
 *#1* CodeChef - [[https://www.codechef.com/CBEN2018/problems/LEONARD][ *Magical Function* ]]\\
-The goal was to recognize the pattern of a given function. [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c][view code]]
+The goal was to recognize the pattern of a given function.
+[[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c][view code]]
 
 -----
 *#2* CodeChef - [[https://www.codechef.com/KQM82018/problems/QM8B][ *Average Halfify(keteki)* ]]\\
-The goal was to calculate the recursive average of pairs of *n* numbers. [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem19/halfifyaverage.c][view code]]
+The goal was to calculate the recursive average of pairs of *n* numbers.
+[[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem19/halfifyaverage.c][view code]]
 
 -----
 *#3* CodeChef - [[https://www.codechef.com/problems/bitmask2][ Mminimizing the Dot Product ]]\\
 the goal was to calculate the minimum dot product of given two vectors. we could
-interchange the vector positions with each other if needed. [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c][view code]]
+interchange the vector positions with each other if needed.
+[[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c][view code]]
 
------
+-------------------------------------------------------------------------------
 *#4* CodeChef - [[https://www.codechef.com/problems/CHEFSUM][ *Little Chef and Sums* ]]\\
 The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values
-in an array. [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][view code]]
------
+in an array.
+[[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][view code]]
+-------------------------------------------------------------------------------
 
 * Thank You, 😍
+-----
 #+html: <p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
