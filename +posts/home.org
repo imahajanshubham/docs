@@ -3,26 +3,30 @@
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#cc][C/C++]]
-  -  [[#average-halfify-keteki][*Average Halfify (keteki)*]]
-  -  [[#little-chef-and-sums][*Little Chef and Sums*]]
-  -  [[#magical-function][*Magical Function*]]
-  -  [[#mminimizing-the-dot-product][Mminimizing the Dot Product]]
+  - [[#_-average-halfify-keteki-_][_ *Average Halfify (keteki)* _]]
+  - [[#_-little-chef-and-sums-_][_ *Little Chef and Sums* _]]
+  - [[#_-magical-function-_][_ *Magical Function* _]]
+  - [[#_-mminimizing-the-dot-product-_][_ Mminimizing the Dot Product _]]
   - [[#structures-and-pointers][Structures and Pointers]]
 - [[#java][Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
 
 * C/C++
-** [[https://www.codechef.com/KQM82018/problems/QM8B][ *Average Halfify (keteki)* ]]
+** _[[https://www.codechef.com/KQM82018/problems/QM8B][ *Average Halfify (keteki)* ]]_
+*March 7,* 2018\\
 The goal was to calculate the recursive average of pairs of *n* numbers.
 -----
-** [[https://www.codechef.com/problems/CHEFSUM][ *Little Chef and Sums* ]]
+** _[[https://www.codechef.com/problems/CHEFSUM][ *Little Chef and Sums* ]]_
+*March 7,* 2018\\
 The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values
 in an array.
 -----
-** [[https://www.codechef.com/CBEN2018/problems/LEONARD][ *Magical Function* ]]
+** _[[https://www.codechef.com/CBEN2018/problems/LEONARD][ *Magical Function* ]]_
+*March 7,* 2018\\
 The goal was to recognize the pattern of a given function.
 -----
-** [[https://www.codechef.com/problems/bitmask2][ Mminimizing the Dot Product ]]
+** _[[https://www.codechef.com/problems/bitmask2][ Mminimizing the Dot Product ]]_
+*March 7,* 2018\\
 the goal was to calculate the minimum dot product of given two vectors. we could
 interchange the vector positions with each other if needed. 
 -----
