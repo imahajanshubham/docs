@@ -562,7 +562,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
     content: "";}
 
 #content .note,#content .seealso{
-    background:#e7f2fa}
+    background:#ede7f6}
 
 .wy-alert p:last-child,#content .note p:last-child,#content .attention p:last-child,#content .caution p:last-child,#content .danger p:last-child,#content .error p:last-child,#content .hint p:last-child,#content .important p:last-child,#content .tip p:last-child,#content .warning p:last-child,#content .seealso p:last-child,#content .admonitiontodo p:last-child{
     margin-bottom:0}
