@@ -7,6 +7,7 @@
   - [[#little-chef-and-sums][Little Chef and Sums]]
   - [[#magical-function][Magical Function]]
   - [[#minimizing-the-dot-product][Minimizing the Dot Product]]
+  - [[#acid-naming][Acid Naming]]
   - [[#structures-and-pointers][Structures and Pointers]]
 - [[#java][Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
@@ -34,6 +35,8 @@ interchange the vector positions with each other if needed.
 
 *March 7,* 2018
 -----
+
+** Acid Naming
 
 ** Structures and Pointers
 An attempt to share my thoughts on *Structures and Pointer* and finally a small
