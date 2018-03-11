@@ -2,6 +2,7 @@
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css" />
 #+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 #+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
@@ -9,5 +10,7 @@
 
 #+ATTR_HTML: :width 100% class="center"
 |------+--------+---------|
-| Home | [[https://github.com/imahajanshubham][GitHub]] | Website |
+| <c>  | <c>    | <c>     |
+|------+--------+---------|
+| Home | [[https://github.com/imahajanshubham][GitHub]] | [[https://sites.google.com/view/the-launchpad/home][Website]] |
 |------+--------+---------|
