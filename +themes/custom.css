@@ -550,7 +550,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
     background:#fdf3f2}
 
 .wy-alert.wy-alert-warning,#content .wy-alert-warning.note,#content .attention,#content .caution,#content .wy-alert-warning.danger,#content .wy-alert-warning.error,#content .wy-alert-warning.hint,#content .wy-alert-warning.important,#content .wy-alert-warning.tip,#content .warning,#content .wy-alert-warning.seealso,#content .admonitiontodo{
-    background:#f3e5f5}
+    background:#ede7f6}
 
 #content .admonition-title.note:before, #content .admonition-title.seealso:before,
 #content .admonition-title.warning:before, #content .admonition-title.caution:before,
@@ -572,7 +572,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
     background:#715ab1}
 
 #content .important,#content .tip,#content .hint{
-    background:#f3e5f5}
+    background:#ede7f6}
 
 #content .admonition-title.note,#content .admonition-title.seealso{
     line-height: 1;
