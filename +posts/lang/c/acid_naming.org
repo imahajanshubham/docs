@@ -15,7 +15,7 @@
   - [[#how-to-check-if-acid-name-ends-with-ic][How to check if ~acid name~ ends with "ic"?]]
   - [[#connecting-the-dots][Connecting the dots...]]
   - [[#finally-here-comes-the-main-function][Finally, Here comes the ~main~ function!]]
-- [[#thank-you-][Thank You :)]]
+- [[#thank-you-][Thank You, 😍]]
 
 * The Problem Statement
 Jonathan is in a science class, but because he does not understand how to name
@@ -348,4 +348,5 @@ upon the input:
   }
 #+end_src
 
-* Thank You :)
+* Thank You, 😍
+#+INCLUDE: ../../../+layouts/footer.org

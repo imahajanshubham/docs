@@ -12,12 +12,17 @@
   - [[#structures-and-pointers][Structures and Pointers]]
 - [[#java][Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
+- [[#thank-you-][Thank You, 😍]]
 
 * Latest
 
 #+begin_attention
 print “Hello World!”
 #+end_attention
+
+#+begin_important
+print “Hello World!”
+#+end_important
 
 * C/C++
 ** [[https://www.codechef.com/KQM82018/problems/QM8B][Average Halfify (keteki)]]
@@ -43,7 +48,7 @@ interchange the vector positions with each other if needed.
 *March 7,* 2018
 -----
 
-** Acid Naming
+** [[https://www.hackerrank.com/contests/w36/challenges/acid-naming][Acid Naming]]
 
 ** Structures and Pointers
 An attempt to share my thoughts on *Structures and Pointer* and finally a small
@@ -57,5 +62,6 @@ A brief introduction about Hash Maps in Java, starting from basic definition,
 properties, syntax to creating a simple program of phonebook in Java.
 
 [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][View Code]]
------
-#+html: <p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
+
+* Thank You, 😍
+#+INCLUDE: ../../../+layouts/footer.org
