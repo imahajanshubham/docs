@@ -1,0 +1,20 @@
+#+INCLUDE: ../../../../+layouts/header.org
+#+TITLE: Magical Function
+
+* Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#about][About]]
+- [[#question][Question]]
+- [[#solution][Solution]]
+- [[#thank-you-][Thank You, 😍]]
+
+* About
+The goal was to *recognize the pattern* of a given function.
+
+* Question
+View the original *Magical Function* question on [[https://www.codechef.com/CBEN2018/problems/LEONARD][CodeChef]].
+
+* Solution
+View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c][GitHub]].
+
+* Thank You, 😍
+#+INCLUDE: ../../../../+layouts/footer.org

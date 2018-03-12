@@ -1,4 +1,4 @@
-#+INCLUDE: ../../../+themes/readtheorg.org
+#+INCLUDE: ../../../+layouts/header.org
 #+TITLE: Acid Naming Problem
 
 * Table of contents                                       :TOC_4_gh:noexport:

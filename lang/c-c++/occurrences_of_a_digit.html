@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-12 Mon 10:38 -->
+<!-- 2018-03-12 Mon 12:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Occurrences of a Digit</title>
@@ -242,27 +242,27 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc764067">1. The Problem Statement</a>
+<li><a href="#org765ca40">1. The Problem Statement</a>
 <ul>
-<li><a href="#org4a18144">1.1. Input</a></li>
-<li><a href="#org971c4b3">1.2. Output</a></li>
+<li><a href="#org1af6c1e">1.1. Input</a></li>
+<li><a href="#org8faf8be">1.2. Output</a></li>
 </ul>
 </li>
-<li><a href="#orgb0bac2e">2. Conditions</a></li>
-<li><a href="#org2bb2f52">3. Test Case</a></li>
-<li><a href="#org0e79285">4. Prerequisites</a></li>
-<li><a href="#org480177e">5. An Attempt Towards The Solution</a>
+<li><a href="#orgffe4ba5">2. Conditions</a></li>
+<li><a href="#org55f935a">3. Test Case</a></li>
+<li><a href="#org3f6fc2d">4. Prerequisites</a></li>
+<li><a href="#orgd622331">5. An Attempt Towards The Solution</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org5e83cd0">5.0.1. Understanding the Datatype of our Input</a></li>
-<li><a href="#org1b6a830">5.0.2. Finding the number of occurences of a digit</a></li>
-<li><a href="#orgdd57d8d">5.0.3. The Solution</a></li>
+<li><a href="#org6a17f4c">5.0.1. Understanding the Datatype of our Input</a></li>
+<li><a href="#org542b5d4">5.0.2. Finding the number of occurences of a digit</a></li>
+<li><a href="#org9289832">5.0.3. The Solution</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org64b8c8c">6. Thank You</a></li>
+<li><a href="#org86e0712">6. Thank You, 😍</a></li>
 </ul>
 </div>
 </div>
@@ -285,8 +285,8 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<div id="outline-container-orgc764067" class="outline-2">
-<h2 id="orgc764067"><span class="section-number-2">1</span> The Problem Statement</h2>
+<div id="outline-container-org765ca40" class="outline-2">
+<h2 id="org765ca40"><span class="section-number-2">1</span> The Problem Statement</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Find the no. of times, a particular digit appeared (occurences) in a <b>very large
@@ -294,8 +294,8 @@ positive number.</b>
 </p>
 </div>
 
-<div id="outline-container-org4a18144" class="outline-3">
-<h3 id="org4a18144"><span class="section-number-3">1.1</span> Input</h3>
+<div id="outline-container-org1af6c1e" class="outline-3">
+<h3 id="org1af6c1e"><span class="section-number-3">1.1</span> Input</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Line 1: A <b>very large positive number</b>.</li>
@@ -304,8 +304,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-org971c4b3" class="outline-3">
-<h3 id="org971c4b3"><span class="section-number-3">1.2</span> Output</h3>
+<div id="outline-container-org8faf8be" class="outline-3">
+<h3 id="org8faf8be"><span class="section-number-3">1.2</span> Output</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>Line 1: <b>Number of occurences</b> of that digit.</li>
@@ -314,8 +314,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-orgb0bac2e" class="outline-2">
-<h2 id="orgb0bac2e"><span class="section-number-2">2</span> Conditions</h2>
+<div id="outline-container-orgffe4ba5" class="outline-2">
+<h2 id="orgffe4ba5"><span class="section-number-2">2</span> Conditions</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>A input number can be as large as from <b>0</b> to <b>2<sup>64</sup> - 1</b>.</li>
@@ -325,8 +325,8 @@ positive number.</b>
 </div>
 </div>
 
-<div id="outline-container-org2bb2f52" class="outline-2">
-<h2 id="org2bb2f52"><span class="section-number-2">3</span> Test Case</h2>
+<div id="outline-container-org55f935a" class="outline-2">
+<h2 id="org55f935a"><span class="section-number-2">3</span> Test Case</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Input
@@ -368,8 +368,8 @@ Output
 </div>
 </div>
 
-<div id="outline-container-org0e79285" class="outline-2">
-<h2 id="org0e79285"><span class="section-number-2">4</span> Prerequisites</h2>
+<div id="outline-container-org3f6fc2d" class="outline-2">
+<h2 id="org3f6fc2d"><span class="section-number-2">4</span> Prerequisites</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Basic syntax of C language, rest we will explore during the journey.
@@ -377,8 +377,8 @@ Basic syntax of C language, rest we will explore during the journey.
 </div>
 </div>
 
-<div id="outline-container-org480177e" class="outline-2">
-<h2 id="org480177e"><span class="section-number-2">5</span> An Attempt Towards The Solution</h2>
+<div id="outline-container-orgd622331" class="outline-2">
+<h2 id="orgd622331"><span class="section-number-2">5</span> An Attempt Towards The Solution</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 In the very first line of the problem statement, we are going to deal with a
@@ -391,8 +391,8 @@ very large positive number. Let's try to understand this much first:
 </ul>
 </div>
 
-<div id="outline-container-org5e83cd0" class="outline-4">
-<h4 id="org5e83cd0"><span class="section-number-4">5.0.1</span> Understanding the Datatype of our Input</h4>
+<div id="outline-container-org6a17f4c" class="outline-4">
+<h4 id="org6a17f4c"><span class="section-number-4">5.0.1</span> Understanding the Datatype of our Input</h4>
 <div class="outline-text-4" id="text-5-0-1">
 <p>
 Let's try to visualize the range of our input number:
@@ -484,8 +484,8 @@ The range of <code>unsigned long int</code> is from <b>0</b> to <b>2<sup>64</sup
 </div>
 </div>
 
-<div id="outline-container-org1b6a830" class="outline-4">
-<h4 id="org1b6a830"><span class="section-number-4">5.0.2</span> Finding the number of occurences of a digit</h4>
+<div id="outline-container-org542b5d4" class="outline-4">
+<h4 id="org542b5d4"><span class="section-number-4">5.0.2</span> Finding the number of occurences of a digit</h4>
 <div class="outline-text-4" id="text-5-0-2">
 <p>
 How many digits are there in total?
@@ -563,8 +563,8 @@ Then divide the number by 10, and repeat the steps i.e.
 </div>
 </div>
 
-<div id="outline-container-orgdd57d8d" class="outline-4">
-<h4 id="orgdd57d8d"><span class="section-number-4">5.0.3</span> The Solution</h4>
+<div id="outline-container-org9289832" class="outline-4">
+<h4 id="org9289832"><span class="section-number-4">5.0.3</span> The Solution</h4>
 <div class="outline-text-4" id="text-5-0-3">
 <p>
 Finally,
@@ -600,18 +600,48 @@ Finally,
 </div>
 </div>
 
-<div id="outline-container-org64b8c8c" class="outline-2">
-<h2 id="org64b8c8c"><span class="section-number-2">6</span> Thank You</h2>
+<div id="outline-container-org86e0712" class="outline-2">
+<h2 id="org86e0712"><span class="section-number-2">6</span> Thank You, 😍</h2>
 <div class="outline-text-2" id="text-6">
+<hr />
+
+<div class="seealso">
 <p>
-I hope, this was a pleasantfull journey for all of us 😍
+If this blog was worth your time, please do checkout my other <a href="https://imahajanshubham.github.io/docs/home.html">shares</a> too.
 </p>
+
+</div>
+
+<p>
+Wanna know more about me?
+</p>
+
+<p>
+Visit:
+</p>
+<ol class="org-ol">
+<li><b>LinkedIn</b> - <a href="https://www.linkedin.com/in/imahajanshubham/">imahajanshubham</a></li>
+<li><b>Website</b> - <a href="https://sites.google.com/view/the-launchpad/home">The Launchpad</a></li>
+</ol>
+
+<p>
+or where my work lives:<br />
+<a href="https://github.com/imahajanshubham">GitHub</a>
+</p>
+
+<p>
+Want to share something with me or just wanna chat?<br />
+<b>Mail me:</b> <a href="mailto:imahajanshubham@gmail.com?">imahajanshubham@gmail.com</a>
+</p>
+
+<hr />
+<p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-03-12 Mon 10:38</p>
+<p class="date">Created: 2018-03-12 Mon 12:47</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

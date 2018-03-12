@@ -1,4 +1,4 @@
-#+INCLUDE: ../../../+themes/readtheorg.org
+#+INCLUDE: ../../../+layouts/header.org
 #+TITLE: Hash Maps in Java
 
 * Table of Contents                                       :TOC_4_gh:noexport:
@@ -19,7 +19,7 @@
   - [[#step---4][Step - 4]]
   - [[#step---5][Step - 5]]
   - [[#step---6][Step - 6]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you-][Thank You, 😍]]
 
 * Basics of Hash Maps
 ** Definition
@@ -314,4 +314,5 @@ Let’s connect the dots:
 That’s it, the program to implement HashMap Logic in Java. I hope if not all,
 we learned something :)
 
-* Thank You!
+* Thank You, 😍
+#+INCLUDE: ../../../+layouts/footer.org

@@ -1,0 +1,20 @@
+#+INCLUDE: ../../../../+layouts/header.org
+#+TITLE: Little Chef and Sums
+
+* Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#about][About]]
+- [[#question][Question]]
+- [[#solution][Solution]]
+- [[#thank-you-][Thank You, 😍]]
+
+* About
+The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values in an array.
+
+* Question
+View the original *Little Chef and Sums* question on [[https://www.codechef.com/problems/CHEFSUM][CodeChef]].
+
+* Solution
+View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][GitHub]].
+
+* Thank You, 😍
+#+INCLUDE: ../../../../+layouts/footer.org

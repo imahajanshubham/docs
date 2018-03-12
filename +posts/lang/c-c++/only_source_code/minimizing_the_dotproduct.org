@@ -1,0 +1,21 @@
+#+INCLUDE: ../../../../+layouts/header.org
+#+TITLE: Minimizing the Dot Product
+
+* Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#about][About]]
+- [[#question][Question]]
+- [[#solution][Solution]]
+- [[#thank-you-][Thank You, 😍]]
+
+* About
+The goal was to calculate the *minimum dot product of given two vectors*. we could
+interchange the vector positions with each other if needed.
+
+* Question
+View the original *Minimizing the Dot Product* question on [[https://www.codechef.com/problems/bitmask2][CodeChef]].
+
+* Solution
+View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c][GitHub]].
+
+* Thank You, 😍
+#+INCLUDE: ../../../../+layouts/footer.org

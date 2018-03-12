@@ -1,67 +1,115 @@
-#+INCLUDE: ../+themes/readtheorg.org
+#+INCLUDE: ../+layouts/header.org
 #+TITLE: Home
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#about][About]]
 - [[#latest][Latest]]
-- [[#cc][C/C++]]
-  - [[#average-halfify-keteki][Average Halfify (keteki)]]
-  - [[#little-chef-and-sums][Little Chef and Sums]]
-  - [[#magical-function][Magical Function]]
-  - [[#minimizing-the-dot-product][Minimizing the Dot Product]]
+- [[#c-c][C-C++]]
+  - [[#beware-of-the-assumptions][Beware Of The Assumptions]]
+  - [[#occurrence-of-a-digit][Occurrence of a Digit]]
   - [[#acid-naming][Acid Naming]]
   - [[#structures-and-pointers][Structures and Pointers]]
+  - [[#only-source-code][Only Source Code]]
+    - [[#average-halfify-keteki][Average Halfify (keteki)]]
+    - [[#little-chef-and-sums][Little Chef and Sums]]
+    - [[#magical-function][Magical Function]]
+    - [[#minimizing-the-dot-product][Minimizing the Dot Product]]
 - [[#java][Java]]
+  - [[#factorials-in-java][Factorials in Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
 - [[#thank-you-][Thank You, 😍]]
+
+* About
+Sharing my views and experience of *Problem Solving* approach via the blog.
 
 * Latest
 
 #+begin_attention
-print “Hello World!”
+Another interesting blog,\\
+Yapp, it’s coming!
+
+[[https://imahajanshubham.github.io/docs/lang/c/beware_of_the_assumptions.html][ *Beware Of The Assumptions* ]]\\
+Calculating the factorials of 100+ using *Divide and Conquer* approach!
+
+*March 8,* 2018
 #+end_attention
 
-#+begin_important
-print “Hello World!”
-#+end_important
+#+begin_quote
+ [[https://imahajanshubham.github.io/docs/lang/c/structures.html][ *Structures and Pointers* ]]\\
+An attempt to share my thoughts on *Structures and Pointer* and finally a small
+program using them too.
 
-* C/C++
-** [[https://www.codechef.com/KQM82018/problems/QM8B][Average Halfify (keteki)]]
+*February 7,* 2018
+#+end_quote
+
+* C-C++
+** [[https://imahajanshubham.github.io/docs/lang/c/beware_of_the_assumptions.html][Beware Of The Assumptions]]
+Calculating the factorials of 100+ using *Divide and Conquer* approach!
+
+*March 8,* 2018
+-----
+
+** [[https://imahajanshubham.github.io/docs/lang/c/occurrences_of_a_digit.html][Occurrence of a Digit]]
+The goal was to find the no. of times, *a particular digit appeared* (occurrences)
+in a *very large positive number*.
+
+*February 24,* 2018
+-----
+
+** [[https://imahajanshubham.github.io/docs/lang/c/acid_naming.html][Acid Naming]]
+The goal was to identify the type of acids from the given set of inputs.
+
+*February 17,* 2018
+-----
+
+** [[https://imahajanshubham.github.io/docs/lang/c/structures.html][Structures and Pointers]]
+An attempt to share my thoughts on *Structures and Pointer* and finally a small
+program using them too.
+
+*February 7,* 2018
+-----
+
+** Only Source Code
+*** [[https://www.codechef.com/KQM82018/problems/QM8B][Average Halfify (keteki)]]
 The goal was to calculate the *recursive average of pairs of n numbers*.
 
 *March 7,* 2018
 -----
-** [[https://www.codechef.com/problems/CHEFSUM][Little Chef and Sums]]
+
+*** [[https://www.codechef.com/problems/CHEFSUM][Little Chef and Sums]]
 The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values
 in an array.
 
 *March 7,* 2018
 -----
-** [[https://www.codechef.com/CBEN2018/problems/LEONARD][Magical Function]]
+
+*** [[https://www.codechef.com/CBEN2018/problems/LEONARD][Magical Function]]
 The goal was to *recognize the pattern* of a given function.
 
 *March 7,* 2018
 -----
-** [[https://www.codechef.com/problems/bitmask2][Minimizing the Dot Product]]
+
+*** [[https://www.codechef.com/problems/bitmask2][Minimizing the Dot Product]]
 The goal was to calculate the *minimum dot product of given two vectors*. we could
 interchange the vector positions with each other if needed. 
 
 *March 7,* 2018
 -----
 
-** [[https://www.hackerrank.com/contests/w36/challenges/acid-naming][Acid Naming]]
-
-** Structures and Pointers
-An attempt to share my thoughts on *Structures and Pointer* and finally a small
-program using them too.
-
-*March 7,* 2018
------
 * Java
-** Hash Maps in Java
+** [[https://imahajanshubham.github.io/docs/lang/java/factorial.html][Factorials in Java]]
+The goal was to calculate the factorial of say… ~50~, which results in a ~65~
+digit answer.
+
+*February 18,* 2018
+-----
+
+** [[https://imahajanshubham.github.io/docs/lang/java/hashmap.html][Hash Maps in Java]]
 A brief introduction about Hash Maps in Java, starting from basic definition,
 properties, syntax to creating a simple program of phonebook in Java.
 
-[[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][View Code]]
+*February 9,* 2018
+-----
 
 * Thank You, 😍
-#+INCLUDE: ../../../+layouts/footer.org
+#+INCLUDE: ../+layouts/footer.org

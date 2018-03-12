@@ -3,18 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<<<<<<< HEAD
-<!-- 2018-01-17 Wed 09:18 -->
-=======
-<<<<<<< HEAD
-<!-- 2018-01-27 Sat 01:01 -->
-=======
-<!-- 2018-01-21 Sun 23:16 -->
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
+<!-- 2018-03-12 Mon 12:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Fun with Pointers</title>
+<title>Minimizing the Dot Product</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Shubham Mahajan" />
 <style type="text/css">
@@ -188,12 +180,10 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp">
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
-<<<<<<< HEAD
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css" />
-=======
-<link rel="stylesheet" type="text/css" href="http://spacemacs.org/css/readtheorg.css" />
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
@@ -247,44 +237,15 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Fun with Pointers</h1>
+<h1 class="title">Minimizing the Dot Product</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<<<<<<< HEAD
-<li><a href="#orgfc03c9a">1. <span class="todo TODO">TODO</span> Basics of pointers</a>
-<ul>
-<li><a href="#orga0fbd46">1.1. <span class="done DONE">DONE</span> Definition</a></li>
-<li><a href="#org62dfc96">1.2. Syntax</a></li>
-<li><a href="#org62a3237">1.3. What’s the data-type of a pointer?</a></li>
-<li><a href="#org947cb82">1.4. <b>Why do we specify data-type before the pointer’s name if it’s of <code>unsigned long int</code> type?</b></a></li>
-</ul>
-</li>
-<li><a href="#org3dc3f3f">2. Thank You!</a></li>
-=======
-<<<<<<< HEAD
-<li><a href="#org59c7191">1. <span class="todo TODO">TODO</span> Basics of pointers</a>
-<ul>
-<li><a href="#orge88ab7b">1.1. <span class="done DONE">DONE</span> Definition</a></li>
-<li><a href="#orgedb3a30">1.2. Syntax</a></li>
-<li><a href="#orgd45ab16">1.3. What’s the data-type of a pointer?</a></li>
-<li><a href="#org033d51d">1.4. <b>Why do we specify data-type before the pointer’s name if it’s of <code>unsigned long int</code> type?</b></a></li>
-</ul>
-</li>
-<li><a href="#orgaa2458e">2. Thank You!</a></li>
-=======
-<li><a href="#org9ae1f50">1. <span class="todo TODO">TODO</span> Basics of pointers</a>
-<ul>
-<li><a href="#orgccd6dc7">1.1. <span class="done DONE">DONE</span> Definition</a></li>
-<li><a href="#orga99cc28">1.2. Syntax</a></li>
-<li><a href="#orge43b56f">1.3. What’s the data-type of a pointer?</a></li>
-<li><a href="#org48e30ae">1.4. <b>Why do we specify data-type before the pointer’s name if it’s of <code>unsigned long int</code> type?</b></a></li>
-</ul>
-</li>
-<li><a href="#org85b4d0f">2. Thank You!</a></li>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
+<li><a href="#orga4034a1">1. About</a></li>
+<li><a href="#orgde087d2">2. Question</a></li>
+<li><a href="#orge85f4a1">3. Solution</a></li>
+<li><a href="#org7c911fe">4. Thank You, 😍</a></li>
 </ul>
 </div>
 </div>
@@ -292,188 +253,92 @@ for the JavaScript code in this tag.
 
 
 <colgroup>
-<col  class="org-left" />
+<col  class="org-center" />
 
-<col  class="org-left" />
+<col  class="org-center" />
 
-<col  class="org-left" />
+<col  class="org-center" />
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">Home</td>
-<td class="org-left">Featured Blogs</td>
-<td class="org-left"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+<td class="org-center"><a href="https://imahajanshubham.github.io/docs/home.html">Home</a></td>
+<td class="org-center"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+<td class="org-center"><a href="https://sites.google.com/view/the-launchpad/home">Website</a></td>
 </tr>
 </tbody>
 </table>
 
-<<<<<<< HEAD
-<div id="outline-container-orgfc03c9a" class="outline-2">
-<h2 id="orgfc03c9a"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Basics of pointers</h2>
+<div id="outline-container-orga4034a1" class="outline-2">
+<h2 id="orga4034a1"><span class="section-number-2">1</span> About</h2>
 <div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-orga0fbd46" class="outline-3">
-<h3 id="orga0fbd46"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Definition</h3>
-=======
-<<<<<<< HEAD
-<div id="outline-container-org59c7191" class="outline-2">
-<h2 id="org59c7191"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Basics of pointers</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-orge88ab7b" class="outline-3">
-<h3 id="orge88ab7b"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Definition</h3>
-=======
-<div id="outline-container-org9ae1f50" class="outline-2">
-<h2 id="org9ae1f50"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Basics of pointers</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-orgccd6dc7" class="outline-3">
-<h3 id="orgccd6dc7"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Definition</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
-<div class="outline-text-3" id="text-1-1">
 <p>
-A pointer is a variable which stores the address (memory location) of another variable.
+The goal was to calculate the <b>minimum dot product of given two vectors</b>. we could
+interchange the vector positions with each other if needed.
 </p>
 </div>
 </div>
 
-<<<<<<< HEAD
-<div id="outline-container-org62dfc96" class="outline-3">
-<h3 id="org62dfc96"><span class="section-number-3">1.2</span> Syntax</h3>
-=======
-<<<<<<< HEAD
-<div id="outline-container-orgedb3a30" class="outline-3">
-<h3 id="orgedb3a30"><span class="section-number-3">1.2</span> Syntax</h3>
-=======
-<div id="outline-container-orga99cc28" class="outline-3">
-<h3 id="orga99cc28"><span class="section-number-3">1.2</span> Syntax</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgde087d2" class="outline-2">
+<h2 id="orgde087d2"><span class="section-number-2">2</span> Question</h2>
+<div class="outline-text-2" id="text-2">
 <p>
-In C Language, The syntax of declaring a pointer is as follows:
+View the original <b>Minimizing the Dot Product</b> question on <a href="https://www.codechef.com/problems/bitmask2">CodeChef</a>.
 </p>
-
-<div class="org-src-container">
-<pre class="src src-C">&lt;data-type&gt; *ptr_name; 
-</pre>
-</div>
 </div>
 </div>
 
-<<<<<<< HEAD
-<div id="outline-container-org62a3237" class="outline-3">
-<h3 id="org62a3237"><span class="section-number-3">1.3</span> What’s the data-type of a pointer?</h3>
-=======
-<<<<<<< HEAD
-<div id="outline-container-orgd45ab16" class="outline-3">
-<h3 id="orgd45ab16"><span class="section-number-3">1.3</span> What’s the data-type of a pointer?</h3>
-=======
-<div id="outline-container-orge43b56f" class="outline-3">
-<h3 id="orge43b56f"><span class="section-number-3">1.3</span> What’s the data-type of a pointer?</h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-orge85f4a1" class="outline-2">
+<h2 id="orge85f4a1"><span class="section-number-2">3</span> Solution</h2>
+<div class="outline-text-2" id="text-3">
 <p>
-_The data-type of any pointer is always an_#a100ff <code>unsigned long int</code> i.e a pointer always stores
-the address of another variable and the address is in hex form.
+View my attempt on <a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c">GitHub</a>.
 </p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
-<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #4f97d7;">&gt;</span>
-
-<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">ptr</span> = <span style="color: #a45bad;">NULL</span>;
-
-  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Size of &#8217;unsigned long&#8217;: %lu"</span>, <span style="color: #4f97d7; font-weight: bold;">sizeof</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">unsigned</span> <span style="color: #ce537a; font-weight: bold;">long</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>;
-  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Size of &#8217;ptr&#8217;: %lu\n\n"</span>, <span style="color: #4f97d7; font-weight: bold;">sizeof</span><span style="color: #2d9574;">(</span>ptr<span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>;
-
-  <span style="color: #4f97d7; font-weight: bold;">return</span> EXIT_SUCCESS;
-<span style="color: #4f97d7;">}</span>
-</pre>
+</div>
 </div>
 
+<div id="outline-container-org7c911fe" class="outline-2">
+<h2 id="org7c911fe"><span class="section-number-2">4</span> Thank You, 😍</h2>
+<div class="outline-text-2" id="text-4">
+<hr />
+
+<div class="seealso">
 <p>
-Output
-</p>
-
-<pre class="example">
-Size of ’unsigned long’: 8
-Size of ’ptr’: 8
-
-</pre>
-
-<div class="note">
-<p>
-The <code>sizeof</code> operator always returns an <code>unsigned long int</code> value (address), so we
-use <code>%lu</code> format specifier for the same.
+If this blog was worth your time, please do checkout my other <a href="https://imahajanshubham.github.io/docs/home.html">shares</a> too.
 </p>
 
 </div>
-</div>
-</div>
 
-<<<<<<< HEAD
-<div id="outline-container-org947cb82" class="outline-3">
-<h3 id="org947cb82"><span class="section-number-3">1.4</span> <b>Why do we specify data-type before the pointer’s name if it’s of <code>unsigned long int</code> type?</b></h3>
-=======
-<<<<<<< HEAD
-<div id="outline-container-org033d51d" class="outline-3">
-<h3 id="org033d51d"><span class="section-number-3">1.4</span> <b>Why do we specify data-type before the pointer’s name if it’s of <code>unsigned long int</code> type?</b></h3>
-=======
-<div id="outline-container-org48e30ae" class="outline-3">
-<h3 id="org48e30ae"><span class="section-number-3">1.4</span> <b>Why do we specify data-type before the pointer’s name if it’s of <code>unsigned long int</code> type?</b></h3>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
-<div class="outline-text-3" id="text-1-4">
 <p>
-To specify the data–type of the variable, whose address pointer is going to
-store.
+Wanna know more about me?
 </p>
 
-<ul class="org-ul">
-<li>Who does a pointer need to know about the data-type of the variable whose
-value it’s going to store?</li>
-</ul>
-</div>
-</div>
-</div>
+<p>
+Visit:
+</p>
+<ol class="org-ol">
+<li><b>LinkedIn</b> - <a href="https://www.linkedin.com/in/imahajanshubham/">imahajanshubham</a></li>
+<li><b>Website</b> - <a href="https://sites.google.com/view/the-launchpad/home">The Launchpad</a></li>
+</ol>
 
-<<<<<<< HEAD
-<div id="outline-container-org3dc3f3f" class="outline-2">
-<h2 id="org3dc3f3f"><span class="section-number-2">2</span> Thank You!</h2>
-=======
-<<<<<<< HEAD
-<div id="outline-container-orgaa2458e" class="outline-2">
-<h2 id="orgaa2458e"><span class="section-number-2">2</span> Thank You!</h2>
-=======
-<div id="outline-container-org85b4d0f" class="outline-2">
-<h2 id="org85b4d0f"><span class="section-number-2">2</span> Thank You!</h2>
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
+<p>
+or where my work lives:<br />
+<a href="https://github.com/imahajanshubham">GitHub</a>
+</p>
+
+<p>
+Want to share something with me or just wanna chat?<br />
+<b>Mail me:</b> <a href="mailto:imahajanshubham@gmail.com?">imahajanshubham@gmail.com</a>
+</p>
+
+<hr />
+<p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<<<<<<< HEAD
-<p class="date">Created: 2018-01-17 Wed 09:18</p>
-=======
-<<<<<<< HEAD
-<p class="date">Created: 2018-01-27 Sat 01:01</p>
+<p class="date">Created: 2018-03-12 Mon 12:51</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
-=======
-<p class="date">Created: 2018-01-21 Sun 23:16</p>
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
-</div>
-</body>
-</html>
-<<<<<<< HEAD
-=======
->>>>>>> 56fa0856f7ac8a3f6ccbb031f887df86ce329ca7
->>>>>>> 089941baa3b144514581895c2c4fa2031cc34755

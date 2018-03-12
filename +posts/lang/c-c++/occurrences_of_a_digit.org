@@ -1,4 +1,4 @@
-#+INCLUDE: ../../../+themes/readtheorg.org
+#+INCLUDE: ../../../+layouts/header.org
 #+TITLE: Occurrences of a Digit
 
 * Table of contents                                       :TOC_4_gh:noexport:
@@ -12,7 +12,7 @@
     - [[#understanding-the-datatype-of-our-input][Understanding the Datatype of our Input]]
     - [[#finding-the-number-of-occurences-of-a-digit][Finding the number of occurences of a digit]]
     - [[#the-solution][The Solution]]
-- [[#thank-you][Thank You]]
+- [[#thank-you-][Thank You, 😍]]
 
 * The Problem Statement
 Find the no. of times, a particular digit appeared (occurences) in a *very large
@@ -182,5 +182,5 @@ Finally,
   }
 #+end_src
 
-* Thank You
-I hope, this was a pleasantfull journey for all of us 😍
+* Thank You, 😍
+#+INCLUDE: ../../../+layouts/footer.org

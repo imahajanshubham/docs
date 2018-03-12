@@ -1,4 +1,4 @@
-#+INCLUDE: ../../../+themes/readtheorg.org
+#+INCLUDE: ../../../+layouts/header.org
 #+TITLE: Factorial of a Number
 
 * Table of contents                                       :TOC_4_gh:noexport:
@@ -12,7 +12,7 @@
   - [[#the-initial-value-of-a-factorial][The initial value of a factorial]]
   - [[#one-step-closer-towards-the-answer][One step closer towards the Answer]]
 - [[#the-final-solution][The Final Solution]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you-][Thank You, 😍]]
 
 * Problem Statement
 Write a program that, given a number ~n~ from STDIN, prints out the factorial of ~n~ to STDOUT:
@@ -162,4 +162,5 @@ Here's the screenshot for few test runs:
 
 [[https://raw.githubusercontent.com/imahajanshubham/docs/master/%2Bassets/lang/java/factorial.png]]
 
-* Thank You!
+* Thank You, 😍
+#+INCLUDE: ../../../+layouts/footer.org

@@ -1,0 +1,20 @@
+#+INCLUDE: ../../../../+layouts/header.org
+#+TITLE: Average Halfify (keteki)
+
+* Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#about][About]]
+- [[#question][Question]]
+- [[#solution][Solution]]
+- [[#thank-you-][Thank You, 😍]]
+
+* About
+The goal was to calculate the recursive average of pairs of n numbers.
+
+* Question
+View the original *Average Halfify* question on [[https://www.codechef.com/KQM82018/problems/QM8B][CodeChef]].
+
+* Solution
+View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem19/halfifyaverage.c][GitHub]].
+
+* Thank You, 😍
+#+INCLUDE: ../../../../+layouts/footer.org

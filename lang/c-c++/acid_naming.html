@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-12 Mon 10:38 -->
+<!-- 2018-03-12 Mon 12:45 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Acid Naming Problem</title>
@@ -242,26 +242,26 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8cbc8dd">1. The Problem Statement</a>
+<li><a href="#orgd18eae4">1. The Problem Statement</a>
 <ul>
-<li><a href="#org19b96f7">1.1. Input</a></li>
-<li><a href="#org6b71b70">1.2. Output</a></li>
+<li><a href="#org803b441">1.1. Input</a></li>
+<li><a href="#org55b9a42">1.2. Output</a></li>
 </ul>
 </li>
-<li><a href="#org933ec58">2. Conditions</a></li>
-<li><a href="#org274e1b0">3. Test Case</a></li>
-<li><a href="#org3cfc9b4">4. What do we need to know?</a></li>
-<li><a href="#org11aa0da">5. Let's begin!</a>
+<li><a href="#org6eb7eb5">2. Conditions</a></li>
+<li><a href="#org5d996b2">3. Test Case</a></li>
+<li><a href="#org0bdce5e">4. What do we need to know?</a></li>
+<li><a href="#org37a3094">5. Let's begin!</a>
 <ul>
-<li><a href="#orgf1227c3">5.1. What should be the maximum length of an <code>acid name</code>?</a></li>
-<li><a href="#orga7125d3">5.2. What method should we use for getting the <code>acid names</code> from user?</a></li>
-<li><a href="#org6d75735">5.3. How do we check whether the input starts with <code>hydro</code> or not?</a></li>
-<li><a href="#org65f48fe">5.4. How to check if <code>acid name</code> ends with "ic"?</a></li>
-<li><a href="#org6018d48">5.5. Connecting the dots&#x2026;</a></li>
-<li><a href="#org1ac75e3">5.6. Finally, Here comes the <code>main</code> function!</a></li>
+<li><a href="#orgc32c198">5.1. What should be the maximum length of an <code>acid name</code>?</a></li>
+<li><a href="#orgaa6f62d">5.2. What method should we use for getting the <code>acid names</code> from user?</a></li>
+<li><a href="#org751d83e">5.3. How do we check whether the input starts with <code>hydro</code> or not?</a></li>
+<li><a href="#orgbf54d41">5.4. How to check if <code>acid name</code> ends with "ic"?</a></li>
+<li><a href="#orgb986950">5.5. Connecting the dots&#x2026;</a></li>
+<li><a href="#org3df120a">5.6. Finally, Here comes the <code>main</code> function!</a></li>
 </ul>
 </li>
-<li><a href="#orgcc3599f">6. Thank You :)</a></li>
+<li><a href="#org0ae9809">6. Thank You, 😍</a></li>
 </ul>
 </div>
 </div>
@@ -284,8 +284,8 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<div id="outline-container-org8cbc8dd" class="outline-2">
-<h2 id="org8cbc8dd"><span class="section-number-2">1</span> The Problem Statement</h2>
+<div id="outline-container-orgd18eae4" class="outline-2">
+<h2 id="orgd18eae4"><span class="section-number-2">1</span> The Problem Statement</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Jonathan is in a science class, but because he does not understand how to name
@@ -315,8 +315,8 @@ acid, and return a string describing the appropriate type of acid.
 </p>
 </div>
 
-<div id="outline-container-org19b96f7" class="outline-3">
-<h3 id="org19b96f7"><span class="section-number-3">1.1</span> Input</h3>
+<div id="outline-container-org803b441" class="outline-3">
+<h3 id="org803b441"><span class="section-number-3">1.1</span> Input</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The first line will contain an integer <b>q</b>.
@@ -325,8 +325,8 @@ The next <b>q</b> lines will contain a single word <b>s</b>.
 </div>
 </div>
 
-<div id="outline-container-org6b71b70" class="outline-3">
-<h3 id="org6b71b70"><span class="section-number-3">1.2</span> Output</h3>
+<div id="outline-container-org55b9a42" class="outline-3">
+<h3 id="org55b9a42"><span class="section-number-3">1.2</span> Output</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>If the word starts with <code>hydro</code> and ends with <code>ic</code> then it is a non-metal acid.
@@ -340,8 +340,8 @@ output is <i>polyatomic acid</i>.</li>
 </div>
 
 
-<div id="outline-container-org933ec58" class="outline-2">
-<h2 id="org933ec58"><span class="section-number-2">2</span> Conditions</h2>
+<div id="outline-container-org6eb7eb5" class="outline-2">
+<h2 id="org6eb7eb5"><span class="section-number-2">2</span> Conditions</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><b>1</b> &lt;= <b>q</b> &lt;= <b>100.</b></li>
@@ -351,8 +351,8 @@ output is <i>polyatomic acid</i>.</li>
 </div>
 </div>
 
-<div id="outline-container-org274e1b0" class="outline-2">
-<h2 id="org274e1b0"><span class="section-number-2">3</span> Test Case</h2>
+<div id="outline-container-org5d996b2" class="outline-2">
+<h2 id="org5d996b2"><span class="section-number-2">3</span> Test Case</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Input
@@ -410,8 +410,8 @@ Output
 </div>
 </div>
 
-<div id="outline-container-org3cfc9b4" class="outline-2">
-<h2 id="org3cfc9b4"><span class="section-number-2">4</span> What do we need to know?</h2>
+<div id="outline-container-org0bdce5e" class="outline-2">
+<h2 id="org0bdce5e"><span class="section-number-2">4</span> What do we need to know?</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>What should be the maximum length of an <code>Acid</code> name?</li>
@@ -421,12 +421,12 @@ Output
 </div>
 </div>
 
-<div id="outline-container-org11aa0da" class="outline-2">
-<h2 id="org11aa0da"><span class="section-number-2">5</span> Let's begin!</h2>
+<div id="outline-container-org37a3094" class="outline-2">
+<h2 id="org37a3094"><span class="section-number-2">5</span> Let's begin!</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-orgf1227c3" class="outline-3">
-<h3 id="orgf1227c3"><span class="section-number-3">5.1</span> What should be the maximum length of an <code>acid name</code>?</h3>
+<div id="outline-container-orgc32c198" class="outline-3">
+<h3 id="orgc32c198"><span class="section-number-3">5.1</span> What should be the maximum length of an <code>acid name</code>?</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 In the constraints section, it is given that:
@@ -442,8 +442,8 @@ So, the <code>acid name</code> can have minimum <b>2</b> and maximum <b>10000</b
 </div>
 </div>
 
-<div id="outline-container-orga7125d3" class="outline-3">
-<h3 id="orga7125d3"><span class="section-number-3">5.2</span> What method should we use for getting the <code>acid names</code> from user?</h3>
+<div id="outline-container-orgaa6f62d" class="outline-3">
+<h3 id="orgaa6f62d"><span class="section-number-3">5.2</span> What method should we use for getting the <code>acid names</code> from user?</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 As the <code>acid names</code> are english words, so we will use <code>char array or string</code>
@@ -502,8 +502,8 @@ That's because, 1 extra Byte would store <code>'\0'</code> (null) i.e. the strin
 </div>
 </div>
 
-<div id="outline-container-org6d75735" class="outline-3">
-<h3 id="org6d75735"><span class="section-number-3">5.3</span> How do we check whether the input starts with <code>hydro</code> or not?</h3>
+<div id="outline-container-org751d83e" class="outline-3">
+<h3 id="org751d83e"><span class="section-number-3">5.3</span> How do we check whether the input starts with <code>hydro</code> or not?</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 To check whether the input starts with <code>hydro</code> or not, we'll take help of a <b>flag</b>
@@ -640,8 +640,8 @@ Now,
 </div>
 </div>
 
-<div id="outline-container-org65f48fe" class="outline-3">
-<h3 id="org65f48fe"><span class="section-number-3">5.4</span> How to check if <code>acid name</code> ends with "ic"?</h3>
+<div id="outline-container-orgbf54d41" class="outline-3">
+<h3 id="orgbf54d41"><span class="section-number-3">5.4</span> How to check if <code>acid name</code> ends with "ic"?</h3>
 <div class="outline-text-3" id="text-5-4">
 <p>
 To check if <code>acide name</code> ends with <b>"ic"</b> or not, we will compare <b>n - 2th</b> index of
@@ -667,8 +667,8 @@ acidName<span style="color: #4f97d7;">[</span>charCount<span style="color: #4f97
 </div>
 </div>
 
-<div id="outline-container-org6018d48" class="outline-3">
-<h3 id="org6018d48"><span class="section-number-3">5.5</span> Connecting the dots&#x2026;</h3>
+<div id="outline-container-orgb986950" class="outline-3">
+<h3 id="orgb986950"><span class="section-number-3">5.5</span> Connecting the dots&#x2026;</h3>
 <div class="outline-text-3" id="text-5-5">
 <p>
 Let's complete the function, so that it can return suitable flag value based
@@ -713,8 +713,8 @@ upon the input:
 </div>
 </div>
 
-<div id="outline-container-org1ac75e3" class="outline-3">
-<h3 id="org1ac75e3"><span class="section-number-3">5.6</span> Finally, Here comes the <code>main</code> function!</h3>
+<div id="outline-container-org3df120a" class="outline-3">
+<h3 id="org3df120a"><span class="section-number-3">5.6</span> Finally, Here comes the <code>main</code> function!</h3>
 <div class="outline-text-3" id="text-5-6">
 <div class="org-src-container">
 <pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
@@ -786,13 +786,48 @@ upon the input:
 </div>
 </div>
 
-<div id="outline-container-orgcc3599f" class="outline-2">
-<h2 id="orgcc3599f"><span class="section-number-2">6</span> Thank You :)</h2>
+<div id="outline-container-org0ae9809" class="outline-2">
+<h2 id="org0ae9809"><span class="section-number-2">6</span> Thank You, 😍</h2>
+<div class="outline-text-2" id="text-6">
+<hr />
+
+<div class="seealso">
+<p>
+If this blog was worth your time, please do checkout my other <a href="https://imahajanshubham.github.io/docs/home.html">shares</a> too.
+</p>
+
+</div>
+
+<p>
+Wanna know more about me?
+</p>
+
+<p>
+Visit:
+</p>
+<ol class="org-ol">
+<li><b>LinkedIn</b> - <a href="https://www.linkedin.com/in/imahajanshubham/">imahajanshubham</a></li>
+<li><b>Website</b> - <a href="https://sites.google.com/view/the-launchpad/home">The Launchpad</a></li>
+</ol>
+
+<p>
+or where my work lives:<br />
+<a href="https://github.com/imahajanshubham">GitHub</a>
+</p>
+
+<p>
+Want to share something with me or just wanna chat?<br />
+<b>Mail me:</b> <a href="mailto:imahajanshubham@gmail.com?">imahajanshubham@gmail.com</a>
+</p>
+
+<hr />
+<p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-03-12 Mon 10:38</p>
+<p class="date">Created: 2018-03-12 Mon 12:45</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
