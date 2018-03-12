@@ -34,8 +34,6 @@ the concept behind the Hash Map.
 Let’s say we want make a record of a phone-book (person’s name and phone no) as
 follows:
 
-#+BEGIN_NOTE
-
 |--------+------------|
 | *Name*   |  *Phone No.* |
 |--------+------------|

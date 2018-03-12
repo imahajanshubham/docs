@@ -569,10 +569,10 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 
 #content .admonition-title.tip,#content .admonition-title.important,#content .admonition-title.hint{
     line-height: 1;
-    background:#1abc9c}
+    background:#715ab1}
 
 #content .important,#content .tip,#content .hint{
-    background:#dbfaf4}
+    background:#f3e5f5}
 
 #content .admonition-title.note,#content .admonition-title.seealso{
     line-height: 1;
