@@ -550,7 +550,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
     background:#fdf3f2}
 
 .wy-alert.wy-alert-warning,#content .wy-alert-warning.note,#content .attention,#content .caution,#content .wy-alert-warning.danger,#content .wy-alert-warning.error,#content .wy-alert-warning.hint,#content .wy-alert-warning.important,#content .wy-alert-warning.tip,#content .warning,#content .wy-alert-warning.seealso,#content .admonitiontodo{
-    background:#ffedcc}
+    background:#f3e5f5}
 
 #content .admonition-title.note:before, #content .admonition-title.seealso:before,
 #content .admonition-title.warning:before, #content .admonition-title.caution:before,
@@ -580,7 +580,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 
 #content .admonition-title.warning,#content .admonition-title.caution,#content .admonition-title.attention{
     line-height: 1;
-    background:#F0B37E}
+    background:#715ab1}
 
 #content .admonition-title.error,#content .admonition-title.danger{
     line-height: 1;
