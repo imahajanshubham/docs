@@ -2,6 +2,7 @@
 #+TITLE: Home
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#latest][Latest]]
 - [[#cc][C/C++]]
   - [[#average-halfify-keteki][Average Halfify (keteki)]]
   - [[#little-chef-and-sums][Little Chef and Sums]]
@@ -11,6 +12,12 @@
   - [[#structures-and-pointers][Structures and Pointers]]
 - [[#java][Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
+
+* Latest
+
+#+begin_attention
+print “Hello World!”
+#+end_attention
 
 * C/C++
 ** [[https://www.codechef.com/KQM82018/problems/QM8B][Average Halfify (keteki)]]
