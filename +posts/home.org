@@ -21,9 +21,15 @@
 - [[#thank-you][Thank You!]]
 
 * About
+:PROPERTIES:
+  :CUSTOM_ID: about
+  :END:
 Sharing my views and experience of *Problem Solving* approach via the blog.
 
 * Latest
+:PROPERTIES:
+  :CUSTOM_ID: latest
+  :END:
 
 #+begin_attention
 Another interesting blog,\\
@@ -33,7 +39,13 @@ Yapp, it’s coming!
 #+end_attention
 
 * C-C++
+:PROPERTIES:
+  :CUSTOM_ID: c-cpp
+  :END:
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html][Beware Of The Assumptions]]
+:PROPERTIES:
+  :CUSTOM_ID: beware-of-the-assumptions
+  :END:
 
 #+begin_quote
 Calculating the factorials of 100+ using *Divide and Conquer* approach!
@@ -42,6 +54,9 @@ Calculating the factorials of 100+ using *Divide and Conquer* approach!
 *March 8,* 2018
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html][Occurrence of a Digit]]
+:PROPERTIES:
+:CUSTOM_ID: occurrence-of-a-digit
+:END:
 
 #+begin_quote
 The goal was to find the no. of times, *a particular digit appeared* (occurrences)
@@ -51,6 +66,9 @@ in a *very large positive number*.
 *February 24,* 2018
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html][Acid Naming]]
+:PROPERTIES:
+:CUSTOM_ID: acid-naming
+:END:
 
 #+begin_quote
 The goal was to identify the type of acids from the given set of inputs.
@@ -59,6 +77,9 @@ The goal was to identify the type of acids from the given set of inputs.
 *February 17,* 2018
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/structures.html][Structures and Pointers]]
+:PROPERTIES:
+:CUSTOM_ID: structures-and-pointers
+:END:
 
 #+begin_quote
 An attempt to share my thoughts on *Structures and Pointer* and finally a small
@@ -68,7 +89,13 @@ program using them too.
 *February 7,* 2018
 
 ** Only Source Code
+:PROPERTIES:
+:CUSTOM_ID: only-source-code
+:END:
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html][Average Halfify (keteki)]]
+:PROPERTIES:
+:CUSTOM_ID: average-halfify
+:END:
 
 #+begin_quote
 The goal was to calculate the *recursive average of pairs of n numbers*.
@@ -77,6 +104,9 @@ The goal was to calculate the *recursive average of pairs of n numbers*.
 *March 7,* 2018
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/little_chefnsums.html][Little Chef and Sums]]
+:PROPERTIES:
+:CUSTOM_ID: little-chef-and-sums
+:END:
 
 #+begin_quote
 The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values
@@ -86,6 +116,9 @@ in an array.
 *March 7,* 2018
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html][Magical Function]]
+:PROPERTIES:
+:CUSTOM_ID: magical-function
+:END:
 
 #+begin_quote
 The goal was to *recognize the pattern* of a given function.
@@ -94,6 +127,9 @@ The goal was to *recognize the pattern* of a given function.
 *March 7,* 2018
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html][Minimizing the Dot Product]]
+:PROPERTIES:
+:CUSTOM_ID: minimizing-the-dot-product
+:END:
 
 #+begin_quote
 The goal was to calculate the *minimum dot product of given two vectors*. we could
@@ -103,7 +139,13 @@ interchange the vector positions with each other if needed.
 *March 7,* 2018
 
 * Java
+:PROPERTIES:
+:CUSTOM_ID: java
+:END:
 ** [[https://imahajanshubham.github.io/docs/lang/java/factorial.html][Factorials in Java]]
+:PROPERTIES:
+:CUSTOM_ID: factorials-in-java
+:END:
 
 #+begin_quote
 The goal was to calculate the factorial of say… ~50~, which results in a ~65~
@@ -113,6 +155,9 @@ digit answer.
 *February 18,* 2018
 
 ** [[https://imahajanshubham.github.io/docs/lang/java/hashmap.html][Hash Maps in Java]]
+:PROPERTIES:
+:CUSTOM_ID: hash-maps-in-java
+:END:
 
 #+begin_quote
 A brief introduction about Hash Maps in Java, starting from basic definition,
@@ -122,19 +167,22 @@ properties, syntax to creating a simple program of phonebook in Java.
 *February 9,* 2018
 
 * Thank You!
+:PROPERTIES:
+:CUSTOM_ID: thank-you
+:END:
 
 #+begin_export html
   <ul class="pager">
       <li class="previous">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html">
-              <div class="tooltip">Previous
+              <div class="tooltip">Next
                   <span class="tooltiptext">Structures And Pointers</span>
               </div>
           </a>
       </li>
       <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html">
-              <div class="tooltip">Next
+              <div class="tooltip">Previous
                   <span class="tooltiptext">Beware Of The Assumptions</span>
               </div>
           </a>

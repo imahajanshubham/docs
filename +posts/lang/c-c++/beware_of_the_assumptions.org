@@ -247,9 +247,9 @@ in an array.
           </a>
       </li>
       <li class="next">
-          <a href="https://imahajanshubham.github.io/docs/home.html">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html">
               <div class="tooltip">Next
-                  <span class="tooltiptext">Home</span>
+                  <span class="tooltiptext">Structures And Pointer</span>
               </div>
           </a>
       </li>
