@@ -28,85 +28,110 @@ Sharing my views and experience of *Problem Solving* approach via the blog.
 Another interesting blog,\\
 Yapp, it’s coming!
 
-[[https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html][ *Beware Of The Assumptions* ]]\\
+[[https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html][ *Beware Of The Assumptions* ]]
+
+#+begin_quote
 Calculating the factorials of 100+ using *Divide and Conquer* approach!
+#+end_quote
 
 *March 8,* 2018
 #+end_attention
 
-#+begin_quote
-[[https://imahajanshubham.github.io/docs/lang/c-c++/structures.html][ *Structures and Pointers* ]]\\
-An attempt to share my thoughts on *Structures and Pointer* and finally a small
-program using them too.
-
-*February 7,* 2018
-#+end_quote
-
 * C-C++
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html][Beware Of The Assumptions]]
+
+#+begin_quote
 Calculating the factorials of 100+ using *Divide and Conquer* approach!
+#+end_quote
 
 *March 8,* 2018
 -----
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html][Occurrence of a Digit]]
+
+#+begin_quote
 The goal was to find the no. of times, *a particular digit appeared* (occurrences)
 in a *very large positive number*.
+#+end_quote
 
 *February 24,* 2018
 -----
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html][Acid Naming]]
+
+#+begin_quote
 The goal was to identify the type of acids from the given set of inputs.
+#+end_quote
 
 *February 17,* 2018
 -----
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/structures.html][Structures and Pointers]]
+
+#+begin_quote
 An attempt to share my thoughts on *Structures and Pointer* and finally a small
 program using them too.
+#+end_quote
 
 *February 7,* 2018
 -----
 
 ** Only Source Code
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html][Average Halfify (keteki)]]
+
+#+begin_quote
 The goal was to calculate the *recursive average of pairs of n numbers*.
+#+end_quote
 
 *March 7,* 2018
 -----
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/little_chefnsums.html][Little Chef and Sums]]
+
+#+begin_quote
 The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values
 in an array.
+#+end_quote
 
 *March 7,* 2018
 -----
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html][Magical Function]]
+
+#+begin_quote
 The goal was to *recognize the pattern* of a given function.
+#+end_quote
 
 *March 7,* 2018
 -----
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html][Minimizing the Dot Product]]
+
+#+begin_quote
 The goal was to calculate the *minimum dot product of given two vectors*. we could
 interchange the vector positions with each other if needed. 
+#+end_quote
 
 *March 7,* 2018
 -----
 
 * Java
 ** [[https://imahajanshubham.github.io/docs/lang/java/factorial.html][Factorials in Java]]
+
+#+begin_quote
 The goal was to calculate the factorial of say… ~50~, which results in a ~65~
 digit answer.
+#+end_quote
 
 *February 18,* 2018
 -----
 
 ** [[https://imahajanshubham.github.io/docs/lang/java/hashmap.html][Hash Maps in Java]]
+
+#+begin_quote
 A brief introduction about Hash Maps in Java, starting from basic definition,
 properties, syntax to creating a simple program of phonebook in Java.
+#+end_quote
 
 *February 9,* 2018
 -----

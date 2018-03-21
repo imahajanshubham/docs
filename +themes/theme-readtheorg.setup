@@ -9,10 +9,3 @@
 #+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
-
-#+ATTR_HTML: :width 100% class="center"
-|------+--------+---------|
-| <c>  | <c>    | <c>     |
-|------+--------+---------|
-| [[https://imahajanshubham.github.io/docs/home.html][Home]] | [[https://github.com/imahajanshubham][GitHub]] | [[https://sites.google.com/view/the-launchpad/home][Website]] |
-|------+--------+---------|

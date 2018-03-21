@@ -1,0 +1,8 @@
+#+TITLE: Title
+#+INCLUDE: ../+layouts/header.org
+
+* Table of Contents                                          :TOC@4:noexport:
+- [[#thank-you-][Thank You, 😍]]
+
+* Thank You, 😍
+#+INCLUDE: ../+layouts/footer.org
