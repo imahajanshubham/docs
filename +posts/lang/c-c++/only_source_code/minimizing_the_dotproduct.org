@@ -21,19 +21,11 @@ View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/b
 
 #+begin_export html
   <ul class="pager">
-      <li class="previous">
-          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html">
-              <div class="tooltip">Previous
-                  <span class="tooltiptext">Occurrences of a Digit</span>
-              </div>
-          </a>
-      </li>
       <li class="next">
-          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html">
-              <div class="tooltip">Next
-                  <span class="tooltiptext">Magical Function</span>
-              </div>
-          </a>
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html" class="btn btn-neutral float-right" title="Magical Function" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html" class="btn btn-neutral" title="Occurrences of a Digit" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>
       </li>
   </ul>
 #+end_export

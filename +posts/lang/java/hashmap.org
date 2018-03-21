@@ -318,19 +318,11 @@ we learned something :)
 
 #+begin_export html
   <ul class="pager">
-      <li class="previous">
-          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html">
-              <div class="tooltip">Previous
-                  <span class="tooltiptext">Structures And Pointers</span>
-              </div>
-          </a>
-      </li>
       <li class="next">
-          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html">
-          <div class="tooltip">Next
-                  <span class="tooltiptext">Acid Naming Problem</span>
-              </div>
-          </a>
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html" class="btn btn-neutral float-right" title="Acid Naming Problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral" title="Structures And Pointers" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       </li>
   </ul>
 #+end_export

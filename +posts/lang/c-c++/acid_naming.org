@@ -352,18 +352,10 @@ upon the input:
 #+begin_export html
   <ul class="pager">
       <li class="next">
-          <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html">
-              <div class="tooltip">Next
-                  <span class="tooltiptext">Factorial of a Number</span>
-              </div>
-          </a>
+          <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html" class="btn btn-neutral float-right" title="Factorial of a Number" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
       </li>
       <li class="previous">
-          <a href="https://imahajanshubham.github.io/docs/lang/java/hashmap.html">
-              <div class="tooltip">Previous
-                  <span class="tooltiptext">Hash Maps in Java</span>
-              </div>
-          </a>
+          <a href="https://imahajanshubham.github.io/docs/lang/java/hashmap.html" class="btn btn-neutral" title="Hash Maps in Java" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>
       </li>
   </ul>
 #+end_export

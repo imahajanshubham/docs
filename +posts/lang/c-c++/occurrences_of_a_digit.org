@@ -186,19 +186,11 @@ Finally,
 
 #+begin_export html
   <ul class="pager">
-      <li class="previous">
-          <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html">
-              <div class="tooltip">Previous
-                  <span class="tooltiptext">Factorial of a Number</span>
-              </div>
-          </a>
-      </li>
       <li class="next">
-          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html">
-              <div class="tooltip">Next
-                  <span class="tooltiptext">Minimizing the Dot Product</span>
-              </div>
-          </a>
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html" class="btn btn-neutral float-right" title="Minimizing the Dot Product" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html" class="btn btn-neutral" title="Factorial of a Number" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>
       </li>
   </ul>
 #+end_export

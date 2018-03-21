@@ -1,8 +1,8 @@
 # -*- mode: org; -*-
 
-#+begin_seealso
+#+begin_attention
 If this blog was worth your time, please do checkout my other [[https://imahajanshubham.github.io/docs/home.html][shares]] too.
-#+end_seealso
+#+end_attention
 
 Wanna know more about me?
 
