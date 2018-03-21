@@ -352,14 +352,14 @@ upon the input:
 
 #+begin_export html
   <ul class="pager">
-      <li class="previous">
+      <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html">
               <div class="tooltip">Next
                   <span class="tooltiptext">Factorial of a Number</span>
               </div>
           </a>
       </li>
-      <li class="next">
+      <li class="previous">
           <a href="https://imahajanshubham.github.io/docs/lang/java/hashmap.html">
               <div class="tooltip">Previous
                   <span class="tooltiptext">Hash Maps in Java</span>
