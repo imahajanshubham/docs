@@ -1,5 +1,6 @@
 #+INCLUDE: ../+layouts/header.org
 #+TITLE: Home
+#+DATE: <2016-10-20>
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#about][About]]
@@ -28,13 +29,7 @@ Sharing my views and experience of *Problem Solving* approach via the blog.
 Another interesting blog,\\
 Yapp, it’s coming!
 
-[[https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html][ *Beware Of The Assumptions* ]]
-
-#+begin_quote
-Calculating the factorials of 100+ using *Divide and Conquer* approach!
-#+end_quote
-
-*March 8,* 2018
+*[[https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html][Beware Of The Assumptions]]*
 #+end_attention
 
 * C-C++
@@ -45,7 +40,6 @@ Calculating the factorials of 100+ using *Divide and Conquer* approach!
 #+end_quote
 
 *March 8,* 2018
------
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html][Occurrence of a Digit]]
 
@@ -55,7 +49,6 @@ in a *very large positive number*.
 #+end_quote
 
 *February 24,* 2018
------
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html][Acid Naming]]
 
@@ -64,7 +57,6 @@ The goal was to identify the type of acids from the given set of inputs.
 #+end_quote
 
 *February 17,* 2018
------
 
 ** [[https://imahajanshubham.github.io/docs/lang/c-c++/structures.html][Structures and Pointers]]
 
@@ -74,7 +66,6 @@ program using them too.
 #+end_quote
 
 *February 7,* 2018
------
 
 ** Only Source Code
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html][Average Halfify (keteki)]]
@@ -84,7 +75,6 @@ The goal was to calculate the *recursive average of pairs of n numbers*.
 #+end_quote
 
 *March 7,* 2018
------
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/little_chefnsums.html][Little Chef and Sums]]
 
@@ -94,7 +84,6 @@ in an array.
 #+end_quote
 
 *March 7,* 2018
------
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html][Magical Function]]
 
@@ -103,7 +92,6 @@ The goal was to *recognize the pattern* of a given function.
 #+end_quote
 
 *March 7,* 2018
------
 
 *** [[https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html][Minimizing the Dot Product]]
 
@@ -113,7 +101,6 @@ interchange the vector positions with each other if needed.
 #+end_quote
 
 *March 7,* 2018
------
 
 * Java
 ** [[https://imahajanshubham.github.io/docs/lang/java/factorial.html][Factorials in Java]]
@@ -124,7 +111,6 @@ digit answer.
 #+end_quote
 
 *February 18,* 2018
------
 
 ** [[https://imahajanshubham.github.io/docs/lang/java/hashmap.html][Hash Maps in Java]]
 
@@ -134,7 +120,6 @@ properties, syntax to creating a simple program of phonebook in Java.
 #+end_quote
 
 *February 9,* 2018
------
 
 * Thank You, 😍
 #+INCLUDE: ../+layouts/footer.org
