@@ -248,6 +248,4 @@ in an array.
   </ul>
 #+end_export
 
------
-
 #+INCLUDE: ../../../+layouts/footer.org

@@ -30,6 +30,4 @@ View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/b
   </ul>
 #+end_export
 
------
-
 #+INCLUDE: ../../../../+layouts/footer.org

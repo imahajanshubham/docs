@@ -182,6 +182,4 @@ properties, syntax to creating a simple program of phonebook in Java.
   </ul>
 #+end_export
 
------
-
 #+INCLUDE: ../+layouts/footer.org
