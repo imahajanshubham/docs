@@ -10,6 +10,8 @@
 #+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
 
+#+OPTIONS: num:nil
+
 #+ATTR_HTML: :width 100% class="center"
 |------+--------+---------|
 | <c>  | <c>    | <c>     |

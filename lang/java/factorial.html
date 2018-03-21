@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-21 Wed 08:47 -->
+<!-- 2018-03-21 Wed 11:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Factorial of a Number</title>
@@ -242,23 +242,23 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org1123bca">1. Problem Statement</a></li>
-<li><a href="#org0337fe1">2. Few Examples</a>
+<li><a href="#org1123bca">Problem Statement</a></li>
+<li><a href="#org0337fe1">Few Examples</a>
 <ul>
-<li><a href="#orgf7b3855">2.1. Example #1</a></li>
-<li><a href="#orgfec6a96">2.2. Example #2</a></li>
+<li><a href="#orgf7b3855">Example #1</a></li>
+<li><a href="#orgfec6a96">Example #2</a></li>
 </ul>
 </li>
-<li><a href="#org19f705e">3. Let's Begin!</a>
+<li><a href="#org19f705e">Let's Begin!</a>
 <ul>
-<li><a href="#org48f9e46">3.1. What did we observed?</a></li>
-<li><a href="#orgbd7ec06">3.2. What should we do to store such big values?</a></li>
-<li><a href="#org67e4b23">3.3. The initial value of a factorial</a></li>
-<li><a href="#org523c2e0">3.4. One step closer towards the Answer</a></li>
+<li><a href="#org48f9e46">What did we observed?</a></li>
+<li><a href="#orgbd7ec06">What should we do to store such big values?</a></li>
+<li><a href="#org67e4b23">The initial value of a factorial</a></li>
+<li><a href="#org523c2e0">One step closer towards the Answer</a></li>
 </ul>
 </li>
-<li><a href="#org3048472">4. The Final Solution</a></li>
-<li><a href="#orgd20ec01">5. Thank You, 😍</a></li>
+<li><a href="#org3048472">The Final Solution</a></li>
+<li><a href="#orgd20ec01">Thank You, 😍</a></li>
 </ul>
 </div>
 </div>
@@ -282,8 +282,8 @@ for the JavaScript code in this tag.
 </table>
 
 <div id="outline-container-org1123bca" class="outline-2">
-<h2 id="org1123bca"><span class="section-number-2">1</span> Problem Statement</h2>
-<div class="outline-text-2" id="text-1">
+<h2 id="org1123bca">Problem Statement</h2>
+<div class="outline-text-2" id="text-org1123bca">
 <p>
 Write a program that, given a number <code>n</code> from STDIN, prints out the factorial of <code>n</code> to STDOUT:
 </p>
@@ -296,12 +296,12 @@ Write a program that, given a number <code>n</code> from STDIN, prints out the f
 </div>
 
 <div id="outline-container-org0337fe1" class="outline-2">
-<h2 id="org0337fe1"><span class="section-number-2">2</span> Few Examples</h2>
-<div class="outline-text-2" id="text-2">
+<h2 id="org0337fe1">Few Examples</h2>
+<div class="outline-text-2" id="text-org0337fe1">
 </div>
 <div id="outline-container-orgf7b3855" class="outline-3">
-<h3 id="orgf7b3855"><span class="section-number-3">2.1</span> Example #1</h3>
-<div class="outline-text-3" id="text-2-1">
+<h3 id="orgf7b3855">Example #1</h3>
+<div class="outline-text-3" id="text-orgf7b3855">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -335,8 +335,8 @@ So given the input <code>3</code>, your program should output:
 </div>
 
 <div id="outline-container-orgfec6a96" class="outline-3">
-<h3 id="orgfec6a96"><span class="section-number-3">2.2</span> Example #2</h3>
-<div class="outline-text-3" id="text-2-2">
+<h3 id="orgfec6a96">Example #2</h3>
+<div class="outline-text-3" id="text-orgfec6a96">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -371,8 +371,8 @@ So given the input <code>7</code>, your program should output:
 </div>
 
 <div id="outline-container-org19f705e" class="outline-2">
-<h2 id="org19f705e"><span class="section-number-2">3</span> Let's Begin!</h2>
-<div class="outline-text-2" id="text-3">
+<h2 id="org19f705e">Let's Begin!</h2>
+<div class="outline-text-2" id="text-org19f705e">
 <ul class="org-ul">
 <li>Let's say we want to calculate the factorial of <code>5</code>. This answer is <code>120</code>.</li>
 <li>What if we want to calculate the factorial of <code>10</code>? The answer would be <code>3628800</code>.</li>
@@ -381,8 +381,8 @@ So given the input <code>7</code>, your program should output:
 </div>
 
 <div id="outline-container-org48f9e46" class="outline-3">
-<h3 id="org48f9e46"><span class="section-number-3">3.1</span> What did we observed?</h3>
-<div class="outline-text-3" id="text-3-1">
+<h3 id="org48f9e46">What did we observed?</h3>
+<div class="outline-text-3" id="text-org48f9e46">
 <ul class="org-ul">
 <li>Factorial of a number grows very fast as we increase the number.</li>
 </ul>
@@ -403,8 +403,8 @@ the result poses a hurdle.
 </div>
 
 <div id="outline-container-orgbd7ec06" class="outline-3">
-<h3 id="orgbd7ec06"><span class="section-number-3">3.2</span> What should we do to store such big values?</h3>
-<div class="outline-text-3" id="text-3-2">
+<h3 id="orgbd7ec06">What should we do to store such big values?</h3>
+<div class="outline-text-3" id="text-orgbd7ec06">
 <p>
 Here comes <code>BigInteger</code> class in java to the rescue!
 </p>
@@ -431,9 +431,9 @@ for <code>BigInteger</code> class and name it as <code>factorial</code>.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #3a81c3; font-weight: bold;">private</span> <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">calculateFactorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">numberWhoseFactToFind</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-    <span style="color: #ba2f59; font-weight: bold;">BigInteger</span> <span style="color: #715ab1;">factorial</span>;
-<span style="color: #3a81c3;">}</span>
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">calculateFactorial</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">numberWhoseFactToFind</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">BigInteger</span> <span style="color: #7590db;">factorial</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -447,8 +447,8 @@ Don't forget to <b>import</b> <code>java.math.BigInteger</code> class!
 </div>
 
 <div id="outline-container-org67e4b23" class="outline-3">
-<h3 id="org67e4b23"><span class="section-number-3">3.3</span> The initial value of a factorial</h3>
-<div class="outline-text-3" id="text-3-3">
+<h3 id="org67e4b23">The initial value of a factorial</h3>
+<div class="outline-text-3" id="text-org67e4b23">
 <p>
 Now, let's recall the logic for calculating the factorial of a number <code>n</code>:
 </p>
@@ -477,17 +477,17 @@ factorial by <code>1</code>.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #3a81c3; font-weight: bold;">private</span> <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">calculateFactorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">numberWhoseFactToFind</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-    <span style="color: #ba2f59; font-weight: bold;">BigInteger</span> <span style="color: #715ab1;">factorial</span> = <span style="color: #4e3163;">BigInteger</span>.ONE;
-<span style="color: #3a81c3;">}</span>
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">calculateFactorial</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">numberWhoseFactToFind</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">BigInteger</span> <span style="color: #7590db;">factorial</span> = <span style="color: #a45bad;">BigInteger</span>.ONE;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
 
 <div id="outline-container-org523c2e0" class="outline-3">
-<h3 id="org523c2e0"><span class="section-number-3">3.4</span> One step closer towards the Answer</h3>
-<div class="outline-text-3" id="text-3-4">
+<h3 id="org523c2e0">One step closer towards the Answer</h3>
+<div class="outline-text-3" id="text-org523c2e0">
 <p>
 Because we have initialized the factorial to <code>1</code>, we don't have to multiply number
 by one in each Test Case.
@@ -499,13 +499,13 @@ encountered.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #3a81c3; font-weight: bold;">private</span> <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">calculateFactorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">numberWhoseFactToFind</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-    <span style="color: #ba2f59; font-weight: bold;">BigInteger</span> <span style="color: #715ab1;">factorial</span> = <span style="color: #4e3163;">BigInteger</span>.ONE;
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">calculateFactorial</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">numberWhoseFactToFind</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">BigInteger</span> <span style="color: #7590db;">factorial</span> = <span style="color: #a45bad;">BigInteger</span>.ONE;
 
-    <span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">number</span> = <span style="color: #4e3163;">2</span>; number &lt;= numberWhoseFactToFind; number++<span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
+    <span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">number</span> = <span style="color: #a45bad;">2</span>; number &lt;= numberWhoseFactToFind; number++<span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
         factorial = factorial.multiply<span style="color: #2d9574;">(</span>BigInteger.valueOf<span style="color: #67b11d;">(</span>number<span style="color: #67b11d;">)</span><span style="color: #2d9574;">)</span>;
-    <span style="color: #6c3163;">}</span>
-<span style="color: #3a81c3;">}</span>
+    <span style="color: #bc6ec5;">}</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -517,8 +517,8 @@ And we are good to go!
 </div>
 
 <div id="outline-container-org3048472" class="outline-2">
-<h2 id="org3048472"><span class="section-number-2">4</span> The Final Solution</h2>
-<div class="outline-text-2" id="text-4">
+<h2 id="org3048472">The Final Solution</h2>
+<div class="outline-text-2" id="text-org3048472">
 <p>
 Connecting the dots i.e. creating a class <code>factorial</code> and a <code>main</code> function inside
 it and the calling the <code>calculateFactorial</code> (passing the input from user) from
@@ -526,28 +526,28 @@ there and <b>importing</b> all the necessary classes that are required.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #3a81c3; font-weight: bold;">import</span> <span style="color: #4e3163;">java</span>.<span style="color: #4e3163;">io</span>.*;
-<span style="color: #3a81c3; font-weight: bold;">import</span> <span style="color: #4e3163;">java</span>.<span style="color: #4e3163;">math</span>.<span style="color: #ba2f59; font-weight: bold;">BigInteger</span>;
-<span style="color: #3a81c3; font-weight: bold;">import</span> <span style="color: #4e3163;">java</span>.<span style="color: #4e3163;">util</span>.*;
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">io</span>.*;
+<span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">math</span>.<span style="color: #ce537a; font-weight: bold;">BigInteger</span>;
+<span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">util</span>.*;
 
-<span style="color: #3a81c3; font-weight: bold;">public</span> <span style="color: #3a81c3; font-weight: bold;">class</span> <span style="color: #ba2f59; font-weight: bold;">factorial</span> <span style="color: #3a81c3;">{</span>
-    <span style="color: #3a81c3; font-weight: bold;">public</span> <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">String</span><span style="color: #2d9574;">[]</span> <span style="color: #715ab1;">args</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
-        <span style="color: #ba2f59; font-weight: bold;">Scanner</span> <span style="color: #715ab1;">scanner</span> = <span style="color: #3a81c3; font-weight: bold;">new</span> <span style="color: #ba2f59; font-weight: bold;">Scanner</span><span style="color: #2d9574;">(</span>System.in<span style="color: #2d9574;">)</span>;
+<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">factorial</span> <span style="color: #4f97d7;">{</span>
+    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">String</span><span style="color: #2d9574;">[]</span> <span style="color: #7590db;">args</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+        <span style="color: #ce537a; font-weight: bold;">Scanner</span> <span style="color: #7590db;">scanner</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Scanner</span><span style="color: #2d9574;">(</span>System.in<span style="color: #2d9574;">)</span>;
         calculateFactorial<span style="color: #2d9574;">(</span>scanner.nextInt<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span>;
 
         scanner.close<span style="color: #2d9574;">()</span>;
-    <span style="color: #6c3163;">}</span>
+    <span style="color: #bc6ec5;">}</span>
 
-    <span style="color: #3a81c3; font-weight: bold;">private</span> <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">calculateFactorial</span><span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">numberWhoseFactToFind</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
-        <span style="color: #ba2f59; font-weight: bold;">BigInteger</span> <span style="color: #715ab1;">factorial</span> = <span style="color: #4e3163;">BigInteger</span>.ONE;
+    <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">calculateFactorial</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">numberWhoseFactToFind</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+        <span style="color: #ce537a; font-weight: bold;">BigInteger</span> <span style="color: #7590db;">factorial</span> = <span style="color: #a45bad;">BigInteger</span>.ONE;
 
-        <span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #2d9574;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">number</span> = <span style="color: #4e3163;">2</span>; number &lt;= numberWhoseFactToFind; number++<span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
+        <span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">number</span> = <span style="color: #a45bad;">2</span>; number &lt;= numberWhoseFactToFind; number++<span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
             factorial = factorial.multiply<span style="color: #67b11d;">(</span>BigInteger.valueOf<span style="color: #b1951d;">(</span>number<span style="color: #b1951d;">)</span><span style="color: #67b11d;">)</span>;
         <span style="color: #2d9574;">}</span>
 
         System.out.println<span style="color: #2d9574;">(</span>factorial<span style="color: #2d9574;">)</span>;
-    <span style="color: #6c3163;">}</span>
-<span style="color: #3a81c3;">}</span>
+    <span style="color: #bc6ec5;">}</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -564,8 +564,8 @@ Here's the screenshot for few test runs:
 </div>
 
 <div id="outline-container-orgd20ec01" class="outline-2">
-<h2 id="orgd20ec01"><span class="section-number-2">5</span> Thank You, 😍</h2>
-<div class="outline-text-2" id="text-5">
+<h2 id="orgd20ec01">Thank You, 😍</h2>
+<div class="outline-text-2" id="text-orgd20ec01">
 <hr />
 
 <div class="seealso">
@@ -651,7 +651,7 @@ Want to share something with me or just wanna chat?
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-03-21 Wed 08:47</p>
+<p class="date">Created: 2018-03-21 Wed 11:05</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
