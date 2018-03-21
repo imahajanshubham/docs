@@ -1,6 +1,7 @@
 #+INCLUDE: ../+layouts/header.org
 #+TITLE: Home
 
+#+ATTR_HTML: :width 10% class="center" background=“yellow”
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#about][About]]
 - [[#latest][Latest]]
