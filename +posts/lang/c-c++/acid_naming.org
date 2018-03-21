@@ -46,7 +46,6 @@ The next *q* lines will contain a single word *s*.
   output is /polyatomic acid/.
 - If the word does not meet any of the cases, then the correct output is /not an acid/.
 
-
 * Conditions
 - *1* <= *q* <= *100.*
 - Word *s* is made up of lower-case english letters.
