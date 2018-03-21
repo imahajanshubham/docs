@@ -14,7 +14,7 @@
   - [[#using-structure-with-typedef][using structure with ’typedef’]]
     - [[#syntax-1][Syntax:]]
     - [[#example][Example:]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * Basics of structures
 
@@ -312,5 +312,27 @@ So, finally the program becomes:
   }
 #+end_src
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/home.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Home</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/java/hashmap.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Hash Maps in Java</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../../../+layouts/footer.org

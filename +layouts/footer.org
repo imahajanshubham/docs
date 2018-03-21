@@ -1,5 +1,4 @@
 # -*- mode: org; -*-
------
 
 #+begin_seealso
 If this blog was worth your time, please do checkout my other [[https://imahajanshubham.github.io/docs/home.html][shares]] too.
@@ -25,6 +24,3 @@ Want to share something with me or just wanna chat?
 |---------+---------------------------|
 | *Mail me* | [[mailto:imahajanshubham@gmail.com?][imahajanshubham@gmail.com]] |
 |---------+---------------------------|
-
------
-#+html: <p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>

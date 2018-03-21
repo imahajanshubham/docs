@@ -1,6 +1,5 @@
 #+INCLUDE: ../+layouts/header.org
 #+TITLE: Home
-#+DATE: <2016-10-20>
 
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#about][About]]
@@ -18,7 +17,7 @@
 - [[#java][Java]]
   - [[#factorials-in-java][Factorials in Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * About
 Sharing my views and experience of *Problem Solving* approach via the blog.
@@ -121,5 +120,27 @@ properties, syntax to creating a simple program of phonebook in Java.
 
 *February 9,* 2018
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Structures And Pointers</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Beware Of The Assumptions</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../+layouts/footer.org

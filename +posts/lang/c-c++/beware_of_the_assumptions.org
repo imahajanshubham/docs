@@ -19,7 +19,7 @@
     - [[#almost-reached-the-destination][Almost reached the Destination!]]
 - [[#key-learnings][Key Learnings]]
 - [[#few-more-treats][Few more treats!]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * Greetings Everyone, 😊
 Been almost two days,
@@ -235,5 +235,27 @@ in an array.
 [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][view code]]
 -------------------------------------------------------------------------------
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Average Halfify (keteki)</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/home.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Home</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../../../+layouts/footer.org

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-21 Wed 11:06 -->
+<!-- 2018-03-21 Wed 13:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Beware Of The Assumptions</title>
@@ -270,7 +270,7 @@ for the JavaScript code in this tag.
 </li>
 <li><a href="#orga53cdf4">Key Learnings</a></li>
 <li><a href="#orgfd1236a">Few more treats!</a></li>
-<li><a href="#org6b14345">Thank You, 😍</a></li>
+<li><a href="#org0a9819c">Thank You!</a></li>
 </ul>
 </div>
 </div>
@@ -321,12 +321,12 @@ work perfectly:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">unsigned</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">factorial</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">unsigned</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">number</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">!</span>number<span style="color: #bc6ec5;">)</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">1</span>;
+<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">unsigned</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">factorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">unsigned</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">number</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span><span style="color: #4e3163;">!</span>number<span style="color: #6c3163;">)</span>
+    <span style="color: #3a81c3; font-weight: bold;">return</span> <span style="color: #4e3163;">1</span>;
 
-  <span style="color: #4f97d7; font-weight: bold;">return</span> number * factorial<span style="color: #bc6ec5;">(</span>number - <span style="color: #a45bad;">1</span><span style="color: #bc6ec5;">)</span>;
-<span style="color: #4f97d7;">}</span>
+  <span style="color: #3a81c3; font-weight: bold;">return</span> number * factorial<span style="color: #6c3163;">(</span>number - <span style="color: #4e3163;">1</span><span style="color: #6c3163;">)</span>;
+<span style="color: #3a81c3;">}</span>
 </pre>
 </div>
 
@@ -522,14 +522,14 @@ of practice, I finally managed develop the following logic:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">factorial</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">number</span>, <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">value</span><span style="color: #bc6ec5;">[]</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  value<span style="color: #bc6ec5;">[</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">]</span> = <span style="color: #a45bad;">1</span>;
-  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">noOfDigits</span> = <span style="color: #a45bad;">1</span>;
+<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">factorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">number</span>, <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">value</span><span style="color: #6c3163;">[]</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  value<span style="color: #6c3163;">[</span><span style="color: #4e3163;">0</span><span style="color: #6c3163;">]</span> = <span style="color: #4e3163;">1</span>;
+  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">noOfDigits</span> = <span style="color: #4e3163;">1</span>;
 
-  <span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">localNumber</span> = <span style="color: #a45bad;">2</span>; localNumber &lt;= number; localNumber++<span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+  <span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">localNumber</span> = <span style="color: #4e3163;">2</span>; localNumber &lt;= number; localNumber++<span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
     noOfDigits = multiply<span style="color: #2d9574;">(</span>localNumber, value, noOfDigits<span style="color: #2d9574;">)</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+  <span style="color: #6c3163;">}</span>
+<span style="color: #3a81c3;">}</span>
 </pre>
 </div>
 
@@ -577,12 +577,12 @@ logic. And store the remainder in ~array[0].
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">indx</span> = <span style="color: #a45bad;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">prod</span> = value<span style="color: #bc6ec5;">[</span>indx<span style="color: #bc6ec5;">]</span> * localNumber + carry;
+<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">indx</span> = <span style="color: #4e3163;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">prod</span> = value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> * localNumber + carry;
 
-  value<span style="color: #bc6ec5;">[</span>indx<span style="color: #bc6ec5;">]</span> = prod % <span style="color: #a45bad;">10</span>;
-  carry = prod / <span style="color: #a45bad;">10</span>;
-<span style="color: #4f97d7;">}</span>
+  value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> = prod % <span style="color: #4e3163;">10</span>;
+  carry = prod / <span style="color: #4e3163;">10</span>;
+<span style="color: #3a81c3;">}</span>
 </pre>
 </div>
 
@@ -609,12 +609,12 @@ If again a carry is generated (ex. 9 + 1 = 10), then repeat <b>previous step</b>
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">indx</span> = <span style="color: #a45bad;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">prod</span> = value<span style="color: #bc6ec5;">[</span>indx<span style="color: #bc6ec5;">]</span> * localNumber + carry;
+<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">indx</span> = <span style="color: #4e3163;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">prod</span> = value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> * localNumber + carry;
 
-  value<span style="color: #bc6ec5;">[</span>indx<span style="color: #bc6ec5;">]</span> = prod % <span style="color: #a45bad;">10</span>;
-  carry = prod / <span style="color: #a45bad;">10</span>;
-<span style="color: #4f97d7;">}</span>
+  value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> = prod % <span style="color: #4e3163;">10</span>;
+  carry = prod / <span style="color: #4e3163;">10</span>;
+<span style="color: #3a81c3;">}</span>
 </pre>
 </div>
 
@@ -697,9 +697,26 @@ in an array.
 </div>
 </div>
 
-<div id="outline-container-org6b14345" class="outline-2">
-<h2 id="org6b14345">Thank You, 😍</h2>
-<div class="outline-text-2" id="text-org6b14345">
+<div id="outline-container-org0a9819c" class="outline-2">
+<h2 id="org0a9819c">Thank You!</h2>
+<div class="outline-text-2" id="text-org0a9819c">
+<ul class="pager">
+    <li class="previous">
+        <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html">
+            <div class="tooltip">Previous
+                <span class="tooltiptext">Average Halfify (keteki)</span>
+            </div>
+        </a>
+    </li>
+    <li class="next">
+        <a href="https://imahajanshubham.github.io/docs/home.html">
+            <div class="tooltip">Next
+                <span class="tooltiptext">Home</span>
+            </div>
+        </a>
+    </li>
+</ul>
+
 <hr />
 
 <div class="seealso">
@@ -777,15 +794,12 @@ Want to share something with me or just wanna chat?
 </tr>
 </tbody>
 </table>
-
-<hr />
-<p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-03-21 Wed 11:06</p>
+<p class="date">Created: 2018-03-21 Wed 13:59</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

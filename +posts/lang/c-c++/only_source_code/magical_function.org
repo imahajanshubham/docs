@@ -5,7 +5,7 @@
 - [[#about][About]]
 - [[#question][Question]]
 - [[#solution][Solution]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * About
 The goal was to *recognize the pattern* of a given function.
@@ -16,5 +16,27 @@ View the original *Magical Function* question on [[https://www.codechef.com/CBEN
 * Solution
 View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c][GitHub]].
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Minimizing the Dot Product</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/little_chefnsums.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Little Chef and Sums</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../../../../+layouts/footer.org

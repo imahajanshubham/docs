@@ -5,7 +5,7 @@
 - [[#about][About]]
 - [[#question][Question]]
 - [[#solution][Solution]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * About
 The goal was calculate the total of *suffix-sum* and *prefix-sum* of given *n* values in an array.
@@ -16,5 +16,27 @@ View the original *Little Chef and Sums* question on [[https://www.codechef.com/
 * Solution
 View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][GitHub]].
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Magical Function</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Average Halfify (keteki)</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../../../../+layouts/footer.org

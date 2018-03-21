@@ -5,7 +5,7 @@
 - [[#about][About]]
 - [[#question][Question]]
 - [[#solution][Solution]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * About
 The goal was to calculate the recursive average of pairs of n numbers.
@@ -16,5 +16,27 @@ View the original *Average Halfify* question on [[https://www.codechef.com/KQM82
 * Solution
 View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem19/halfifyaverage.c][GitHub]].
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/little_chefnsums.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Little Chef and Sums</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Beware Of The Assumptions</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../../../../+layouts/footer.org

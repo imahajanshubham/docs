@@ -5,7 +5,7 @@
 - [[#about][About]]
 - [[#question][Question]]
 - [[#solution][Solution]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * About
 The goal was to calculate the *minimum dot product of given two vectors*. we could
@@ -17,5 +17,27 @@ View the original *Minimizing the Dot Product* question on [[https://www.codeche
 * Solution
 View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c][GitHub]].
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Occurrences of a Digit</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Magical Function</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../../../../+layouts/footer.org

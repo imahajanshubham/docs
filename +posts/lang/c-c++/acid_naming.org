@@ -15,7 +15,7 @@
   - [[#how-to-check-if-acid-name-ends-with-ic][How to check if ~acid name~ ends with "ic"?]]
   - [[#connecting-the-dots][Connecting the dots...]]
   - [[#finally-here-comes-the-main-function][Finally, Here comes the ~main~ function!]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * The Problem Statement
 Jonathan is in a science class, but because he does not understand how to name
@@ -348,5 +348,27 @@ upon the input:
   }
 #+end_src
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/java/hashmap.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Hash Maps in Java</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Factorial of a Number</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../../../+layouts/footer.org

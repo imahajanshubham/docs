@@ -1,8 +1,30 @@
-#+TITLE: Title
 #+INCLUDE: ../+layouts/header.org
+#+TITLE: Title
 
 * Table of Contents                                          :TOC@4:noexport:
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="#">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">PREVIOUS</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="#">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">NEXT</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../+layouts/footer.org

@@ -12,7 +12,7 @@
   - [[#the-initial-value-of-a-factorial][The initial value of a factorial]]
   - [[#one-step-closer-towards-the-answer][One step closer towards the Answer]]
 - [[#the-final-solution][The Final Solution]]
-- [[#thank-you-][Thank You, 😍]]
+- [[#thank-you][Thank You!]]
 
 * Problem Statement
 Write a program that, given a number ~n~ from STDIN, prints out the factorial of ~n~ to STDOUT:
@@ -162,5 +162,27 @@ Here's the screenshot for few test runs:
 
 [[https://raw.githubusercontent.com/imahajanshubham/docs/master/%2Bassets/lang/java/factorial.png]]
 
-* Thank You, 😍
+* Thank You!
+
+#+begin_export html
+  <ul class="pager">
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html">
+              <div class="tooltip">Previous
+                  <span class="tooltiptext">Acid Naming Problem</span>
+              </div>
+          </a>
+      </li>
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html">
+              <div class="tooltip">Next
+                  <span class="tooltiptext">Occurrences of a Digit</span>
+              </div>
+          </a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
 #+INCLUDE: ../../../+layouts/footer.org
