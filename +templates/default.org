@@ -8,21 +8,14 @@
 
 #+begin_export html
   <ul class="pager">
-      <li class="previous">
-          <a href="#">
-              <div class="tooltip">Previous
-                  <span class="tooltiptext">PREVIOUS</span>
-              </div>
-          </a>
-      </li>
       <li class="next">
-          <a href="#">
-              <div class="tooltip">Next
-                  <span class="tooltiptext">NEXT</span>
-              </div>
-          </a>
+          <a href="" class="btn btn-neutral float-right" title="" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="" class="btn btn-neutral" title="" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       </li>
   </ul>
+#+end_export
 #+end_export
 
 -----
