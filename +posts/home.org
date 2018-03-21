@@ -173,14 +173,14 @@ properties, syntax to creating a simple program of phonebook in Java.
 
 #+begin_export html
   <ul class="pager">
-      <li class="previous">
+      <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html">
               <div class="tooltip">Next
                   <span class="tooltiptext">Structures And Pointers</span>
               </div>
           </a>
       </li>
-      <li class="next">
+      <li class="previous">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html">
               <div class="tooltip">Previous
                   <span class="tooltiptext">Beware Of The Assumptions</span>
