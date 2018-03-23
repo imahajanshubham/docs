@@ -330,4 +330,3 @@ we learned something :)
 #+end_export
 
 #+INCLUDE: ../../../+layouts/footer.org
-
