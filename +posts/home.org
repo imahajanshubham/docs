@@ -1,7 +1,7 @@
 #+INCLUDE: ../+layouts/header.org
 #+TITLE: Home
 
-* Beginners tutorial                                      :TOC_4_gh:noexport:
+* Table of Contents                                       :TOC_4_gh:noexport:
 - [[#about][About]]
 - [[#latest][Latest]]
 - [[#c-c][C-C++]]
@@ -17,7 +17,7 @@
 - [[#java][Java]]
   - [[#factorials-in-java][Factorials in Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
-- [[#thank-you][Thank you]]
+- [[#thank-you][Thank You!]]
 
 * About
 :PROPERTIES:
@@ -165,7 +165,7 @@ properties, syntax to creating a simple program of phonebook in Java.
 
 *February 9,* 2018
 
-* Thank you
+* Thank You!
 :PROPERTIES:
 :CUSTOM_ID: thank-you
 :END:
