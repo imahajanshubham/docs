@@ -2,7 +2,8 @@
 #+HTML_HEAD: <link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp">
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
 
 #+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -18,3 +19,9 @@
 |------+--------+---------|
 | [[https://imahajanshubham.github.io/docs/home.html][Home]] | [[https://github.com/imahajanshubham][GitHub]] | [[https://sites.google.com/view/the-launchpad/home][Website]] |
 |------+--------+---------|
+
+-----
+
+#+begin_export html
+<a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" align="middle" /></a>
+#+end_export
