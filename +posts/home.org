@@ -1,7 +1,6 @@
 #+INCLUDE: ../+layouts/header.org
 #+TITLE: Home
 
-#+ATTR_HTML: :width 10% class="center" background=“yellow”
 * Beginners tutorial                                      :TOC_4_gh:noexport:
 - [[#about][About]]
 - [[#latest][Latest]]
@@ -18,7 +17,7 @@
 - [[#java][Java]]
   - [[#factorials-in-java][Factorials in Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you][Thank you]]
 
 * About
 :PROPERTIES:
@@ -59,8 +58,8 @@ Calculating the factorials of 100+ using *Divide and Conquer* approach!
 :END:
 
 #+begin_quote
-The goal was to find the no. of times, *a particular digit appeared* (occurrences)
-in a *very large positive number*.
+The goal was to find the no. of times, *a particular digit appeared*
+(occurrences) in a *very large positive number*.
 #+end_quote
 
 *February 24,* 2018
@@ -166,7 +165,7 @@ properties, syntax to creating a simple program of phonebook in Java.
 
 *February 9,* 2018
 
-* Thank You!
+* Thank you
 :PROPERTIES:
 :CUSTOM_ID: thank-you
 :END:

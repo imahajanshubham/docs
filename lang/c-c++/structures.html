@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-21 Wed 19:33 -->
+<!-- 2018-03-23 Fri 09:11 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Structures And Pointers</title>
@@ -183,6 +183,7 @@
 <link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp">
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
 <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -242,31 +243,31 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org905e65e">Basics of structures</a>
+<li><a href="#org1a7826e">1. Basics of structures</a>
 <ul>
-<li><a href="#orga96c539">Definition</a>
+<li><a href="#orge857279">1.1. Definition</a>
 <ul>
-<li><a href="#org839d2ae">But what do we mean by that?</a></li>
+<li><a href="#org9ac453a">1.1.1. But what do we mean by that?</a></li>
 </ul>
 </li>
-<li><a href="#orgab6f297">Syntax</a></li>
-<li><a href="#orgc772138">Properties of a structure</a></li>
-<li><a href="#org097c6a8">Structure variables</a></li>
+<li><a href="#orgb01517e">1.2. Syntax</a></li>
+<li><a href="#orge345bc6">1.3. Properties of a structure</a></li>
+<li><a href="#orgbeb4831">1.4. Structure variables</a></li>
 </ul>
 </li>
-<li><a href="#org548b791">A basic Students Record program</a>
+<li><a href="#org8d3eb72">2. A basic Students Record program</a>
 <ul>
-<li><a href="#orga5d14bf">using standard approach</a></li>
-<li><a href="#orge0f3440">using structural approach</a></li>
-<li><a href="#orgb3aaf1a">using structure with ’typedef’</a>
+<li><a href="#org370825f">2.1. using standard approach</a></li>
+<li><a href="#org94ae013">2.2. using structural approach</a></li>
+<li><a href="#org15bfaf3">2.3. using structure with ’typedef’</a>
 <ul>
-<li><a href="#org98fef00">Syntax:</a></li>
-<li><a href="#orgadffe67">Example:</a></li>
+<li><a href="#orgbabfe60">2.3.1. Syntax:</a></li>
+<li><a href="#org74e8073">2.3.2. Example:</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org8585ee0">Thank You!</a></li>
+<li><a href="#org6e9db40">3. Thank You!</a></li>
 </ul>
 </div>
 </div>
@@ -289,22 +290,22 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<div id="outline-container-org905e65e" class="outline-2">
-<h2 id="org905e65e">Basics of structures</h2>
-<div class="outline-text-2" id="text-org905e65e">
+<div id="outline-container-org1a7826e" class="outline-2">
+<h2 id="org1a7826e"><span class="section-number-2">1</span> Basics of structures</h2>
+<div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orga96c539" class="outline-3">
-<h3 id="orga96c539">Definition</h3>
-<div class="outline-text-3" id="text-orga96c539">
+<div id="outline-container-orge857279" class="outline-3">
+<h3 id="orge857279"><span class="section-number-3">1.1</span> Definition</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
 A structure simply is a collection of finite set of similar (heterogeneous)
 collection of data elements under a single name.
 </p>
 </div>
 
-<div id="outline-container-org839d2ae" class="outline-4">
-<h4 id="org839d2ae">But what do we mean by that?</h4>
-<div class="outline-text-4" id="text-org839d2ae">
+<div id="outline-container-org9ac453a" class="outline-4">
+<h4 id="org9ac453a"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
+<div class="outline-text-4" id="text-1-1-1">
 <p>
 Consider a scenario where we want to maintain a College record of a student.
 Now, let’s try to visualize the various variables we are going to deal with:
@@ -489,23 +490,23 @@ corresponding groups. Isn’t it? That’s exactly the idea behind the concepts 
 </div>
 </div>
 
-<div id="outline-container-orgab6f297" class="outline-3">
-<h3 id="orgab6f297">Syntax</h3>
-<div class="outline-text-3" id="text-orgab6f297">
+<div id="outline-container-orgb01517e" class="outline-3">
+<h3 id="orgb01517e"><span class="section-number-3">1.2</span> Syntax</h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 In C Language, The syntax of writing a block of structure is follows:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">struct</span> &lt;structure_name&gt; <span style="color: #3a81c3;">{</span>
-  data_element#<span style="color: #4e3163;">1</span>;
-  data_element#<span style="color: #4e3163;">2</span>;
-  data_element#<span style="color: #4e3163;">3</span>;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> &lt;structure_name&gt; <span style="color: #4f97d7;">{</span>
+  data_element#<span style="color: #a45bad;">1</span>;
+  data_element#<span style="color: #a45bad;">2</span>;
+  data_element#<span style="color: #a45bad;">3</span>;
   .
   .
   .
   data_element#n;
-  <span style="color: #3a81c3;">}</span>;
+  <span style="color: #4f97d7;">}</span>;
 </pre>
 </div>
 
@@ -576,24 +577,24 @@ becomes:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">name</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">age</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> <span style="color: #715ab1;">gender</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">DOB</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">email</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">mobile</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> <span style="color: #715ab1;">father_Name</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> <span style="color: #715ab1;">mother_Name</span>;
-<span style="color: #3a81c3;">}</span>;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">name</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">age</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">gender</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">DOB</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">email</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">mobile</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">father_Name</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">mother_Name</span>;
+<span style="color: #4f97d7;">}</span>;
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc772138" class="outline-3">
-<h3 id="orgc772138">Properties of a structure</h3>
-<div class="outline-text-3" id="text-orgc772138">
+<div id="outline-container-orge345bc6" class="outline-3">
+<h3 id="orge345bc6"><span class="section-number-3">1.3</span> Properties of a structure</h3>
+<div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>Structure in itself is user-defined data-type.</li>
 <li>The <code>&lt;structure_name&gt;</code> is a pointer, pointing the first data-element of
@@ -614,9 +615,9 @@ it’s variables. They can’t be directly accessed outside the structure.</li>
 </div>
 </div>
 
-<div id="outline-container-org097c6a8" class="outline-3">
-<h3 id="org097c6a8">Structure variables</h3>
-<div class="outline-text-3" id="text-org097c6a8">
+<div id="outline-container-orgbeb4831" class="outline-3">
+<h3 id="orgbeb4831"><span class="section-number-3">1.4</span> Structure variables</h3>
+<div class="outline-text-3" id="text-1-4">
 <p>
 As we discussed earlier, <code>structure</code> itself is a user-defined data-type. So,
 every data-type must’ve a variable-name so as to use it. In case of
@@ -624,7 +625,7 @@ every data-type must’ve a variable-name so as to use it. In case of
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">struct</span> &lt;structure_name&gt; &lt;structure_variable&gt;; 
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> &lt;structure_name&gt; &lt;structure_variable&gt;; 
 </pre>
 </div>
 
@@ -633,7 +634,7 @@ For example:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #715ab1;">std1</span>;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #7590db;">std1</span>;
 </pre>
 </div>
 
@@ -644,9 +645,9 @@ So, <code>std1</code> is a variable name of <code>struct student_Personal_Detail
 </div>
 </div>
 
-<div id="outline-container-org548b791" class="outline-2">
-<h2 id="org548b791">A basic Students Record program</h2>
-<div class="outline-text-2" id="text-org548b791">
+<div id="outline-container-org8d3eb72" class="outline-2">
+<h2 id="org8d3eb72"><span class="section-number-2">2</span> A basic Students Record program</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 Now, Let’s try to develop a program where our goal is to get the following data
 of a student from the user:
@@ -660,89 +661,89 @@ of a student from the user:
 </ul>
 </div>
 
-<div id="outline-container-orga5d14bf" class="outline-3">
-<h3 id="orga5d14bf">using standard approach</h3>
-<div class="outline-text-3" id="text-orga5d14bf">
+<div id="outline-container-org370825f" class="outline-3">
+<h3 id="org370825f"><span class="section-number-3">2.1</span> using standard approach</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 Writing ’Students Record’ program using only single main/normal function.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #3a81c3;">&gt;</span>
-<span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #3a81c3;">&gt;</span>
+<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #4f97d7;">&gt;</span>
 
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">main</span> <span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">rollNo</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">name</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">email</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">branch</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span> <span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">rollNo</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">name</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">email</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">branch</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Roll No - "</span><span style="color: #6c3163;">)</span>;
-  scanf<span style="color: #6c3163;">(</span>&#8221;%d&#8220;, &amp;rollNo<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Roll No - "</span><span style="color: #bc6ec5;">)</span>;
+  scanf<span style="color: #bc6ec5;">(</span>&#8221;%d&#8220;, &amp;rollNo<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Name - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>&amp;name, <span style="color: #4e3163;">25</span>, stdin<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Name - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>&amp;name, <span style="color: #a45bad;">25</span>, stdin<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Branch - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>&amp;branch, <span style="color: #4e3163;">10</span>, stdin<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Branch - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>&amp;branch, <span style="color: #a45bad;">10</span>, stdin<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Email - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>&amp;email, <span style="color: #4e3163;">50</span>, stdin<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Email - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>&amp;email, <span style="color: #a45bad;">50</span>, stdin<span style="color: #bc6ec5;">)</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">return</span> EXIT_SUCCESS;
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">return</span> EXIT_SUCCESS;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orge0f3440" class="outline-3">
-<h3 id="orge0f3440">using structural approach</h3>
-<div class="outline-text-3" id="text-orge0f3440">
+<div id="outline-container-org94ae013" class="outline-3">
+<h3 id="org94ae013"><span class="section-number-3">2.2</span> using structural approach</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
 Same program, but instead using structure.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #3a81c3;">&gt;</span>
-<span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #3a81c3;">&gt;</span>
+<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #4f97d7;">&gt;</span>
 
-<span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">rollNo</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">name</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">email</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">branch</span>;
-<span style="color: #3a81c3;">}</span>;
+<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">rollNo</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">name</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">email</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">branch</span>;
+<span style="color: #4f97d7;">}</span>;
 
-<span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #715ab1;">std1</span>;
+<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #7590db;">std1</span>;
 
-<span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">populate_Structure</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Roll No. - "</span><span style="color: #6c3163;">)</span>;
-  scanf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;std1.rollNo<span style="color: #6c3163;">)</span>;
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">populate_Structure</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Roll No. - "</span><span style="color: #bc6ec5;">)</span>;
+  scanf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;std1.rollNo<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Name - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>std1.name, <span style="color: #4e3163;">25</span>, stdin<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Name - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>std1.name, <span style="color: #a45bad;">25</span>, stdin<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Branch - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>std1.branch, <span style="color: #4e3163;">10</span>, stdin<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Branch - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>std1.branch, <span style="color: #a45bad;">10</span>, stdin<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Email - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>std1.email, <span style="color: #4e3163;">50</span>, stdin<span style="color: #6c3163;">)</span>;
-<span style="color: #3a81c3;">}</span>
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Email - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>std1.email, <span style="color: #a45bad;">50</span>, stdin<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  populate_Structure<span style="color: #6c3163;">()</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  populate_Structure<span style="color: #bc6ec5;">()</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">return</span> EXIT_SUCCESS;
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">return</span> EXIT_SUCCESS;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb3aaf1a" class="outline-3">
-<h3 id="orgb3aaf1a">using structure with ’typedef’</h3>
-<div class="outline-text-3" id="text-orgb3aaf1a">
+<div id="outline-container-org15bfaf3" class="outline-3">
+<h3 id="org15bfaf3"><span class="section-number-3">2.3</span> using structure with ’typedef’</h3>
+<div class="outline-text-3" id="text-2-3">
 <p>
 The <code>typedef</code> <i>stands</i> for <code>type definition</code>. So using <code>typedef</code>, we can give a
 new alias/name to already existing data-type i.e. same as one person can have
@@ -750,27 +751,27 @@ two names.
 </p>
 </div>
 
-<div id="outline-container-org98fef00" class="outline-4">
-<h4 id="org98fef00">Syntax:</h4>
-<div class="outline-text-4" id="text-org98fef00">
+<div id="outline-container-orgbabfe60" class="outline-4">
+<h4 id="orgbabfe60"><span class="section-number-4">2.3.1</span> Syntax:</h4>
+<div class="outline-text-4" id="text-2-3-1">
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">typedef</span> &lt;datatype&gt; &lt;alias/new_name&gt;;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">typedef</span> &lt;datatype&gt; &lt;alias/new_name&gt;;
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgadffe67" class="outline-4">
-<h4 id="orgadffe67">Example:</h4>
-<div class="outline-text-4" id="text-orgadffe67">
+<div id="outline-container-org74e8073" class="outline-4">
+<h4 id="org74e8073"><span class="section-number-4">2.3.2</span> Example:</h4>
+<div class="outline-text-4" id="text-2-3-2">
 <p>
 Instead of writing:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #715ab1;">std1</span>;
-<span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #715ab1;">std2</span>;
-<span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #715ab1;">std3</span>;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #7590db;">std1</span>;
+<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #7590db;">std2</span>;
+<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #7590db;">std3</span>;
 </pre>
 </div>
 
@@ -779,11 +780,11 @@ We can take create our own data-type using <code>typedef</code> as follows:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">typedef</span> <span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #ba2f59; font-weight: bold;">stdRecord</span>;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">typedef</span> <span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #ce537a; font-weight: bold;">stdRecord</span>;
 
-<span style="color: #ba2f59; font-weight: bold;">stdRecord</span> <span style="color: #715ab1;">std1</span>;
-<span style="color: #ba2f59; font-weight: bold;">stdRecord</span> <span style="color: #715ab1;">std2</span>;
-<span style="color: #ba2f59; font-weight: bold;">stdRecord</span> <span style="color: #715ab1;">std3</span>;
+<span style="color: #ce537a; font-weight: bold;">stdRecord</span> <span style="color: #7590db;">std1</span>;
+<span style="color: #ce537a; font-weight: bold;">stdRecord</span> <span style="color: #7590db;">std2</span>;
+<span style="color: #ce537a; font-weight: bold;">stdRecord</span> <span style="color: #7590db;">std3</span>;
 </pre>
 </div>
 
@@ -792,38 +793,38 @@ So, finally the program becomes:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #3a81c3;">&gt;</span>
-<span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #3a81c3;">&gt;</span>
+<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #4f97d7;">&gt;</span>
 
-<span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">rollNo</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">name</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">email</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> *<span style="color: #715ab1;">branch</span>;
-<span style="color: #3a81c3;">}</span>;
+<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">rollNo</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">name</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">email</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">branch</span>;
+<span style="color: #4f97d7;">}</span>;
 
-<span style="color: #3a81c3; font-weight: bold;">typedef</span> <span style="color: #3a81c3; font-weight: bold;">struct</span> <span style="color: #ba2f59; font-weight: bold;">student_Personal_Details</span> <span style="color: #ba2f59; font-weight: bold;">stdRecord</span>;
-<span style="color: #ba2f59; font-weight: bold;">stdRecord</span> <span style="color: #715ab1;">std1</span>;
+<span style="color: #4f97d7; font-weight: bold;">typedef</span> <span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">student_Personal_Details</span> <span style="color: #ce537a; font-weight: bold;">stdRecord</span>;
+<span style="color: #ce537a; font-weight: bold;">stdRecord</span> <span style="color: #7590db;">std1</span>;
 
-<span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">populate_Structure</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Roll No. - "</span><span style="color: #6c3163;">)</span>;
-  scanf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;std1.rollNo<span style="color: #6c3163;">)</span>;
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">populate_Structure</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Roll No. - "</span><span style="color: #bc6ec5;">)</span>;
+  scanf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;std1.rollNo<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Name - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>std1.name, <span style="color: #4e3163;">25</span>, stdin<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Name - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>std1.name, <span style="color: #a45bad;">25</span>, stdin<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Branch - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>std1.branch, <span style="color: #4e3163;">10</span>, stdin<span style="color: #6c3163;">)</span>;
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Branch - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>std1.branch, <span style="color: #a45bad;">10</span>, stdin<span style="color: #bc6ec5;">)</span>;
 
-  printf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"Email - "</span><span style="color: #6c3163;">)</span>;
-  fgets<span style="color: #6c3163;">(</span>std1.email, <span style="color: #4e3163;">50</span>, stdin<span style="color: #6c3163;">)</span>;
-<span style="color: #3a81c3;">}</span>
+  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Email - "</span><span style="color: #bc6ec5;">)</span>;
+  fgets<span style="color: #bc6ec5;">(</span>std1.email, <span style="color: #a45bad;">50</span>, stdin<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  populate_Structure<span style="color: #6c3163;">()</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  populate_Structure<span style="color: #bc6ec5;">()</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">return</span> EXIT_SUCCESS;
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">return</span> EXIT_SUCCESS;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
@@ -831,9 +832,9 @@ So, finally the program becomes:
 </div>
 </div>
 
-<div id="outline-container-org8585ee0" class="outline-2">
-<h2 id="org8585ee0">Thank You!</h2>
-<div class="outline-text-2" id="text-org8585ee0">
+<div id="outline-container-org6e9db40" class="outline-2">
+<h2 id="org6e9db40"><span class="section-number-2">3</span> Thank You!</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="pager">
     <li class="next">
         <a href="https://imahajanshubham.github.io/docs/lang/java/hashmap.html" class="btn btn-neutral float-right" title="Hash Maps in Java" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
@@ -925,7 +926,7 @@ Want to share something with me or just wanna chat?
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-03-21 Wed 19:33</p>
+<p class="date">Created: 2018-03-23 Fri 09:11</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-21 Wed 19:33 -->
+<!-- 2018-03-23 Fri 09:11 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hash Maps in Java</title>
@@ -183,6 +183,7 @@
 <link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp">
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
 <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -242,33 +243,33 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc1ff97e">Basics of Hash Maps</a>
+<li><a href="#org664bd33">1. Basics of Hash Maps</a>
 <ul>
-<li><a href="#org1d582b8">Definition</a>
+<li><a href="#orgc4dae4a">1.1. Definition</a>
 <ul>
-<li><a href="#org89eac7f">But what do we mean by that?</a></li>
-<li><a href="#orge020dd0">What did we observed?</a></li>
-<li><a href="#org746f20b">What did we observed?</a></li>
-<li><a href="#org537b998">What did we observed?</a></li>
+<li><a href="#orgb13ad27">1.1.1. But what do we mean by that?</a></li>
+<li><a href="#orgfd75f44">1.1.2. What did we observed?</a></li>
+<li><a href="#orga091198">1.1.3. What did we observed?</a></li>
+<li><a href="#org3eaac36">1.1.4. What did we observed?</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgbae03e4">Syntax</a></li>
-<li><a href="#orgbe53972">Properties of a HashMap</a></li>
-<li><a href="#orgf465c7a">A sample program</a></li>
-<li><a href="#org8f0ca4e">The test case</a></li>
-<li><a href="#orgbe83abb">A humble solution</a>
+<li><a href="#orgd7af672">2. Syntax</a></li>
+<li><a href="#orge8bad5b">3. Properties of a HashMap</a></li>
+<li><a href="#orgb89ee45">4. A sample program</a></li>
+<li><a href="#orgb9d7eec">5. The test case</a></li>
+<li><a href="#org318d06c">6. A humble solution</a>
 <ul>
-<li><a href="#org439b58d">Step - 1</a></li>
-<li><a href="#org0efbcbd">Step - 2</a></li>
-<li><a href="#org4c4ed3a">Step - 3</a></li>
-<li><a href="#orgad6996f">Step - 4</a></li>
-<li><a href="#org9a945c6">Step - 5</a></li>
-<li><a href="#orgc2f4c7c">Step - 6</a></li>
+<li><a href="#org84c6794">6.1. Step - 1</a></li>
+<li><a href="#org44829c8">6.2. Step - 2</a></li>
+<li><a href="#orgaaa77be">6.3. Step - 3</a></li>
+<li><a href="#orgbe50d38">6.4. Step - 4</a></li>
+<li><a href="#org015993d">6.5. Step - 5</a></li>
+<li><a href="#org5e23946">6.6. Step - 6</a></li>
 </ul>
 </li>
-<li><a href="#org1fefbcb">Thank You!</a></li>
+<li><a href="#orga55239c">7. Thank You!</a></li>
 </ul>
 </div>
 </div>
@@ -291,13 +292,13 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<div id="outline-container-orgc1ff97e" class="outline-2">
-<h2 id="orgc1ff97e">Basics of Hash Maps</h2>
-<div class="outline-text-2" id="text-orgc1ff97e">
+<div id="outline-container-org664bd33" class="outline-2">
+<h2 id="org664bd33"><span class="section-number-2">1</span> Basics of Hash Maps</h2>
+<div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org1d582b8" class="outline-3">
-<h3 id="org1d582b8">Definition</h3>
-<div class="outline-text-3" id="text-org1d582b8">
+<div id="outline-container-orgc4dae4a" class="outline-3">
+<h3 id="orgc4dae4a"><span class="section-number-3">1.1</span> Definition</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
 Java HashMap is one of the most popular Collection classes in java. Java Hash is
 Hash table based implementation. HashMap in java extends AbstractMap class that
@@ -305,9 +306,9 @@ implements Map interface.
 </p>
 </div>
 
-<div id="outline-container-org89eac7f" class="outline-4">
-<h4 id="org89eac7f">But what do we mean by that?</h4>
-<div class="outline-text-4" id="text-org89eac7f">
+<div id="outline-container-orgb13ad27" class="outline-4">
+<h4 id="orgb13ad27"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
+<div class="outline-text-4" id="text-1-1-1">
 <p>
 Before trying to understand the definition of Hash Map, we should try to understand
 the concept behind the Hash Map.
@@ -507,9 +508,9 @@ For ex:
 </div>
 </div>
 
-<div id="outline-container-orge020dd0" class="outline-4">
-<h4 id="orge020dd0">What did we observed?</h4>
-<div class="outline-text-4" id="text-orge020dd0">
+<div id="outline-container-orgfd75f44" class="outline-4">
+<h4 id="orgfd75f44"><span class="section-number-4">1.1.2</span> What did we observed?</h4>
+<div class="outline-text-4" id="text-1-1-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -533,9 +534,9 @@ For ex:
 </div>
 </div>
 
-<div id="outline-container-org746f20b" class="outline-4">
-<h4 id="org746f20b">What did we observed?</h4>
-<div class="outline-text-4" id="text-org746f20b">
+<div id="outline-container-orga091198" class="outline-4">
+<h4 id="orga091198"><span class="section-number-4">1.1.3</span> What did we observed?</h4>
+<div class="outline-text-4" id="text-1-1-3">
 <ul class="org-ul">
 <li>We don’t know the exact no of names/phone-nos.</li>
 <li>So the Hash-Size is not fixed. But there are ways via which we can fix the
@@ -571,9 +572,9 @@ Keys/Values depends upon the user.</li>
 </div>
 </div>
 
-<div id="outline-container-org537b998" class="outline-4">
-<h4 id="org537b998">What did we observed?</h4>
-<div class="outline-text-4" id="text-org537b998">
+<div id="outline-container-org3eaac36" class="outline-4">
+<h4 id="org3eaac36"><span class="section-number-4">1.1.4</span> What did we observed?</h4>
+<div class="outline-text-4" id="text-1-1-4">
 <ul class="org-ul">
 <li>We don’t know the exact no of names/phone-nos.</li>
 </ul>
@@ -610,15 +611,15 @@ technical terms.
 </div>
 </div>
 
-<div id="outline-container-orgbae03e4" class="outline-2">
-<h2 id="orgbae03e4">Syntax</h2>
-<div class="outline-text-2" id="text-orgbae03e4">
+<div id="outline-container-orgd7af672" class="outline-2">
+<h2 id="orgd7af672"><span class="section-number-2">2</span> Syntax</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 In Java, the HashMap class’ object is declared as follows:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #ba2f59; font-weight: bold;">Map</span><span style="color: #3a81c3;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">Key</span>, <span style="color: #ba2f59; font-weight: bold;">Value</span><span style="color: #3a81c3;">&gt;</span> <span style="color: #715ab1;">obj</span> = <span style="color: #3a81c3; font-weight: bold;">new</span> <span style="color: #ba2f59; font-weight: bold;">HashMap</span><span style="color: #3a81c3;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">Key</span>, <span style="color: #ba2f59; font-weight: bold;">Value</span><span style="color: #3a81c3;">&gt;()</span>;
+<pre class="src src-java"><span style="color: #ce537a; font-weight: bold;">Map</span><span style="color: #4f97d7;">&lt;</span><span style="color: #ce537a; font-weight: bold;">Key</span>, <span style="color: #ce537a; font-weight: bold;">Value</span><span style="color: #4f97d7;">&gt;</span> <span style="color: #7590db;">obj</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">HashMap</span><span style="color: #4f97d7;">&lt;</span><span style="color: #ce537a; font-weight: bold;">Key</span>, <span style="color: #ce537a; font-weight: bold;">Value</span><span style="color: #4f97d7;">&gt;()</span>;
 </pre>
 </div>
 
@@ -627,16 +628,16 @@ For ex:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #ba2f59; font-weight: bold;">Map</span><span style="color: #3a81c3;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">String</span>, <span style="color: #ba2f59; font-weight: bold;">Integer</span><span style="color: #3a81c3;">&gt;</span> <span style="color: #715ab1;">record1</span> = <span style="color: #3a81c3; font-weight: bold;">new</span> <span style="color: #ba2f59; font-weight: bold;">HashMap</span><span style="color: #3a81c3;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">String</span>, <span style="color: #ba2f59; font-weight: bold;">Integer</span><span style="color: #3a81c3;">&gt;()</span>;
-<span style="color: #ba2f59; font-weight: bold;">Map</span><span style="color: #3a81c3;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">String</span>, <span style="color: #ba2f59; font-weight: bold;">String</span><span style="color: #3a81c3;">&gt;</span> <span style="color: #715ab1;">record2</span> = <span style="color: #3a81c3; font-weight: bold;">new</span> <span style="color: #ba2f59; font-weight: bold;">HashMap</span><span style="color: #3a81c3;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">String</span>, <span style="color: #ba2f59; font-weight: bold;">String</span><span style="color: #3a81c3;">&gt;()</span>;
+<pre class="src src-java"><span style="color: #ce537a; font-weight: bold;">Map</span><span style="color: #4f97d7;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">Integer</span><span style="color: #4f97d7;">&gt;</span> <span style="color: #7590db;">record1</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">HashMap</span><span style="color: #4f97d7;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">Integer</span><span style="color: #4f97d7;">&gt;()</span>;
+<span style="color: #ce537a; font-weight: bold;">Map</span><span style="color: #4f97d7;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">String</span><span style="color: #4f97d7;">&gt;</span> <span style="color: #7590db;">record2</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">HashMap</span><span style="color: #4f97d7;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">String</span><span style="color: #4f97d7;">&gt;()</span>;
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgbe53972" class="outline-2">
-<h2 id="orgbe53972">Properties of a HashMap</h2>
-<div class="outline-text-2" id="text-orgbe53972">
+<div id="outline-container-orge8bad5b" class="outline-2">
+<h2 id="orge8bad5b"><span class="section-number-2">3</span> Properties of a HashMap</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>HashMap is denoted as <code>HashMap&lt;Key, Value&gt;</code>.</li>
 <li>No need to specify the size of HashMap.</li>
@@ -665,9 +666,9 @@ But we will study all these and others during our lifelong journey ♥.
 </div>
 </div>
 
-<div id="outline-container-orgf465c7a" class="outline-2">
-<h2 id="orgf465c7a">A sample program</h2>
-<div class="outline-text-2" id="text-orgf465c7a">
+<div id="outline-container-orgb89ee45" class="outline-2">
+<h2 id="orgb89ee45"><span class="section-number-2">4</span> A sample program</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 What better way to understand more than to learn it by implementation? With that
 spirit, let’s try to make a program in java to implement a phonebook
@@ -733,9 +734,9 @@ names, print:</li>
 </div>
 </div>
 
-<div id="outline-container-org8f0ca4e" class="outline-2">
-<h2 id="org8f0ca4e">The test case</h2>
-<div class="outline-text-2" id="text-org8f0ca4e">
+<div id="outline-container-orgb9d7eec" class="outline-2">
+<h2 id="orgb9d7eec"><span class="section-number-2">5</span> The test case</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 Input:
 </p>
@@ -796,64 +797,64 @@ Output:
 </div>
 </div>
 
-<div id="outline-container-orgbe83abb" class="outline-2">
-<h2 id="orgbe83abb">A humble solution</h2>
-<div class="outline-text-2" id="text-orgbe83abb">
+<div id="outline-container-org318d06c" class="outline-2">
+<h2 id="org318d06c"><span class="section-number-2">6</span> A humble solution</h2>
+<div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-org439b58d" class="outline-3">
-<h3 id="org439b58d">Step - 1</h3>
-<div class="outline-text-3" id="text-org439b58d">
+<div id="outline-container-org84c6794" class="outline-3">
+<h3 id="org84c6794"><span class="section-number-3">6.1</span> Step - 1</h3>
+<div class="outline-text-3" id="text-6-1">
 <p>
 Let’s create testMain class with main function and initialize <code>Scanner</code> and <code>Map</code>
 classes:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #3a81c3; font-weight: bold;">import</span> <span style="color: #4e3163;">java</span>.<span style="color: #4e3163;">util</span>.*;
-<span style="color: #3a81c3; font-weight: bold;">import</span> <span style="color: #4e3163;">java</span>.<span style="color: #4e3163;">io</span>.*;
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">util</span>.*;
+<span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">io</span>.*;
 
-<span style="color: #3a81c3; font-weight: bold;">class</span> <span style="color: #ba2f59; font-weight: bold;">testMain</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #3a81c3; font-weight: bold;">public</span> <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">String</span> <span style="color: #2d9574;">[]</span><span style="color: #715ab1;">args</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
-    <span style="color: #ba2f59; font-weight: bold;">Map</span><span style="color: #2d9574;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">String</span>, <span style="color: #ba2f59; font-weight: bold;">Integer</span><span style="color: #2d9574;">&gt;</span> <span style="color: #715ab1;">phoneBook</span> = <span style="color: #3a81c3; font-weight: bold;">new</span> <span style="color: #ba2f59; font-weight: bold;">HashMap</span><span style="color: #2d9574;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">String</span>, <span style="color: #ba2f59; font-weight: bold;">Integer</span><span style="color: #2d9574;">&gt;()</span>;
-    <span style="color: #ba2f59; font-weight: bold;">Scanner</span> <span style="color: #715ab1;">scan</span> = <span style="color: #3a81c3; font-weight: bold;">new</span> <span style="color: #ba2f59; font-weight: bold;">Scanner</span><span style="color: #2d9574;">(</span>System.in<span style="color: #2d9574;">)</span>;
-  <span style="color: #6c3163;">}</span>
-<span style="color: #3a81c3;">}</span>    
+<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">testMain</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #2d9574;">[]</span><span style="color: #7590db;">args</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">Map</span><span style="color: #2d9574;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">Integer</span><span style="color: #2d9574;">&gt;</span> <span style="color: #7590db;">phoneBook</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">HashMap</span><span style="color: #2d9574;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">Integer</span><span style="color: #2d9574;">&gt;()</span>;
+    <span style="color: #ce537a; font-weight: bold;">Scanner</span> <span style="color: #7590db;">scan</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Scanner</span><span style="color: #2d9574;">(</span>System.in<span style="color: #2d9574;">)</span>;
+  <span style="color: #bc6ec5;">}</span>
+<span style="color: #4f97d7;">}</span>    
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org0efbcbd" class="outline-3">
-<h3 id="org0efbcbd">Step - 2</h3>
-<div class="outline-text-3" id="text-org0efbcbd">
+<div id="outline-container-org44829c8" class="outline-3">
+<h3 id="org44829c8"><span class="section-number-3">6.2</span> Step - 2</h3>
+<div class="outline-text-3" id="text-6-2">
 <p>
 Now let’s get the value of ’n’ (<code>INTEGER</code>) i.e. the no of phone records to be
 entered:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">n</span> = scan.nextInt<span style="color: #3a81c3;">()</span>;
+<pre class="src src-java"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">n</span> = scan.nextInt<span style="color: #4f97d7;">()</span>;
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org4c4ed3a" class="outline-3">
-<h3 id="org4c4ed3a">Step - 3</h3>
-<div class="outline-text-3" id="text-org4c4ed3a">
+<div id="outline-container-orgaaa77be" class="outline-3">
+<h3 id="orgaaa77be"><span class="section-number-3">6.3</span> Step - 3</h3>
+<div class="outline-text-3" id="text-6-3">
 <p>
 Now let’s fill ’n’ records (<code>STRING INTEGER</code>) in the phonebook.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">n</span> = scan.nextInt<span style="color: #3a81c3;">()</span>;
+<pre class="src src-java"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">n</span> = scan.nextInt<span style="color: #4f97d7;">()</span>;
 
-<span style="color: #3a81c3; font-weight: bold;">for</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">i</span> = <span style="color: #4e3163;">0</span>; i &lt; <span style="color: #ba2f59; font-weight: bold;">n</span>; i++<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">String</span> <span style="color: #715ab1;">name</span> = scan.next<span style="color: #6c3163;">()</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">phone</span> = scan.nextInt<span style="color: #6c3163;">()</span>;
+<span style="color: #4f97d7; font-weight: bold;">for</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span> = <span style="color: #a45bad;">0</span>; i &lt; <span style="color: #ce537a; font-weight: bold;">n</span>; i++<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">name</span> = scan.next<span style="color: #bc6ec5;">()</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">phone</span> = scan.nextInt<span style="color: #bc6ec5;">()</span>;
 
-  phoneBook.put<span style="color: #6c3163;">(</span>name, phone<span style="color: #6c3163;">)</span>;
-<span style="color: #3a81c3;">}</span>
+  phoneBook.put<span style="color: #bc6ec5;">(</span>name, phone<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -871,9 +872,9 @@ To put the data (name, phoneno) in the HashMap/phonebook, <code>put()</code> met
 </div>
 </div>
 
-<div id="outline-container-orgad6996f" class="outline-3">
-<h3 id="orgad6996f">Step - 4</h3>
-<div class="outline-text-3" id="text-orgad6996f">
+<div id="outline-container-orgbe50d38" class="outline-3">
+<h3 id="orgbe50d38"><span class="section-number-3">6.4</span> Step - 4</h3>
+<div class="outline-text-3" id="text-6-4">
 <p>
 Now comes a little tricky part:
 </p>
@@ -913,28 +914,28 @@ Let’s to do it one-by-one:
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #3a81c3; font-weight: bold;">while</span><span style="color: #3a81c3;">(</span>scan.hasNext<span style="color: #6c3163;">()</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">String</span> <span style="color: #715ab1;">s</span> = scan.next<span style="color: #6c3163;">()</span>;
-<span style="color: #3a81c3;">}</span>
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">while</span><span style="color: #4f97d7;">(</span>scan.hasNext<span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">s</span> = scan.next<span style="color: #bc6ec5;">()</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9a945c6" class="outline-3">
-<h3 id="org9a945c6">Step - 5</h3>
-<div class="outline-text-3" id="text-org9a945c6">
+<div id="outline-container-org015993d" class="outline-3">
+<h3 id="org015993d"><span class="section-number-3">6.5</span> Step - 5</h3>
+<div class="outline-text-3" id="text-6-5">
 <ul class="org-ul">
 <li>print the required output.</li>
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #3a81c3; font-weight: bold;">while</span><span style="color: #3a81c3;">(</span>scan.hasNext<span style="color: #6c3163;">()</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">String</span> <span style="color: #715ab1;">s</span> = scan.next<span style="color: #6c3163;">()</span>;
-  <span style="color: #ba2f59; font-weight: bold;">Integer</span> <span style="color: #715ab1;">phoneNumber</span> = phoneBook.get<span style="color: #6c3163;">(</span>s<span style="color: #6c3163;">)</span>;
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">while</span><span style="color: #4f97d7;">(</span>scan.hasNext<span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">s</span> = scan.next<span style="color: #bc6ec5;">()</span>;
+  <span style="color: #ce537a; font-weight: bold;">Integer</span> <span style="color: #7590db;">phoneNumber</span> = phoneBook.get<span style="color: #bc6ec5;">(</span>s<span style="color: #bc6ec5;">)</span>;
 
-  System.out.println<span style="color: #6c3163;">(</span><span style="color: #2d9574;">(</span>phoneNumber != <span style="color: #4e3163;">null</span><span style="color: #2d9574;">)</span> ? s + <span style="color: #2d9574;">"="</span> + phoneNumber : <span style="color: #2d9574;">"Not found"</span><span style="color: #6c3163;">)</span>;
-<span style="color: #3a81c3;">}</span>
+  System.out.println<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span>phoneNumber != <span style="color: #a45bad;">null</span><span style="color: #2d9574;">)</span> ? s + <span style="color: #2d9574;">"="</span> + phoneNumber : <span style="color: #2d9574;">"Not found"</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -957,41 +958,41 @@ present. To check whether a Name/Key is present in the <code>HashMap</code> or n
 </div>
 </div>
 
-<div id="outline-container-orgc2f4c7c" class="outline-3">
-<h3 id="orgc2f4c7c">Step - 6</h3>
-<div class="outline-text-3" id="text-orgc2f4c7c">
+<div id="outline-container-org5e23946" class="outline-3">
+<h3 id="org5e23946"><span class="section-number-3">6.6</span> Step - 6</h3>
+<div class="outline-text-3" id="text-6-6">
 <p>
 Let’s connect the dots:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #3a81c3; font-weight: bold;">import</span> <span style="color: #4e3163;">java</span>.<span style="color: #4e3163;">util</span>.*;
-<span style="color: #3a81c3; font-weight: bold;">import</span> <span style="color: #4e3163;">java</span>.<span style="color: #4e3163;">io</span>.*;
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">util</span>.*;
+<span style="color: #4f97d7; font-weight: bold;">import</span> <span style="color: #a45bad;">java</span>.<span style="color: #a45bad;">io</span>.*;
 
-<span style="color: #3a81c3; font-weight: bold;">class</span> <span style="color: #ba2f59; font-weight: bold;">testMain</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #3a81c3; font-weight: bold;">public</span> <span style="color: #3a81c3; font-weight: bold;">static</span> <span style="color: #ba2f59; font-weight: bold;">void</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">String</span> <span style="color: #2d9574;">[]</span><span style="color: #715ab1;">args</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
-    <span style="color: #ba2f59; font-weight: bold;">Map</span><span style="color: #2d9574;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">String</span>, <span style="color: #ba2f59; font-weight: bold;">Integer</span><span style="color: #2d9574;">&gt;</span> <span style="color: #715ab1;">phoneBook</span> = <span style="color: #3a81c3; font-weight: bold;">new</span> <span style="color: #ba2f59; font-weight: bold;">HashMap</span><span style="color: #2d9574;">&lt;</span><span style="color: #ba2f59; font-weight: bold;">String</span>, <span style="color: #ba2f59; font-weight: bold;">Integer</span><span style="color: #2d9574;">&gt;()</span>;
-    <span style="color: #ba2f59; font-weight: bold;">Scanner</span> <span style="color: #715ab1;">scan</span> = <span style="color: #3a81c3; font-weight: bold;">new</span> <span style="color: #ba2f59; font-weight: bold;">Scanner</span><span style="color: #2d9574;">(</span>System.in<span style="color: #2d9574;">)</span>;
+<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">testMain</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #2d9574;">[]</span><span style="color: #7590db;">args</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">Map</span><span style="color: #2d9574;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">Integer</span><span style="color: #2d9574;">&gt;</span> <span style="color: #7590db;">phoneBook</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">HashMap</span><span style="color: #2d9574;">&lt;</span><span style="color: #ce537a; font-weight: bold;">String</span>, <span style="color: #ce537a; font-weight: bold;">Integer</span><span style="color: #2d9574;">&gt;()</span>;
+    <span style="color: #ce537a; font-weight: bold;">Scanner</span> <span style="color: #7590db;">scan</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Scanner</span><span style="color: #2d9574;">(</span>System.in<span style="color: #2d9574;">)</span>;
 
-    <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">n</span> = scan.nextInt<span style="color: #2d9574;">()</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">n</span> = scan.nextInt<span style="color: #2d9574;">()</span>;
 
-    <span style="color: #3a81c3; font-weight: bold;">for</span><span style="color: #2d9574;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">i</span> = <span style="color: #4e3163;">0</span>; i &lt; <span style="color: #ba2f59; font-weight: bold;">n</span>; i++<span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-      <span style="color: #ba2f59; font-weight: bold;">String</span> <span style="color: #715ab1;">name</span> = scan.next<span style="color: #67b11d;">()</span>;
-      <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">phone</span> = scan.nextInt<span style="color: #67b11d;">()</span>;
+    <span style="color: #4f97d7; font-weight: bold;">for</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span> = <span style="color: #a45bad;">0</span>; i &lt; <span style="color: #ce537a; font-weight: bold;">n</span>; i++<span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
+      <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">name</span> = scan.next<span style="color: #67b11d;">()</span>;
+      <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">phone</span> = scan.nextInt<span style="color: #67b11d;">()</span>;
 
       phoneBook.put<span style="color: #67b11d;">(</span>name, phone<span style="color: #67b11d;">)</span>;
     <span style="color: #2d9574;">}</span>
 
-    <span style="color: #3a81c3; font-weight: bold;">while</span><span style="color: #2d9574;">(</span>scan.hasNext<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-      <span style="color: #ba2f59; font-weight: bold;">String</span> <span style="color: #715ab1;">s</span> = scan.next<span style="color: #67b11d;">()</span>;
-      <span style="color: #ba2f59; font-weight: bold;">Integer</span> <span style="color: #715ab1;">phoneNumber</span> = phoneBook.get<span style="color: #67b11d;">(</span>s<span style="color: #67b11d;">)</span>;
+    <span style="color: #4f97d7; font-weight: bold;">while</span><span style="color: #2d9574;">(</span>scan.hasNext<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
+      <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">s</span> = scan.next<span style="color: #67b11d;">()</span>;
+      <span style="color: #ce537a; font-weight: bold;">Integer</span> <span style="color: #7590db;">phoneNumber</span> = phoneBook.get<span style="color: #67b11d;">(</span>s<span style="color: #67b11d;">)</span>;
 
-      System.out.println<span style="color: #67b11d;">(</span><span style="color: #b1951d;">(</span>phoneNumber != <span style="color: #4e3163;">null</span><span style="color: #b1951d;">)</span> ? s + <span style="color: #2d9574;">"="</span> + phoneNumber : <span style="color: #2d9574;">"Not found"</span><span style="color: #67b11d;">)</span>;
+      System.out.println<span style="color: #67b11d;">(</span><span style="color: #b1951d;">(</span>phoneNumber != <span style="color: #a45bad;">null</span><span style="color: #b1951d;">)</span> ? s + <span style="color: #2d9574;">"="</span> + phoneNumber : <span style="color: #2d9574;">"Not found"</span><span style="color: #67b11d;">)</span>;
     <span style="color: #2d9574;">}</span>
 
     scan.close<span style="color: #2d9574;">()</span>;
-  <span style="color: #6c3163;">}</span>
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #bc6ec5;">}</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -1003,9 +1004,9 @@ we learned something :)
 </div>
 </div>
 
-<div id="outline-container-org1fefbcb" class="outline-2">
-<h2 id="org1fefbcb">Thank You!</h2>
-<div class="outline-text-2" id="text-org1fefbcb">
+<div id="outline-container-orga55239c" class="outline-2">
+<h2 id="orga55239c"><span class="section-number-2">7</span> Thank You!</h2>
+<div class="outline-text-2" id="text-7">
 <ul class="pager">
     <li class="next">
         <a href="https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html" class="btn btn-neutral float-right" title="Acid Naming Problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
@@ -1097,7 +1098,7 @@ Want to share something with me or just wanna chat?
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-03-21 Wed 19:33</p>
+<p class="date">Created: 2018-03-23 Fri 09:11</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
