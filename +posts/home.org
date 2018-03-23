@@ -172,7 +172,7 @@ properties, syntax to creating a simple program of phonebook in Java.
 
 #+begin_export html
   <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create">
-    <a href="lol"><p class="plus"><img src="https://raw.githubusercontent.com/imahajanshubham/docs/27f258a364fbe725bb524d44c8b5b7c119a51eaa/%2Bassets/view_code.svg"></p></a>
+    <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/home.org"><p class="plus">👁</p></a>
   </div>
 
   <ul class="pager">
