@@ -130,11 +130,12 @@ code {
 
 .btn-github:hover {
     color: #343131;
+    background-color: #715ab1;
 }
 
 .btn-github {
-    color: #fff;
-    background-color: #2980b9;
+    color: #715ab1;
+    background-color: #343131;
     border-color: rgba(0, 0, 0, 0.2)
 }
 
