@@ -172,3 +172,9 @@ code {
     bottom: 15px;
     right: 15px;
 }
+
+.title {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
