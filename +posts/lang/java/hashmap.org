@@ -19,7 +19,7 @@
   - [[#step---4][Step - 4]]
   - [[#step---5][Step - 5]]
   - [[#step---6][Step - 6]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you][Thank you]]
 
 * Basics of Hash Maps
 ** Definition
@@ -314,9 +314,11 @@ Let’s connect the dots:
 That’s it, the program to implement HashMap Logic in Java. I hope if not all,
 we learned something :)
 
-* Thank You!
+* Thank you
 
 #+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/java/hashmap.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
   <ul class="pager">
       <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html" class="btn btn-neutral float-right" title="Acid Naming Problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>

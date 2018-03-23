@@ -2,11 +2,13 @@
 #+TITLE: Title
 
 * Table of Contents                                          :TOC@4:noexport:
-- [[#thank-you][Thank You!]]
+- [[#thank-you][Thank you]]
 
-* Thank You!
+* Thank you
 
 #+begin_export html
+  <a href="" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
   <ul class="pager">
       <li class="next">
           <a href="" class="btn btn-neutral float-right" title="" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>

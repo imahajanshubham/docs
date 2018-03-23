@@ -12,7 +12,7 @@
     - [[#understanding-the-datatype-of-our-input][Understanding the Datatype of our Input]]
     - [[#finding-the-number-of-occurences-of-a-digit][Finding the number of occurences of a digit]]
     - [[#the-solution][The Solution]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you][Thank you]]
 
 * The Problem Statement
 Find the no. of times, a particular digit appeared (occurences) in a *very large
@@ -182,9 +182,11 @@ Finally,
   }
 #+end_src
 
-* Thank You!
+* Thank you
 
 #+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/occurrences_of_a_digit.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
   <ul class="pager">
       <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html" class="btn btn-neutral float-right" title="Minimizing the Dot Product" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>

@@ -170,21 +170,17 @@ properties, syntax to creating a simple program of phonebook in Java.
 :CUSTOM_ID: thank-you
 :END:
 
-    # <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create">
-    #   <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/home.org"><p class="plus">👁</p></a>
-    # </div>
 #+begin_export html
-  <a class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/home.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
 
-
-    <ul class="pager">
-        <li class="next">
-            <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="Structures And Pointers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-        </li>
-        <li class="previous">
-            <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html" class="btn btn-neutral" title="Beware Of The Assumptions" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-        </li>
-    </ul>
+  <ul class="pager">
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="Structures And Pointers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html" class="btn btn-neutral" title="Beware Of The Assumptions" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      </li>
+  </ul>
 #+end_export
 
 #+INCLUDE: ../+layouts/footer.org

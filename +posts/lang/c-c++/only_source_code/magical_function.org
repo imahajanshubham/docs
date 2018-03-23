@@ -5,7 +5,7 @@
 - [[#about][About]]
 - [[#question][Question]]
 - [[#solution][Solution]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you][Thank you]]
 
 * About
 The goal was to *recognize the pattern* of a given function.
@@ -16,9 +16,11 @@ View the original *Magical Function* question on [[https://www.codechef.com/CBEN
 * Solution
 View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c][GitHub]].
 
-* Thank You!
+* Thank you
 
 #+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/only_source_code/magical_function.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
   <ul class="pager">
       <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/little_chefnsums.html" class="btn btn-neutral float-right" title="Little Chef and Sums" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>

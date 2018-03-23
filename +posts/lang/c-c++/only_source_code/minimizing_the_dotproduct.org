@@ -5,7 +5,7 @@
 - [[#about][About]]
 - [[#question][Question]]
 - [[#solution][Solution]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you][Thank you]]
 
 * About
 The goal was to calculate the *minimum dot product of given two vectors*. we could
@@ -17,9 +17,11 @@ View the original *Minimizing the Dot Product* question on [[https://www.codeche
 * Solution
 View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c][GitHub]].
 
-* Thank You!
+* Thank you
 
 #+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/only_source_code/minimizing_the_dotproduct.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
   <ul class="pager">
       <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html" class="btn btn-neutral float-right" title="Magical Function" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>

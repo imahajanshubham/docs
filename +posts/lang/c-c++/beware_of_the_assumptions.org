@@ -19,7 +19,7 @@
     - [[#almost-reached-the-destination][Almost reached the Destination!]]
 - [[#key-learnings][Key Learnings]]
 - [[#few-more-treats][Few more treats!]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you][Thank you]]
 
 * Greetings Everyone, 😊
 Been almost two days,
@@ -235,9 +235,11 @@ in an array.
 [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c][view code]]
 -------------------------------------------------------------------------------
 
-* Thank You!
+* Thank you
 
 #+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/beware_of_the_assumptions.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
   <ul class="pager">
       <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="Structures And Pointer" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>

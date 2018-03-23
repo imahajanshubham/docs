@@ -14,7 +14,7 @@
   - [[#using-structure-with-typedef][using structure with ’typedef’]]
     - [[#syntax-1][Syntax:]]
     - [[#example][Example:]]
-- [[#thank-you][Thank You!]]
+- [[#thank-you][Thank you]]
 
 * Basics of structures
 
@@ -312,9 +312,11 @@ So, finally the program becomes:
   }
 #+end_src
 
-* Thank You!
+* Thank you
 
 #+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/structures.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
   <ul class="pager">
       <li class="next">
           <a href="https://imahajanshubham.github.io/docs/lang/java/hashmap.html" class="btn btn-neutral float-right" title="Hash Maps in Java" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
