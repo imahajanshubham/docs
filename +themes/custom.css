@@ -162,3 +162,9 @@ code {
     border: 1px solid transparent;
     border-radius: 4px;
 }
+
+.fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
