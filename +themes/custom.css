@@ -128,11 +128,11 @@ code {
     border-right: 1px solid rgba(0, 0, 0, 0.2)
 }
 
-.btn-github {
-    a:hover {
-        color: #343131;
-    }
+.btn-github:hover {
+    color: #343131;
+}
 
+.btn-github {
     color: #fff;
     background-color: #715ab1;
     border-color: rgba(0, 0, 0, 0.2)

@@ -19,9 +19,3 @@
 |------+--------+---------|
 | [[https://imahajanshubham.github.io/docs/home.html][Home]] | [[https://github.com/imahajanshubham][GitHub]] | [[https://sites.google.com/view/the-launchpad/home][Website]] |
 |------+--------+---------|
-
------
-
-#+begin_export html
-<a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" align="middle" /></a>
-#+end_export
