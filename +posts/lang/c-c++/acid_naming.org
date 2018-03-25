@@ -113,9 +113,8 @@ way only 1 loop will do our whole job.
 #+end_src
 
 #+begin_note
-Even though the maximum ~acid name~ should be equal-to/less-than 10000 characters, but we used:
-
-~acidName[10001];~
+Even though the maximum ~acid name~ should be equal-to/less-than 10000 characters,
+but we used ~acidName[10001]~
 
 That's because, 1 extra Byte would store ~'\0'~ (null) i.e. the string end indicator.
 #+end_note
