@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-03-26 Mon 05:08 -->
+<!-- 2018-03-26 Mon 00:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Occurrences of a Digit</title>
+<title>Home</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Shubham Mahajan" />
 <style type="text/css">
@@ -182,7 +182,7 @@
 </style>
 <link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp">
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
 <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -237,32 +237,36 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Occurrences of a Digit</h1>
+<h1 class="title">Home</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc9ee2f8">1. The Problem Statement</a>
+<li><a href="#about">1. About</a></li>
+<li><a href="#latest">2. Latest</a></li>
+<li><a href="#c-cpp">3. C-C++</a>
 <ul>
-<li><a href="#org6a4db3b">1.1. Input</a></li>
-<li><a href="#org409c4b1">1.2. Output</a></li>
+<li><a href="#beware-of-the-assumptions">3.1. Beware Of The Assumptions</a></li>
+<li><a href="#occurrence-of-a-digit">3.2. Occurrence of a Digit</a></li>
+<li><a href="#acid-naming">3.3. Acid Naming</a></li>
+<li><a href="#structures-and-pointers">3.4. Structures and Pointers</a></li>
+<li><a href="#only-source-code">3.5. Only Source Code</a>
+<ul>
+<li><a href="#average-halfify">3.5.1. Average Halfify (keteki)</a></li>
+<li><a href="#little-chef-and-sums">3.5.2. Little Chef and Sums</a></li>
+<li><a href="#magical-function">3.5.3. Magical Function</a></li>
+<li><a href="#minimizing-the-dot-product">3.5.4. Minimizing the Dot Product</a></li>
 </ul>
 </li>
-<li><a href="#orgbf8d954">2. Conditions</a></li>
-<li><a href="#orgd24874b">3. Test Case</a></li>
-<li><a href="#org17b6385">4. Prerequisites</a></li>
-<li><a href="#orge634361">5. An Attempt Towards The Solution</a>
-<ul>
-<li>
-<ul>
-<li><a href="#org55d9167">5.0.1. Understanding the Datatype of our Input</a></li>
-<li><a href="#orga02b15d">5.0.2. Finding the number of occurences of a digit</a></li>
-<li><a href="#orgb0cad3d">5.0.3. The Solution</a></li>
 </ul>
 </li>
+<li><a href="#java">4. Java</a>
+<ul>
+<li><a href="#factorials-in-java">4.1. Factorials in Java</a></li>
+<li><a href="#hash-maps-in-java">4.2. Hash Maps in Java</a></li>
 </ul>
 </li>
-<li><a href="#org9cdb910">6. Thank you</a></li>
+<li><a href="#thank-you">5. Thank you</a></li>
 </ul>
 </div>
 </div>
@@ -285,332 +289,230 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<div id="outline-container-orgc9ee2f8" class="outline-2">
-<h2 id="orgc9ee2f8"><span class="section-number-2">1</span> The Problem Statement</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-orgf2e7c58" class="outline-2">
+<h2 id="about"><a id="orgf2e7c58"></a><span class="section-number-2">1</span> About</h2>
+<div class="outline-text-2" id="text-about">
 <p>
-Find the no. of times, a particular digit appeared (occurences) in a <b>very large
-positive number.</b>
-</p>
-</div>
-
-<div id="outline-container-org6a4db3b" class="outline-3">
-<h3 id="org6a4db3b"><span class="section-number-3">1.1</span> Input</h3>
-<div class="outline-text-3" id="text-1-1">
-<ul class="org-ul">
-<li>Line 1: A <b>very large positive number</b>.</li>
-<li>Line 2: <b>Digit</b>, whose no. of occurences to find.</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org409c4b1" class="outline-3">
-<h3 id="org409c4b1"><span class="section-number-3">1.2</span> Output</h3>
-<div class="outline-text-3" id="text-1-2">
-<ul class="org-ul">
-<li>Line 1: <b>Number of occurences</b> of that digit.</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgbf8d954" class="outline-2">
-<h2 id="orgbf8d954"><span class="section-number-2">2</span> Conditions</h2>
-<div class="outline-text-2" id="text-2">
-<ul class="org-ul">
-<li>A input number can be as large as from <b>0</b> to <b>2<sup>64</sup> - 1</b>.</li>
-<li>A number can only contain digits from <b>0-9</b>.</li>
-<li>The running time <b>(T)</b> should be <b>&lt;= 0.050 seconds</b>.</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgd24874b" class="outline-2">
-<h2 id="orgd24874b"><span class="section-number-2">3</span> Test Case</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-Input
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-right" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-right">5983461123450009</td>
-</tr>
-
-<tr>
-<td class="org-right">4</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-Output
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-right" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-right">2</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div id="outline-container-org17b6385" class="outline-2">
-<h2 id="org17b6385"><span class="section-number-2">4</span> Prerequisites</h2>
-<div class="outline-text-2" id="text-4">
-<p>
-Basic syntax of C language, rest we will explore during the journey.
+Sharing my views and experience of <b>Problem Solving</b> approach via the blog.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge634361" class="outline-2">
-<h2 id="orge634361"><span class="section-number-2">5</span> An Attempt Towards The Solution</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-orgc99c6df" class="outline-2">
+<h2 id="latest"><a id="orgc99c6df"></a><span class="section-number-2">2</span> Latest</h2>
+<div class="outline-text-2" id="text-latest">
+<div class="attention">
 <p>
-In the very first line of the problem statement, we are going to deal with a
-very large positive number. Let's try to understand this much first:
+Another interesting blog,<br />
+Yapp, it’s coming!
 </p>
 
-<ul class="org-ul">
-<li>A positive number? So we can use an <code>unsigned</code> number.</li>
-<li>We are only dealing with <code>INTEGERS</code>, so we can use <code>unsigned int</code> number.</li>
-</ul>
-</div>
-
-<div id="outline-container-org55d9167" class="outline-4">
-<h4 id="org55d9167"><span class="section-number-4">5.0.1</span> Understanding the Datatype of our Input</h4>
-<div class="outline-text-4" id="text-5-0-1">
 <p>
-Let's try to visualize the range of our input number:
-</p>
-
-<ul class="org-ul">
-<li>4 Bytes = 4 * 8 = 32 Bits.</li>
-</ul>
-
-<div class="note">
-<p>
-Size of <code>int</code>: 4 Bytes (Unix 64-Bit Architecture).
+<b><a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html">Beware Of The Assumptions</a></b>
 </p>
 
 </div>
+</div>
+</div>
 
-<ul class="org-ul">
-<li>And we know that by default, any <code>integer</code> is a <code>signed integer</code>. Whoa&#x2026; What do
-we mean by that?</li>
-</ul>
-
-<p>
-That means, a number can be either <code>+ve</code> as well as <code>-ve</code>. To get the range of
-<code>signed integer</code>, let's try to find the maximum number we can make from 32 Bits.
-</p>
-
-<p>
-32 Bits -&gt; 2<sup>32</sup> i.e. 4294967296.
-</p>
-
-<p>
-<b>Now because we can make both <code>+ve</code> as well as <code>-ve</code> numbers, we should divide the
-answer by 2.</b>
-</p>
-
-<p>
-2<sup>32</sup> / 2 = 2<sup>31</sup> i.e. 2147483648. Thats's it!
-</p>
-
-<p>
-The range of <code>signed int</code> is from <b>-2<sup>32</sup></b> to <b>2<sup>32</sup> - 1</b>.
-</p>
-
-<hr />
-<p>
-But we wanted to find the range of <code>unsigned int</code> and not <code>signed int</code>&#x2026;
-Worry not, we have already found that.
-</p>
-
-<p>
-Didn't you noticed?
-</p>
-
+<div id="outline-container-org226678b" class="outline-2">
+<h2 id="c-cpp"><a id="org226678b"></a><span class="section-number-2">3</span> C-C++</h2>
+<div class="outline-text-2" id="text-c-cpp">
+</div>
+<div id="outline-container-org89d8a96" class="outline-3">
+<h3 id="beware-of-the-assumptions"><a id="org89d8a96"></a><span class="section-number-3">3.1</span> <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html">Beware Of The Assumptions</a></h3>
+<div class="outline-text-3" id="text-beware-of-the-assumptions">
 <blockquote>
 <p>
-That means, a number can be either <code>+ve</code> as well as <code>-ve</code>. To get the range of
-<code>signed integer</code>, let's try to find the maximum number we can make from 32 Bits.
-</p>
-
-<p>
-32 Bits -&gt; 2<sup>32</sup> i.e. 4294967296
+Calculating the factorials of 100+ using <b>Divide and Conquer</b> approach!
 </p>
 </blockquote>
 
 <p>
-The reason why we divided it by 2 was, we were considering <code>-ve</code> numbers too.
-</p>
-
-<p>
-Therefore,
-</p>
-
-<p>
-The range of <code>unsigned int</code> is from <b>0</b> to <b>2<sup>32</sup>.</b>
-</p>
-
-<hr />
-<p>
-Similarly, <code>unsigned long int</code> is a 8 Bytes datatype.
-</p>
-
-<p>
-8 Bytes = 8 * 8 = 64 Bits.
-</p>
-
-<p>
-The range of <code>unsigned long int</code> is from <b>0</b> to <b>2<sup>64</sup></b>.
+<b>March 8,</b> 2018
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga02b15d" class="outline-4">
-<h4 id="orga02b15d"><span class="section-number-4">5.0.2</span> Finding the number of occurences of a digit</h4>
-<div class="outline-text-4" id="text-5-0-2">
-<p>
-How many digits are there in total?
-</p>
-
+<div id="outline-container-org601d226" class="outline-3">
+<h3 id="occurrence-of-a-digit"><a id="org601d226"></a><span class="section-number-3">3.2</span> <a href="https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html">Occurrence of a Digit</a></h3>
+<div class="outline-text-3" id="text-occurrence-of-a-digit">
 <blockquote>
 <p>
-10 i.e. from 0 to 9.
+The goal was to find the no. of times, <b>a particular digit appeared</b> (occurrences) in a <b>very large positive number</b>.
 </p>
 </blockquote>
 
 <p>
-Now, let's create an array of size 10.
+<b>February 24,</b> 2018
 </p>
+</div>
+</div>
+
+<div id="outline-container-orge4d20d8" class="outline-3">
+<h3 id="acid-naming"><a id="orge4d20d8"></a><span class="section-number-3">3.3</span> <a href="https://imahajanshubham.github.io/docs/lang/c-c++/acid_naming.html">Acid Naming</a></h3>
+<div class="outline-text-3" id="text-acid-naming">
+<blockquote>
+<p>
+The goal was to identify the type of acids from the given set of inputs.
+</p>
+</blockquote>
+
+<p>
+<b>February 17,</b> 2018
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4a1b49e" class="outline-3">
+<h3 id="structures-and-pointers"><a id="org4a1b49e"></a><span class="section-number-3">3.4</span> <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html">Structures and Pointers</a></h3>
+<div class="outline-text-3" id="text-structures-and-pointers">
+<blockquote>
+<p>
+An attempt to share my thoughts on <b>Structures and Pointer</b> and finally a small
+program using them too.
+</p>
+</blockquote>
+
+<p>
+<b>February 7,</b> 2018
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgade7789" class="outline-3">
+<h3 id="only-source-code"><a id="orgade7789"></a><span class="section-number-3">3.5</span> Only Source Code</h3>
+<div class="outline-text-3" id="text-only-source-code">
+</div>
+<div id="outline-container-org7174657" class="outline-4">
+<h4 id="average-halfify"><a id="org7174657"></a><span class="section-number-4">3.5.1</span> <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html">Average Halfify (keteki)</a></h4>
+<div class="outline-text-4" id="text-average-halfify">
+<blockquote>
+<p>
+The goal was to calculate the <b>recursive average of pairs of n numbers</b>.
+</p>
+</blockquote>
+
+<p>
+<b>March 7,</b> 2018
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbc997ac" class="outline-4">
+<h4 id="little-chef-and-sums"><a id="orgbc997ac"></a><span class="section-number-4">3.5.2</span> <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/little_chefnsums.html">Little Chef and Sums</a></h4>
+<div class="outline-text-4" id="text-little-chef-and-sums">
+<blockquote>
+<p>
+The goal was calculate the total of <b>suffix-sum</b> and <b>prefix-sum</b> of given <b>n</b> values
+in an array.
+</p>
+</blockquote>
+
+<p>
+<b>March 7,</b> 2018
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72d9764" class="outline-4">
+<h4 id="magical-function"><a id="org72d9764"></a><span class="section-number-4">3.5.3</span> <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html">Magical Function</a></h4>
+<div class="outline-text-4" id="text-magical-function">
+<blockquote>
+<p>
+The goal was to <b>recognize the pattern</b> of a given function.
+</p>
+</blockquote>
+
+<p>
+<b>March 7,</b> 2018
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc4fea1f" class="outline-4">
+<h4 id="minimizing-the-dot-product"><a id="orgc4fea1f"></a><span class="section-number-4">3.5.4</span> <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html">Minimizing the Dot Product</a></h4>
+<div class="outline-text-4" id="text-minimizing-the-dot-product">
+<blockquote>
+<p>
+The goal was to calculate the <b>minimum dot product of given two vectors</b>. we could
+interchange the vector positions with each other if needed. 
+</p>
+</blockquote>
+
+<p>
+<b>March 7,</b> 2018
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2a1d0bf" class="outline-2">
+<h2 id="java"><a id="org2a1d0bf"></a><span class="section-number-2">4</span> Java</h2>
+<div class="outline-text-2" id="text-java">
+</div>
+<div id="outline-container-org05b36a7" class="outline-3">
+<h3 id="factorials-in-java"><a id="org05b36a7"></a><span class="section-number-3">4.1</span> <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html">Factorials in Java</a></h3>
+<div class="outline-text-3" id="text-factorials-in-java">
+<blockquote>
+<p>
+The goal was to calculate the factorial of say… <code>50</code>, which results in a <code>65</code>
+digit answer.
+</p>
+</blockquote>
+
+<p>
+<b>February 18,</b> 2018
+</p>
+</div>
+</div>
+
+<div id="outline-container-org99d2268" class="outline-3">
+<h3 id="hash-maps-in-java"><a id="org99d2268"></a><span class="section-number-3">4.2</span> <a href="https://imahajanshubham.github.io/docs/lang/java/hashmap.html">Hash Maps in Java</a></h3>
+<div class="outline-text-3" id="text-hash-maps-in-java">
+<blockquote>
+<p>
+a brief introduction about hash maps in java, starting from basic definition,
+properties, syntax to creating a simple program of phonebook in java.
+</p>
+</blockquote>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">array</span><span style="color: #4f97d7;">[</span><span style="color: #a45bad;">10</span><span style="color: #4f97d7;">]</span>;
+<pre class="src src-sh">ls -n
 </pre>
 </div>
 
-<p>
-What we are trying to do is.. Say if we encounter a digit <code>x</code>, we will do
-<code>array[x]++</code>. This way we will be able to store the no. of occurences of any digit
-from <b>0</b> to <b>9</b> by treating them as array index.
-</p>
+<pre class="example">
+total 396
+-rw-rw-r-- 1 1000 1000  21461 Mar 26 00:04 home.html
+-rw-rw-r-- 1 1000 1000   5535 Mar 26 00:09 home.org
+-rw-rw-r-- 1 1000 1000   5254 Mar 21 12:54 home.rst
+drwxrwxr-x 4 1000 1000   4096 Mar 12 12:41 lang
+-rw-rw-r-- 1 1000 1000      0 Mar 23 03:27 lol
+-rw-rw-r-- 1 1000 1000     43 Mar 25 05:56 sitemap.org
+-rw-rw-r-- 1 1000 1000 305102 Mar 23 10:01 temp.html
 
-<p>
-The value at that array index will give us the no. of occurences of that digit.
-</p>
-
-<p>
-But if we do <code>array[x]++</code>, we will get garbage, because it's initial value is not
-defined.
-</p>
-
-<p>
-So we use the keybord <code>static</code>.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">array</span><span style="color: #4f97d7;">[</span><span style="color: #a45bad;">10</span><span style="color: #4f97d7;">]</span>;
 </pre>
-</div>
-
-<div class="note">
-<p>
-If not initialized, by default all <code>static int</code> variables are set to <b>0</b>.
-</p>
-
-</div>
 
 <p>
-To the get digit, out of a number, we find out the remainder by dividing the
-number by 10.
+<b>February 9,</b> 2018
 </p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">digit</span> = number % <span style="color: #a45bad;">10</span>;
-</pre>
-</div>
-
-<p>
-Then divide the number by 10, and repeat the steps i.e.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #4f97d7;">(</span>number<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  digit = number % <span style="color: #a45bad;">10</span>;
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">Rest code goes here.</span>
-
-  number /= <span style="color: #a45bad;">10</span>;
- <span style="color: #4f97d7;">}</span>
-</pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb0cad3d" class="outline-4">
-<h4 id="orgb0cad3d"><span class="section-number-4">5.0.3</span> The Solution</h4>
-<div class="outline-text-4" id="text-5-0-3">
-<p>
-Finally,
-</p>
-
-<div class="org-src-container">
-<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
-<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #4f97d7;">&gt;</span>
-
-<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">unsigned</span> <span style="color: #ce537a; font-weight: bold;">long</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">inputNumber</span>;
-  scanf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%lu"</span>, &amp;inputNumber<span style="color: #bc6ec5;">)</span>;
-
-  <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">noOfOccurrences</span><span style="color: #bc6ec5;">[</span><span style="color: #a45bad;">10</span><span style="color: #bc6ec5;">]</span>;
-
-  <span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #bc6ec5;">(</span>inputNumber<span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">Digit</span> = inputNumber % <span style="color: #a45bad;">10</span>;
-
-    noOfOccurrences<span style="color: #2d9574;">[</span>Digit<span style="color: #2d9574;">]</span>++;
-    inputNumber /= <span style="color: #a45bad;">10</span>;
-  <span style="color: #bc6ec5;">}</span>
-
-  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">Digit</span>;
-
-  scanf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;Digit<span style="color: #bc6ec5;">)</span>;
-  printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%d\n"</span>, noOfOccurrences<span style="color: #2d9574;">[</span>Digit<span style="color: #2d9574;">]</span><span style="color: #bc6ec5;">)</span>;
-
-  <span style="color: #4f97d7; font-weight: bold;">return</span> EXIT_SUCCESS;
-<span style="color: #4f97d7;">}</span>
-</pre>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org9cdb910" class="outline-2">
-<h2 id="org9cdb910"><span class="section-number-2">6</span> Thank you</h2>
-<div class="outline-text-2" id="text-6">
-<a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/occurrences_of_a_digit.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+<div id="outline-container-org96d1098" class="outline-2">
+<h2 id="thank-you"><a id="org96d1098"></a><span class="section-number-2">5</span> Thank you</h2>
+<div class="outline-text-2" id="text-thank-you">
+<a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/home.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
 
 <ul class="pager">
     <li class="next">
-        <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html" class="btn btn-neutral float-right" title="Minimizing the Dot Product" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="Structures And Pointers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
     </li>
     <li class="previous">
-        <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html" class="btn btn-neutral" title="Factorial of a Number" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>
+        <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html" class="btn btn-neutral" title="Beware Of The Assumptions" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
     </li>
 </ul>
 
@@ -691,12 +593,16 @@ Want to share something with me or just wanna chat?
 </tr>
 </tbody>
 </table>
+
+<hr />
+
+<p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-03-26 Mon 05:08</p>
+<p class="date">Created: 2018-03-26 Mon 00:09</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
