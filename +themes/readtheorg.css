@@ -739,6 +739,11 @@ hr{
         text-align: center;
         padding: 0.6em;
         margin-bottom: 0.6em;
+        left: 0px;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        z-index: 10;
     }
     #toggle-sidebar h2 {
         color: white;

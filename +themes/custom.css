@@ -177,7 +177,7 @@ code {
 
 .title {
     text-align: center;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     margin-bottom: 1em;
 }
 
@@ -187,13 +187,4 @@ code {
 
 .todo {
     background-color: #715ab1;
-}
-
-@media screen and (max-width: 768px)
-#toggle-sidebar {
-    left: 0px;
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    z-index: 10;
 }
