@@ -3,6 +3,7 @@
 
 * Table of Contents                                       :TOC_4_gh:noexport:
 - [[#about][About]]
+- [[#trending][Trending]]
 - [[#latest][Latest]]
 - [[#c-c][C-C++]]
   - [[#beware-of-the-assumptions][Beware Of The Assumptions]]
@@ -24,6 +25,12 @@
   :CUSTOM_ID: about
   :END:
 Sharing my views and experience of *Problem Solving* approach via the blog.
+
+* TODO Trending
+:PROPERTIES:
+  :CUSTOM_ID: trending
+  :END:
+Coming soon, stay tuned!
 
 * Latest
 :PROPERTIES:
