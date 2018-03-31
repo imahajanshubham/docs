@@ -35,7 +35,7 @@ or intern, send your resume to [[mailto:sanjliagarwal@gmail.com][sanjliagarwal@g
 #+end_quote
 
 * Initial thoughts
-What an opportunity! And here I’m, not even prepared my *Resume* till now…
+What an opportunity! And here I’m, not even have prepared my *Resume* till now…
 
 ** Why?
 Um-mm, I had planned to prepare it in summers just like earlier when [[https://sites.google.com/view/the-launchpad/dev][Dev]] and
