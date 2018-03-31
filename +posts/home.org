@@ -189,6 +189,12 @@ properties, syntax to creating a simple program of phonebook in java.
   </ul>
 
 
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = https://imahajanshubham.github.io  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = /docs/home.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = 'https://the-greatest-enemy-of-learning-is-knowing.disqus.com/embed.js';
