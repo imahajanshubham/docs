@@ -2,17 +2,32 @@
 #+TITLE: The greatest enemy of learning is knowing.
 
 * Table of Contents                                          :TOC@4:noexport:
-- [[#hello-everyone][Hello Everyone!]]
+- [[#hello-everyone][Hello Everyone]]
+- [[#initial-thoughts][Initial thoughts]]
+  - [[#why][Why?]]
 - [[#thank-you][Thank you]]
 
-* Hello Everyone!
-A very beautiful quote thanks to the courtesy of *John Maxwell*.
+* Hello Everyone
+A very beautiful quote thanks to the courtesy of *John Maxwell*. Two days ago,
+Aasish Sir shared me with a message:
+
+#+begin_quote
+For people graduating in 2019 and 2020 if you want to apply in Microsoft for FTE
+or intern, send your resume to [[mailto:sanjliagarwal@gmail.com][sanjliagarwal@gmail.com]].
+#+end_quote
+
+* Initial thoughts
+What an opportunity! And here I’m, not even prepared my *Resume* till now…
+
+** Why?
+Um-mm, I had planned to prepare it in Summers just like earlier when [[https://sites.google.com/view/the-launchpad/dev][Dev]] and
+[[https://sites.google.com/view/the-launchpad/abhijit][Abhijit]] made their own. Ample of time to think *What goes in and What not*.
 
 * Thank you
 
 #+begin_export html
   <a href="" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
-
+<script id="dsq-count-scr" src="//imahajanshubham.disqus.com/count.js" async></script>
   <ul class="pager">
       <li class="next">
           <a href="" class="btn btn-neutral float-right" title="" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
@@ -21,8 +36,28 @@ A very beautiful quote thanks to the courtesy of *John Maxwell*.
           <a href="" class="btn btn-neutral" title="" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       </li>
   </ul>
+
+<a href="http://codeblocq.com/post1.html#disqus_thread"># COMMENTS</a>
+<div id="disqus_thread"></div>
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://imahajanshubham.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 #+end_export
 
 -----
+
+#+begin_export html
+  <a href="" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+<h3>Ratings</h3>
+<script data-sil-id='5abfb739b2632c002df24fd0'> (function() {var d = document, w = window, l = window.location,p = l.protocol == 'file:' ? 'http://' : '//';if (!w.WS) w.WS = {}; c = w.WS;var m=function(t, o){  var e = d.getElementsByTagName('script'); e=e[e.length-1];  var n = d.createElement(t); if (t=='script') {n.async=true;} for (k in o) n[k] = o[k];  e.parentNode.insertBefore(n, e)};   m('script', {      src: p+'bawkbox.com/widget/star-rating/5abfb739b2632c002df24fd0?page='+encodeURIComponent(l+''),      type: 'text/javascript'  });  c.load_net = m;})();</script>
+<script type='application/ld+json' src='//bawkbox.com/widget/star-rating/5abfb739b2632c002df24fd0/microdata'></script><div class='sil-widget-star-rating sil-widget' id='sil-widget-5abfb739b2632c002df24fd0'><a href='https://bawkbox.com/install/star-rating'>Star Ratings and Reviews</a></div>
+#+end_export
 
 #+INCLUDE: ../../+layouts/footer.org
