@@ -40,7 +40,7 @@ Um-mm, I had planned to prepare it in Summers just like earlier when [[https://s
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-this.page.url = https://imahajanshubham.github.io/docs/others/words_to_cherish.html;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.url = imahajanshubham.github.io/docs/others/words_to_cherish.html;  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = /docs/others/words_to_cherish.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 (function() { // DON'T EDIT BELOW THIS LINE
