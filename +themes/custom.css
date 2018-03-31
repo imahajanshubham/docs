@@ -130,11 +130,11 @@ code {
 
 .btn-github:hover {
     color: #343131;
-    background-color: #715ab1;
+    background-color: #2980B9;
 }
 
 .btn-github {
-    color: #715ab1;
+    color: #2980B9;
     background-color: #343131;
     border-color: rgba(0, 0, 0, 0.2);
     z-index: 10;
@@ -180,14 +180,6 @@ code {
     margin-bottom: 1em;
 }
 
-.example {
-    background-color: #EDE7F6;
-}
-
-.todo {
-    background-color: #715ab1;
-}
-
 /* :target:before { */
 /*     content: ""; */
 /*     display: block; */
@@ -195,7 +187,6 @@ code {
 /*     margin: -51.1875px 0 0; */
 /* } */
 
-button:hover {
-    color: white;
-    background-color: #715ab1;
+.hero_image {
+    width: 50%;
 }

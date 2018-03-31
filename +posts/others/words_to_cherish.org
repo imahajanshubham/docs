@@ -1,17 +1,36 @@
 #+INCLUDE: ../../+layouts/header.org
-#+TITLE: The greatest enemy of learning is knowing.
+#+TITLE: The greatest enemy of learning is knowing
 
 * Table of Contents                                          :TOC@4:noexport:
-- [[#hello-everyone][Hello Everyone]]
+- [[#morning-everyone][Morning everyone]]
 - [[#initial-thoughts][Initial thoughts]]
   - [[#why][Why?]]
+  - [[#what-i-missed][What I missed?]]
+- [[#a-weird-idea][A weird idea]]
+- [[#the-discussion][The discussion]]
+  - [[#but-hey][But hey…]]
+- [[#the-result][The result]]
+  - [[#words-to-cherrish][Words to cherrish]]
+- [[#moments-later][Moments later]]
+- [[#current-plan][Current plan]]
+- [[#quote-of-the-day][Quote of the day]]
 - [[#thank-you][Thank you]]
 
-* Hello Everyone
+* Morning everyone
+#+begin_export html
+<br>
+  <p align="center">
+    <img class="hero_image" src="https://cdn6.aptoide.com/imgs/7/8/1/7810180e76160e3d4896e211c4d8bb89_icon.png?w=240" width="125px" heigh="125px">
+  </p>
+<br>
+#+end_export
+
 A very beautiful quote thanks to the courtesy of *John Maxwell*. Two days ago,
-Aasish Sir shared me with a message:
+Aasish Sir shared me a message:
 
 #+begin_quote
+*March ~30~, 2017 (Friday)*
+
 For people graduating in 2019 and 2020 if you want to apply in Microsoft for FTE
 or intern, send your resume to [[mailto:sanjliagarwal@gmail.com][sanjliagarwal@gmail.com]].
 #+end_quote
@@ -20,8 +39,119 @@ or intern, send your resume to [[mailto:sanjliagarwal@gmail.com][sanjliagarwal@g
 What an opportunity! And here I’m, not even prepared my *Resume* till now…
 
 ** Why?
-Um-mm, I had planned to prepare it in Summers just like earlier when [[https://sites.google.com/view/the-launchpad/dev][Dev]] and
-[[https://sites.google.com/view/the-launchpad/abhijit][Abhijit]] made their own. Ample of time to think *What goes in and What not*.
+Um-mm, I had planned to prepare it in summers just like earlier when [[https://sites.google.com/view/the-launchpad/dev][Dev]] and
+[[https://sites.google.com/view/the-launchpad/abhijit][Abhijit]] made their own. Ample time to think *“What goes in and What not“*.
+
+** What I missed?
+Precious *time*, to manage and prepare better in advance. On top of that, today
+was the last the date and I’d to go to the College for some paperwork and registrations.
+
+* A weird idea
+Due to the hurry for which only I was responsible, I couldn’t think of any
+experiments with the layout/structure and contents of the resume.
+
+Was just… *total silence!*
+
+*Later a wierd thought came to use [[https://docs.google.com/presentation/d/1v1XE-k13ZKbxA6Gybhz3x39ZRXFpsIS7VmNWvHN7Jlc/present?slide=id.p4][Dev’s Resume]] as a template*, in the time of peril.
+
+* The discussion
+In the meantime, Sir suggested me to *include a cover letter* and try to highlight
+my *strengths and personality*.
+
+For once I thought that whether Sir meant by the usual formal-format resume
+rather than the powerpoint one which I was thinking.
+
+So He clarified that I should I continue and try not to use too many colours and
+also to take care of consistency throughout the presentation.
+
+** But hey…
+Till now Sir didn’t knew that I was about to use a template rather than
+experimenting out myself.
+
+#+begin_danger
+This was soon going to be a mistake!
+#+end_danger
+
+*And I continued…*
+
+* The result
+Though was not at all satisfied because all the work had lost it’s authenticity.
+Still happy with whateverI could do in the limited time.
+
+#+begin_export html
+<br>
+  <p align"center">
+    <iframe src="https://drive.google.com/file/d/14DKkB9YgRWIfjzTmk_1GQNaOqnCzG8Iw/preview" width="100%" height="500px"></iframe>
+  </p>
+<br>
+#+end_export
+
+Even though I used a template, I tried to think/use my own beliefs and
+personality traits as *accurate and authentic* as I could given the time I’d left.
+
+Shared with the Sir (had mailed it to the Ma’am too) and He replied:+1:
+
+** Words to cherrish
+- Please note that *templates are the barriers for creativity*.
+- *Be inspired , but stay open to experiment with different forms.*
+- Idea is to *communicate the key messages* about you effectively
+- In a manner that is *impactful*.
+- *Right messages* are drawn.
+
+And the *receiver should have a ~smile~ on face the moment your profile comes across!*
+
+* Moments later
+Suddenly Sir shared a convo:
+
+#+begin_export html
+<br>
+  <p align="center">
+    <img src="../+assets/others/convo.jpeg" width="50%" heigh="125px">
+  </p>
+<br>
+#+end_export
+
+Sir had shared the resume with a different group and then replied:
+
+#+begin_quote
+In my eyes resume is good.
+
+However u may want to review from a point of someone unknown.\\
+It will be understood by people who respect independent thinking.
+#+end_quote
+
+Beautiful words once again! Here’s how I replied back:
+
+#+begin_quote
+😋 *Honest feedback is little hard these days...* Really happy to hear that.
+🙏🙏 For it is the opportunity ✨ to improve even further!
+
+*We are only as good as the exposure*, ✌
+
+I'll definitely devote decent 🕐 time in thought process from the  audience
+perspective first before doing anything.
+
+Will work from scratch, Keeping those points in mind.
+
+Thank you Sir, *for sharing*, 🙏
+#+end_quote
+
+I was fortunate enough to get such a wonderful opportunity to learn and improve further!
+
+* TODO Current plan
+Will do a fair amount of experimentation first, gather feddback and improvise.
+Then see how it goes.
+
+* Quote of the day
+
+#+begin_quote
+"The man who asks a question is a fool for a minute, the man who does not ask is
+a fool for life."
+
+*― Confucius*
+#+end_quote
+
+Cheers!
 
 * Thank you
 
