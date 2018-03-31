@@ -18,6 +18,8 @@
 - [[#java][Java]]
   - [[#factorials-in-java][Factorials in Java]]
   - [[#hash-maps-in-java][Hash Maps in Java]]
+- [[#others][Others]]
+  - [[#the-greatest-enemy-of-learning-is-knowing][The greatest enemy of learning is knowing]]
 - [[#thank-you][Thank you]]
 
 * About
@@ -38,10 +40,10 @@ Coming soon, stay tuned!
   :END:
 
 #+begin_attention
-Another interesting blog,\\
+Another wonderful opportunity to learn,\\
 Yapp, it’s coming!
 
-*[[https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html][Beware Of The Assumptions]]*
+*[[https://imahajanshubham.github.io/docs/others/words_to_cherish.html][The greatest enemy of learning is knowing]]*
 #+end_attention
 
 * C-C++
@@ -171,6 +173,23 @@ properties, syntax to creating a simple program of phonebook in java.
 
 *February 9,* 2018
 
+* Others
+:PROPERTIES:
+:CUSTOM_ID: others
+:END:
+** [[https://imahajanshubham.github.io/docs/others/words_to_cherish.html][The greatest enemy of learning is knowing]]
+:PROPERTIES:
+:CUSTOM_ID: the-greatest-enemy-of-learning-is-knowing
+:END:
+
+#+begin_quote
+"The man who asks a question is a fool for a minute, the man who does not ask is a fool for life."
+
+― Confucius
+#+end_quote
+
+*March 30,* 2018
+
 * Thank you
 :PROPERTIES:
 :CUSTOM_ID: thank-you
@@ -184,7 +203,7 @@ properties, syntax to creating a simple program of phonebook in java.
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="Structures And Pointers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       </li>
       <li class="previous">
-          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html" class="btn btn-neutral" title="Beware Of The Assumptions" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+          <a href="https://imahajanshubham.github.io/docs/others/words_to_cherish.html" class="btn btn-neutral" title="The greatest enemy of learning is knowing" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       </li>
   </ul>
 #+end_export

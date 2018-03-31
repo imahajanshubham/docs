@@ -242,7 +242,7 @@ in an array.
 
   <ul class="pager">
       <li class="next">
-          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="Structures And Pointer" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
+          <a href="https://imahajanshubham.github.io/docs/others/words_to_cherish.html" class="btn btn-neutral float-right" title="The greatest enemy of learning is knowing" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
       </li>
       <li class="previous">
           <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html" class="btn btn-neutral" title="Average Halfify (keteki)" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>

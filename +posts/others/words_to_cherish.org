@@ -155,14 +155,14 @@ Cheers!
 * Thank you
 
 #+begin_export html
-  <a href="" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/others/words_to_cherish.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
 <script id="dsq-count-scr" src="//imahajanshubham.disqus.com/count.js" async></script>
   <ul class="pager">
       <li class="next">
-          <a href="" class="btn btn-neutral float-right" title="" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       </li>
       <li class="previous">
-          <a href="" class="btn btn-neutral" title="" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/beware_of_the_assumptions.html" class="btn btn-neutral" title="" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       </li>
   </ul>
 #+end_export
