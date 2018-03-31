@@ -81,7 +81,7 @@ b,strong{
     font-weight:bold}
 
 blockquote{
-    background-color: #fbf8ef;
+    background-color: #efebe9;
     border-left: 5px solid #EFEBE9;
     font-style:italic;
     line-height:24px;
@@ -739,11 +739,6 @@ hr{
         text-align: center;
         padding: 0.6em;
         margin-bottom: 0.6em;
-        left: 0px;
-        position: fixed;
-        right: 0px;
-        top: 0px;
-        z-index: 10;
     }
     #toggle-sidebar h2 {
         color: white;

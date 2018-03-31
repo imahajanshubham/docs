@@ -1,0 +1,28 @@
+#+INCLUDE: ../../+layouts/header.org
+#+TITLE: The greatest enemy of learning is knowing.
+
+* Table of Contents                                          :TOC@4:noexport:
+- [[#hello-everyone][Hello Everyone!]]
+- [[#thank-you][Thank you]]
+
+* Hello Everyone!
+A very beautiful quote thanks to the courtesy of *John Maxwell*.
+
+* Thank you
+
+#+begin_export html
+  <a href="" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
+  <ul class="pager">
+      <li class="next">
+          <a href="" class="btn btn-neutral float-right" title="" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="" class="btn btn-neutral" title="" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      </li>
+  </ul>
+#+end_export
+
+-----
+
+#+INCLUDE: ../../+layouts/footer.org
