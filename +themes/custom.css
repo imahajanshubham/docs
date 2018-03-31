@@ -190,3 +190,9 @@ code {
 .hero_image {
     width: 50%;
 }
+
+@media only screen and (min-width: 1025px) {
+    .hero_image {
+        width: 25%;
+    }
+}

@@ -20,13 +20,12 @@
 #+begin_export html
 <br>
   <p align="center">
-    <img class="hero_image" src="https://cdn6.aptoide.com/imgs/7/8/1/7810180e76160e3d4896e211c4d8bb89_icon.png?w=240" width="125px" heigh="125px">
+    <img class="hero_image" src="https://cdn6.aptoide.com/imgs/7/8/1/7810180e76160e3d4896e211c4d8bb89_icon.png?" />
   </p>
 <br>
 #+end_export
 
-A very beautiful quote thanks to the courtesy of *John Maxwell*. Two days ago,
-Aasish Sir shared me a message:
+Two days ago, Aasish Sir shared me a message:
 
 #+begin_quote
 *March ~30~, 2017 (Friday)*
