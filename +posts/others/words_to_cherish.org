@@ -60,7 +60,7 @@ my *strengths and personality*.
 For once I thought that whether Sir meant by the usual formal-format resume
 rather than the powerpoint one which I was thinking.
 
-So He clarified that I should I continue and try not to use too many colours and
+So He clarified that I should continue and try not to use too many colours and
 also to take care of consistency throughout the presentation.
 
 ** But hey…
@@ -74,8 +74,8 @@ This was soon going to be a mistake!
 *And I continued…*
 
 * The result
-Though was not at all satisfied because all the work had lost it’s authenticity.
-Still happy with whateverI could do in the limited time.
+Though I was not at all satisfied because all the work had lost it’s authenticity.
+Still I was happy with whateverI could do in the limited time.
 
 #+begin_export html
 <br>
