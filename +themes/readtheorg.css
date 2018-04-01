@@ -586,7 +586,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 
 #content .admonition-title.error,#content .admonition-title.danger{
     line-height: 1;
-    background: #ffc107}
+    background: #715ab1}
 
 legend{
     display:block;
