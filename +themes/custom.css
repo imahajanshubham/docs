@@ -130,11 +130,11 @@ code {
 
 .btn-github:hover {
     color: #343131;
-    background-color: #2980B9;
+    background-color: #715ab1;
 }
 
 .btn-github {
-    color: #2980B9;
+    color: #715ab1;
     background-color: #343131;
     border-color: rgba(0, 0, 0, 0.2);
     z-index: 10;
@@ -186,6 +186,11 @@ code {
 /*     height: 51.1875px; */
 /*     margin: -51.1875px 0 0; */
 /* } */
+
+.todo {
+    background-color: #ffc107;
+    color: black;
+}
 
 .hero_image {
     width: 50%;

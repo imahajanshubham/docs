@@ -547,10 +547,10 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
     margin-bottom:0px}
 
 #content .danger,#content .error{
-    background:#fdf3f2}
+    background:#ffc107}
 
 .wy-alert.wy-alert-warning,#content .wy-alert-warning.note,#content .attention,#content .caution,#content .wy-alert-warning.danger,#content .wy-alert-warning.error,#content .wy-alert-warning.hint,#content .wy-alert-warning.important,#content .wy-alert-warning.tip,#content .warning,#content .wy-alert-warning.seealso,#content .admonitiontodo{
-    background: #EDE7F6;
+    background: #ffc107;
     }
 
 #content .admonition-title.note:before, #content .admonition-title.seealso:before,
@@ -563,7 +563,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
     content: "";}
 
 #content .note,#content .seealso{
-    background:#ede7f6}
+    background:#ffc107}
 
 .wy-alert p:last-child,#content .note p:last-child,#content .attention p:last-child,#content .caution p:last-child,#content .danger p:last-child,#content .error p:last-child,#content .hint p:last-child,#content .important p:last-child,#content .tip p:last-child,#content .warning p:last-child,#content .seealso p:last-child,#content .admonitiontodo p:last-child{
     margin-bottom:0}
@@ -573,7 +573,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
     background:#715ab1}
 
 #content .important,#content .tip,#content .hint{
-    background:#ede7f6}
+    background:#ffc107}
 
 #content .admonition-title.note,#content .admonition-title.seealso{
     line-height: 1;
@@ -586,7 +586,7 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 
 #content .admonition-title.error,#content .admonition-title.danger{
     line-height: 1;
-    background:#f29f97}
+    background: #ffc107}
 
 legend{
     display:block;
