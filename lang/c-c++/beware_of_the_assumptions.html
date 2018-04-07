@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-04-01 Sun 16:54 -->
+<!-- 2018-04-07 Sat 08:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Beware Of The Assumptions</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Shubham Mahajan" />
 <style type="text/css">
@@ -180,15 +180,6 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp" />
-<meta name="theme-color" content="#715ab1" />
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
-<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
-<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -238,64 +229,44 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Beware Of The Assumptions</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgab43cef">1. Greetings Everyone, 😊</a></li>
-<li><a href="#orgfff80ee">2. What took so long?</a>
+<li><a href="#orga4d9dce">1. Greetings Everyone, 😊</a></li>
+<li><a href="#orgb9c8be9">2. What took so long?</a>
 <ul>
-<li><a href="#org5ae0c0e">2.1. <b>How to calculate the factorial of … say <code>50</code>?</b></a></li>
-<li><a href="#org1a6f5b0">2.2. Factorial of <code>50</code> is a <code>65</code> digit answer!</a></li>
-<li><a href="#orgb962b4c">2.3. Do we even have a <code>datatype</code> in C to store such a huge number?</a></li>
+<li><a href="#org14db3fb">2.1. <b>How to calculate the factorial of … say <code>50</code>?</b></a></li>
+<li><a href="#org5438708">2.2. Factorial of <code>50</code> is a <code>65</code> digit answer!</a></li>
+<li><a href="#org4273ddc">2.3. Do we even have a <code>datatype</code> in C to store such a huge number?</a></li>
 </ul>
 </li>
-<li><a href="#org5a9ddfc">3. But why?</a>
+<li><a href="#org19902eb">3. But why?</a>
 <ul>
-<li><a href="#org5c155e8">3.1. False Assumption</a></li>
-<li><a href="#orgf766faa">3.2. Wrong Test Cases</a></li>
+<li><a href="#org796e799">3.1. False Assumption</a></li>
+<li><a href="#org885dc97">3.2. Wrong Test Cases</a></li>
 </ul>
 </li>
-<li><a href="#orga0a422f">4. How did I overcame it?</a>
+<li><a href="#org91ff111">4. How did I overcame it?</a>
 <ul>
 <li>
 <ul>
-<li><a href="#orge4e8956">4.0.1. What if:</a></li>
-<li><a href="#org69f3094">4.0.2. One step forward!</a></li>
-<li><a href="#orgc82132d">4.0.3. Another step forward!</a></li>
-<li><a href="#org86bdfb2">4.0.4. Almost reached the Destination!</a></li>
+<li><a href="#org0199b90">4.0.1. What if:</a></li>
+<li><a href="#orgca5e4d1">4.0.2. One step forward!</a></li>
+<li><a href="#org9f541b9">4.0.3. Another step forward!</a></li>
+<li><a href="#org5cdf1c8">4.0.4. Almost reached the Destination!</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org3eb32e6">5. Key Learnings</a></li>
-<li><a href="#org50d338b">6. Few more treats!</a></li>
-<li><a href="#orgfbaf050">7. Thank you</a></li>
+<li><a href="#orgafa113a">5. Key Learnings</a></li>
+<li><a href="#orgb677b96">6. Few more treats!</a></li>
+<li><a href="#org170f0ff">7. Thank you</a></li>
 </ul>
 </div>
 </div>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100% class=&quot;center&quot; background=“white”">
-
-
-<colgroup>
-<col  class="org-center" />
-
-<col  class="org-center" />
-
-<col  class="org-center" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-center"><a href="https://imahajanshubham.github.io/docs/home.html">Home</a></td>
-<td class="org-center"><a href="https://github.com/imahajanshubham">GitHub</a></td>
-<td class="org-center"><a href="https://sites.google.com/view/the-launchpad/home">Website</a></td>
-</tr>
-</tbody>
-</table>
-
-<div id="outline-container-orgab43cef" class="outline-2">
-<h2 id="orgab43cef"><span class="section-number-2">1</span> Greetings Everyone, 😊</h2>
+<div id="outline-container-orga4d9dce" class="outline-2">
+<h2 id="orga4d9dce"><span class="section-number-2">1</span> Greetings Everyone, 😊</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Been almost two days,
@@ -305,16 +276,16 @@ Did a lot of challenges in the time period.
 </div>
 </div>
 
-<div id="outline-container-orgfff80ee" class="outline-2">
-<h2 id="orgfff80ee"><span class="section-number-2">2</span> What took so long?</h2>
+<div id="outline-container-orgb9c8be9" class="outline-2">
+<h2 id="orgb9c8be9"><span class="section-number-2">2</span> What took so long?</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Umm… Basically, a question:
 </p>
 </div>
 
-<div id="outline-container-org5ae0c0e" class="outline-3">
-<h3 id="org5ae0c0e"><span class="section-number-3">2.1</span> <b>How to calculate the factorial of … say <code>50</code>?</b></h3>
+<div id="outline-container-org14db3fb" class="outline-3">
+<h3 id="org14db3fb"><span class="section-number-3">2.1</span> <b>How to calculate the factorial of … say <code>50</code>?</b></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sure, our basic logic of calculating the factorial using recursion would
@@ -322,12 +293,12 @@ work perfectly:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">unsigned</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">factorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">unsigned</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">number</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span><span style="color: #4e3163;">!</span>number<span style="color: #6c3163;">)</span>
-    <span style="color: #3a81c3; font-weight: bold;">return</span> <span style="color: #4e3163;">1</span>;
+<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">unsigned</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">factorial</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">unsigned</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">number</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">!</span>number<span style="color: #bc6ec5;">)</span>
+    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">1</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">return</span> number * factorial<span style="color: #6c3163;">(</span>number - <span style="color: #4e3163;">1</span><span style="color: #6c3163;">)</span>;
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">return</span> number * factorial<span style="color: #bc6ec5;">(</span>number - <span style="color: #a45bad;">1</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -338,8 +309,8 @@ work perfectly:
 </div>
 </div>
 
-<div id="outline-container-org1a6f5b0" class="outline-3">
-<h3 id="org1a6f5b0"><span class="section-number-3">2.2</span> Factorial of <code>50</code> is a <code>65</code> digit answer!</h3>
+<div id="outline-container-org5438708" class="outline-3">
+<h3 id="org5438708"><span class="section-number-3">2.2</span> Factorial of <code>50</code> is a <code>65</code> digit answer!</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 You heard it right,
@@ -354,8 +325,8 @@ Just way too long…
 </div>
 </div>
 
-<div id="outline-container-orgb962b4c" class="outline-3">
-<h3 id="orgb962b4c"><span class="section-number-3">2.3</span> Do we even have a <code>datatype</code> in C to store such a huge number?</h3>
+<div id="outline-container-org4273ddc" class="outline-3">
+<h3 id="org4273ddc"><span class="section-number-3">2.3</span> Do we even have a <code>datatype</code> in C to store such a huge number?</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Nope!
@@ -370,16 +341,16 @@ elementary-level failed and I never realized of dealing with such huge numbers.
 </div>
 </div>
 
-<div id="outline-container-org5a9ddfc" class="outline-2">
-<h2 id="org5a9ddfc"><span class="section-number-2">3</span> But why?</h2>
+<div id="outline-container-org19902eb" class="outline-2">
+<h2 id="org19902eb"><span class="section-number-2">3</span> But why?</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Because of my false assumption and wrong test cases.
 </p>
 </div>
 
-<div id="outline-container-org5c155e8" class="outline-3">
-<h3 id="org5c155e8"><span class="section-number-3">3.1</span> False Assumption</h3>
+<div id="outline-container-org796e799" class="outline-3">
+<h3 id="org796e799"><span class="section-number-3">3.1</span> False Assumption</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Implementing the Pen n’ Paper logic via Code and believing - <b>that’s it!</b>
@@ -392,8 +363,8 @@ i.e. Only focusing on how to iterate the loop/function from <code>2</code> to <c
 </div>
 </div>
 
-<div id="outline-container-orgf766faa" class="outline-3">
-<h3 id="orgf766faa"><span class="section-number-3">3.2</span> Wrong Test Cases</h3>
+<div id="outline-container-org885dc97" class="outline-3">
+<h3 id="org885dc97"><span class="section-number-3">3.2</span> Wrong Test Cases</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 The major reason behind such mistake:
@@ -422,8 +393,8 @@ And that was the sole mistake.
 </div>
 </div>
 
-<div id="outline-container-orga0a422f" class="outline-2">
-<h2 id="orga0a422f"><span class="section-number-2">4</span> How did I overcame it?</h2>
+<div id="outline-container-org91ff111" class="outline-2">
+<h2 id="org91ff111"><span class="section-number-2">4</span> How did I overcame it?</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Thought processing.
@@ -493,8 +464,8 @@ While multiplying <code>5</code> with <code>24</code>,
 <hr />
 </div>
 
-<div id="outline-container-orge4e8956" class="outline-4">
-<h4 id="orge4e8956"><span class="section-number-4">4.0.1</span> What if:</h4>
+<div id="outline-container-org0199b90" class="outline-4">
+<h4 id="org0199b90"><span class="section-number-4">4.0.1</span> What if:</h4>
 <div class="outline-text-4" id="text-4-0-1">
 <p>
 Instead of treating <code>24</code> as a whole number, if I store
@@ -514,8 +485,8 @@ just like I was doing on the piece of paper?
 </div>
 </div>
 
-<div id="outline-container-org69f3094" class="outline-4">
-<h4 id="org69f3094"><span class="section-number-4">4.0.2</span> One step forward!</h4>
+<div id="outline-container-orgca5e4d1" class="outline-4">
+<h4 id="orgca5e4d1"><span class="section-number-4">4.0.2</span> One step forward!</h4>
 <div class="outline-text-4" id="text-4-0-2">
 <p>
 Initially, it felt a little tough to think such a logic… But after a little-bit
@@ -523,14 +494,14 @@ of practice, I finally managed develop the following logic:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">factorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">number</span>, <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">value</span><span style="color: #6c3163;">[]</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  value<span style="color: #6c3163;">[</span><span style="color: #4e3163;">0</span><span style="color: #6c3163;">]</span> = <span style="color: #4e3163;">1</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">noOfDigits</span> = <span style="color: #4e3163;">1</span>;
+<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">factorial</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">number</span>, <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">value</span><span style="color: #bc6ec5;">[]</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  value<span style="color: #bc6ec5;">[</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">]</span> = <span style="color: #a45bad;">1</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">noOfDigits</span> = <span style="color: #a45bad;">1</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">localNumber</span> = <span style="color: #4e3163;">2</span>; localNumber &lt;= number; localNumber++<span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
+  <span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">localNumber</span> = <span style="color: #a45bad;">2</span>; localNumber &lt;= number; localNumber++<span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
     noOfDigits = multiply<span style="color: #2d9574;">(</span>localNumber, value, noOfDigits<span style="color: #2d9574;">)</span>;
-  <span style="color: #6c3163;">}</span>
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #bc6ec5;">}</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -551,8 +522,8 @@ Tricky part of actually multiplying the numbers was still left.
 </div>
 </div>
 
-<div id="outline-container-orgc82132d" class="outline-4">
-<h4 id="orgc82132d"><span class="section-number-4">4.0.3</span> Another step forward!</h4>
+<div id="outline-container-org9f541b9" class="outline-4">
+<h4 id="org9f541b9"><span class="section-number-4">4.0.3</span> Another step forward!</h4>
 <div class="outline-text-4" id="text-4-0-3">
 <p>
 So to ease the problem,<br />
@@ -561,7 +532,7 @@ I divided it into two sub-parts:
 </div>
 
 <ol class="org-ol">
-<li><a id="org2214b7b"></a>Multiply the intermediate number.<br />
+<li><a id="org7ecccda"></a>Multiply the intermediate number.<br />
 <div class="outline-text-5" id="text-4-0-3-1">
 <p>
 Taking the <code>24 x 5</code> example,<br />
@@ -578,12 +549,12 @@ logic. And store the remainder in ~array[0].
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">indx</span> = <span style="color: #4e3163;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">prod</span> = value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> * localNumber + carry;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">indx</span> = <span style="color: #a45bad;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">prod</span> = value<span style="color: #bc6ec5;">[</span>indx<span style="color: #bc6ec5;">]</span> * localNumber + carry;
 
-  value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> = prod % <span style="color: #4e3163;">10</span>;
-  carry = prod / <span style="color: #4e3163;">10</span>;
-<span style="color: #3a81c3;">}</span>
+  value<span style="color: #bc6ec5;">[</span>indx<span style="color: #bc6ec5;">]</span> = prod % <span style="color: #a45bad;">10</span>;
+  carry = prod / <span style="color: #a45bad;">10</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -599,7 +570,7 @@ In that case, we need to add the carry too.
 </div>
 </li>
 
-<li><a id="orgba7df0a"></a>Update the final carry.<br />
+<li><a id="org93e83cf"></a>Update the final carry.<br />
 <div class="outline-text-5" id="text-4-0-3-2">
 <p>
 Add the carry i.e <code>2</code> to <code>array[0 + 1]</code>.
@@ -610,12 +581,12 @@ If again a carry is generated (ex. 9 + 1 = 10), then repeat <b>previous step</b>
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">indx</span> = <span style="color: #4e3163;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">prod</span> = value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> * localNumber + carry;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">indx</span> = <span style="color: #a45bad;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">prod</span> = value<span style="color: #bc6ec5;">[</span>indx<span style="color: #bc6ec5;">]</span> * localNumber + carry;
 
-  value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> = prod % <span style="color: #4e3163;">10</span>;
-  carry = prod / <span style="color: #4e3163;">10</span>;
-<span style="color: #3a81c3;">}</span>
+  value<span style="color: #bc6ec5;">[</span>indx<span style="color: #bc6ec5;">]</span> = prod % <span style="color: #a45bad;">10</span>;
+  carry = prod / <span style="color: #a45bad;">10</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -625,8 +596,8 @@ If again a carry is generated (ex. 9 + 1 = 10), then repeat <b>previous step</b>
 </ol>
 </div>
 
-<div id="outline-container-org86bdfb2" class="outline-4">
-<h4 id="org86bdfb2"><span class="section-number-4">4.0.4</span> Almost reached the Destination!</h4>
+<div id="outline-container-org5cdf1c8" class="outline-4">
+<h4 id="org5cdf1c8"><span class="section-number-4">4.0.4</span> Almost reached the Destination!</h4>
 <div class="outline-text-4" id="text-4-0-4">
 <p>
 Now only thing to be done was, print values of <code>array</code> from <code>0</code> to <code>noOfDigits</code> so as
@@ -641,8 +612,8 @@ And we are good to go!!!
 </div>
 </div>
 
-<div id="outline-container-org3eb32e6" class="outline-2">
-<h2 id="org3eb32e6"><span class="section-number-2">5</span> Key Learnings</h2>
+<div id="outline-container-orgafa113a" class="outline-2">
+<h2 id="orgafa113a"><span class="section-number-2">5</span> Key Learnings</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>Always validate the assumptions, <b>at any cost</b>.</li>
@@ -658,8 +629,8 @@ I hope this was the experience worth sharing.🙋
 </div>
 </div>
 
-<div id="outline-container-org50d338b" class="outline-2">
-<h2 id="org50d338b"><span class="section-number-2">6</span> Few more treats!</h2>
+<div id="outline-container-orgb677b96" class="outline-2">
+<h2 id="orgb677b96"><span class="section-number-2">6</span> Few more treats!</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Here’s the original source code and various others on <b>GitHub</b>:
@@ -698,8 +669,8 @@ in an array.
 </div>
 </div>
 
-<div id="outline-container-orgfbaf050" class="outline-2">
-<h2 id="orgfbaf050"><span class="section-number-2">7</span> Thank you</h2>
+<div id="outline-container-org170f0ff" class="outline-2">
+<h2 id="org170f0ff"><span class="section-number-2">7</span> Thank you</h2>
 <div class="outline-text-2" id="text-7">
 <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/beware_of_the_assumptions.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
 
@@ -711,106 +682,12 @@ in an array.
         <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html" class="btn btn-neutral" title="Average Halfify (keteki)" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>
     </li>
 </ul>
-
-<div id="disqus_thread"></div>
-<script>
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://imahajanshubham.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<script id="dsq-count-scr" src="//the-greatest-enemy-of-learning-is-knowing.disqus.com/count.js" async></script>
-
-<hr />
-
-<div class="attention">
-<p>
-If this blog was worth your time, please do checkout my other <a href="https://imahajanshubham.github.io/docs/home.html">shares</a> too.
-</p>
-
-</div>
-
-<p>
-Wanna know more about me?
-</p>
-
-<p>
-Visit:
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left"><b>LinkedIn</b></td>
-<td class="org-left"><a href="https://www.linkedin.com/in/imahajanshubham/">imahajanshubham</a></td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Website</b></td>
-<td class="org-left"><a href="https://sites.google.com/view/the-launchpad/home">The Launchpad</a></td>
-</tr>
-</tbody>
-</table>
-
-<p>
-or where my work lives:
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left"><b>GitHub</b></td>
-<td class="org-left"><a href="https://github.com/imahajanshubham">imahajanshubham</a></td>
-</tr>
-</tbody>
-</table>
-
-<p>
-Want to share something with me or just wanna chat?
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left"><b>Mail me</b></td>
-<td class="org-left"><a href="mailto:imahajanshubham@gmail.com?">imahajanshubham@gmail.com</a></td>
-</tr>
-</tbody>
-</table>
-
-<hr />
-
-<p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-04-01 Sun 16:54</p>
+<p class="date">Created: 2018-04-07 Sat 08:14</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

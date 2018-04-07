@@ -1,5 +1,4 @@
-#+INCLUDE: ../../../+layouts/header.org
-#+TITLE: Beware Of The Assumptions
+# #+INCLUDE: ../../../+layouts/header.org
 
 * Table of contents                                       :TOC_4_gh:noexport:
 - [[#greetings-everyone-][Greetings Everyone, 😊]]
@@ -250,4 +249,4 @@ in an array.
   </ul>
 #+end_export
 
-#+INCLUDE: ../../../+layouts/footer.org
+# #+INCLUDE: ../../../+layouts/footer.org

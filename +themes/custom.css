@@ -177,7 +177,7 @@ code {
 
 .title {
     text-align: center;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 /* :target:before { */
@@ -187,10 +187,10 @@ code {
 /*     margin: -51.1875px 0 0; */
 /* } */
 
-.todo {
-    background-color: #ffc107;
-    color: black;
-}
+/* .todo { */
+/*     background-color: #ffc107; */
+/*     color: black; */
+/* } */
 
 .hero_image {
     width: 50%;
