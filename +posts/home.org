@@ -32,7 +32,7 @@ Sharing my views and experience of *Problem Solving* approach via the blog.
 :PROPERTIES:
   :CUSTOM_ID: trending
   :END:
-Coming soon, stay tuned!
+Coming soon, stay tuned
 
 * Latest
 :PROPERTIES:
@@ -67,7 +67,8 @@ Calculating the factorials of 100+ using *Divide and Conquer* approach!
 :END:
 
 #+begin_quote
-The goal was to find the no. of times, *a particular digit appeared* (occurrences) in a *very large positive number*.
+The goal was to find the no. of times, *a particular digit appeared* (occurrences)
+in a damn large positive number*.
 #+end_quote
 
 *February 24,* 2018

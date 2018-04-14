@@ -180,17 +180,17 @@ code {
     /* margin-bottom: 1em; */
 }
 
-/* :target:before { */
-/*     content: ""; */
-/*     display: block; */
-/*     height: 51.1875px; */
-/*     margin: -51.1875px 0 0; */
-/* } */
+:target:before {
+    content: "";
+    display: block;
+    height: 51.1875px;
+    margin: -51.1875px 0 0;
+}
 
-/* .todo { */
-/*     background-color: #ffc107; */
-/*     color: black; */
-/* } */
+.todo {
+    background-color: #ffc107;
+    color: black;
+}
 
 .hero_image {
     width: 50%;
