@@ -1,17 +1,17 @@
-body {
-    background: #fcfcfc;
-}
+/* body { */
+/*     background: #fcfcfc; */
+/* } */
 
-#content {
-    max-width: 100%;
-}
+/* #content { */
+/*     max-width: 100%; */
+/* } */
 
-@media only screen and (min-width: 1025px) {
-    #content {
-        max-width: 100%;
-        padding: 1.5em 10em;
-    }
-}
+/* @media only screen and (min-width: 1025px) { */
+/*     #content { */
+/*         max-width: 100%; */
+/*         padding: 1.5em 10em; */
+/*     } */
+/* } */
 
 a:visited {
     color: #2980B9
