@@ -1,5 +1,6 @@
 #+TITLE: Sitemap
 
 - [[file:home.org][Home]]
+- [[file:c-c++config.org][Spacemacs Configuration]]
 - others
   - [[file:others/words_to_cherish.org][The greatest enemy of learning is knowing]]

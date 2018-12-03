@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-04-01 Sun 16:54 -->
+<!-- 2018-12-04 Tue 01:44 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Acid Naming Problem</title>
@@ -181,7 +181,7 @@
   /*]]>*/-->
 </style>
 <link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp" />
-<meta name="theme-color" content="#715ab1" />
+<meta name="theme-color" content="#2980b9" />
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
 <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
 <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
@@ -243,26 +243,26 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgcccc6d8">1. The Problem Statement</a>
+<li><a href="#orgbfd20a8">1. The Problem Statement</a>
 <ul>
-<li><a href="#org8a92a30">1.1. Input</a></li>
-<li><a href="#org263ee03">1.2. Output</a></li>
+<li><a href="#orgb9b1084">1.1. Input</a></li>
+<li><a href="#org4b8c270">1.2. Output</a></li>
 </ul>
 </li>
-<li><a href="#orga96486f">2. Conditions</a></li>
-<li><a href="#org115ef03">3. Test Case</a></li>
-<li><a href="#orgb25da2b">4. What do we need to know?</a></li>
-<li><a href="#org59d84bf">5. Let's begin!</a>
+<li><a href="#org2a2e560">2. Conditions</a></li>
+<li><a href="#orgfb24792">3. Test Case</a></li>
+<li><a href="#orgf34135c">4. What do we need to know?</a></li>
+<li><a href="#org501e52b">5. Let's begin!</a>
 <ul>
-<li><a href="#orgccd15f8">5.1. What should be the maximum length of an <code>acid name</code>?</a></li>
-<li><a href="#org405f510">5.2. What method should we use for getting the <code>acid names</code> from user?</a></li>
-<li><a href="#org169f483">5.3. How do we check whether the input starts with <code>hydro</code> or not?</a></li>
-<li><a href="#orgb1f421e">5.4. How to check if <code>acid name</code> ends with "ic"?</a></li>
-<li><a href="#org2e3ce76">5.5. Connecting the dots&#x2026;</a></li>
-<li><a href="#orge630630">5.6. Finally, Here comes the <code>main</code> function!</a></li>
+<li><a href="#org2bd82b9">5.1. What should be the maximum length of an <code>acid name</code>?</a></li>
+<li><a href="#org5d38c5c">5.2. What method should we use for getting the <code>acid names</code> from user?</a></li>
+<li><a href="#orgf4cd226">5.3. How do we check whether the input starts with <code>hydro</code> or not?</a></li>
+<li><a href="#org1054f0c">5.4. How to check if <code>acid name</code> ends with "ic"?</a></li>
+<li><a href="#org8e3412d">5.5. Connecting the dots&#x2026;</a></li>
+<li><a href="#org2b98ad7">5.6. Finally, Here comes the <code>main</code> function!</a></li>
 </ul>
 </li>
-<li><a href="#org23c75e6">6. Thank you</a></li>
+<li><a href="#org8bcfda3">6. Thank you</a></li>
 </ul>
 </div>
 </div>
@@ -285,8 +285,8 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<div id="outline-container-orgcccc6d8" class="outline-2">
-<h2 id="orgcccc6d8"><span class="section-number-2">1</span> The Problem Statement</h2>
+<div id="outline-container-orgbfd20a8" class="outline-2">
+<h2 id="orgbfd20a8"><span class="section-number-2">1</span> The Problem Statement</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Jonathan is in a science class, but because he does not understand how to name
@@ -316,8 +316,8 @@ acid, and return a string describing the appropriate type of acid.
 </p>
 </div>
 
-<div id="outline-container-org8a92a30" class="outline-3">
-<h3 id="org8a92a30"><span class="section-number-3">1.1</span> Input</h3>
+<div id="outline-container-orgb9b1084" class="outline-3">
+<h3 id="orgb9b1084"><span class="section-number-3">1.1</span> Input</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The first line will contain an integer <b>q</b>.
@@ -326,8 +326,8 @@ The next <b>q</b> lines will contain a single word <b>s</b>.
 </div>
 </div>
 
-<div id="outline-container-org263ee03" class="outline-3">
-<h3 id="org263ee03"><span class="section-number-3">1.2</span> Output</h3>
+<div id="outline-container-org4b8c270" class="outline-3">
+<h3 id="org4b8c270"><span class="section-number-3">1.2</span> Output</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>If the word starts with <code>hydro</code> and ends with <code>ic</code> then it is a non-metal acid.
@@ -340,8 +340,8 @@ output is <i>polyatomic acid</i>.</li>
 </div>
 </div>
 
-<div id="outline-container-orga96486f" class="outline-2">
-<h2 id="orga96486f"><span class="section-number-2">2</span> Conditions</h2>
+<div id="outline-container-org2a2e560" class="outline-2">
+<h2 id="org2a2e560"><span class="section-number-2">2</span> Conditions</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><b>1</b> &lt;= <b>q</b> &lt;= <b>100.</b></li>
@@ -351,8 +351,8 @@ output is <i>polyatomic acid</i>.</li>
 </div>
 </div>
 
-<div id="outline-container-org115ef03" class="outline-2">
-<h2 id="org115ef03"><span class="section-number-2">3</span> Test Case</h2>
+<div id="outline-container-orgfb24792" class="outline-2">
+<h2 id="orgfb24792"><span class="section-number-2">3</span> Test Case</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Input
@@ -410,8 +410,8 @@ Output
 </div>
 </div>
 
-<div id="outline-container-orgb25da2b" class="outline-2">
-<h2 id="orgb25da2b"><span class="section-number-2">4</span> What do we need to know?</h2>
+<div id="outline-container-orgf34135c" class="outline-2">
+<h2 id="orgf34135c"><span class="section-number-2">4</span> What do we need to know?</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>What should be the maximum length of an <code>Acid</code> name?</li>
@@ -421,12 +421,12 @@ Output
 </div>
 </div>
 
-<div id="outline-container-org59d84bf" class="outline-2">
-<h2 id="org59d84bf"><span class="section-number-2">5</span> Let's begin!</h2>
+<div id="outline-container-org501e52b" class="outline-2">
+<h2 id="org501e52b"><span class="section-number-2">5</span> Let's begin!</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-orgccd15f8" class="outline-3">
-<h3 id="orgccd15f8"><span class="section-number-3">5.1</span> What should be the maximum length of an <code>acid name</code>?</h3>
+<div id="outline-container-org2bd82b9" class="outline-3">
+<h3 id="org2bd82b9"><span class="section-number-3">5.1</span> What should be the maximum length of an <code>acid name</code>?</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 In the constraints section, it is given that:
@@ -442,8 +442,8 @@ So, the <code>acid name</code> can have minimum <b>2</b> and maximum <b>10000</b
 </div>
 </div>
 
-<div id="outline-container-org405f510" class="outline-3">
-<h3 id="org405f510"><span class="section-number-3">5.2</span> What method should we use for getting the <code>acid names</code> from user?</h3>
+<div id="outline-container-org5d38c5c" class="outline-3">
+<h3 id="org5d38c5c"><span class="section-number-3">5.2</span> What method should we use for getting the <code>acid names</code> from user?</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 As the <code>acid names</code> are english words, so we will use <code>char array or string</code>
@@ -472,16 +472,16 @@ way only 1 loop will do our whole job.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">character</span>;
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">charCount</span> = <span style="color: #4e3163;">0</span>;
+<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">character</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">charCount</span> = <span style="color: #a45bad;">0</span>;
 
-<span style="color: #ba2f59; font-weight: bold;">char</span> <span style="color: #715ab1;">acidName</span><span style="color: #3a81c3;">[</span><span style="color: #4e3163;">10001</span><span style="color: #3a81c3;">]</span>;
+<span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">acidName</span><span style="color: #4f97d7;">[</span><span style="color: #a45bad;">10001</span><span style="color: #4f97d7;">]</span>;
 
-<span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #3a81c3;">(</span><span style="color: #6c3163;">(</span>character = getchar<span style="color: #2d9574;">()</span><span style="color: #6c3163;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  acidName<span style="color: #6c3163;">[</span>charCount++<span style="color: #6c3163;">]</span> = character;
+<span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span>character = getchar<span style="color: #2d9574;">()</span><span style="color: #bc6ec5;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  acidName<span style="color: #bc6ec5;">[</span>charCount++<span style="color: #bc6ec5;">]</span> = character;
 
-  <span style="color: #2aa1ae; background-color: #ecf3ec;">// </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Rest of the code goes here.</span>
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">Rest of the code goes here.</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -499,8 +499,8 @@ That's because, 1 extra Byte would store <code>'\0'</code> (null) i.e. the strin
 </div>
 </div>
 
-<div id="outline-container-org169f483" class="outline-3">
-<h3 id="org169f483"><span class="section-number-3">5.3</span> How do we check whether the input starts with <code>hydro</code> or not?</h3>
+<div id="outline-container-orgf4cd226" class="outline-3">
+<h3 id="orgf4cd226"><span class="section-number-3">5.3</span> How do we check whether the input starts with <code>hydro</code> or not?</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 To check whether the input starts with <code>hydro</code> or not, we'll take help of a <b>flag</b>
@@ -512,29 +512,29 @@ Now, if we are getting the input character-by-character then why not simply do:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #3a81c3;">(</span><span style="color: #6c3163;">(</span>character = getchar<span style="color: #2d9574;">()</span><span style="color: #6c3163;">)</span> == <span style="color: #2d9574;">'h'</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  acidName<span style="color: #6c3163;">[</span>charCount++<span style="color: #6c3163;">]</span> = character;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span>character = getchar<span style="color: #2d9574;">()</span><span style="color: #bc6ec5;">)</span> == <span style="color: #2d9574;">'h'</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  acidName<span style="color: #bc6ec5;">[</span>charCount++<span style="color: #bc6ec5;">]</span> = character;
 
-  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span><span style="color: #2d9574;">(</span>character = getchar<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span> == <span style="color: #2d9574;">'y'</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span>character = getchar<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span> == <span style="color: #2d9574;">'y'</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
     acidName<span style="color: #2d9574;">[</span>charCount++<span style="color: #2d9574;">]</span> = character;
 
-    <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span><span style="color: #67b11d;">(</span>character = getchar<span style="color: #b1951d;">()</span><span style="color: #67b11d;">)</span> == <span style="color: #2d9574;">'d'</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
+    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span><span style="color: #67b11d;">(</span>character = getchar<span style="color: #b1951d;">()</span><span style="color: #67b11d;">)</span> == <span style="color: #2d9574;">'d'</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
       acidName<span style="color: #67b11d;">[</span>charCount++<span style="color: #67b11d;">]</span> = character;
 
-      <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #67b11d;">(</span><span style="color: #b1951d;">(</span>character = getchar<span style="color: #3a81c3;">()</span><span style="color: #b1951d;">)</span> == <span style="color: #2d9574;">'r'</span><span style="color: #67b11d;">)</span> <span style="color: #67b11d;">{</span>
+      <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #67b11d;">(</span><span style="color: #b1951d;">(</span>character = getchar<span style="color: #4f97d7;">()</span><span style="color: #b1951d;">)</span> == <span style="color: #2d9574;">'r'</span><span style="color: #67b11d;">)</span> <span style="color: #67b11d;">{</span>
         acidName<span style="color: #b1951d;">[</span>charCount++<span style="color: #b1951d;">]</span> = character;
 
-        <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #b1951d;">(</span><span style="color: #3a81c3;">(</span>character = getchar<span style="color: #6c3163;">()</span><span style="color: #3a81c3;">)</span> == <span style="color: #2d9574;">'o'</span><span style="color: #b1951d;">)</span> <span style="color: #b1951d;">{</span>
-          acidName<span style="color: #3a81c3;">[</span>charCount++<span style="color: #3a81c3;">]</span> = character;
+        <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #b1951d;">(</span><span style="color: #4f97d7;">(</span>character = getchar<span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span> == <span style="color: #2d9574;">'o'</span><span style="color: #b1951d;">)</span> <span style="color: #b1951d;">{</span>
+          acidName<span style="color: #4f97d7;">[</span>charCount++<span style="color: #4f97d7;">]</span> = character;
 
-          flag = <span style="color: #4e3163;">1</span>;
+          flag = <span style="color: #a45bad;">1</span>;
         <span style="color: #b1951d;">}</span>
 
-        <span style="color: #3a81c3; font-weight: bold;">else</span> flag = <span style="color: #4e3163;">0</span>;
+        <span style="color: #4f97d7; font-weight: bold;">else</span> flag = <span style="color: #a45bad;">0</span>;
       <span style="color: #67b11d;">}</span>
     <span style="color: #2d9574;">}</span>
-  <span style="color: #6c3163;">}</span>
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #bc6ec5;">}</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -548,21 +548,21 @@ So, Let's use one of the possible better approach:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">flag</span> = <span style="color: #4e3163;">0</span>;
+<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">flag</span> = <span style="color: #a45bad;">0</span>;
 
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">character</span>;
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">charCount</span> = <span style="color: #4e3163;">0</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">character</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">charCount</span> = <span style="color: #a45bad;">0</span>;
 
-<span style="color: #ba2f59; font-weight: bold;">char</span> <span style="color: #715ab1;">acidName</span><span style="color: #3a81c3;">[</span><span style="color: #4e3163;">10001</span><span style="color: #3a81c3;">]</span>;
+<span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">acidName</span><span style="color: #4f97d7;">[</span><span style="color: #a45bad;">10001</span><span style="color: #4f97d7;">]</span>;
 
-<span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #3a81c3;">(</span><span style="color: #6c3163;">(</span>character = getchar<span style="color: #2d9574;">()</span><span style="color: #6c3163;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  acidName<span style="color: #6c3163;">[</span>charCount++<span style="color: #6c3163;">]</span> = character;
+<span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span>character = getchar<span style="color: #2d9574;">()</span><span style="color: #bc6ec5;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  acidName<span style="color: #bc6ec5;">[</span>charCount++<span style="color: #bc6ec5;">]</span> = character;
 
-  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span>charCount == <span style="color: #4e3163;">5</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
-    <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span><span style="color: #4e3163;">!</span>strcmp<span style="color: #67b11d;">(</span>acidName, <span style="color: #2d9574;">"hydro"</span><span style="color: #67b11d;">)</span><span style="color: #2d9574;">)</span>
-      hasStart = <span style="color: #4e3163;">1</span>;
-  <span style="color: #6c3163;">}</span>
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>charCount == <span style="color: #a45bad;">5</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span><span style="color: #a45bad;">!</span>strcmp<span style="color: #67b11d;">(</span>acidName, <span style="color: #2d9574;">"hydro"</span><span style="color: #67b11d;">)</span><span style="color: #2d9574;">)</span>
+      hasStart = <span style="color: #a45bad;">1</span>;
+  <span style="color: #bc6ec5;">}</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -602,9 +602,9 @@ In general,
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #3a81c3;">(</span>n<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #2aa1ae; background-color: #ecf3ec;">// </span><span style="color: #2aa1ae; background-color: #ecf3ec;">code</span>
-<span style="color: #3a81c3;">}</span>
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #4f97d7;">(</span>n<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">code</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -614,9 +614,9 @@ want to say, <b>n</b> equal to <b>0</b>?
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #3a81c3;">(</span>n == <span style="color: #4e3163;">0</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #2aa1ae; background-color: #ecf3ec;">// </span><span style="color: #2aa1ae; background-color: #ecf3ec;">code</span>
-<span style="color: #3a81c3;">}</span>
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #4f97d7;">(</span>n == <span style="color: #a45bad;">0</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">code</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -625,9 +625,9 @@ or, we use <code>!</code> operator to achieve the same:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #3a81c3;">(</span><span style="color: #4e3163;">!</span>n<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #2aa1ae; background-color: #ecf3ec;">// </span><span style="color: #2aa1ae; background-color: #ecf3ec;">code</span>
-<span style="color: #3a81c3;">}</span>
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #4f97d7;">(</span><span style="color: #a45bad;">!</span>n<span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">code</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -637,8 +637,8 @@ Now,
 </div>
 </div>
 
-<div id="outline-container-orgb1f421e" class="outline-3">
-<h3 id="orgb1f421e"><span class="section-number-3">5.4</span> How to check if <code>acid name</code> ends with "ic"?</h3>
+<div id="outline-container-org1054f0c" class="outline-3">
+<h3 id="org1054f0c"><span class="section-number-3">5.4</span> How to check if <code>acid name</code> ends with "ic"?</h3>
 <div class="outline-text-3" id="text-5-4">
 <p>
 To check if <code>acide name</code> ends with <b>"ic"</b> or not, we will compare <b>n - 2th</b> index of
@@ -646,26 +646,26 @@ the <code>acid name</code>.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #3a81c3;">(</span><span style="color: #6c3163;">(</span>character = getchar<span style="color: #2d9574;">()</span><span style="color: #6c3163;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  acidName<span style="color: #6c3163;">[</span>charCount++<span style="color: #6c3163;">]</span> = character;
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span>character = getchar<span style="color: #2d9574;">()</span><span style="color: #bc6ec5;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  acidName<span style="color: #bc6ec5;">[</span>charCount++<span style="color: #bc6ec5;">]</span> = character;
 
-  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span>charCount == <span style="color: #4e3163;">5</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
-    <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span><span style="color: #4e3163;">!</span>strcmp<span style="color: #67b11d;">(</span>acidName, <span style="color: #2d9574;">"hydro"</span><span style="color: #67b11d;">)</span><span style="color: #2d9574;">)</span>
-      hasStart = <span style="color: #4e3163;">1</span>;
-  <span style="color: #6c3163;">}</span>
- <span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>charCount == <span style="color: #a45bad;">5</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span><span style="color: #a45bad;">!</span>strcmp<span style="color: #67b11d;">(</span>acidName, <span style="color: #2d9574;">"hydro"</span><span style="color: #67b11d;">)</span><span style="color: #2d9574;">)</span>
+      hasStart = <span style="color: #a45bad;">1</span>;
+  <span style="color: #bc6ec5;">}</span>
+ <span style="color: #4f97d7;">}</span>
 
-acidName<span style="color: #3a81c3;">[</span>charCount<span style="color: #3a81c3;">]</span> = <span style="color: #2d9574;">'\0'</span>;
+<span style="color: #ce537a; font-weight: bold;">acidName</span><span style="color: #4f97d7;">[</span>charCount<span style="color: #4f97d7;">]</span> = <span style="color: #2d9574;">'\0'</span>;
 
-<span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #3a81c3;">(</span>charCount &gt;=<span style="color: #4e3163;">2</span> &amp;&amp; <span style="color: #4e3163;">!</span>strcmp<span style="color: #6c3163;">(</span>&amp;acidName<span style="color: #2d9574;">[</span>charCount - <span style="color: #4e3163;">2</span><span style="color: #2d9574;">]</span>, <span style="color: #2d9574;">"ic"</span><span style="color: #6c3163;">)</span><span style="color: #3a81c3;">)</span>
-  hasEnd = <span style="color: #4e3163;">1</span>;
+<span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #4f97d7;">(</span>charCount &gt;=<span style="color: #a45bad;">2</span> &amp;&amp; <span style="color: #a45bad;">!</span>strcmp<span style="color: #bc6ec5;">(</span>&amp;acidName<span style="color: #2d9574;">[</span>charCount - <span style="color: #a45bad;">2</span><span style="color: #2d9574;">]</span>, <span style="color: #2d9574;">"ic"</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+  hasEnd = <span style="color: #a45bad;">1</span>;
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org2e3ce76" class="outline-3">
-<h3 id="org2e3ce76"><span class="section-number-3">5.5</span> Connecting the dots&#x2026;</h3>
+<div id="outline-container-org8e3412d" class="outline-3">
+<h3 id="org8e3412d"><span class="section-number-3">5.5</span> Connecting the dots&#x2026;</h3>
 <div class="outline-text-3" id="text-5-5">
 <p>
 Let's complete the function, so that it can return suitable flag value based
@@ -673,118 +673,118 @@ upon the input:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">checkForAcidName</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">hasStart</span> = <span style="color: #4e3163;">0</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">hasEnd</span> = <span style="color: #4e3163;">0</span>;
+<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">checkForAcidName</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">hasStart</span> = <span style="color: #a45bad;">0</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">hasEnd</span> = <span style="color: #a45bad;">0</span>;
 
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">character</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">charCount</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> <span style="color: #715ab1;">acidName</span><span style="color: #6c3163;">[</span><span style="color: #4e3163;">10001</span><span style="color: #6c3163;">]</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">character</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">charCount</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">acidName</span><span style="color: #bc6ec5;">[</span><span style="color: #a45bad;">10001</span><span style="color: #bc6ec5;">]</span>;
 
-  charCount = <span style="color: #4e3163;">0</span>;
+  charCount = <span style="color: #a45bad;">0</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #6c3163;">(</span><span style="color: #2d9574;">(</span>character = getchar<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
+  <span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span>character = getchar<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
     acidName<span style="color: #2d9574;">[</span>charCount++<span style="color: #2d9574;">]</span> = character;
 
-    <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>charCount == <span style="color: #4e3163;">5</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-      <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #67b11d;">(</span><span style="color: #4e3163;">!</span>strcmp<span style="color: #b1951d;">(</span>acidName, <span style="color: #2d9574;">"hydro"</span><span style="color: #b1951d;">)</span><span style="color: #67b11d;">)</span>
-        hasStart = <span style="color: #4e3163;">1</span>;
+    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>charCount == <span style="color: #a45bad;">5</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
+      <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #67b11d;">(</span><span style="color: #a45bad;">!</span>strcmp<span style="color: #b1951d;">(</span>acidName, <span style="color: #2d9574;">"hydro"</span><span style="color: #b1951d;">)</span><span style="color: #67b11d;">)</span>
+        hasStart = <span style="color: #a45bad;">1</span>;
     <span style="color: #2d9574;">}</span>
-  <span style="color: #6c3163;">}</span>
+  <span style="color: #bc6ec5;">}</span>
 
-  acidName<span style="color: #6c3163;">[</span>charCount<span style="color: #6c3163;">]</span> = <span style="color: #2d9574;">'\0'</span>;
+  acidName<span style="color: #bc6ec5;">[</span>charCount<span style="color: #bc6ec5;">]</span> = <span style="color: #2d9574;">'\0'</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span>charCount &gt;=<span style="color: #4e3163;">2</span> &amp;&amp; <span style="color: #4e3163;">!</span>strcmp<span style="color: #2d9574;">(</span>&amp;acidName<span style="color: #67b11d;">[</span>charCount - <span style="color: #4e3163;">2</span><span style="color: #67b11d;">]</span>, <span style="color: #2d9574;">"ic"</span><span style="color: #2d9574;">)</span><span style="color: #6c3163;">)</span>
-    hasEnd = <span style="color: #4e3163;">1</span>;
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>charCount &gt;=<span style="color: #a45bad;">2</span> &amp;&amp; <span style="color: #a45bad;">!</span>strcmp<span style="color: #2d9574;">(</span>&amp;acidName<span style="color: #67b11d;">[</span>charCount - <span style="color: #a45bad;">2</span><span style="color: #67b11d;">]</span>, <span style="color: #2d9574;">"ic"</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>
+    hasEnd = <span style="color: #a45bad;">1</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span>hasStart &amp;&amp; hasEnd<span style="color: #6c3163;">)</span>
-    <span style="color: #3a81c3; font-weight: bold;">return</span> <span style="color: #4e3163;">1</span>;
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>hasStart &amp;&amp; hasEnd<span style="color: #bc6ec5;">)</span>
+    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">1</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">else</span> <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span><span style="color: #4e3163;">!</span>hasStart &amp;&amp; hasEnd<span style="color: #6c3163;">)</span>
-    <span style="color: #3a81c3; font-weight: bold;">return</span> <span style="color: #4e3163;">2</span>;
+  <span style="color: #4f97d7; font-weight: bold;">else</span> <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">!</span>hasStart &amp;&amp; hasEnd<span style="color: #bc6ec5;">)</span>
+    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">2</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">return</span> <span style="color: #4e3163;">3</span>;
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">3</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orge630630" class="outline-3">
-<h3 id="orge630630"><span class="section-number-3">5.6</span> Finally, Here comes the <code>main</code> function!</h3>
+<div id="outline-container-org2b98ad7" class="outline-3">
+<h3 id="org2b98ad7"><span class="section-number-3">5.6</span> Finally, Here comes the <code>main</code> function!</h3>
 <div class="outline-text-3" id="text-5-6">
 <div class="org-src-container">
-<pre class="src src-C"><span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #3a81c3;">&gt;</span>
-<span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #3a81c3;">&gt;</span>
-<span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">string.h</span><span style="color: #3a81c3;">&gt;</span>
+<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdlib.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">string.h</span><span style="color: #4f97d7;">&gt;</span>
 
-<span style="color: #6c3163;">#define</span> <span style="color: #715ab1;">HYDRO</span> <span style="color: #4e3163;">1</span>
-<span style="color: #6c3163;">#define</span> <span style="color: #715ab1;">IC</span> <span style="color: #4e3163;">1</span>
+<span style="color: #bc6ec5;">#define</span> <span style="color: #7590db;">HYDRO</span> <span style="color: #a45bad;">1</span>
+<span style="color: #bc6ec5;">#define</span> <span style="color: #7590db;">IC</span> <span style="color: #a45bad;">1</span>
 
-<span style="color: #6c3163;">#define</span> <span style="color: #715ab1;">HCLACID</span> <span style="color: #4e3163;">1</span>
-<span style="color: #6c3163;">#define</span> <span style="color: #715ab1;">POLYACID</span> <span style="color: #4e3163;">2</span>
-<span style="color: #6c3163;">#define</span> <span style="color: #715ab1;">NOTANACID</span> <span style="color: #4e3163;">3</span>
+<span style="color: #bc6ec5;">#define</span> <span style="color: #7590db;">HCLACID</span> <span style="color: #a45bad;">1</span>
+<span style="color: #bc6ec5;">#define</span> <span style="color: #7590db;">POLYACID</span> <span style="color: #a45bad;">2</span>
+<span style="color: #bc6ec5;">#define</span> <span style="color: #7590db;">NOTANACID</span> <span style="color: #a45bad;">3</span>
 
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">checkForAcidName</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">hasStart</span> = <span style="color: #4e3163;">0</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">hasEnd</span> = <span style="color: #4e3163;">0</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">checkForAcidName</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">hasStart</span> = <span style="color: #a45bad;">0</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">hasEnd</span> = <span style="color: #a45bad;">0</span>;
 
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">character</span>;
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">charCount</span>;
-  <span style="color: #ba2f59; font-weight: bold;">char</span> <span style="color: #715ab1;">acidName</span><span style="color: #6c3163;">[</span><span style="color: #4e3163;">10001</span><span style="color: #6c3163;">]</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">character</span>;
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">charCount</span>;
+  <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">acidName</span><span style="color: #bc6ec5;">[</span><span style="color: #a45bad;">10001</span><span style="color: #bc6ec5;">]</span>;
 
-  charCount = <span style="color: #4e3163;">0</span>;
+  charCount = <span style="color: #a45bad;">0</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">while</span> <span style="color: #6c3163;">(</span><span style="color: #2d9574;">(</span>character = getchar<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
+  <span style="color: #4f97d7; font-weight: bold;">while</span> <span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span>character = getchar<span style="color: #67b11d;">()</span><span style="color: #2d9574;">)</span> != <span style="color: #2d9574;">'\n'</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
     acidName<span style="color: #2d9574;">[</span>charCount++<span style="color: #2d9574;">]</span> = character;
 
-    <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>charCount == <span style="color: #4e3163;">5</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-      <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #67b11d;">(</span><span style="color: #4e3163;">!</span>strcmp<span style="color: #b1951d;">(</span>acidName, <span style="color: #2d9574;">"hydro"</span><span style="color: #b1951d;">)</span><span style="color: #67b11d;">)</span>
+    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>charCount == <span style="color: #a45bad;">5</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
+      <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #67b11d;">(</span><span style="color: #a45bad;">!</span>strcmp<span style="color: #b1951d;">(</span>acidName, <span style="color: #2d9574;">"hydro"</span><span style="color: #b1951d;">)</span><span style="color: #67b11d;">)</span>
         hasStart = HYDRO;
     <span style="color: #2d9574;">}</span>
-  <span style="color: #6c3163;">}</span>
+  <span style="color: #bc6ec5;">}</span>
 
-  acidName<span style="color: #6c3163;">[</span>charCount<span style="color: #6c3163;">]</span> = <span style="color: #2d9574;">'\0'</span>;
+  acidName<span style="color: #bc6ec5;">[</span>charCount<span style="color: #bc6ec5;">]</span> = <span style="color: #2d9574;">'\0'</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span>charCount &gt;= <span style="color: #4e3163;">2</span> &amp;&amp; <span style="color: #4e3163;">!</span>strcmp<span style="color: #2d9574;">(</span>&amp;acidName<span style="color: #67b11d;">[</span>charCount - <span style="color: #4e3163;">2</span><span style="color: #67b11d;">]</span>, <span style="color: #2d9574;">"ic"</span><span style="color: #2d9574;">)</span><span style="color: #6c3163;">)</span>
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>charCount &gt;= <span style="color: #a45bad;">2</span> &amp;&amp; <span style="color: #a45bad;">!</span>strcmp<span style="color: #2d9574;">(</span>&amp;acidName<span style="color: #67b11d;">[</span>charCount - <span style="color: #a45bad;">2</span><span style="color: #67b11d;">]</span>, <span style="color: #2d9574;">"ic"</span><span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>
     hasEnd = POLYACID;
 
-  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span>hasStart &amp;&amp; hasEnd<span style="color: #6c3163;">)</span>
-    <span style="color: #3a81c3; font-weight: bold;">return</span> HCLACID;
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>hasStart &amp;&amp; hasEnd<span style="color: #bc6ec5;">)</span>
+    <span style="color: #4f97d7; font-weight: bold;">return</span> HCLACID;
 
-  <span style="color: #3a81c3; font-weight: bold;">else</span> <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span><span style="color: #4e3163;">!</span>hasStart &amp;&amp; hasEnd<span style="color: #6c3163;">)</span>
-    <span style="color: #3a81c3; font-weight: bold;">return</span> POLYACID;
+  <span style="color: #4f97d7; font-weight: bold;">else</span> <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">!</span>hasStart &amp;&amp; hasEnd<span style="color: #bc6ec5;">)</span>
+    <span style="color: #4f97d7; font-weight: bold;">return</span> POLYACID;
 
-  <span style="color: #3a81c3; font-weight: bold;">return</span> NOTANACID;
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">return</span> NOTANACID;
+<span style="color: #4f97d7;">}</span>
 
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">void</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
-  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">testCases</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">void</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
+  <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">testCases</span>;
 
-  scanf<span style="color: #6c3163;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;testCases<span style="color: #6c3163;">)</span>;
-  getchar<span style="color: #6c3163;">()</span>;
+  scanf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"%d"</span>, &amp;testCases<span style="color: #bc6ec5;">)</span>;
+  getchar<span style="color: #bc6ec5;">()</span>;
 
-  <span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">indx</span> = <span style="color: #4e3163;">0</span>; indx &lt; testCases; indx++<span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
-    <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">acid</span> = checkForAcidName<span style="color: #2d9574;">()</span>;
+  <span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">indx</span> = <span style="color: #a45bad;">0</span>; indx &lt; testCases; indx++<span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">acid</span> = checkForAcidName<span style="color: #2d9574;">()</span>;
 
-    <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>acid == HCLACID<span style="color: #2d9574;">)</span>
+    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>acid == HCLACID<span style="color: #2d9574;">)</span>
       puts<span style="color: #2d9574;">(</span><span style="color: #2d9574;">"non-metal acid"</span><span style="color: #2d9574;">)</span>;
-    <span style="color: #3a81c3; font-weight: bold;">else</span> <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>acid == POLYACID<span style="color: #2d9574;">)</span>
+    <span style="color: #4f97d7; font-weight: bold;">else</span> <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>acid == POLYACID<span style="color: #2d9574;">)</span>
       puts<span style="color: #2d9574;">(</span><span style="color: #2d9574;">"polyatomic acid"</span><span style="color: #2d9574;">)</span>;
-    <span style="color: #3a81c3; font-weight: bold;">else</span>
+    <span style="color: #4f97d7; font-weight: bold;">else</span>
       puts<span style="color: #2d9574;">(</span><span style="color: #2d9574;">"not an acid"</span><span style="color: #2d9574;">)</span>;
-  <span style="color: #6c3163;">}</span>
+  <span style="color: #bc6ec5;">}</span>
 
-  <span style="color: #3a81c3; font-weight: bold;">return</span> EXIT_SUCCESS;
-<span style="color: #3a81c3;">}</span>
+  <span style="color: #4f97d7; font-weight: bold;">return</span> EXIT_SUCCESS;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org23c75e6" class="outline-2">
-<h2 id="org23c75e6"><span class="section-number-2">6</span> Thank you</h2>
+<div id="outline-container-org8bcfda3" class="outline-2">
+<h2 id="org8bcfda3"><span class="section-number-2">6</span> Thank you</h2>
 <div class="outline-text-2" id="text-6">
 <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/acid_naming.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
 
@@ -895,7 +895,7 @@ Want to share something with me or just wanna chat?
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<p class="date">Created: 2018-04-01 Sun 16:54</p>
+<p class="date">Created: 2018-12-04 Tue 01:44</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
