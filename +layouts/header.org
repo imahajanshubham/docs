@@ -1,7 +1,11 @@
 # -*- mode: org; -*-
 
 #+HTML_HEAD: <link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp" />
+<<<<<<< HEAD
 #+HTML_HEAD: <meta name="theme-color" content="#2980b9" />
+=======
+#+HTML_HEAD: <meta name="theme-color" content="#715ab1" />
+>>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />

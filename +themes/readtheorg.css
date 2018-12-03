@@ -336,7 +336,11 @@ pre.src{
 }
 
 .example{
+<<<<<<< HEAD
     background:#fbf8ef;
+=======
+    background:#ede7f6;
+>>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
     border:1px solid #e1e4e5;
     color:#404040;
     font-size: 12px;

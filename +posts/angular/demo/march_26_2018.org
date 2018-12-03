@@ -1,8 +1,0 @@
-#+BEGIN_SRC sh :results scalar
-cat *
-#+END_SRC
-
-#+RESULTS:
-: #+BEGIN_SRC sh :results scalar
-: cat *
-: #+END_SRC

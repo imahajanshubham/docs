@@ -1,5 +1,0 @@
-#+TITLE: Sitemap
-
-- [[file:home.org][Home]]
-- others
-  - [[file:others/words_to_cherish.org][The greatest enemy of learning is knowing]]
