@@ -1,0 +1,35 @@
+#+INCLUDE: ../../../../+layouts/header.org
+#+TITLE: Minimizing the Dot Product
+
+* Beginners tutorial                                      :TOC_4_gh:noexport:
+- [[#about][About]]
+- [[#question][Question]]
+- [[#solution][Solution]]
+- [[#thank-you][Thank you]]
+
+* About
+The goal was to calculate the *minimum dot product of given two vectors*. we could
+interchange the vector positions with each other if needed.
+
+* Question
+View the original *Minimizing the Dot Product* question on [[https://www.codechef.com/problems/bitmask2][CodeChef]].
+
+* Solution
+View my attempt on [[https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c][GitHub]].
+
+* Thank you
+
+#+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/only_source_code/minimizing_the_dotproduct.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
+  <ul class="pager">
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/magical_function.html" class="btn btn-neutral float-right" title="Magical Function" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/occurrences_of_a_digit.html" class="btn btn-neutral" title="Occurrences of a Digit" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>
+      </li>
+  </ul>
+#+end_export
+
+#+INCLUDE: ../../../../+layouts/footer.org

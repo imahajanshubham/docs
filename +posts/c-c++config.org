@@ -1,0 +1,348 @@
+#+INCLUDE: ../+layouts/header.org
+#+TITLE: Spacemacs Configuration
+
+* Table of Contents                                       :TOC_4_gh:noexport:
+- [[#about][About]]
+- [[#basic-setup][Basic setup]]
+  - [[#dependencies][Dependencies]]
+    - [[#emacs][Emacs]]
+    - [[#spacemacs][Spacemacs]]
+- [[#cc-configurations][C/C++ configurations]]
+  - [[#about-1][About]]
+  - [[#setup][Setup]]
+- [[#flycheck-syntax-checking-configurations][Flycheck (syntax-checking) configurations]]
+  - [[#about-2][About]]
+  - [[#setup-1][Setup]]
+- [[#flyspell-configurations][Flyspell configurations]]
+- [[#general-configurations][General configurations]]
+- [[#layouts-configurations][Layouts configurations]]
+- [[#java-configurations][Java configurations]]
+- [[#misc-configurations][Misc. configurations]]
+- [[#mu4e-e-mail-configurations][mu4e (e-mail) configurations]]
+- [[#org-configurations][Org configurations]]
+- [[#plantuml-configurations][PlantUML configurations]]
+- [[#shell-configurations][Shell configurations]]
+- [[#python-configurations][Python configurations]]
+- [[#sql-configurations][SQL configurations]]
+- [[#summary][Summary]]
+- [[#thank-you][Thank you]]
+
+* About
+
+#+begin_export html
+<br>
+  <p align="center">
+    <img class="hero_image" src="https://imahajanshubham.github.io/docs/+assets/favicon.webp" />
+  </p>
+<br>
+#+end_export
+
+I love *spacemacs* a lot because it combines key-bindings/modal concepts of *Vim*
+(my personal favorite reason) and functionality of *Emacs* via the beautiful *lisp* ~(emacs-lisp)~
+language.
+
+Kinda *best of both the worlds!* Ehh, right?
+
+In my free-time, I try to learn more about the language and the editor itself
+bit-by-bit. Learning about the functionalities and packages, thus configuring it
+to my own personal taste is the favorite part.
+
+Here is the experience so far…
+
+* Basic setup
+To try-out my spacemacs configuration, create a directory at *home* as
+~.spacemacs.d~ and move the ~.spacemacs~ file from home to the newly created
+directory and rename it as ~init.el~.
+
+#+begin_src sh
+  mkdir ~/.spacemacs.d
+  mv ~/.spacemacs ~/.spacemacs.d/init.el
+#+end_src
+
+** Dependencies
+For a smooth experience, you need to have the following bare-minimum software
+installed on your system and ensure they are updated.
+
+*** Emacs
+Minimum version required: *25.0.1*. Download it via:
+
+#+begin_src sh
+  sudo apt install emacs
+
+  # Explicitly download emacs with version 25.0.1.
+  sudo apt install emacs25
+#+end_src
+
+*** Spacemacs
+You also need to clone the ~spacemacs~ github repository in your *home* directory (recommended).
+
+*Stable version*
+
+#+begin_src sh
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+#+end_src
+
+*Develop version*
+
+For more details, please refer the [[https://github.com/syl20bnr/spacemacs#install][spacemacs installation guide]].
+
+#+begin_src sh
+git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+#+end_src
+
+#+begin_note
+I use *Develop version* of the spacemacs.
+#+end_note
+
+Now open the ~init.el~ file and under the ~dotspacemacs/user-config~ section, we
+need to add few changes as follows:
+
+#+begin_src emacs-lisp
+  (defun dotspacemacs/user-config ()
+   "Configuration for user code:
+  This function is called at the very end of Spacemacs startup, after layer
+  configuration.
+  Put your configuration code here, except for variables that should be set
+  before packages are loaded."
+
+     ;; Load the directory for custom spacemacs config files.
+     (push "~/.spacemacs.d/" load-path)
+
+     (load "<config-file-name#1>")
+     (load "<config-file-name#2")
+     ;; and so on...
+
+   ;; rest of the code
+   )
+#+end_src
+
+We are almost there. The only thing we need is to download the following
+files under ~~/.spacemacs.d~ directory and edit minor changes in ~init.el~ file as
+suggested and we are good to go!
+
+* C/C++ configurations
+** About
+:PROPERTIES:
+:CUSTOM_ID: java
+:END:
+
+Enable ~flycheck~ integration along-with ~cmake-ide~ in *c-c++ mode*.
+
+Also integrate ~clang-analyzer~ (a static code analysis tool) along-with ~cppcheck~
+for strict syntax-checking. *(read [[#flycheck-syntax-checking-configurations][flycheck]] config)*.
+
+Removed ~clang-format-before-save~ hook from *c-c++ mode* as it was causing
+auto-format issue in other modes. So to use it, one has to manually call the function via ~SPC m = =~.
+
+** Setup
+To use this configuration, you would need to download the following ~*.el~ file in
+the correct path as well as update the ~init.el~ file as describe below:
+
+| *Location* | ~~/.spacemacs.d/c-c++config.el~ |
+| *Link*     | [[https://www.google.com/][c-c++config.el]]                |
+
+Add ~(load "c-c++config")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+*Example:*
+
+#+begin_src emacs-lisp
+  (defun dotspacemacs/user-config ()
+   "Configuration for user code:
+  This function is called at the very end of Spacemacs startup, after layer
+  configuration.
+  Put your configuration code here, except for variables that should be set
+  before packages are loaded."
+
+     ;; Load the directory for custom spacemacs config files.
+     (push "~/.spacemacs.d/" load-path)
+
+     (load "c-c++config")
+
+   ;; rest of the code
+   )
+#+end_src
+
+And the ~~/.spacemacs.d~ directory should look something like this:
+
+#+begin_src sh :exports results :results value scalar
+  tree ~/SPACE.d
+#+end_src
+
+#+RESULTS:
+: /home/imahajanshubham/SPACE.d
+: ├── generalconfig.el
+: └── init.el
+: 
+: 0 directories, 2 files
+
+* Flycheck (syntax-checking) configurations
+:PROPERTIES:
+:CUSTOM_ID: flycheck-syntax-checking-configurations
+:END:
+
+** About
+
+** Setup
+To use this configuration, you would need to download the following ~*.el~ file in
+the correct path as well as update the ~init.el~ file as describe below:
+
+| *Location* | ~~/.spacemacs.d/flycheckconfig.el~ |
+| *Link*     | [[https://www.google.com/][flycheckconfig.el]]                |
+
+Add ~(load "flycheckconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+#+begin_note
+Even though downloading ~clang-analyzer~ is optional, it’s highly recommend
+along-side other tools to reduce bugs in your code and improve its quality.
+#+end_note
+
+Download ~clang-analyzer~~ via:
+
+#+begin_src sh
+sudo apt install clang-analyzer
+#+end_src
+
+For fully-featured experience, download the *complete clang-package* via:
+
+#+begin_src sh
+sudo apt install clang clang-format clang-analyzer
+#+end_src
+
+* Flyspell configurations
+
+| *Location* | ~~/.spacemacs.d/flyspellconfig.el~ |
+| *Link*     | [[https://www.google.com/][flyspellconfig.el]]                |
+
+Add ~(load "flyspellconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* General configurations
+
+| *Location* | ~~/.spacemacs.d/generalconfig.el~ |
+| *Link*     | [[https://www.google.com/][generalconfig.el]]                |
+
+Add ~(load "generalconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* Layouts configurations
+
+| *Location* | ~~/.spacemacs.d/layoutsconfig.el~ |
+| *Link*     | [[https://www.google.com/][layoutsconfig.el]]                |
+
+Add ~(load "layoutsconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* Java configurations
+
+| *Location* | ~~/.spacemacs.d/javaconfig.el~ |
+| *Link*     | [[https://www.google.com/][javaconfig.el]]                |
+
+Add ~(load "javaconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* Misc. configurations
+
+| *Location* | ~~/.spacemacs.d/miscconfig.el~ |
+| *Link*     | [[https://www.google.com/][miscconfig.el]]                |
+
+Add ~(load "miscconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* mu4e (e-mail) configurations
+
+| *Location* | ~~/.spacemacs.d/mu4econfig.el~ |
+| *Link*     | [[https://www.google.com/][mu4econfig.el]]                |
+
+Add ~(load "mu4econfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* Org configurations
+
+| *Location* | ~~/.spacemacs.d/orgconfig.el~ |
+| *Link*     | [[https://www.google.com/][orgconfig.el]]                |
+
+Add ~(load "orgconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* PlantUML configurations
+
+| *Location* | ~~/.spacemacs.d/plantumlconfig.el~ |
+| *Link*     | [[https://www.google.com/][plantumlconfig.el]]                |
+
+Add ~(load "plantumlconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* Shell configurations
+
+| *Location* | ~~/.spacemacs.d/shellconfig.el~ |
+| *Link*     | [[https://www.google.com/][shellconfig.el]]                |
+
+Add ~(load "shellconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* Python configurations
+
+| *Location* | ~~/.spacemacs.d/pythonconfig.el~ |
+| *Link*     | [[https://www.google.com/][pythonconfig.el]]                |
+
+Add ~(load "pythonconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* SQL configurations
+
+| *Location* | ~~/.spacemacs.d/sqlconfig.el~ |
+| *Link*     | [[https://www.google.com/][sqlconfig.el]]                |
+
+Add ~(load "sqlconfig")~ to the ~dotspacemacs/user-config~ section of your
+dotfile.
+
+* Summary
+If you have used all the config files, then the ~~/.spacemacs.d~ directory should
+finally look something like this:
+
+#+begin_src sh :exports both :results value scalar
+  tree ~/SPACE.d
+#+end_src
+
+#+RESULTS:
+#+begin_example
+/home/imahajanshubham/SPACE.d
+├── c-c++config.el
+├── flycheckconfig.el
+├── flyspellconfig.el
+├── generalconfig.el
+├── init.el
+├── javaconfig.el
+├── layoutsconfig.el
+├── miscconfig.el
+├── mu4econfig.el
+├── orgconfig.el
+├── plantumlconfig.el
+├── pythonconfig.el
+├── shellconfig.el
+└── sqlconfig.el
+
+0 directories, 14 files
+#+end_example
+
+* Thank you
+:PROPERTIES:
+:CUSTOM_ID: thank-you
+:END:
+
+#+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/home.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
+  <ul class="pager">
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="Structures And Pointers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/others/words_to_cherish.html" class="btn btn-neutral" title="The greatest enemy of learning is knowing" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      </li>
+  </ul>
+#+end_export
+
+#+INCLUDE: ../+layouts/footer.org

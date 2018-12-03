@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-04-14 Sat 10:21 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Shubham Mahajan" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp" />
+<meta name="theme-color" content="#2980b9" />
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org927e573">1. Greetings Everyone, 😊</a></li>
+<li><a href="#orgbefa135">2. What took so long?</a>
+<ul>
+<li><a href="#org41d2cfb">2.1. <b>How to calculate the factorial of … say <code>50</code>?</b></a></li>
+<li><a href="#org2c7fc3c">2.2. Factorial of <code>50</code> is a <code>65</code> digit answer!</a></li>
+<li><a href="#org97b0490">2.3. Do we even have a <code>datatype</code> in C to store such a huge number?</a></li>
+</ul>
+</li>
+<li><a href="#org9478816">3. But why?</a>
+<ul>
+<li><a href="#org7267053">3.1. False Assumption</a></li>
+<li><a href="#org962aacc">3.2. Wrong Test Cases</a></li>
+</ul>
+</li>
+<li><a href="#orgba43255">4. How did I overcame it?</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org3d4725e">4.0.1. What if:</a></li>
+<li><a href="#org4dcc57c">4.0.2. One step forward!</a></li>
+<li><a href="#org73aff1c">4.0.3. Another step forward!</a></li>
+<li><a href="#orgfe47a39">4.0.4. Almost reached the Destination!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgde9ab74">5. Key Learnings</a></li>
+<li><a href="#org29233de">6. Few more treats!</a></li>
+<li><a href="#org24cab29">7. Thank you</a></li>
+</ul>
+</div>
+</div>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100% class=&quot;center&quot; background=“white”">
+
+
+<colgroup>
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-center"><a href="https://imahajanshubham.github.io/docs/home.html">Home</a></td>
+<td class="org-center"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+<td class="org-center"><a href="https://sites.google.com/view/the-launchpad/home">Website</a></td>
+</tr>
+</tbody>
+</table>
+
+<div id="outline-container-org927e573" class="outline-2">
+<h2 id="org927e573"><span class="section-number-2">1</span> Greetings Everyone, 😊</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Been almost two days,
+Did a lot of challenges in the time period.
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-orgbefa135" class="outline-2">
+<h2 id="orgbefa135"><span class="section-number-2">2</span> What took so long?</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Umm… Basically, a question:
+</p>
+</div>
+
+<div id="outline-container-org41d2cfb" class="outline-3">
+<h3 id="org41d2cfb"><span class="section-number-3">2.1</span> <b>How to calculate the factorial of … say <code>50</code>?</b></h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Sure, our basic logic of calculating the factorial using recursion would
+work perfectly:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">unsigned</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">factorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">unsigned</span> <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">number</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #6c3163;">(</span><span style="color: #4e3163;">!</span>number<span style="color: #6c3163;">)</span>
+    <span style="color: #3a81c3; font-weight: bold;">return</span> <span style="color: #4e3163;">1</span>;
+
+  <span style="color: #3a81c3; font-weight: bold;">return</span> number * factorial<span style="color: #6c3163;">(</span>number - <span style="color: #4e3163;">1</span><span style="color: #6c3163;">)</span>;
+<span style="color: #3a81c3;">}</span>
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>It’s even efficient in terms of speed too.</li>
+</ul>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org2c7fc3c" class="outline-3">
+<h3 id="org2c7fc3c"><span class="section-number-3">2.2</span> Factorial of <code>50</code> is a <code>65</code> digit answer!</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+You heard it right,
+Factorial of <code>50</code> equals to
+<code>30414093201713378043612608166064768844377641568960512000000000000</code>
+</p>
+
+<p>
+Just way too long…
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org97b0490" class="outline-3">
+<h3 id="org97b0490"><span class="section-number-3">2.3</span> Do we even have a <code>datatype</code> in C to store such a huge number?</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Nope!
+</p>
+
+<p>
+I was just shocked, that even the <b>factorial program</b> being the most
+elementary-level failed and I never realized of dealing with such huge numbers.
+</p>
+<hr />
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9478816" class="outline-2">
+<h2 id="org9478816"><span class="section-number-2">3</span> But why?</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Because of my false assumption and wrong test cases.
+</p>
+</div>
+
+<div id="outline-container-org7267053" class="outline-3">
+<h3 id="org7267053"><span class="section-number-3">3.1</span> False Assumption</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Implementing the Pen n’ Paper logic via Code and believing - <b>that’s it!</b>
+</p>
+
+<p>
+i.e. Only focusing on how to iterate the loop/function from <code>2</code> to <code>n</code>.
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org962aacc" class="outline-3">
+<h3 id="org962aacc"><span class="section-number-3">3.2</span> Wrong Test Cases</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+The major reason behind such mistake:
+</p>
+
+<ul class="org-ul">
+<li><b>0!</b>: The logic gives <code>1</code> as expected.</li>
+<li><b>5!</b>: Again <code>120</code> as expected.</li>
+</ul>
+
+<p>
+OR in some case,
+</p>
+
+<ul class="org-ul">
+<li><b>10!</b>: i.e. <code>3628800</code> which is under feasable range.</li>
+</ul>
+
+<p>
+<b>But never went beyond that…<br />
+</b>
+And that was the sole mistake.
+</p>
+<hr />
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgba43255" class="outline-2">
+<h2 id="orgba43255"><span class="section-number-2">4</span> How did I overcame it?</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Thought processing.
+</p>
+
+<p>
+Now after understanding the problem and realizing that I don’t have any such datatype
+to store such big values at my disposal… - I started my planning on
+</p>
+
+<p>
+<b>How do I manage/store the result?</b>
+</p>
+
+<p>
+After facing a lot many previous challenges, I got the habit of storing the
+occurrences of a digit/alphabet in the arrays as index value.
+</p>
+
+<p>
+So,
+</p>
+
+<p>
+At the back of my mind, I had the same thought of somehow using arrays to solve
+the problem. Was just calculating the factorial of <code>5</code> by-hand on a piece of
+paper, and I got this weird idea:
+</p>
+
+<p>
+While multiplying <code>5</code> with <code>24</code>,
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">2 as carry</th>
+<th scope="col" class="org-right">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">5</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right"><b>0</b></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+</div>
+
+<div id="outline-container-org3d4725e" class="outline-4">
+<h4 id="org3d4725e"><span class="section-number-4">4.0.1</span> What if:</h4>
+<div class="outline-text-4" id="text-4-0-1">
+<p>
+Instead of treating <code>24</code> as a whole number, if I store
+</p>
+
+<p>
+<code>4</code> in <code>array[0]</code> and,<br />
+<code>2</code> in <code>array[1]</code>
+</p>
+
+
+<p>
+And then multiply <code>5</code> by <code>array[0]</code> and then add the carry to <code>array[1]</code> and again multiply
+just like I was doing on the piece of paper?
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org4dcc57c" class="outline-4">
+<h4 id="org4dcc57c"><span class="section-number-4">4.0.2</span> One step forward!</h4>
+<div class="outline-text-4" id="text-4-0-2">
+<p>
+Initially, it felt a little tough to think such a logic… But after a little-bit
+of practice, I finally managed develop the following logic:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">factorial</span><span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">number</span>, <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">value</span><span style="color: #6c3163;">[]</span><span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  value<span style="color: #6c3163;">[</span><span style="color: #4e3163;">0</span><span style="color: #6c3163;">]</span> = <span style="color: #4e3163;">1</span>;
+  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">noOfDigits</span> = <span style="color: #4e3163;">1</span>;
+
+  <span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #6c3163;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">localNumber</span> = <span style="color: #4e3163;">2</span>; localNumber &lt;= number; localNumber++<span style="color: #6c3163;">)</span> <span style="color: #6c3163;">{</span>
+    noOfDigits = multiply<span style="color: #2d9574;">(</span>localNumber, value, noOfDigits<span style="color: #2d9574;">)</span>;
+  <span style="color: #6c3163;">}</span>
+<span style="color: #3a81c3;">}</span>
+</pre>
+</div>
+
+<p>
+Using the <code>for</code> loop, I was iterating as usual, but was multiplying each
+intermediate number with the previous value i.e. <code>array</code> (initially set to <code>1</code> as <code>0!</code> is <code>1</code>) and updating the no of digits
+thus obtained.
+</p>
+
+<p>
+So far, only <b>30%</b> work was done.
+</p>
+
+<p>
+Tricky part of actually multiplying the numbers was still left.
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org73aff1c" class="outline-4">
+<h4 id="org73aff1c"><span class="section-number-4">4.0.3</span> Another step forward!</h4>
+<div class="outline-text-4" id="text-4-0-3">
+<p>
+So to ease the problem,<br />
+I divided it into two sub-parts:
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgca95efb"></a>Multiply the intermediate number.<br />
+<div class="outline-text-5" id="text-4-0-3-1">
+<p>
+Taking the <code>24 x 5</code> example,<br />
+Let’s say that at <code>array[0]</code>, we would get <code>4</code>. So, multiply <code>5</code> with <code>4</code>.
+</p>
+
+<p>
+<b>Answer is 20.</b>
+</p>
+
+<p>
+Now, separate out the carry digit from the intermediate product <code>number % 10</code>
+logic. And store the remainder in ~array[0].
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">indx</span> = <span style="color: #4e3163;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">prod</span> = value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> * localNumber + carry;
+
+  value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> = prod % <span style="color: #4e3163;">10</span>;
+  carry = prod / <span style="color: #4e3163;">10</span>;
+<span style="color: #3a81c3;">}</span>
+</pre>
+</div>
+
+<div class="note">
+<p>
+We also need to take care of any previous carry digits.<br />
+In that case, we need to add the carry too.
+</p>
+
+</div>
+
+<hr />
+</div>
+</li>
+
+<li><a id="org120bd03"></a>Update the final carry.<br />
+<div class="outline-text-5" id="text-4-0-3-2">
+<p>
+Add the carry i.e <code>2</code> to <code>array[0 + 1]</code>.
+</p>
+
+<p>
+If again a carry is generated (ex. 9 + 1 = 10), then repeat <b>previous step</b>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #3a81c3; font-weight: bold;">for</span> <span style="color: #3a81c3;">(</span><span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">indx</span> = <span style="color: #4e3163;">0</span>; indx &lt; noOfDigits; indx++<span style="color: #3a81c3;">)</span> <span style="color: #3a81c3;">{</span>
+  <span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #715ab1;">prod</span> = value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> * localNumber + carry;
+
+  value<span style="color: #6c3163;">[</span>indx<span style="color: #6c3163;">]</span> = prod % <span style="color: #4e3163;">10</span>;
+  carry = prod / <span style="color: #4e3163;">10</span>;
+<span style="color: #3a81c3;">}</span>
+</pre>
+</div>
+
+<hr />
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgfe47a39" class="outline-4">
+<h4 id="orgfe47a39"><span class="section-number-4">4.0.4</span> Almost reached the Destination!</h4>
+<div class="outline-text-4" id="text-4-0-4">
+<p>
+Now only thing to be done was, print values of <code>array</code> from <code>0</code> to <code>noOfDigits</code> so as
+to display the final factorial.
+</p>
+
+<p>
+And we are good to go!!!
+</p>
+<hr />
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgde9ab74" class="outline-2">
+<h2 id="orgde9ab74"><span class="section-number-2">5</span> Key Learnings</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Always validate the assumptions, <b>at any cost</b>.</li>
+<li>Explore every other possibilities.</li>
+<li>Consider general-case scenarios rather than fixed ones.</li>
+<li>Always have the room to improvise/innovate.</li>
+</ul>
+
+<p>
+I hope this was the experience worth sharing.🙋 
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org29233de" class="outline-2">
+<h2 id="org29233de"><span class="section-number-2">6</span> Few more treats!</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Here’s the original source code and various others on <b>GitHub</b>:
+</p>
+
+<hr />
+<p>
+<b>#1</b> CodeChef - <a href="https://www.codechef.com/CBEN2018/problems/LEONARD"> <b>Magical Function</b> </a><br />
+The goal was to recognize the pattern of a given function.
+<a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem14/magicNumbers.c">view code</a>
+</p>
+
+<hr />
+<p>
+<b>#2</b> CodeChef - <a href="https://www.codechef.com/KQM82018/problems/QM8B"> <b>Average Halfify(keteki)</b> </a><br />
+The goal was to calculate the recursive average of pairs of <b>n</b> numbers.
+<a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem19/halfifyaverage.c">view code</a>
+</p>
+
+<hr />
+<p>
+<b>#3</b> CodeChef - <a href="https://www.codechef.com/problems/bitmask2"> Mminimizing the Dot Product </a><br />
+the goal was to calculate the minimum dot product of given two vectors. we could
+interchange the vector positions with each other if needed.
+<a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem15/dotproduct.c">view code</a>
+</p>
+
+<hr />
+<p>
+<b>#4</b> CodeChef - <a href="https://www.codechef.com/problems/CHEFSUM"> <b>Little Chef and Sums</b> </a><br />
+The goal was calculate the total of <b>suffix-sum</b> and <b>prefix-sum</b> of given <b>n</b> values
+in an array.
+<a href="https://github.com/imahajanshubham/Miscellaneous-Programs/blob/master/c_lang/problem16/suffixprefixsum.c">view code</a>
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org24cab29" class="outline-2">
+<h2 id="org24cab29"><span class="section-number-2">7</span> Thank you</h2>
+<div class="outline-text-2" id="text-7">
+<a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/beware_of_the_assumptions.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
+<ul class="pager">
+    <li class="next">
+        <a href="https://imahajanshubham.github.io/docs/others/words_to_cherish.html" class="btn btn-neutral float-right" title="The greatest enemy of learning is knowing" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
+    </li>
+    <li class="previous">
+        <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/average_halfify.html" class="btn btn-neutral" title="Average Halfify (keteki)" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>
+    </li>
+</ul>
+
+<div id="disqus_thread"></div>
+<script>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://imahajanshubham.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//the-greatest-enemy-of-learning-is-knowing.disqus.com/count.js" async></script>
+
+<hr />
+
+<div class="attention">
+<p>
+If this blog was worth your time, please do checkout my other <a href="https://imahajanshubham.github.io/docs/home.html">shares</a> too.
+</p>
+
+</div>
+
+<p>
+Wanna know more about me?
+</p>
+
+<p>
+Visit:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>LinkedIn</b></td>
+<td class="org-left"><a href="https://www.linkedin.com/in/imahajanshubham/">imahajanshubham</a></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Website</b></td>
+<td class="org-left"><a href="https://sites.google.com/view/the-launchpad/home">The Launchpad</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+or where my work lives:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>GitHub</b></td>
+<td class="org-left"><a href="https://github.com/imahajanshubham">imahajanshubham</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Want to share something with me or just wanna chat?
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Mail me</b></td>
+<td class="org-left"><a href="mailto:imahajanshubham@gmail.com?">imahajanshubham@gmail.com</a></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Shubham Mahajan</p>
+<p class="date">Created: 2018-04-14 Sat 10:21</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

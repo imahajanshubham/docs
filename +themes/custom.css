@@ -1,0 +1,203 @@
+/* body { */
+/*     background: #fcfcfc; */
+/* } */
+
+/* #content { */
+/*     max-width: 100%; */
+/* } */
+
+/* @media only screen and (min-width: 1025px) { */
+/*     #content { */
+/*         max-width: 100%; */
+/*         padding: 1.5em 10em; */
+/*     } */
+/* } */
+
+a:visited {
+    color: #2980B9
+}
+
+code {
+    color: #E74C3C;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none
+}
+
+.pager li {
+    display: inline
+}
+
+.pager li>a,
+.pager li>span {
+    color: white;
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #343131;
+    border: 1px solid #ddd;
+}
+
+.pager li>a:focus,
+.pager li>a:hover {
+    text-decoration: none;
+    background-color: #4e4a4a;
+}
+
+.pager .next>a,
+.pager .next>span {
+    float: right
+}
+
+.pager .previous>a,
+.pager .previous>span {
+    float: left
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.btn-social-icon>:first-child {
+    border: none;
+    text-align: center;
+    width: 100% !important
+}
+
+.btn-social-icon {
+    position: relative;
+    padding-left: 44px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    width: 50px;
+    padding: 0
+}
+
+.btn-social-icon>:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    line-height: 50px;
+    font-size: 2em;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.btn-github:hover {
+    color: #343131;
+    background-color: #715ab1;
+}
+
+.btn-github {
+    color: #715ab1;
+    background-color: #343131;
+    border-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.btn-github:focus,
+.btn-github.focus {
+    color: #fff;
+    background-color: #2b2b2b;
+    border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.fixedbutton {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.title {
+    text-align: center;
+    /* margin-bottom: 1em; */
+}
+
+/* :target:before { */
+/*     content: ""; */
+/*     display: block; */
+/*     height: 51.1875px; */
+/*     margin: -51.1875px 0 0; */
+/* } */
+
+.todo {
+    background-color: #ffc107;
+    color: black;
+}
+
+.hero_image {
+    width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+    .hero_image {
+        width: 25%;
+    }
+}
