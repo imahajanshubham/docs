@@ -3,11 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<<<<<<< HEAD
 <!-- 2018-04-01 Sun 16:54 -->
-=======
-<!-- 2018-04-14 Sat 10:21 -->
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hash Maps in Java</title>
@@ -185,11 +181,7 @@
   /*]]>*/-->
 </style>
 <link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp" />
-<<<<<<< HEAD
 <meta name="theme-color" content="#715ab1" />
-=======
-<meta name="theme-color" content="#2980b9" />
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
 <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
 <link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
@@ -251,7 +243,6 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<<<<<<< HEAD
 <li><a href="#orgbf1627a">1. Basics of Hash Maps</a>
 <ul>
 <li><a href="#org05a5586">1.1. Definition</a>
@@ -260,21 +251,10 @@ for the JavaScript code in this tag.
 <li><a href="#orgc8fceec">1.1.2. What did we observed?</a></li>
 <li><a href="#org95a2159">1.1.3. What did we observed?</a></li>
 <li><a href="#orgb15a302">1.1.4. What did we observed?</a></li>
-=======
-<li><a href="#orgd4cbe16">1. Basics of Hash Maps</a>
-<ul>
-<li><a href="#orgf47b082">1.1. Definition</a>
-<ul>
-<li><a href="#orgf04bafb">1.1.1. But what do we mean by that?</a></li>
-<li><a href="#org53411b5">1.1.2. What did we observed?</a></li>
-<li><a href="#org15bf87b">1.1.3. What did we observed?</a></li>
-<li><a href="#orgf7bc7a0">1.1.4. What did we observed?</a></li>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 </ul>
 </li>
 </ul>
 </li>
-<<<<<<< HEAD
 <li><a href="#orgb6b6521">2. Syntax</a></li>
 <li><a href="#orgd95e663">3. Properties of a HashMap</a></li>
 <li><a href="#org6284824">4. A sample program</a></li>
@@ -290,23 +270,6 @@ for the JavaScript code in this tag.
 </ul>
 </li>
 <li><a href="#org7f72240">7. Thank you</a></li>
-=======
-<li><a href="#org4acfa7a">2. Syntax</a></li>
-<li><a href="#orgaa6624f">3. Properties of a HashMap</a></li>
-<li><a href="#org42f2b23">4. A sample program</a></li>
-<li><a href="#orgb3c852a">5. The test case</a></li>
-<li><a href="#org6ff3eff">6. A humble solution</a>
-<ul>
-<li><a href="#org1a82369">6.1. Step - 1</a></li>
-<li><a href="#orgd6ab0d4">6.2. Step - 2</a></li>
-<li><a href="#org3053a3a">6.3. Step - 3</a></li>
-<li><a href="#org38f089f">6.4. Step - 4</a></li>
-<li><a href="#orgb485a3e">6.5. Step - 5</a></li>
-<li><a href="#org09a8aad">6.6. Step - 6</a></li>
-</ul>
-</li>
-<li><a href="#org94f7c60">7. Thank you</a></li>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 </ul>
 </div>
 </div>
@@ -329,21 +292,12 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 
-<<<<<<< HEAD
 <div id="outline-container-orgbf1627a" class="outline-2">
 <h2 id="orgbf1627a"><span class="section-number-2">1</span> Basics of Hash Maps</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 <div id="outline-container-org05a5586" class="outline-3">
 <h3 id="org05a5586"><span class="section-number-3">1.1</span> Definition</h3>
-=======
-<div id="outline-container-orgd4cbe16" class="outline-2">
-<h2 id="orgd4cbe16"><span class="section-number-2">1</span> Basics of Hash Maps</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-orgf47b082" class="outline-3">
-<h3 id="orgf47b082"><span class="section-number-3">1.1</span> Definition</h3>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-3" id="text-1-1">
 <p>
 Java HashMap is one of the most popular Collection classes in java. Java Hash is
@@ -352,13 +306,8 @@ implements Map interface.
 </p>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgbcfc7c1" class="outline-4">
 <h4 id="orgbcfc7c1"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
-=======
-<div id="outline-container-orgf04bafb" class="outline-4">
-<h4 id="orgf04bafb"><span class="section-number-4">1.1.1</span> But what do we mean by that?</h4>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 Before trying to understand the definition of Hash Map, we should try to understand
@@ -559,13 +508,8 @@ For ex:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgc8fceec" class="outline-4">
 <h4 id="orgc8fceec"><span class="section-number-4">1.1.2</span> What did we observed?</h4>
-=======
-<div id="outline-container-org53411b5" class="outline-4">
-<h4 id="org53411b5"><span class="section-number-4">1.1.2</span> What did we observed?</h4>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-4" id="text-1-1-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -590,13 +534,8 @@ For ex:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org95a2159" class="outline-4">
 <h4 id="org95a2159"><span class="section-number-4">1.1.3</span> What did we observed?</h4>
-=======
-<div id="outline-container-org15bf87b" class="outline-4">
-<h4 id="org15bf87b"><span class="section-number-4">1.1.3</span> What did we observed?</h4>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-4" id="text-1-1-3">
 <ul class="org-ul">
 <li>We don’t know the exact no of names/phone-nos.</li>
@@ -633,13 +572,8 @@ Keys/Values depends upon the user.</li>
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgb15a302" class="outline-4">
 <h4 id="orgb15a302"><span class="section-number-4">1.1.4</span> What did we observed?</h4>
-=======
-<div id="outline-container-orgf7bc7a0" class="outline-4">
-<h4 id="orgf7bc7a0"><span class="section-number-4">1.1.4</span> What did we observed?</h4>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-4" id="text-1-1-4">
 <ul class="org-ul">
 <li>We don’t know the exact no of names/phone-nos.</li>
@@ -677,13 +611,8 @@ technical terms.
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgb6b6521" class="outline-2">
 <h2 id="orgb6b6521"><span class="section-number-2">2</span> Syntax</h2>
-=======
-<div id="outline-container-org4acfa7a" class="outline-2">
-<h2 id="org4acfa7a"><span class="section-number-2">2</span> Syntax</h2>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-2" id="text-2">
 <p>
 In Java, the HashMap class’ object is declared as follows:
@@ -706,13 +635,8 @@ For ex:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgd95e663" class="outline-2">
 <h2 id="orgd95e663"><span class="section-number-2">3</span> Properties of a HashMap</h2>
-=======
-<div id="outline-container-orgaa6624f" class="outline-2">
-<h2 id="orgaa6624f"><span class="section-number-2">3</span> Properties of a HashMap</h2>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>HashMap is denoted as <code>HashMap&lt;Key, Value&gt;</code>.</li>
@@ -742,13 +666,8 @@ But we will study all these and others during our lifelong journey ♥.
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org6284824" class="outline-2">
 <h2 id="org6284824"><span class="section-number-2">4</span> A sample program</h2>
-=======
-<div id="outline-container-org42f2b23" class="outline-2">
-<h2 id="org42f2b23"><span class="section-number-2">4</span> A sample program</h2>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-2" id="text-4">
 <p>
 What better way to understand more than to learn it by implementation? With that
@@ -815,13 +734,8 @@ names, print:</li>
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgdae1be3" class="outline-2">
 <h2 id="orgdae1be3"><span class="section-number-2">5</span> The test case</h2>
-=======
-<div id="outline-container-orgb3c852a" class="outline-2">
-<h2 id="orgb3c852a"><span class="section-number-2">5</span> The test case</h2>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-2" id="text-5">
 <p>
 Input:
@@ -883,21 +797,12 @@ Output:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org649d171" class="outline-2">
 <h2 id="org649d171"><span class="section-number-2">6</span> A humble solution</h2>
 <div class="outline-text-2" id="text-6">
 </div>
 <div id="outline-container-orgd41e694" class="outline-3">
 <h3 id="orgd41e694"><span class="section-number-3">6.1</span> Step - 1</h3>
-=======
-<div id="outline-container-org6ff3eff" class="outline-2">
-<h2 id="org6ff3eff"><span class="section-number-2">6</span> A humble solution</h2>
-<div class="outline-text-2" id="text-6">
-</div>
-<div id="outline-container-org1a82369" class="outline-3">
-<h3 id="org1a82369"><span class="section-number-3">6.1</span> Step - 1</h3>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-3" id="text-6-1">
 <p>
 Let’s create testMain class with main function and initialize <code>Scanner</code> and <code>Map</code>
@@ -919,13 +824,8 @@ classes:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org9bdfe8f" class="outline-3">
 <h3 id="org9bdfe8f"><span class="section-number-3">6.2</span> Step - 2</h3>
-=======
-<div id="outline-container-orgd6ab0d4" class="outline-3">
-<h3 id="orgd6ab0d4"><span class="section-number-3">6.2</span> Step - 2</h3>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-3" id="text-6-2">
 <p>
 Now let’s get the value of ’n’ (<code>INTEGER</code>) i.e. the no of phone records to be
@@ -939,13 +839,8 @@ entered:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgae08672" class="outline-3">
 <h3 id="orgae08672"><span class="section-number-3">6.3</span> Step - 3</h3>
-=======
-<div id="outline-container-org3053a3a" class="outline-3">
-<h3 id="org3053a3a"><span class="section-number-3">6.3</span> Step - 3</h3>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-3" id="text-6-3">
 <p>
 Now let’s fill ’n’ records (<code>STRING INTEGER</code>) in the phonebook.
@@ -977,13 +872,8 @@ To put the data (name, phoneno) in the HashMap/phonebook, <code>put()</code> met
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org422e959" class="outline-3">
 <h3 id="org422e959"><span class="section-number-3">6.4</span> Step - 4</h3>
-=======
-<div id="outline-container-org38f089f" class="outline-3">
-<h3 id="org38f089f"><span class="section-number-3">6.4</span> Step - 4</h3>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-3" id="text-6-4">
 <p>
 Now comes a little tricky part:
@@ -1032,13 +922,8 @@ Let’s to do it one-by-one:
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgebe12cd" class="outline-3">
 <h3 id="orgebe12cd"><span class="section-number-3">6.5</span> Step - 5</h3>
-=======
-<div id="outline-container-orgb485a3e" class="outline-3">
-<h3 id="orgb485a3e"><span class="section-number-3">6.5</span> Step - 5</h3>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-3" id="text-6-5">
 <ul class="org-ul">
 <li>print the required output.</li>
@@ -1073,13 +958,8 @@ present. To check whether a Name/Key is present in the <code>HashMap</code> or n
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-orgd041af3" class="outline-3">
 <h3 id="orgd041af3"><span class="section-number-3">6.6</span> Step - 6</h3>
-=======
-<div id="outline-container-org09a8aad" class="outline-3">
-<h3 id="org09a8aad"><span class="section-number-3">6.6</span> Step - 6</h3>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-3" id="text-6-6">
 <p>
 Let’s connect the dots:
@@ -1124,13 +1004,8 @@ we learned something :)
 </div>
 </div>
 
-<<<<<<< HEAD
 <div id="outline-container-org7f72240" class="outline-2">
 <h2 id="org7f72240"><span class="section-number-2">7</span> Thank you</h2>
-=======
-<div id="outline-container-org94f7c60" class="outline-2">
-<h2 id="org94f7c60"><span class="section-number-2">7</span> Thank you</h2>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <div class="outline-text-2" id="text-7">
 <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/java/hashmap.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
 
@@ -1241,11 +1116,7 @@ Want to share something with me or just wanna chat?
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Shubham Mahajan</p>
-<<<<<<< HEAD
 <p class="date">Created: 2018-04-01 Sun 16:54</p>
-=======
-<p class="date">Created: 2018-04-14 Sat 10:21</p>
->>>>>>> f4bcf46ef4e80431e36e414ae6f6ed3946c527b6
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

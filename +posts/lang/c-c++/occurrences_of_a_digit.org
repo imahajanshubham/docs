@@ -1,0 +1,200 @@
+#+INCLUDE: ../../../+layouts/header.org
+#+TITLE: Occurrences of a Digit
+
+* Table of contents                                       :TOC_4_gh:noexport:
+- [[#the-problem-statement][The Problem Statement]]
+  - [[#input][Input]]
+  - [[#output][Output]]
+- [[#conditions][Conditions]]
+- [[#test-case][Test Case]]
+- [[#prerequisites][Prerequisites]]
+- [[#an-attempt-towards-the-solution][An Attempt Towards The Solution]]
+    - [[#understanding-the-datatype-of-our-input][Understanding the Datatype of our Input]]
+    - [[#finding-the-number-of-occurences-of-a-digit][Finding the number of occurences of a digit]]
+    - [[#the-solution][The Solution]]
+- [[#thank-you][Thank you]]
+
+* The Problem Statement
+Find the no. of times, a particular digit appeared (occurences) in a *very large
+positive number.*
+
+** Input
+- Line 1: A *very large positive number*.
+- Line 2: *Digit*, whose no. of occurences to find.
+
+** Output
+- Line 1: *Number of occurences* of that digit.
+
+* Conditions
+- A input number can be as large as from *0* to *2^64 - 1*.
+- A number can only contain digits from *0-9*.
+- The running time *(T)* should be *<= 0.050 seconds*.
+
+* Test Case
+Input
+
+|------------------|
+| 5983461123450009 |
+| 4                |
+|------------------|
+
+Output
+
+| 2 |
+
+* Prerequisites
+Basic syntax of C language, rest we will explore during the journey.
+
+* An Attempt Towards The Solution
+In the very first line of the problem statement, we are going to deal with a
+very large positive number. Let's try to understand this much first:
+
+- A positive number? So we can use an ~unsigned~ number.
+- We are only dealing with ~INTEGERS~, so we can use ~unsigned int~ number.
+
+*** Understanding the Datatype of our Input
+Let's try to visualize the range of our input number:
+
+- 4 Bytes = 4 * 8 = 32 Bits.
+
+#+begin_note
+Size of ~int~: 4 Bytes (Unix 64-Bit Architecture).
+# https://msdn.microsoft.com/en-us/library/s3f49ktz.aspx
+#+end_note
+
+- And we know that by default, any ~integer~ is a ~signed integer~. Whoa... What do
+  we mean by that?
+
+That means, a number can be either ~+ve~ as well as ~-ve~. To get the range of
+~signed integer~, let's try to find the maximum number we can make from 32 Bits.
+
+32 Bits -> 2^32 i.e. 4294967296.
+
+*Now because we can make both ~+ve~ as well as ~-ve~ numbers, we should divide the
+answer by 2.*
+
+2^32 / 2 = 2^31 i.e. 2147483648. Thats's it!
+
+The range of ~signed int~ is from *-2^32* to *2^32 - 1*.
+
+-----
+But we wanted to find the range of ~unsigned int~ and not ~signed int~...
+Worry not, we have already found that.
+
+Didn't you noticed?
+
+#+begin_quote
+That means, a number can be either ~+ve~ as well as ~-ve~. To get the range of
+~signed integer~, let's try to find the maximum number we can make from 32 Bits.
+
+32 Bits -> 2^32 i.e. 4294967296
+#+end_quote
+
+The reason why we divided it by 2 was, we were considering ~-ve~ numbers too.
+
+Therefore,
+
+The range of ~unsigned int~ is from *0* to *2^32.*
+
+-----
+Similarly, ~unsigned long int~ is a 8 Bytes datatype.
+
+8 Bytes = 8 * 8 = 64 Bits.
+
+The range of ~unsigned long int~ is from *0* to *2^64*.
+
+*** Finding the number of occurences of a digit
+How many digits are there in total?
+
+#+begin_quote
+10 i.e. from 0 to 9.
+#+end_quote
+
+Now, let's create an array of size 10.
+
+#+begin_src C
+  int array[10];
+#+end_src
+
+What we are trying to do is.. Say if we encounter a digit ~x~, we will do
+~array[x]++~. This way we will be able to store the no. of occurences of any digit
+from *0* to *9* by treating them as array index.
+
+The value at that array index will give us the no. of occurences of that digit.
+
+But if we do ~array[x]++~, we will get garbage, because it's initial value is not
+defined.
+
+So we use the keybord ~static~.
+
+#+begin_src C
+  static int array[10];
+#+end_src
+
+#+begin_note
+If not initialized, by default all ~static int~ variables are set to *0*.
+#+end_note
+
+To the get digit, out of a number, we find out the remainder by dividing the
+number by 10.
+
+#+begin_src C
+  int digit = number % 10;
+#+end_src
+
+Then divide the number by 10, and repeat the steps i.e.
+
+#+begin_src C
+  while (number) {
+    digit = number % 10;
+    // Rest code goes here.
+
+    number /= 10;
+   }
+#+end_src
+
+*** The Solution
+Finally,
+
+#+begin_src C
+  #include <stdio.h>
+  #include <stdlib.h>
+
+  int main(void) {
+    unsigned long int inputNumber;
+    scanf("%lu", &inputNumber);
+
+    static int noOfOccurrences[10];
+
+    while (inputNumber) {
+      int Digit = inputNumber % 10;
+
+      noOfOccurrences[Digit]++;
+      inputNumber /= 10;
+    }
+
+    int Digit;
+
+    scanf("%d", &Digit);
+    printf("%d\n", noOfOccurrences[Digit]);
+
+    return EXIT_SUCCESS;
+  }
+#+end_src
+
+* Thank you
+
+#+begin_export html
+  <a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/lang/c-c%2B%2B/occurrences_of_a_digit.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
+  <ul class="pager">
+      <li class="next">
+          <a href="https://imahajanshubham.github.io/docs/lang/c-c++/only_source_code/minimizing_the_dotproduct.html" class="btn btn-neutral float-right" title="Minimizing the Dot Product" accesskey="n" rel="next">next <span class="fa fa-arrow-circle-right"></span></a>
+      </li>
+      <li class="previous">
+          <a href="https://imahajanshubham.github.io/docs/lang/java/factorial.html" class="btn btn-neutral" title="Factorial of a Number" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> previous</a>
+      </li>
+  </ul>
+#+end_export
+
+#+INCLUDE: ../../../+layouts/footer.org

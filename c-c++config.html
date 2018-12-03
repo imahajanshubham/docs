@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-04-20 Fri 01:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spacemacs Configuration</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Shubham Mahajan" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="icon" type="image/png" href="https://imahajanshubham.github.io/docs/+assets/favicon.webp" />
+<meta name="theme-color" content="#2980b9" />
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css" />
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/readtheorg.css" />
+<link rel="stylesheet" type="text/css" href="https://imahajanshubham.github.io/docs/+themes/custom.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Spacemacs Configuration</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgafc2d33">1. About</a></li>
+<li><a href="#orgf92ea0c">2. Basic setup</a>
+<ul>
+<li><a href="#orgc06e54d">2.1. Dependencies</a>
+<ul>
+<li><a href="#org2e118d8">2.1.1. Emacs</a></li>
+<li><a href="#org1365362">2.1.2. Spacemacs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org2eaa8aa">3. C/C++ configurations</a>
+<ul>
+<li><a href="#java">3.1. About</a></li>
+<li><a href="#org57e98cd">3.2. Setup</a></li>
+</ul>
+</li>
+<li><a href="#flycheck-syntax-checking-configurations">4. Flycheck (syntax-checking) configurations</a>
+<ul>
+<li><a href="#orgd956abb">4.1. About</a></li>
+<li><a href="#org382104b">4.2. Setup</a></li>
+</ul>
+</li>
+<li><a href="#orgee13c5f">5. Flyspell configurations</a></li>
+<li><a href="#org6340362">6. General configurations</a></li>
+<li><a href="#org8b8d97f">7. Layouts configurations</a></li>
+<li><a href="#orgb716c86">8. Java configurations</a></li>
+<li><a href="#org0724f24">9. Misc. configurations</a></li>
+<li><a href="#org72a9ca6">10. mu4e (e-mail) configurations</a></li>
+<li><a href="#org98f3ebb">11. Org configurations</a></li>
+<li><a href="#org0ae1f66">12. PlantUML configurations</a></li>
+<li><a href="#orgc2e6379">13. Shell configurations</a></li>
+<li><a href="#org39b735b">14. Python configurations</a></li>
+<li><a href="#org0226eac">15. SQL configurations</a></li>
+<li><a href="#orgba4780f">16. Summary</a></li>
+<li><a href="#thank-you">17. Thank you</a></li>
+</ul>
+</div>
+</div>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100% class=&quot;center&quot; background=“white”">
+
+
+<colgroup>
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-center"><a href="https://imahajanshubham.github.io/docs/home.html">Home</a></td>
+<td class="org-center"><a href="https://github.com/imahajanshubham">GitHub</a></td>
+<td class="org-center"><a href="https://sites.google.com/view/the-launchpad/home">Website</a></td>
+</tr>
+</tbody>
+</table>
+
+<div id="outline-container-orgafc2d33" class="outline-2">
+<h2 id="orgafc2d33"><span class="section-number-2">1</span> About</h2>
+<div class="outline-text-2" id="text-1">
+<br>
+  <p align="center">
+    <img class="hero_image" src="https://imahajanshubham.github.io/docs/+assets/favicon.webp" />
+  </p>
+<br>
+
+<p>
+I love <b>spacemacs</b> a lot because it combines key-bindings/modal concepts of <b>Vim</b>
+(my personal favorite reason) and functionality of <b>Emacs</b> via the beautiful <b>lisp</b> <code>(emacs-lisp)</code>
+language.
+</p>
+
+<p>
+Kinda <b>best of both the worlds!</b> Ehh, right?
+</p>
+
+<p>
+In my free-time, I try to learn more about the language and the editor itself
+bit-by-bit. Learning about the functionalities and packages, thus configuring it
+to my own personal taste is the favorite part.
+</p>
+
+<p>
+Here is the experience so far…
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf92ea0c" class="outline-2">
+<h2 id="orgf92ea0c"><span class="section-number-2">2</span> Basic setup</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+To try-out my spacemacs configuration, create a directory at <b>home</b> as
+<code>.spacemacs.d</code> and move the <code>.spacemacs</code> file from home to the newly created
+directory and rename it as <code>init.el</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">mkdir ~/.spacemacs.d
+mv ~/.spacemacs ~/.spacemacs.d/init.el
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgc06e54d" class="outline-3">
+<h3 id="orgc06e54d"><span class="section-number-3">2.1</span> Dependencies</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+For a smooth experience, you need to have the following bare-minimum software
+installed on your system and ensure they are updated.
+</p>
+</div>
+
+<div id="outline-container-org2e118d8" class="outline-4">
+<h4 id="org2e118d8"><span class="section-number-4">2.1.1</span> Emacs</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+Minimum version required: <b>25.0.1</b>. Download it via:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">sudo apt install emacs
+
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Explicitly download emacs with version 25.0.1.</span>
+sudo apt install emacs25
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1365362" class="outline-4">
+<h4 id="org1365362"><span class="section-number-4">2.1.2</span> Spacemacs</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+You also need to clone the <code>spacemacs</code> github repository in your <b>home</b> directory (recommended).
+</p>
+
+<p>
+<b>Stable version</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+</pre>
+</div>
+
+<p>
+<b>Develop version</b>
+</p>
+
+<p>
+For more details, please refer the <a href="https://github.com/syl20bnr/spacemacs#install">spacemacs installation guide</a>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+</pre>
+</div>
+
+<div class="note">
+<p>
+I use <b>Develop version</b> of the spacemacs.
+</p>
+
+</div>
+
+<p>
+Now open the <code>init.el</code> file and under the <code>dotspacemacs/user-config</code> section, we
+need to add few changes as follows:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #3a81c3;">(</span><span style="color: #3a81c3; font-weight: bold;">defun</span> <span style="color: #6c3163; font-weight: bold;">dotspacemacs/user-config</span> <span style="color: #6c3163;">()</span>
+ <span style="color: #da8b55;">"Configuration for user code:</span>
+<span style="color: #da8b55;">This function is called at the very end of Spacemacs startup, after layer</span>
+<span style="color: #da8b55;">configuration.</span>
+<span style="color: #da8b55;">Put your configuration code here, except for variables that should be set</span>
+<span style="color: #da8b55;">before packages are loaded."</span>
+
+   <span style="color: #2aa1ae; background-color: #ecf3ec;">;; </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Load the directory for custom spacemacs config files.</span>
+   <span style="color: #6c3163;">(</span><span style="color: #3a81c3; font-weight: bold;">push</span> <span style="color: #2d9574;">"~/.spacemacs.d/"</span> load-path<span style="color: #6c3163;">)</span>
+
+   <span style="color: #6c3163;">(</span>load <span style="color: #2d9574;">"&lt;config-file-name#1&gt;"</span><span style="color: #6c3163;">)</span>
+   <span style="color: #6c3163;">(</span>load <span style="color: #2d9574;">"&lt;config-file-name#2"</span><span style="color: #6c3163;">)</span>
+   <span style="color: #2aa1ae; background-color: #ecf3ec;">;; </span><span style="color: #2aa1ae; background-color: #ecf3ec;">and so on...</span>
+
+ <span style="color: #2aa1ae; background-color: #ecf3ec;">;; </span><span style="color: #2aa1ae; background-color: #ecf3ec;">rest of the code</span>
+ <span style="color: #3a81c3;">)</span>
+</pre>
+</div>
+
+<p>
+We are almost there. The only thing we need is to download the following
+files under <code>~/.spacemacs.d</code> directory and edit minor changes in <code>init.el</code> file as
+suggested and we are good to go!
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2eaa8aa" class="outline-2">
+<h2 id="org2eaa8aa"><span class="section-number-2">3</span> C/C++ configurations</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgfc6ad52" class="outline-3">
+<h3 id="java"><a id="orgfc6ad52"></a><span class="section-number-3">3.1</span> About</h3>
+<div class="outline-text-3" id="text-java">
+<p>
+Enable <code>flycheck</code> integration along-with <code>cmake-ide</code> in <b>c-c++ mode</b>.
+</p>
+
+<p>
+Also integrate <code>clang-analyzer</code> (a static code analysis tool) along-with <code>cppcheck</code>
+for strict syntax-checking. <b>(read <a href="#flycheck-syntax-checking-configurations">flycheck</a> config)</b>.
+</p>
+
+<p>
+Removed <code>clang-format-before-save</code> hook from <b>c-c++ mode</b> as it was causing
+auto-format issue in other modes. So to use it, one has to manually call the function via <code>SPC m = =</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org57e98cd" class="outline-3">
+<h3 id="org57e98cd"><span class="section-number-3">3.2</span> Setup</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+To use this configuration, you would need to download the following <code>*.el</code> file in
+the correct path as well as update the <code>init.el</code> file as describe below:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/c-c++config.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">c-c++config.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "c-c++config")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+
+<p>
+<b>Example:</b>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #3a81c3;">(</span><span style="color: #3a81c3; font-weight: bold;">defun</span> <span style="color: #6c3163; font-weight: bold;">dotspacemacs/user-config</span> <span style="color: #6c3163;">()</span>
+ <span style="color: #da8b55;">"Configuration for user code:</span>
+<span style="color: #da8b55;">This function is called at the very end of Spacemacs startup, after layer</span>
+<span style="color: #da8b55;">configuration.</span>
+<span style="color: #da8b55;">Put your configuration code here, except for variables that should be set</span>
+<span style="color: #da8b55;">before packages are loaded."</span>
+
+   <span style="color: #2aa1ae; background-color: #ecf3ec;">;; </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Load the directory for custom spacemacs config files.</span>
+   <span style="color: #6c3163;">(</span><span style="color: #3a81c3; font-weight: bold;">push</span> <span style="color: #2d9574;">"~/.spacemacs.d/"</span> load-path<span style="color: #6c3163;">)</span>
+
+   <span style="color: #6c3163;">(</span>load <span style="color: #2d9574;">"c-c++config"</span><span style="color: #6c3163;">)</span>
+
+ <span style="color: #2aa1ae; background-color: #ecf3ec;">;; </span><span style="color: #2aa1ae; background-color: #ecf3ec;">rest of the code</span>
+ <span style="color: #3a81c3;">)</span>
+</pre>
+</div>
+
+<p>
+And the <code>~/.spacemacs.d</code> directory should look something like this:
+</p>
+
+<pre class="example">
+/home/imahajanshubham/SPACE.d
+├── c-c++config.el
+├── flycheckconfig.el
+├── flyspellconfig.el
+├── generalconfig.el
+├── init.el
+├── javaconfig.el
+├── layoutsconfig.el
+├── miscconfig.el
+├── mu4econfig.el
+├── orgconfig.el
+├── plantumlconfig.el
+├── pythonconfig.el
+├── shellconfig.el
+└── sqlconfig.el
+
+0 directories, 14 files
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgeca013a" class="outline-2">
+<h2 id="flycheck-syntax-checking-configurations"><a id="orgeca013a"></a><span class="section-number-2">4</span> Flycheck (syntax-checking) configurations</h2>
+<div class="outline-text-2" id="text-flycheck-syntax-checking-configurations">
+</div>
+
+<div id="outline-container-orgd956abb" class="outline-3">
+<h3 id="orgd956abb"><span class="section-number-3">4.1</span> About</h3>
+</div>
+
+<div id="outline-container-org382104b" class="outline-3">
+<h3 id="org382104b"><span class="section-number-3">4.2</span> Setup</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+To use this configuration, you would need to download the following <code>*.el</code> file in
+the correct path as well as update the <code>init.el</code> file as describe below:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/flycheckconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">flycheckconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "flycheckconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+
+<div class="note">
+<p>
+Even though downloading <code>clang-analyzer</code> is optional, it’s highly recommend
+along-side other tools to reduce bugs in your code and improve its quality.
+</p>
+
+</div>
+
+<p>
+Download <code>clang-analyzer~</code> via:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">sudo apt install clang-analyzer
+</pre>
+</div>
+
+<p>
+For fully-featured experience, download the <b>complete clang-package</b> via:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">sudo apt install clang clang-format clang-analyzer
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgee13c5f" class="outline-2">
+<h2 id="orgee13c5f"><span class="section-number-2">5</span> Flyspell configurations</h2>
+<div class="outline-text-2" id="text-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/flyspellconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">flyspellconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "flyspellconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6340362" class="outline-2">
+<h2 id="org6340362"><span class="section-number-2">6</span> General configurations</h2>
+<div class="outline-text-2" id="text-6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/generalconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">generalconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "generalconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8b8d97f" class="outline-2">
+<h2 id="org8b8d97f"><span class="section-number-2">7</span> Layouts configurations</h2>
+<div class="outline-text-2" id="text-7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/layoutsconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">layoutsconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "layoutsconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb716c86" class="outline-2">
+<h2 id="orgb716c86"><span class="section-number-2">8</span> Java configurations</h2>
+<div class="outline-text-2" id="text-8">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/javaconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">javaconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "javaconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0724f24" class="outline-2">
+<h2 id="org0724f24"><span class="section-number-2">9</span> Misc. configurations</h2>
+<div class="outline-text-2" id="text-9">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/miscconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">miscconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "miscconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72a9ca6" class="outline-2">
+<h2 id="org72a9ca6"><span class="section-number-2">10</span> mu4e (e-mail) configurations</h2>
+<div class="outline-text-2" id="text-10">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/mu4econfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">mu4econfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "mu4econfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org98f3ebb" class="outline-2">
+<h2 id="org98f3ebb"><span class="section-number-2">11</span> Org configurations</h2>
+<div class="outline-text-2" id="text-11">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/orgconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">orgconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "orgconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0ae1f66" class="outline-2">
+<h2 id="org0ae1f66"><span class="section-number-2">12</span> PlantUML configurations</h2>
+<div class="outline-text-2" id="text-12">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/plantumlconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">plantumlconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "plantumlconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc2e6379" class="outline-2">
+<h2 id="orgc2e6379"><span class="section-number-2">13</span> Shell configurations</h2>
+<div class="outline-text-2" id="text-13">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/shellconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">shellconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "shellconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org39b735b" class="outline-2">
+<h2 id="org39b735b"><span class="section-number-2">14</span> Python configurations</h2>
+<div class="outline-text-2" id="text-14">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/pythonconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">pythonconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "pythonconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0226eac" class="outline-2">
+<h2 id="org0226eac"><span class="section-number-2">15</span> SQL configurations</h2>
+<div class="outline-text-2" id="text-15">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Location</b></td>
+<td class="org-left"><code>~/.spacemacs.d/sqlconfig.el</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Link</b></td>
+<td class="org-left"><a href="https://www.google.com/">sqlconfig.el</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Add <code>(load "sqlconfig")</code> to the <code>dotspacemacs/user-config</code> section of your
+dotfile.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgba4780f" class="outline-2">
+<h2 id="orgba4780f"><span class="section-number-2">16</span> Summary</h2>
+<div class="outline-text-2" id="text-16">
+<p>
+If you have used all the config files, then the <code>~/.spacemacs.d</code> directory should
+finally look something like this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">tree ~/SPACE.d
+</pre>
+</div>
+
+<pre class="example">
+/home/imahajanshubham/SPACE.d
+├── c-c++config.el
+├── flycheckconfig.el
+├── flyspellconfig.el
+├── generalconfig.el
+├── init.el
+├── javaconfig.el
+├── layoutsconfig.el
+├── miscconfig.el
+├── mu4econfig.el
+├── orgconfig.el
+├── plantumlconfig.el
+├── pythonconfig.el
+├── shellconfig.el
+└── sqlconfig.el
+
+0 directories, 14 files
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orge3129b9" class="outline-2">
+<h2 id="thank-you"><a id="orge3129b9"></a><span class="section-number-2">17</span> Thank you</h2>
+<div class="outline-text-2" id="text-thank-you">
+<a href="https://github.com/imahajanshubham/docs/blob/master/%2Bposts/home.org" class="fixedbutton btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+
+<ul class="pager">
+    <li class="next">
+        <a href="https://imahajanshubham.github.io/docs/lang/c-c++/structures.html" class="btn btn-neutral float-right" title="Structures And Pointers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+    </li>
+    <li class="previous">
+        <a href="https://imahajanshubham.github.io/docs/others/words_to_cherish.html" class="btn btn-neutral" title="The greatest enemy of learning is knowing" accesskey="n" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+    </li>
+</ul>
+
+<div id="disqus_thread"></div>
+<script>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://imahajanshubham.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//the-greatest-enemy-of-learning-is-knowing.disqus.com/count.js" async></script>
+
+<hr />
+
+<div class="attention">
+<p>
+If this blog was worth your time, please do checkout my other <a href="https://imahajanshubham.github.io/docs/home.html">shares</a> too.
+</p>
+
+</div>
+
+<p>
+Wanna know more about me?
+</p>
+
+<p>
+Visit:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>LinkedIn</b></td>
+<td class="org-left"><a href="https://www.linkedin.com/in/imahajanshubham/">imahajanshubham</a></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Website</b></td>
+<td class="org-left"><a href="https://sites.google.com/view/the-launchpad/home">The Launchpad</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+or where my work lives:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>GitHub</b></td>
+<td class="org-left"><a href="https://github.com/imahajanshubham">imahajanshubham</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Want to share something with me or just wanna chat?
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Mail me</b></td>
+<td class="org-left"><a href="mailto:imahajanshubham@gmail.com?">imahajanshubham@gmail.com</a></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<p align="center"><a href="http://spacemacs.org"><img src="https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg" /></a></p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Shubham Mahajan</p>
+<p class="date">Created: 2018-04-20 Fri 01:01</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
